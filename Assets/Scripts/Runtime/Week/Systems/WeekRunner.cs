@@ -27,7 +27,7 @@ public sealed class WeekRunner
         RuntimeWeekContext context = new(weekDefinition, childState);
         Dictionary<SO_CardInfoDefinition, RuntimeWeekSelection> selectionMap = BuildSelectionMap(selections);
 
-        ApplyInteractions(weekDefinition.OnWeekStartInteractions, childState);
+        GameplayInteractionExecutor.ApplyAll(weekDefinition.OnWeekStartInteractions, childState);
 
         foreach (SO_WeekRuleDefinition weekRule in weekDefinition.WeekRules)
         {
@@ -44,7 +44,7 @@ public sealed class WeekRunner
             weekRule?.OnWeekEnd(context);
         }
 
-        ApplyInteractions(weekDefinition.OnWeekEndInteractions, childState);
+        GameplayInteractionExecutor.ApplyAll(weekDefinition.OnWeekEndInteractions, childState);
 
         return new RuntimeWeekResult(weekDefinition, context.ResolvedCards, context.WeekLogs);
     }
@@ -95,7 +95,7 @@ public sealed class WeekRunner
             weekRule?.BeforeResolveCard(context, cardEntry.Card, selectedOption);
         }
 
-        ApplyInteractions(selectedOption.Interactions, context.ChildState);
+        GameplayInteractionExecutor.ApplyAll(selectedOption.Interactions, context.ChildState);
 
         foreach (SO_WeekRuleDefinition weekRule in context.WeekDefinition.WeekRules)
         {
@@ -104,20 +104,5 @@ public sealed class WeekRunner
 
         context.AddResolvedCard(
             new RuntimeResolvedCardRecord(cardEntry.Card, selection.SelectedOptionIndex, selectedOption));
-    }
-
-    private static void ApplyInteractions(
-        IReadOnlyList<SO_CardInteractionDefinition> interactions,
-        RuntimeChildState childState)
-    {
-        if (interactions == null)
-        {
-            return;
-        }
-
-        foreach (SO_CardInteractionDefinition interaction in interactions)
-        {
-            interaction?.Apply(childState);
-        }
     }
 }

@@ -16,6 +16,11 @@ public sealed class RuntimeWeekContext
     public IReadOnlyList<string> WeekLogs => _weekLogs;
     public IReadOnlyList<RuntimeResolvedCardRecord> ResolvedCards => _resolvedCards;
 
+    public void ApplyInteractions(IReadOnlyList<SO_CardInteractionDefinition> interactions)
+    {
+        GameplayInteractionExecutor.ApplyAll(interactions, ChildState);
+    }
+
     public void AddWeekLog(string log)
     {
         if (string.IsNullOrWhiteSpace(log))

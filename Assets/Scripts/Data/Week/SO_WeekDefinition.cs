@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(
     fileName = "WeekDefinition_",
@@ -67,11 +68,14 @@ public class WeekEventReactionData
 {
     [SerializeField] private EChildStatusType _dominantStat;
     [SerializeField, TextArea(2, 5)] private string _reactionText = string.Empty;
-    [SerializeField] private StatusDeltaData[] _statDeltas = Array.Empty<StatusDeltaData>();
+    [SerializeField] private SO_CardInteractionDefinition[] _interactions = Array.Empty<SO_CardInteractionDefinition>();
+    [FormerlySerializedAs("_statDeltas")]
+    [SerializeField, HideInInspector] private StatusDeltaData[] _legacyStatDeltas = Array.Empty<StatusDeltaData>();
 
     public EChildStatusType DominantStat => _dominantStat;
     public string ReactionText => _reactionText;
-    public StatusDeltaData[] StatDeltas => _statDeltas;
+    public SO_CardInteractionDefinition[] Interactions => _interactions;
+    public bool HasLegacyStatDeltas => _legacyStatDeltas != null && _legacyStatDeltas.Length > 0;
 }
 
 [Serializable]
@@ -91,11 +95,14 @@ public class DialogueChoiceData
 {
     [SerializeField] private string _label = string.Empty;
     [SerializeField, TextArea(2, 5)] private string _responseLine = string.Empty;
-    [SerializeField] private StatusDeltaData[] _statDeltas = Array.Empty<StatusDeltaData>();
+    [SerializeField] private SO_CardInteractionDefinition[] _interactions = Array.Empty<SO_CardInteractionDefinition>();
+    [FormerlySerializedAs("_statDeltas")]
+    [SerializeField, HideInInspector] private StatusDeltaData[] _legacyStatDeltas = Array.Empty<StatusDeltaData>();
 
     public string Label => _label;
     public string ResponseLine => _responseLine;
-    public StatusDeltaData[] StatDeltas => _statDeltas;
+    public SO_CardInteractionDefinition[] Interactions => _interactions;
+    public bool HasLegacyStatDeltas => _legacyStatDeltas != null && _legacyStatDeltas.Length > 0;
 }
 
 [Serializable]
