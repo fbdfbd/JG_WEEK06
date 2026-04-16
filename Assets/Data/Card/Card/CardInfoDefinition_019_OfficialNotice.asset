@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: CardInfoDefinition_019_OfficialNotice
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_019_officialnotice
+  _cardType: {fileID: 11400000, guid: 5e9d0a45fba43434c94831e4b00b06c4, type: 2}
+  _title: "공식 공지문"
+  _originalText: "저택에 대한 외부 공지문이 돌기 시작했다. 이제는 소문이 아니라, 모두가 볼 수 있는 글의 형태로 바깥 정보가 들어온다."
+  _options:
+  - _semantic: 0
+    _label: "공개"
+    _presentedText: "공지문이 있다는 사실과 내용을 설명한다. 네모는 불안해하기보다, 이제야 모두가 같은 글을 보는구나 하고 받아들인다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000001, type: 2}
+    - {fileID: 11400000, guid: f1000000000000000000000000000003, type: 2}
+  - _semantic: 1
+    _label: "수정 공지"
+    _presentedText: "필요한 부분만 골라 설명한다. 네모는 정리된 답을 듣지만, 원문이 따로 있을 거라는 생각도 함께 품는다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000007, type: 2}
+  - _semantic: 2
+    _label: "비공개"
+    _presentedText: "공지문을 보여 주지 않는다. 네모는 모두가 볼 수 있는 것이 자신에게만 오지 않는다는 사실을 나중에 더 크게 받아들일 수 있다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000005, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000c, type: 2}

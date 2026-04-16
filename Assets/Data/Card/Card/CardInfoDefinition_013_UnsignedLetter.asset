@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: CardInfoDefinition_013_UnsignedLetter
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_013_unsignedletter
+  _cardType: {fileID: 11400000, guid: 698832e9d630e6043a056dab5ae945e1, type: 2}
+  _title: "보낸 이 없는 보고서"
+  _originalText: "보낸 이가 적히지 않은 쪽지가 도착했다. 내용은 짧지만, 저택이 숨기는 일이 오래가지 않을 것이라는 경고를 담고 있다."
+  _options:
+  - _semantic: 0
+    _label: "전달"
+    _presentedText: "쪽지를 숨기지 않고 보여 준다. 네모는 겁을 먹으면서도, 누군가 일부러 자신에게 신호를 보내고 있다고 느낀다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000003, type: 2}
+    - {fileID: 11400000, guid: f1000000000000000000000000000005, type: 2}
+  - _semantic: 1
+    _label: "검열 후 전달"
+    _presentedText: "위협적인 문장을 빼고 읽어 준다. 네모는 누군가 자신에게 하고 싶은 말이 있었는데 끝을 듣지 못한 듯한 꺼림칙함을 느낀다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000007, type: 2}
+    - {fileID: 11400000, guid: f1000000000000000000000000000009, type: 2}
+  - _semantic: 2
+    _label: "보류"
+    _presentedText: "쪽지를 치워 둔다. 네모는 그날따라 책상 위가 조금 어수선하다는 이유만으로도 무언가 놓친 것이 있는지 신경 쓰게 된다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000002, type: 2}
+    - {fileID: 11400000, guid: f1000000000000000000000000000005, type: 2}
+    - {fileID: 11400000, guid: f1000000000000000000000000000009, type: 2}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: CardInfoDefinition_009_ChapelExcursion
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_009_chapelexcursion
+  _cardType: {fileID: 11400000, guid: 679de3888087a004f870e3f9b25b5d49, type: 2}
+  _title: "예배당 외출"
+  _originalText: "이번 주 예배당 왕복 외출을 허가할 수 있다. 길목에서는 저택을 보는 바깥사람들의 시선과 짧은 인사가 자연스럽게 오간다."
+  _options:
+  - _semantic: 0
+    _label: "허가"
+    _presentedText: "예배당까지 외출을 허가한다. 네모는 바깥 공기와 시선을 직접 경험하며, 저택 바깥의 세계가 생각보다 가까이 있다는 사실을 체감한다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000001, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000b, type: 2}
+  - _semantic: 2
+    _label: "제한"
+    _presentedText: "외출을 취소하고 예배는 방에서 대신한다. 네모는 창문 너머로 지나가는 마차 소리를 들으며 바깥을 더 상상하게 된다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000003, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000c, type: 2}

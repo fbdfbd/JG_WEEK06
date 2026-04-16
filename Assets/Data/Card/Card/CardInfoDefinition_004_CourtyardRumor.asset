@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: CardInfoDefinition_004_CourtyardRumor
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_004_courtyardrumor
+  _cardType: {fileID: 11400000, guid: 5e9d0a45fba43434c94831e4b00b06c4, type: 2}
+  _title: "안뜰 밖에서 도는 소문"
+  _originalText: "저택 담장 바깥에서 먼 친척이 문제를 일으켰다는 소문이 다시 돌기 시작했다. 하인들은 네모의 귀에 들어갈까 눈치를 본다."
+  _options:
+  - _semantic: 0
+    _label: "공개"
+    _presentedText: "소문이 있다는 사실을 숨기지 않는다. 네모는 듣고 잠시 조용해지지만, 저택 바깥의 분위기가 실재한다는 것을 또렷이 느낀다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000003, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000b, type: 2}
+  - _semantic: 1
+    _label: "수정 공지"
+    _presentedText: "오해가 퍼지고 있다고만 설명한다. 네모는 크게 흔들리진 않지만, 어른들이 이미 답을 정해 둔 채 말하고 있다는 느낌을 받는다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000001, type: 2}
+    - {fileID: 11400000, guid: f1000000000000000000000000000007, type: 2}
+  - _semantic: 2
+    _label: "비공개"
+    _presentedText: "관련 이야기를 전부 차단한다. 네모는 정원 쪽에서 말이 끊기는 순간마다 자신과 상관있는 일이라는 직감을 키워 간다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000005, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000c, type: 2}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: CardInfoDefinition_002_TutorVisit
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_002_tutorvisit
+  _cardType: {fileID: 11400000, guid: afa1ac45c9bf08740ae1b6f746678f1e, type: 2}
+  _title: "가정교사의 첫 방문"
+  _originalText: "새 가정교사가 저택에 들어온다. 그는 예의 바르지만, 네모의 부모와 먼 친척에 대한 이야기를 이미 조금 듣고 있는 눈치다."
+  _options:
+  - _semantic: 0
+    _label: "허가"
+    _presentedText: "가정교사가 네모와 인사를 나누고, 책 읽는 습관을 칭찬한다. 네모는 어른들이 자신을 정식으로 대우하고 있다고 느낀다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000001, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000a, type: 2}
+  - _semantic: 2
+    _label: "거절"
+    _presentedText: "가정교사를 문 앞에서 돌려보낸다. 네모는 왜 새로운 사람이 자신을 보지 못하고 떠났는지 짧게 질문하지만 명확한 답은 듣지 못한다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000005, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000c, type: 2}

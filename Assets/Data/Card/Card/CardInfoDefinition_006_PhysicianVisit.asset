@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: CardInfoDefinition_006_PhysicianVisit
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_006_physicianvisit
+  _cardType: {fileID: 11400000, guid: afa1ac45c9bf08740ae1b6f746678f1e, type: 2}
+  _title: "주치의의 안부 방문"
+  _originalText: "저택의 주치의가 네모의 상태를 확인하러 온다. 그는 밖의 공기가 어수선하니 아이가 불안해하지 않도록 하라는 말을 남기려 한다."
+  _options:
+  - _semantic: 0
+    _label: "허가"
+    _presentedText: "주치의가 네모를 직접 살피고 안심시킨다. 네모는 저택 안에서 자신을 돌보는 사람이 많다는 사실에 조금 안도한다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000001, type: 2}
+    - {fileID: 11400000, guid: f1000000000000000000000000000006, type: 2}
+  - _semantic: 2
+    _label: "거절"
+    _presentedText: "주치의를 들이지 않는다. 네모는 자신이 아픈 것도 아닌데 왜 방문이 취소됐는지 의아해하며 방 안에 더 오래 머문다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000005, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000c, type: 2}

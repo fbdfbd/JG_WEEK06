@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: CardInfoDefinition_020_MaidRumor
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_020_maidrumor
+  _cardType: {fileID: 11400000, guid: 005835eb8ed6baf43b45d56d82348582, type: 2}
+  _title: "시녀들 사이의 평판"
+  _originalText: "시녀들 사이에서 저택의 평판과 먼 친척 이야기가 다시 오르내린다. 이번에는 네모가 이미 여러 조각을 주워 담은 뒤라, 작은 말도 더 크게 남을 수 있다."
+  _options:
+  - _semantic: 0
+    _label: "그대로 둠"
+    _presentedText: "시녀들의 분위기를 그대로 둔다. 네모는 들은 말보다, 모두가 같은 사람을 조심스럽게 말한다는 사실 자체를 더 무겁게 느낀다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000002, type: 2}
+    - {fileID: 11400000, guid: f1000000000000000000000000000003, type: 2}
+  - _semantic: 1
+    _label: "순화 지침"
+    _presentedText: "불필요하게 자극적인 표현을 누그러뜨린다. 네모는 저택 안의 말이 매번 조심스럽게 정리된다는 사실을 익숙하게 받아들인다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000001, type: 2}
+  - _semantic: 2
+    _label: "입단속"
+    _presentedText: "관련 이야기를 막는다. 네모는 이제 저택의 침묵이 누군가의 의도라는 사실을 거의 확신하게 된다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000005, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000c, type: 2}

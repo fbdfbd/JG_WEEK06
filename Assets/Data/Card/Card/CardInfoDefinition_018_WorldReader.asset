@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: CardInfoDefinition_018_WorldReader
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_018_worldreader
+  _cardType: {fileID: 11400000, guid: 0cade4c5a3082f848b46a8180b85e857, type: 2}
+  _title: "밖의 세계를 다룬 독본"
+  _originalText: "새 독본은 영지 바깥의 길과 도시, 다른 집안의 생활을 다룬다. 지금까지보다 훨씬 넓은 세계가 페이지마다 펼쳐진다."
+  _options:
+  - _semantic: 0
+    _label: "원본 공개"
+    _presentedText: "독본을 그대로 읽게 한다. 네모는 저택 밖이 막연한 위험이 아니라 실제 사람과 길이 있는 세계라는 사실을 생생하게 받아들인다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000003, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000b, type: 2}
+  - _semantic: 1
+    _label: "순화본 공개"
+    _presentedText: "여행과 갈등 부분을 줄인 채 읽게 한다. 네모는 바깥 세계가 있다는 사실은 알지만, 거기 닿는 감각은 조금 흐릿하다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000001, type: 2}
+  - _semantic: 2
+    _label: "비공개"
+    _presentedText: "독본을 미뤄 둔다. 네모는 왜 늘 저택 안 이야기만 배우는지 점점 의식하기 시작한다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000003, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000c, type: 2}

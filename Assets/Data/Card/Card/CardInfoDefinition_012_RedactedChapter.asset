@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: CardInfoDefinition_012_RedactedChapter
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_012_redactedchapter
+  _cardType: {fileID: 11400000, guid: 0cade4c5a3082f848b46a8180b85e857, type: 2}
+  _title: "가려진 장의 교재"
+  _originalText: "교재의 다음 장은 저택이 외부와 갈등을 겪은 시기를 다룬다. 장 전체를 유지하면 네모가 지금의 침묵과 교재 내용 사이의 연결고리를 스스로 찾게 된다."
+  _options:
+  - _semantic: 0
+    _label: "원본 공개"
+    _presentedText: "장 전체를 보여 준다. 네모는 지금의 저택 분위기가 과거의 사건과 이어져 있을 수 있다는 생각을 처음 해 본다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000003, type: 2}
+  - _semantic: 1
+    _label: "순화본 공개"
+    _presentedText: "갈등 부분을 흐린 서술로 바꾼다. 네모는 수업을 무리 없이 따라가지만, 책에서 힘을 빼 버린 듯한 느낌을 받는다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000007, type: 2}
+  - _semantic: 2
+    _label: "장 제외"
+    _presentedText: "문제의 장을 통째로 덮어 둔다. 네모는 읽는 중간에 갑자기 끊기는 흐름을 이상하게 여기고, 빠진 장을 직접 찾고 싶어진다."
+    _interactions:
+    - {fileID: 11400000, guid: f1000000000000000000000000000003, type: 2}
+    - {fileID: 11400000, guid: f1000000000000000000000000000005, type: 2}
+    - {fileID: 11400000, guid: f100000000000000000000000000000c, type: 2}
