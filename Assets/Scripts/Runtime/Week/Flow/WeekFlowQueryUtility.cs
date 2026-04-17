@@ -6,12 +6,12 @@ public static class WeekFlowQueryUtility
 {
     public static WeekCardEntryData[] GetCurrentWeekEntries(SO_WeekDefinition currentWeekDefinition)
     {
-        if (currentWeekDefinition == null || currentWeekDefinition.CardEntries == null)
+        if (currentWeekDefinition?.PreTurn == null || currentWeekDefinition.PreTurn.InformationCards == null)
         {
             return Array.Empty<WeekCardEntryData>();
         }
 
-        return currentWeekDefinition.CardEntries
+        return currentWeekDefinition.PreTurn.InformationCards
             .Where(weekCardEntry => weekCardEntry != null)
             .OrderBy(weekCardEntry => weekCardEntry.DisplayOrder)
             .ToArray();

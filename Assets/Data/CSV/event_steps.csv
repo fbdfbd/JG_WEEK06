@@ -1,0 +1,7 @@
+event_id,step_id,title_override,body_text,use_custom_visual_state,visual_state,on_enter_interaction_ids,default_next_step_id
+routine_letter_blocked,step_letter_blocked_01,편지 반응,말하지 않은 편지 이야기가 네모의 마음에 오래 남는 장면이다.,false,Neutral,reaction_log_letter_open,
+routine_outside_open,step_outside_open_01,바깥 반응,네모가 바깥 이야기의 결을 오래 붙잡고 생각한다.,false,Neutral,curiosity_plus_1|reaction_log_hidden_hint,
+story_letter_suspected,step_story_letter_01,수상한 질문,네모가 편지 이야기를 다시 묻는다.,true,Conflicted,hidden_info_detected_flag,step_story_letter_02
+story_letter_suspected,step_story_letter_02,침묵 이후,짧은 침묵 뒤에도 네모의 시선은 거두어지지 않는다.,false,Neutral,,
+night_outside_interest,step_night_outside_01,밤의 대화,네모가 오늘 들은 바깥 이야기를 조심스럽게 다시 꺼낸다.,false,Neutral,,
+night_outside_interest,step_night_outside_02,다음 약속,네모는 아직 다 이해하지 못했지만 다음에는 직접 확인하고 싶어 한다.,false,Curious,trust_plus_1,

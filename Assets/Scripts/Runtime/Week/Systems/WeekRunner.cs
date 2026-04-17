@@ -34,7 +34,11 @@ public sealed class WeekRunner
             weekRule?.OnWeekStart(context);
         }
 
-        foreach (WeekCardEntryData cardEntry in weekDefinition.CardEntries.OrderBy(entry => entry.DisplayOrder))
+        WeekCardEntryData[] weekEntries = weekDefinition.PreTurn != null
+            ? weekDefinition.PreTurn.InformationCards
+            : Array.Empty<WeekCardEntryData>();
+
+        foreach (WeekCardEntryData cardEntry in weekEntries.OrderBy(entry => entry.DisplayOrder))
         {
             ResolveCardEntry(cardEntry, selectionMap, context);
         }
@@ -46,7 +50,11 @@ public sealed class WeekRunner
 
         GameplayInteractionExecutor.ApplyAll(weekDefinition.OnWeekEndInteractions, childState);
 
-        return new RuntimeWeekResult(weekDefinition, context.ResolvedCards, context.WeekLogs);
+        return new RuntimeWeekResult(
+            weekDefinition,
+            context.ResolvedCards,
+            context.WeekLogs,
+            WeekInformationControlResolver.Resolve(context.ResolvedCards));
     }
 
     private static Dictionary<SO_CardInfoDefinition, RuntimeWeekSelection> BuildSelectionMap(
@@ -104,5 +112,23 @@ public sealed class WeekRunner
 
         context.AddResolvedCard(
             new RuntimeResolvedCardRecord(cardEntry.Card, selection.SelectedOptionIndex, selectedOption));
+    }
+}
+
+public static class WeekInformationControlResolver
+{
+    public static RuntimeInformationControlResult Resolve(
+        IReadOnlyList<RuntimeResolvedCardRecord> resolvedCards)
+    {
+        RuntimeInformationSelectionRecord[] selections = resolvedCards?
+            .Where(resolvedCard => resolvedCard?.CardDefinition != null && resolvedCard.SelectedOption != null)
+            .Select(resolvedCard => new RuntimeInformationSelectionRecord(
+                resolvedCard.CardDefinition,
+                resolvedCard.CardDefinition.CardType,
+                resolvedCard.SelectedOption.Semantic))
+            .ToArray()
+            ?? Array.Empty<RuntimeInformationSelectionRecord>();
+
+        return new RuntimeInformationControlResult(selections);
     }
 }

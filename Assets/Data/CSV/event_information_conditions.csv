@@ -1,0 +1,4 @@
+event_id,information_type_id,use_semantic_filter,semantic,minimum_count
+story_letter_suspected,card_type_letter,true,Blocked,1
+night_outside_interest,card_type_externalinfo,false,,1
+night_outside_interest,card_type_letter,true,Modified,1

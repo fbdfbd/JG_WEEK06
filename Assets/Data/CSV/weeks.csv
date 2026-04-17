@@ -1,0 +1,2 @@
+week_id,week_index,title,summary,preturn_title,preturn_summary,on_week_start_interaction_ids,on_week_end_interaction_ids
+week_001,1,첫 주의 정리,첫 주에 들어온 정보들을 네모에게 어떤 방식으로 전달할지 정리하고 그 결과로 열리는 이벤트를 본다.,사전 정보 정리,이번 주의 정보를 먼저 전달하고 그 선택 결과에 따라 낮과 밤 이벤트가 열린다.,,week_001_wrapup_log

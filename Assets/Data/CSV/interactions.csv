@@ -1,0 +1,15 @@
+interaction_id,kind,display_name,stat_type,amount,flag_id,condition_stat,min_value,target_stat,reaction_text,child_interaction_ids
+trust_plus_1,stat_delta,신뢰 +1,Trust,1,,,,,,
+curiosity_plus_1,stat_delta,호기심 +1,Curiosity,1,,,,,,
+anxiety_plus_1,stat_delta,불안 +1,Anxiety,1,,,,,,
+obedience_plus_1,stat_delta,순응 +1,Obedience,1,,,,,,
+letter_suspected_flag,set_flag,편지 의심 플래그,,,letter_suspected,,,,,
+external_interest_flag,set_flag,바깥 관심 플래그,,,external_interest,,,,,
+hidden_info_detected_flag,set_flag,숨은 정보 감지 플래그,,,hidden_info_detected,,,,,
+visitor_remembered_flag,set_flag,방문자 기억 플래그,,,visitor_remembered,,,,,
+outside_interest_bundle,group,바깥 관심 묶음,,,,,,,,curiosity_plus_1|external_interest_flag
+if_curiosity_3_then_trust_plus_1,conditional_stat_delta,호기심 3 이상이면 신뢰 +1,,,,Curiosity,3,Trust,,
+reaction_log_letter_open,add_reaction_log,편지 기록,,,,,,,편지가 마음에 오래 남았다.,
+reaction_log_hidden_hint,add_reaction_log,숨은 단서 기록,,,,,,,말해지지 않은 무언가가 있다는 감각이 생겼다.,
+reaction_log_night_promise,add_reaction_log,밤의 약속 기록,,,,,,,다음에는 함께 확인해 보자는 약속을 기억했다.,
+week_001_wrapup_log,add_reaction_log,1주 마감 기록,,,,,,,첫 주의 선택들이 네모의 마음에 층층이 쌓였다.,

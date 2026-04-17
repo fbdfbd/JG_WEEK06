@@ -31,6 +31,10 @@ public readonly struct EndingPresentation
 
 public static class EndingResolver
 {
+    private const string HiddenInfoDetectedFlagId = "hidden_info_detected";
+    private const string LetterSuspectedFlagId = "letter_suspected";
+    private const string ExternalInterestFlagId = "external_interest";
+
     public static EndingPresentation Resolve(RuntimeChildState childState)
     {
         int trust = childState.GetStat(EChildStatusType.Trust);
@@ -38,8 +42,10 @@ public static class EndingResolver
         int anxiety = childState.GetStat(EChildStatusType.Anxiety);
         int obedience = childState.GetStat(EChildStatusType.Obedience);
 
-        bool sensedHiddenTruth = childState.HasFlag(EChildFlagType.HiddenInfoDetected) || childState.HasFlag(EChildFlagType.LetterSuspected);
-        bool interestedInOutside = childState.HasFlag(EChildFlagType.ExternalInterest);
+        bool sensedHiddenTruth =
+            childState.HasFlag(HiddenInfoDetectedFlagId) ||
+            childState.HasFlag(LetterSuspectedFlagId);
+        bool interestedInOutside = childState.HasFlag(ExternalInterestFlagId);
 
         if (curiosity >= 4 && interestedInOutside && sensedHiddenTruth && trust <= 2)
         {

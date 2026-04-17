@@ -4,61 +4,88 @@ using System.Linq;
 
 public static class WeekNarrativeResolver
 {
-    public static WeekFixedEventPresentation ResolveFixedEvent(
+    public static SO_InteractiveEventDefinition[] ResolvePendingEvents(
         SO_WeekDefinition weekDefinition,
+        RuntimeChildState childState,
+        RuntimeInformationControlResult informationControlResult)
+    {
+        List<SO_InteractiveEventDefinition> pendingEvents = new();
+        pendingEvents.AddRange(ResolveRoutineEvents(weekDefinition?.DayFlow, childState, informationControlResult));
+        pendingEvents.AddRange(ResolveStoryEvents(weekDefinition?.DayFlow, childState, informationControlResult));
+        pendingEvents.AddRange(ResolveNightDialogues(weekDefinition?.NightFlow, childState, informationControlResult));
+        return pendingEvents.ToArray();
+    }
+
+    public static InteractiveEventPresentation CreatePresentation(
+        RuntimeInteractiveEventSession eventSession,
         RuntimeChildState childState,
         WeekUiTextProvider weekUiText)
     {
-        WeekFixedEventData fixedEventDefinition = weekDefinition != null ? weekDefinition.FixedEvent : null;
-        if (fixedEventDefinition == null || fixedEventDefinition.Reactions == null || fixedEventDefinition.Reactions.Length == 0)
+        if (eventSession?.EventDefinition == null || eventSession.CurrentStep == null)
         {
-            return WeekFixedEventPresentation.Empty;
+            return InteractiveEventPresentation.Empty;
         }
 
-        EChildStatusType dominantStat = GetDominantStat(childState);
-        WeekEventReactionData matchedReaction = fixedEventDefinition.Reactions
-            .FirstOrDefault(reaction => reaction != null && reaction.DominantStat == dominantStat);
-        WeekEventReactionData fallbackReaction = fixedEventDefinition.Reactions
-            .FirstOrDefault(reaction => reaction != null);
-        WeekEventReactionData selectedReaction = matchedReaction ?? fallbackReaction;
+        SO_InteractiveEventStepDefinition step = eventSession.CurrentStep;
+        InteractiveEventChoicePresentation[] choices = step.Choices?
+            .Where(choice => choice != null)
+            .Select(choice => new InteractiveEventChoicePresentation(
+                choice.Label,
+                BuildEffectSummary(choice.Interactions, weekUiText)))
+            .ToArray()
+            ?? Array.Empty<InteractiveEventChoicePresentation>();
 
-        if (selectedReaction == null)
-        {
-            return WeekFixedEventPresentation.Empty;
-        }
+        DialogueLinePresentation[] dialogueLines = BuildDialogueLines(
+            step.DialogueLines,
+            step.NemoLine);
 
-        return new WeekFixedEventPresentation(
-            string.IsNullOrWhiteSpace(fixedEventDefinition.Title) ? weekUiText.GetFixedEventTitleFallback() : fixedEventDefinition.Title,
-            fixedEventDefinition.SituationText,
-            selectedReaction.ReactionText,
-            BuildEffectSummaryLine(weekUiText, selectedReaction.Interactions, selectedReaction.HasLegacyStatDeltas),
-            dominantStat,
-            selectedReaction.Interactions ?? Array.Empty<SO_CardInteractionDefinition>());
+        return new InteractiveEventPresentation(
+            string.IsNullOrWhiteSpace(step.TitleOverride) ? eventSession.EventDefinition.Title : step.TitleOverride,
+            step.BodyText,
+            BuildEffectSummary(step.OnEnterInteractions, weekUiText),
+            ResolveVisualState(step, childState),
+            dialogueLines,
+            choices,
+            choices.Length == 0);
     }
 
-    public static WeekPrivateDialoguePresentation ResolvePrivateDialogue(
-        SO_WeekDefinition weekDefinition,
+    public static InteractiveEventChoiceResultPresentation CreateChoiceResultPresentation(
+        InteractiveEventChoiceData selectedChoice,
         WeekUiTextProvider weekUiText)
     {
-        WeekPrivateDialogueData privateDialogueDefinition = weekDefinition != null ? weekDefinition.PrivateDialogue : null;
-        if (privateDialogueDefinition == null || privateDialogueDefinition.Choices == null || privateDialogueDefinition.Choices.Length == 0)
+        return new InteractiveEventChoiceResultPresentation(
+            BuildDialogueLines(
+                selectedChoice?.ResponseDialogueLines,
+                selectedChoice?.ResponseLine),
+            BuildEffectSummary(selectedChoice?.Interactions, weekUiText));
+    }
+
+    public static DialogueLinePresentation GetPrimaryDialogueLine(
+        IReadOnlyList<DialogueLinePresentation> dialogueLines,
+        string fallbackSpeakerName = NemoFeedbackResolver.DefaultSpeakerName)
+    {
+        if (dialogueLines != null)
         {
-            return WeekPrivateDialoguePresentation.Empty;
+            foreach (DialogueLinePresentation dialogueLine in dialogueLines)
+            {
+                if (!dialogueLine.HasContent)
+                {
+                    continue;
+                }
+
+                string speakerName = string.IsNullOrWhiteSpace(dialogueLine.SpeakerName)
+                    ? fallbackSpeakerName
+                    : dialogueLine.SpeakerName;
+                return new DialogueLinePresentation(speakerName, dialogueLine.Text);
+            }
         }
 
-        WeekDialogueChoicePresentation[] choicePresentations = privateDialogueDefinition.Choices
-            .Where(choice => choice != null)
-            .Select(choice => new WeekDialogueChoicePresentation(
-                choice.Label,
-                choice.ResponseLine,
-                BuildEffectSummaryLine(weekUiText, choice.Interactions, choice.HasLegacyStatDeltas),
-                choice.Interactions ?? Array.Empty<SO_CardInteractionDefinition>()))
-            .ToArray();
+        return new DialogueLinePresentation(fallbackSpeakerName, string.Empty);
+    }
 
-        return new WeekPrivateDialoguePresentation(
-            string.IsNullOrWhiteSpace(privateDialogueDefinition.Title) ? weekUiText.GetPrivateDialogueTitleFallback() : privateDialogueDefinition.Title,
-            privateDialogueDefinition.OpeningLine,
-            choicePresentations);
+    public static ENemoVisualState GetVisualStateForCurrentState(RuntimeChildState childState)
+    {
+        return GetVisualStateForStat(GetDominantStat(childState));
     }
 
     public static ENemoVisualState GetVisualStateForStat(EChildStatusType dominantStat)
@@ -81,118 +108,247 @@ public static class WeekNarrativeResolver
             .First();
     }
 
-    private static string BuildEffectSummaryLine(
-        WeekUiTextProvider weekUiText,
+    private static IEnumerable<SO_InteractiveEventDefinition> ResolveRoutineEvents(
+        SO_WeekDayFlowDefinition dayFlow,
+        RuntimeChildState childState,
+        RuntimeInformationControlResult informationControlResult)
+    {
+        return dayFlow?.RoutineEvents?
+            .Where(routineEvent => routineEvent != null)
+            .Select(routineEvent => new
+            {
+                Event = routineEvent,
+                Score = ResolveRoutineMatchScore(routineEvent, informationControlResult),
+            })
+            .Where(item => item.Score > 0 && IsEventAvailable(item.Event, childState, informationControlResult))
+            .OrderByDescending(item => item.Score)
+            .ThenByDescending(item => item.Event.Priority)
+            .Select(item => item.Event)
+            ?? Enumerable.Empty<SO_InteractiveEventDefinition>();
+    }
+
+    private static IEnumerable<SO_InteractiveEventDefinition> ResolveStoryEvents(
+        SO_WeekDayFlowDefinition dayFlow,
+        RuntimeChildState childState,
+        RuntimeInformationControlResult informationControlResult)
+    {
+        return ResolveEligibleEvents(dayFlow?.StoryEvents, childState, informationControlResult);
+    }
+
+    private static IEnumerable<SO_InteractiveEventDefinition> ResolveNightDialogues(
+        SO_WeekNightFlowDefinition nightFlow,
+        RuntimeChildState childState,
+        RuntimeInformationControlResult informationControlResult)
+    {
+        return ResolveEligibleEvents(nightFlow?.Dialogues, childState, informationControlResult).Take(1);
+    }
+
+    private static IEnumerable<SO_InteractiveEventDefinition> ResolveEligibleEvents(
+        IEnumerable<SO_InteractiveEventDefinition> events,
+        RuntimeChildState childState,
+        RuntimeInformationControlResult informationControlResult)
+    {
+        return events?
+            .Where(eventDefinition => IsEventAvailable(eventDefinition, childState, informationControlResult))
+            .OrderByDescending(eventDefinition => eventDefinition.Priority)
+            ?? Enumerable.Empty<SO_InteractiveEventDefinition>();
+    }
+
+    private static bool IsEventAvailable(
+        SO_InteractiveEventDefinition eventDefinition,
+        RuntimeChildState childState,
+        RuntimeInformationControlResult informationControlResult)
+    {
+        if (eventDefinition?.FirstStep == null)
+        {
+            return false;
+        }
+
+        WeekEventConditionData conditions = eventDefinition.Conditions;
+        return HasRequiredFlags(childState, conditions) &&
+               HasNoBlockedFlags(childState, conditions) &&
+               MeetsStatRequirements(childState, conditions) &&
+               MeetsInformationRequirements(informationControlResult, conditions);
+    }
+
+    private static bool HasRequiredFlags(RuntimeChildState childState, WeekEventConditionData conditions)
+    {
+        return conditions?.RequiredFlags == null || conditions.RequiredFlags.All(childState.HasFlag);
+    }
+
+    private static bool HasNoBlockedFlags(RuntimeChildState childState, WeekEventConditionData conditions)
+    {
+        return conditions?.BlockedFlags == null || conditions.BlockedFlags.All(flagType => !childState.HasFlag(flagType));
+    }
+
+    private static bool MeetsStatRequirements(RuntimeChildState childState, WeekEventConditionData conditions)
+    {
+        if (conditions?.StatRequirements == null)
+        {
+            return true;
+        }
+
+        return conditions.StatRequirements.All(requirement =>
+        {
+            int value = childState.GetStat(requirement.StatType);
+            bool meetsMinimum = !requirement.UseMinimum || value >= requirement.MinimumValue;
+            bool meetsMaximum = !requirement.UseMaximum || value <= requirement.MaximumValue;
+            return meetsMinimum && meetsMaximum;
+        });
+    }
+
+    private static bool MeetsInformationRequirements(
+        RuntimeInformationControlResult informationControlResult,
+        WeekEventConditionData conditions)
+    {
+        if (conditions?.InformationRequirements == null)
+        {
+            return true;
+        }
+
+        return conditions.InformationRequirements.All(requirement =>
+        {
+            ECardOptionSemantic? semanticFilter = requirement.UseSemanticFilter ? requirement.Semantic : null;
+            int count = informationControlResult.CountSelectionsForType(requirement.InformationType, semanticFilter);
+            return count >= requirement.MinimumCount;
+        });
+    }
+
+    private static int ResolveRoutineMatchScore(
+        SO_DayRoutineEventDefinition routineEvent,
+        RuntimeInformationControlResult informationControlResult)
+    {
+        if (routineEvent?.RelatedInformationTypes == null || routineEvent.RelatedInformationTypes.Length == 0)
+        {
+            return 0;
+        }
+
+        if (routineEvent.PreferredSemantics == null || routineEvent.PreferredSemantics.Length == 0)
+        {
+            return informationControlResult.CountSelectionsForAnyType(routineEvent.RelatedInformationTypes);
+        }
+
+        return routineEvent.PreferredSemantics.Sum(semantic =>
+            informationControlResult.CountSelectionsForAnyType(routineEvent.RelatedInformationTypes, semantic));
+    }
+
+    private static ENemoVisualState ResolveVisualState(
+        SO_InteractiveEventStepDefinition step,
+        RuntimeChildState childState)
+    {
+        return step.UseCustomVisualState
+            ? step.VisualState
+            : GetVisualStateForCurrentState(childState);
+    }
+
+    private static string BuildEffectSummary(
         IReadOnlyList<SO_CardInteractionDefinition> interactions,
-        bool hasLegacyStatDeltas)
+        WeekUiTextProvider weekUiText)
     {
-        List<string> effectNames = interactions?
+        string[] effectNames = interactions?
             .Where(interaction => interaction != null)
-            .Select(GetEffectDisplayName)
+            .Select(interaction => interaction.name)
             .Where(effectName => !string.IsNullOrWhiteSpace(effectName))
-            .ToList()
-            ?? new List<string>();
+            .ToArray()
+            ?? Array.Empty<string>();
 
-        if (effectNames.Count > 0)
-        {
-            return string.Join(" / ", effectNames);
-        }
-
-        if (hasLegacyStatDeltas)
-        {
-            return weekUiText.GetLegacyNarrativeEffectMessage();
-        }
-
-        return weekUiText.GetNoEffectSummary();
+        return effectNames.Length == 0
+            ? weekUiText.GetNoEffectSummary()
+            : string.Join(" / ", effectNames);
     }
 
-    private static string GetEffectDisplayName(SO_CardInteractionDefinition interaction)
+    private static DialogueLinePresentation[] BuildDialogueLines(
+        IReadOnlyList<DialogueLineData> dialogueLines,
+        string legacyFallbackLine)
     {
-        if (interaction == null)
+        DialogueLinePresentation[] lines = dialogueLines?
+            .Where(dialogueLine => dialogueLine != null && !string.IsNullOrWhiteSpace(dialogueLine.Text))
+            .Select(dialogueLine => new DialogueLinePresentation(
+                ResolveSpeakerName(dialogueLine.Speaker),
+                dialogueLine.Text))
+            .ToArray()
+            ?? Array.Empty<DialogueLinePresentation>();
+
+        if (lines.Length > 0)
         {
-            return string.Empty;
+            return lines;
         }
 
-        return string.IsNullOrWhiteSpace(interaction.name)
-            ? interaction.GetType().Name
-            : interaction.name;
+        return string.IsNullOrWhiteSpace(legacyFallbackLine)
+            ? Array.Empty<DialogueLinePresentation>()
+            : new[] { new DialogueLinePresentation(NemoFeedbackResolver.DefaultSpeakerName, legacyFallbackLine) };
+    }
+
+    private static string ResolveSpeakerName(SO_DialogueSpeakerDefinition speaker)
+    {
+        if (speaker == null)
+        {
+            return NemoFeedbackResolver.DefaultSpeakerName;
+        }
+
+        if (!string.IsNullOrWhiteSpace(speaker.DisplayName))
+        {
+            return speaker.DisplayName;
+        }
+
+        if (!string.IsNullOrWhiteSpace(speaker.name))
+        {
+            return speaker.name;
+        }
+
+        return NemoFeedbackResolver.DefaultSpeakerName;
     }
 }
 
-public readonly struct WeekFixedEventPresentation
+public readonly struct InteractiveEventPresentation
 {
-    public static WeekFixedEventPresentation Empty => new(
+    public static InteractiveEventPresentation Empty => new(
         string.Empty,
         string.Empty,
         string.Empty,
-        string.Empty,
-        EChildStatusType.Trust,
-        Array.Empty<SO_CardInteractionDefinition>());
+        ENemoVisualState.Neutral,
+        Array.Empty<DialogueLinePresentation>(),
+        Array.Empty<InteractiveEventChoicePresentation>(),
+        false);
 
-    public WeekFixedEventPresentation(
+    public InteractiveEventPresentation(
         string title,
-        string situationText,
-        string reactionText,
+        string bodyText,
         string effectSummaryLine,
-        EChildStatusType dominantStat,
-        IReadOnlyList<SO_CardInteractionDefinition> interactions)
+        ENemoVisualState visualState,
+        IReadOnlyList<DialogueLinePresentation> dialogueLines,
+        IReadOnlyList<InteractiveEventChoicePresentation> choices,
+        bool canContinue)
     {
         Title = title;
-        SituationText = situationText;
-        ReactionText = reactionText;
+        BodyText = bodyText;
         EffectSummaryLine = effectSummaryLine;
-        DominantStat = dominantStat;
-        Interactions = interactions;
-    }
-
-    public string Title { get; }
-    public string SituationText { get; }
-    public string ReactionText { get; }
-    public string EffectSummaryLine { get; }
-    public EChildStatusType DominantStat { get; }
-    public IReadOnlyList<SO_CardInteractionDefinition> Interactions { get; }
-    public bool HasContent => !string.IsNullOrWhiteSpace(Title);
-}
-
-public readonly struct WeekPrivateDialoguePresentation
-{
-    public static WeekPrivateDialoguePresentation Empty => new(
-        string.Empty,
-        string.Empty,
-        Array.Empty<WeekDialogueChoicePresentation>());
-
-    public WeekPrivateDialoguePresentation(
-        string title,
-        string openingLine,
-        IReadOnlyList<WeekDialogueChoicePresentation> choices)
-    {
-        Title = title;
-        OpeningLine = openingLine;
+        VisualState = visualState;
+        DialogueLines = dialogueLines;
         Choices = choices;
+        CanContinue = canContinue;
     }
 
     public string Title { get; }
-    public string OpeningLine { get; }
-    public IReadOnlyList<WeekDialogueChoicePresentation> Choices { get; }
-    public bool HasContent => !string.IsNullOrWhiteSpace(Title) && Choices != null && Choices.Count > 0;
+    public string BodyText { get; }
+    public string EffectSummaryLine { get; }
+    public ENemoVisualState VisualState { get; }
+    public IReadOnlyList<DialogueLinePresentation> DialogueLines { get; }
+    public IReadOnlyList<InteractiveEventChoicePresentation> Choices { get; }
+    public bool CanContinue { get; }
+    public bool HasContent => !string.IsNullOrWhiteSpace(Title) || !string.IsNullOrWhiteSpace(BodyText);
 }
 
-public readonly struct WeekDialogueChoicePresentation
+public readonly struct InteractiveEventChoicePresentation
 {
-    public WeekDialogueChoicePresentation(
+    public InteractiveEventChoicePresentation(
         string label,
-        string responseLine,
-        string effectSummaryLine,
-        IReadOnlyList<SO_CardInteractionDefinition> interactions)
+        string effectSummaryLine)
     {
         Label = label;
-        ResponseLine = responseLine;
         EffectSummaryLine = effectSummaryLine;
-        Interactions = interactions;
     }
 
     public string Label { get; }
-    public string ResponseLine { get; }
     public string EffectSummaryLine { get; }
-    public IReadOnlyList<SO_CardInteractionDefinition> Interactions { get; }
 }

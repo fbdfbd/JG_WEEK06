@@ -10,25 +10,34 @@ public enum ENemoVisualState
 
 public readonly struct NemoFeedbackPresentation
 {
-    public NemoFeedbackPresentation(ENemoVisualState visualState, string dialogueLine)
+    public NemoFeedbackPresentation(string speakerName, ENemoVisualState visualState, string dialogueLine)
     {
+        SpeakerName = speakerName;
         VisualState = visualState;
         DialogueLine = dialogueLine;
     }
 
+    public NemoFeedbackPresentation(ENemoVisualState visualState, string dialogueLine)
+        : this(NemoFeedbackResolver.DefaultSpeakerName, visualState, dialogueLine)
+    {
+    }
+
+    public string SpeakerName { get; }
     public ENemoVisualState VisualState { get; }
     public string DialogueLine { get; }
 }
 
 public static class NemoFeedbackResolver
 {
+    public const string DefaultSpeakerName = "네모";
+
     public static NemoFeedbackPresentation Resolve(
         RuntimeChildState childState,
         RuntimeResolvedCardRecord resolvedCard)
     {
         ENemoVisualState visualState = ResolveVisualState(childState);
         string dialogueLine = ResolveDialogueLine(childState, resolvedCard);
-        return new NemoFeedbackPresentation(visualState, dialogueLine);
+        return new NemoFeedbackPresentation(DefaultSpeakerName, visualState, dialogueLine);
     }
 
     private static ENemoVisualState ResolveVisualState(RuntimeChildState childState)

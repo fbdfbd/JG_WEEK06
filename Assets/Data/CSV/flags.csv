@@ -1,0 +1,5 @@
+flag_id,display_name,description
+letter_suspected,편지 의심,전달되지 않은 편지나 숨긴 편지를 네모가 의심하는 상태
+external_interest,바깥 관심,네모가 집 밖의 정보와 세계에 지속적으로 관심을 보이는 상태
+hidden_info_detected,숨은 정보 감지,말해지지 않은 단서가 있다는 감각을 네모가 붙잡은 상태
+visitor_remembered,방문자 기억,중요 방문자에 대한 인상이 오래 남아 있는 상태

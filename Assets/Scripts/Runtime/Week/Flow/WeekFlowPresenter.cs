@@ -50,7 +50,10 @@ public sealed class WeekFlowPresenter
         };
 
         string[] flagNames = _runtimeState.ChildState.Flags
-            .Select(flagType => flagType.ToString())
+            .Select(flagDefinition => flagDefinition != null && !string.IsNullOrWhiteSpace(flagDefinition.DisplayName)
+                ? flagDefinition.DisplayName
+                : flagDefinition != null ? flagDefinition.name : string.Empty)
+            .Where(flagName => !string.IsNullOrWhiteSpace(flagName))
             .ToArray();
 
         string[] reactionLogs = _runtimeState.ChildState.ReactionLogs
@@ -92,24 +95,48 @@ public sealed class WeekFlowPresenter
         _view?.ShowWeekFeedback(presentation);
     }
 
-    public void ShowWeekEvent(WeekFixedEventPresentation presentation)
+    public void ShowInteractiveEvent(InteractiveEventPresentation presentation)
     {
-        _view?.ShowWeekEvent(presentation);
+        _view?.ShowInteractiveEvent(presentation);
     }
 
-    public void ShowPrivateDialogue(WeekPrivateDialoguePresentation presentation)
+    public void ShowInteractiveEventResult(InteractiveEventChoiceResultPresentation presentation)
     {
-        _view?.ShowPrivateDialogue(presentation);
-    }
-
-    public void ShowPrivateDialogueResult(WeekDialogueChoiceResultPresentation presentation)
-    {
-        _view?.ShowPrivateDialogueResult(presentation);
+        _view?.ShowInteractiveEventResult(presentation);
     }
 
     public void ShowEnding(EndingPresentation presentation)
     {
         _view?.ShowEnding(presentation);
+    }
+
+    public void PresentScreen(WeekFlowScreen screen)
+    {
+        if (screen == null)
+        {
+            return;
+        }
+
+        switch (screen.ScreenType)
+        {
+            case EWeekFlowScreenType.WeekFeedback:
+                ShowWeekFeedback(screen.WeekFeedback);
+                break;
+            case EWeekFlowScreenType.EventStep:
+                ShowInteractiveEvent(screen.EventStep);
+                break;
+            case EWeekFlowScreenType.ChoiceResult:
+                ShowInteractiveEventResult(screen.ChoiceResult);
+                break;
+            case EWeekFlowScreenType.Ending:
+                ShowEnding(screen.Ending);
+                break;
+        }
+    }
+
+    public void HideFlowScreens()
+    {
+        _view?.HideTransientViews();
     }
 
     private void PublishWeekHeader()

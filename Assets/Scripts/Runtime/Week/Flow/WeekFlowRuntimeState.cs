@@ -1,21 +1,23 @@
+using System;
+using System.Collections.Generic;
+
 public sealed class WeekFlowRuntimeState
 {
+    private readonly List<SO_InteractiveEventDefinition> _pendingEvents = new();
+    private int _nextEventIndex;
+
     public WeekFlowRuntimeState()
     {
         ChildState = new RuntimeChildState();
-        ClearPendingNarrativeState();
+        ClearPendingEventState();
         StatusMessage = "Week flow is ready.";
     }
 
     public RuntimeChildState ChildState { get; private set; }
     public RuntimeWeekResult LastWeekResult { get; set; }
-    public WeekFixedEventPresentation PendingWeekEvent { get; set; }
-    public WeekPrivateDialoguePresentation PendingPrivateDialogue { get; set; }
-    public WeekDialogueChoicePresentation SelectedDialogueChoice { get; set; }
-    public bool HasAppliedPendingWeekEvent { get; set; }
-    public bool HasSelectedDialogueChoice { get; set; }
-    public bool ShouldShowEndingAfterNarrative { get; set; }
-    public bool ShouldAdvanceToNextWeekAfterNarrative { get; set; }
+    public RuntimeInteractiveEventSession CurrentEventSession { get; private set; }
+    public bool ShouldShowEndingAfterEvents { get; set; }
+    public bool ShouldAdvanceToNextWeekAfterEvents { get; set; }
     public bool HasReachedEnding { get; set; }
     public string StatusMessage { get; private set; }
 
@@ -24,22 +26,105 @@ public sealed class WeekFlowRuntimeState
         ChildState = new RuntimeChildState();
         LastWeekResult = null;
         HasReachedEnding = false;
-        ClearPendingNarrativeState();
+        ClearPendingEventState();
     }
 
-    public void ClearPendingNarrativeState()
+    public void SetPendingEvents(IReadOnlyList<SO_InteractiveEventDefinition> pendingEvents)
     {
-        PendingWeekEvent = WeekFixedEventPresentation.Empty;
-        PendingPrivateDialogue = WeekPrivateDialoguePresentation.Empty;
-        SelectedDialogueChoice = default;
-        HasAppliedPendingWeekEvent = false;
-        HasSelectedDialogueChoice = false;
-        ShouldShowEndingAfterNarrative = false;
-        ShouldAdvanceToNextWeekAfterNarrative = false;
+        _pendingEvents.Clear();
+        _pendingEvents.AddRange(pendingEvents ?? Array.Empty<SO_InteractiveEventDefinition>());
+        _nextEventIndex = 0;
+        CurrentEventSession = null;
+    }
+
+    public bool TryStartNextEvent()
+    {
+        while (_nextEventIndex < _pendingEvents.Count)
+        {
+            SO_InteractiveEventDefinition nextEvent = _pendingEvents[_nextEventIndex++];
+            if (nextEvent?.FirstStep == null)
+            {
+                continue;
+            }
+
+            CurrentEventSession = new RuntimeInteractiveEventSession(nextEvent);
+            return true;
+        }
+
+        CurrentEventSession = null;
+        return false;
+    }
+
+    public void ClearCurrentEventSession()
+    {
+        CurrentEventSession = null;
+    }
+
+    public void ClearPendingEventState()
+    {
+        _pendingEvents.Clear();
+        _nextEventIndex = 0;
+        CurrentEventSession = null;
+        ShouldShowEndingAfterEvents = false;
+        ShouldAdvanceToNextWeekAfterEvents = false;
     }
 
     public void SetStatusMessage(string statusMessage)
     {
         StatusMessage = statusMessage;
+    }
+}
+
+public sealed class RuntimeInteractiveEventSession
+{
+    public RuntimeInteractiveEventSession(SO_InteractiveEventDefinition eventDefinition)
+    {
+        EventDefinition = eventDefinition;
+        CurrentStep = eventDefinition != null ? eventDefinition.FirstStep : null;
+    }
+
+    public SO_InteractiveEventDefinition EventDefinition { get; }
+    public SO_InteractiveEventStepDefinition CurrentStep { get; private set; }
+    public InteractiveEventChoiceData SelectedChoice { get; private set; }
+    public bool HasAppliedCurrentStep { get; private set; }
+    public bool HasPendingChoiceResult => SelectedChoice != null;
+
+    public void MarkCurrentStepApplied()
+    {
+        HasAppliedCurrentStep = true;
+    }
+
+    public void SelectChoice(InteractiveEventChoiceData choice)
+    {
+        SelectedChoice = choice;
+    }
+
+    public void ClearChoiceResult()
+    {
+        SelectedChoice = null;
+    }
+
+    public bool TryMoveToNextStep()
+    {
+        SO_InteractiveEventStepDefinition nextStep = ResolveNextStep();
+        if (nextStep == null)
+        {
+            return false;
+        }
+
+        CurrentStep = nextStep;
+        SelectedChoice = null;
+        HasAppliedCurrentStep = false;
+        return true;
+    }
+
+    private SO_InteractiveEventStepDefinition ResolveNextStep()
+    {
+        if (SelectedChoice?.NextStep != null)
+        {
+            return SelectedChoice.NextStep;
+        }
+
+        return CurrentStep != null ? CurrentStep.NextStep : null;
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,9 +9,8 @@ public abstract class WeekFlowViewBase : MonoBehaviour
     public event Action ResetSelectionsRequested;
     public event Action ResetChildStateRequested;
     public event Action WeekFeedbackClosed;
-    public event Action WeekEventContinueRequested;
-    public event Action<int> PrivateDialogueChoiceSelected;
-    public event Action PrivateDialogueContinueRequested;
+    public event Action InteractiveEventContinueRequested;
+    public event Action<int> InteractiveEventChoiceSelected;
     public event Action<SO_CardInfoDefinition, int> CardOptionSelected;
 
     protected void RaiseRunWeekRequested()
@@ -33,19 +33,14 @@ public abstract class WeekFlowViewBase : MonoBehaviour
         WeekFeedbackClosed?.Invoke();
     }
 
-    protected void RaiseWeekEventContinueRequested()
+    protected void RaiseInteractiveEventContinueRequested()
     {
-        WeekEventContinueRequested?.Invoke();
+        InteractiveEventContinueRequested?.Invoke();
     }
 
-    protected void RaisePrivateDialogueChoiceSelected(int choiceIndex)
+    protected void RaiseInteractiveEventChoiceSelected(int choiceIndex)
     {
-        PrivateDialogueChoiceSelected?.Invoke(choiceIndex);
-    }
-
-    protected void RaisePrivateDialogueContinueRequested()
-    {
-        PrivateDialogueContinueRequested?.Invoke();
+        InteractiveEventChoiceSelected?.Invoke(choiceIndex);
     }
 
     protected void RaiseCardOptionSelected(SO_CardInfoDefinition cardDefinition, int optionIndex)
@@ -54,26 +49,16 @@ public abstract class WeekFlowViewBase : MonoBehaviour
     }
 
     public virtual void RenderWeekHeader(WeekHeaderPresentation presentation) { }
-
     public virtual void RenderSelections(IReadOnlyList<WeekSelectionEntryPresentation> presentations) { }
-
     public virtual void RenderChildState(ChildStatePresentation presentation) { }
-
     public virtual void RenderStatusMessage(string statusMessage) { }
-
     public virtual void PresentNemoFeedback(NemoFeedbackPresentation presentation) { }
-
     public virtual void ShowWeekFeedback(WeekFeedbackPresentation presentation) { }
-
-    public virtual void ShowWeekEvent(WeekFixedEventPresentation presentation) { }
-
-    public virtual void ShowPrivateDialogue(WeekPrivateDialoguePresentation presentation) { }
-
-    public virtual void ShowPrivateDialogueResult(WeekDialogueChoiceResultPresentation presentation) { }
-
+    public virtual void ShowInteractiveEvent(InteractiveEventPresentation presentation) { }
+    public virtual void ShowInteractiveEventResult(InteractiveEventChoiceResultPresentation presentation) { }
     public virtual void ShowEnding(EndingPresentation presentation) { }
-
     public virtual void HideTransientViews() { }
+    public virtual IEnumerator PlayFlowTransition(WeekFlowTransitionContext context) { yield break; }
 }
 
 public readonly struct WeekHeaderPresentation
@@ -147,16 +132,29 @@ public readonly struct ChildStatePresentation
     public IReadOnlyList<string> ReactionLogs { get; }
 }
 
-public readonly struct WeekDialogueChoiceResultPresentation
+public readonly struct DialogueLinePresentation
 {
-    public WeekDialogueChoiceResultPresentation(
-        string responseLine,
+    public DialogueLinePresentation(string speakerName, string text)
+    {
+        SpeakerName = speakerName;
+        Text = text;
+    }
+
+    public string SpeakerName { get; }
+    public string Text { get; }
+    public bool HasContent => !string.IsNullOrWhiteSpace(Text);
+}
+
+public readonly struct InteractiveEventChoiceResultPresentation
+{
+    public InteractiveEventChoiceResultPresentation(
+        IReadOnlyList<DialogueLinePresentation> dialogueLines,
         string effectSummaryLine)
     {
-        ResponseLine = responseLine;
+        DialogueLines = dialogueLines;
         EffectSummaryLine = effectSummaryLine;
     }
 
-    public string ResponseLine { get; }
+    public IReadOnlyList<DialogueLinePresentation> DialogueLines { get; }
     public string EffectSummaryLine { get; }
 }

@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 public class RuntimeChildState
 {
@@ -8,7 +10,7 @@ public class RuntimeChildState
     public const int DefaultStatValue = 2;
 
     private readonly Dictionary<EChildStatusType, int> _stats = new();
-    private readonly HashSet<EChildFlagType> _flags = new();
+    private readonly HashSet<SO_FlagDefinition> _flags = new();
     private readonly List<string> _reactionLogs = new();
 
     public RuntimeChildState()
@@ -16,7 +18,7 @@ public class RuntimeChildState
         InitializeDefaultStats();
     }
 
-    public IReadOnlyCollection<EChildFlagType> Flags => _flags;
+    public IReadOnlyCollection<SO_FlagDefinition> Flags => _flags;
     public IReadOnlyList<string> ReactionLogs => _reactionLogs;
 
     public int GetStat(EChildStatusType statType)
@@ -39,24 +41,39 @@ public class RuntimeChildState
         SetStat(statType, GetStat(statType) + amount);
     }
 
-    public bool HasFlag(EChildFlagType flagType)
+    public bool HasFlag(SO_FlagDefinition flagDefinition)
     {
-        return _flags.Contains(flagType);
+        return flagDefinition != null && _flags.Contains(flagDefinition);
     }
 
-    public void SetFlag(EChildFlagType flagType)
+    public bool HasFlag(string flagId)
     {
-        if (flagType == EChildFlagType.None)
+        if (string.IsNullOrWhiteSpace(flagId))
+        {
+            return false;
+        }
+
+        return _flags.Any(flagDefinition => flagDefinition != null && flagDefinition.Id == flagId);
+    }
+
+    public void SetFlag(SO_FlagDefinition flagDefinition)
+    {
+        if (flagDefinition == null)
         {
             return;
         }
 
-        _flags.Add(flagType);
+        _flags.Add(flagDefinition);
     }
 
-    public void RemoveFlag(EChildFlagType flagType)
+    public void RemoveFlag(SO_FlagDefinition flagDefinition)
     {
-        _flags.Remove(flagType);
+        if (flagDefinition == null)
+        {
+            return;
+        }
+
+        _flags.Remove(flagDefinition);
     }
 
     public void AddReactionLog(string reactionText)
@@ -106,11 +123,16 @@ public enum EChildStatusType
     Obedience
 }
 
-public enum EChildFlagType
+[CreateAssetMenu(
+    fileName = "FlagDefinition_",
+    menuName = "Scriptable Objects/Runtime/FlagDefinition")]
+public class SO_FlagDefinition : ScriptableObject
 {
-    None = 0,
-    LetterSuspected,
-    VisitorRemembered,
-    ExternalInterest,
-    HiddenInfoDetected
+    [SerializeField] private string _id = string.Empty;
+    [SerializeField] private string _displayName = string.Empty;
+    [SerializeField, TextArea(2, 4)] private string _description = string.Empty;
+
+    public string Id => _id;
+    public string DisplayName => _displayName;
+    public string Description => _description;
 }

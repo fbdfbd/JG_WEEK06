@@ -1,0 +1,5 @@
+week_id,display_order,card_id,is_required
+week_001,0,card_001_parentsletter,true
+week_001,1,card_002_courtyardrumor,true
+week_001,2,card_003_tutorvisit,true
+week_001,3,card_004_lineagebook,false
