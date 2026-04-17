@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using UnityEditor;
@@ -6,6 +7,18 @@ using UnityEngine;
 
 public static class CsvImportAssetUtility
 {
+    private static readonly HashSet<string> EnsuredFolders = new(StringComparer.OrdinalIgnoreCase);
+
+    public static void BeginImportSession()
+    {
+        EnsuredFolders.Clear();
+    }
+
+    public static void EndImportSession()
+    {
+        EnsuredFolders.Clear();
+    }
+
     public static T LoadOrCreateAsset<T>(string assetPath, string assetName, CsvImportReport report)
         where T : ScriptableObject
     {
@@ -28,13 +41,24 @@ public static class CsvImportAssetUtility
 
     public static void EnsureFolder(string folderPath)
     {
-        if (string.IsNullOrWhiteSpace(folderPath) || AssetDatabase.IsValidFolder(folderPath))
+        string normalizedPath = NormalizeAssetPath(folderPath);
+        if (string.IsNullOrWhiteSpace(normalizedPath))
         {
             return;
         }
 
-        string normalizedPath = folderPath.Replace('\\', '/');
-        string parentFolder = Path.GetDirectoryName(normalizedPath)?.Replace('\\', '/');
+        if (EnsuredFolders.Contains(normalizedPath))
+        {
+            return;
+        }
+
+        if (AssetDatabase.IsValidFolder(normalizedPath))
+        {
+            EnsuredFolders.Add(normalizedPath);
+            return;
+        }
+
+        string parentFolder = NormalizeAssetPath(Path.GetDirectoryName(normalizedPath));
         string folderName = Path.GetFileName(normalizedPath);
 
         EnsureFolder(parentFolder);
@@ -42,6 +66,8 @@ public static class CsvImportAssetUtility
         {
             AssetDatabase.CreateFolder(parentFolder, folderName);
         }
+
+        EnsuredFolders.Add(normalizedPath);
     }
 
     public static string CombineAssetPath(params string[] parts)
@@ -73,5 +99,10 @@ public static class CsvImportAssetUtility
         {
             EditorUtility.SetDirty(asset);
         }
+    }
+
+    private static string NormalizeAssetPath(string assetPath)
+    {
+        return assetPath?.Replace('\\', '/');
     }
 }
