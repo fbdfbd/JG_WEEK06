@@ -33,11 +33,14 @@ public sealed class WeekFlowPresenter
 
     public void PublishSelectionEntries()
     {
-        WeekSelectionEntryPresentation[] selectionPresentations = _weekSelectionState.BuildSelectionPresentations(
-            WeekFlowQueryUtility.GetCurrentWeekEntries(_weekSequenceState.CurrentWeekDefinition),
-            _weekUiText.GetUnknownCardType());
-        _view?.RenderSelections(selectionPresentations);
+        WeekSelectionCategoryGroupPresentation[] selectionGroups =
+            _weekSelectionState.BuildSelectionGroupPresentations(
+                WeekFlowQueryUtility.GetCurrentWeekEntries(_weekSequenceState.CurrentWeekDefinition),
+                _weekUiText.GetUnknownCardType());
+
+        _view?.RenderSelectionGroups(selectionGroups);
     }
+
 
     public void PublishChildState()
     {

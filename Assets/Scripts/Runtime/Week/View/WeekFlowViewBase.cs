@@ -50,6 +50,31 @@ public abstract class WeekFlowViewBase : MonoBehaviour
 
     public virtual void RenderWeekHeader(WeekHeaderPresentation presentation) { }
     public virtual void RenderSelections(IReadOnlyList<WeekSelectionEntryPresentation> presentations) { }
+
+    public virtual void RenderSelectionGroups(IReadOnlyList<WeekSelectionCategoryGroupPresentation> groups)
+    {
+        if (groups == null || groups.Count == 0)
+        {
+            RenderSelections(Array.Empty<WeekSelectionEntryPresentation>());
+            return;
+        }
+
+        List<WeekSelectionEntryPresentation> flattened = new();
+
+        foreach (WeekSelectionCategoryGroupPresentation group in groups)
+        {
+            if (group.Entries == null || group.Entries.Count == 0)
+            {
+                continue;
+            }
+
+            flattened.AddRange(group.Entries);
+        }
+
+        RenderSelections(flattened);
+    }
+
+
     public virtual void RenderChildState(ChildStatePresentation presentation) { }
     public virtual void RenderStatusMessage(string statusMessage) { }
     public virtual void PresentNemoFeedback(NemoFeedbackPresentation presentation) { }
@@ -157,4 +182,21 @@ public readonly struct InteractiveEventChoiceResultPresentation
 
     public IReadOnlyList<DialogueLinePresentation> DialogueLines { get; }
     public string EffectSummaryLine { get; }
+}
+
+public readonly struct WeekSelectionCategoryGroupPresentation
+{
+    public WeekSelectionCategoryGroupPresentation(
+        SO_CardInfoTypeDefinition cardType,
+        string typeName,
+        IReadOnlyList<WeekSelectionEntryPresentation> entries)
+    {
+        CardType = cardType;
+        TypeName = typeName;
+        Entries = entries;
+    }
+
+    public SO_CardInfoTypeDefinition CardType { get; }
+    public string TypeName { get; }
+    public IReadOnlyList<WeekSelectionEntryPresentation> Entries { get; }
 }

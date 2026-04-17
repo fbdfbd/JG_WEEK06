@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: WeekPreTurn_
+  m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
+  _title: PreTurn
+  _summary: dddd
+  _informationCards:
+  - _card: {fileID: 11400000, guid: 07b1c36b63632254680ca980d08aa172, type: 2}
+    _isRequired: 1
+    _displayOrder: 0
+  - _card: {fileID: 11400000, guid: c2000000000000000000000000000002, type: 2}
+    _isRequired: 1
+    _displayOrder: 0
