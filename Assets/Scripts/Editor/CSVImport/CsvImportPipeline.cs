@@ -18,6 +18,7 @@ public static class CsvImportPipeline
 
         try
         {
+            CsvImportAssetUtility.BeginImportSession();
             AssetDatabase.StartAssetEditing();
             FlagCsvImporter.Import(context);
             CardTypeCsvImporter.Import(context);
@@ -30,6 +31,7 @@ public static class CsvImportPipeline
         finally
         {
             AssetDatabase.StopAssetEditing();
+            CsvImportAssetUtility.EndImportSession();
         }
 
         AssetDatabase.SaveAssets();

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
+  m_Name: WeekPreTurn_week_001
+  m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
+  _title: "\uC0AC\uC804 \uC815\uBCF4 \uC815\uB9AC"
+  _summary: "\uC774\uBC88 \uC8FC\uC758 \uC815\uBCF4\uB97C \uBA3C\uC800 \uC804\uB2EC\uD558\uACE0
+    \uADF8 \uC120\uD0DD \uACB0\uACFC\uC5D0 \uB530\uB77C \uB0AE\uACFC \uBC24 \uC774\uBCA4\uD2B8\uAC00
+    \uC5F4\uB9B0\uB2E4."
+  _informationCards:
+  - _card: {fileID: 11400000, guid: 230258348c0a2ea4599d97d75095b99a, type: 2}
+    _isRequired: 1
+    _displayOrder: 0
+  - _card: {fileID: 11400000, guid: ee1f2a7219784ba42a44630863a18a3b, type: 2}
+    _isRequired: 1
+    _displayOrder: 1
+  - _card: {fileID: 11400000, guid: 1a27c300f4238dc45a026e267227617b, type: 2}
+    _isRequired: 1
+    _displayOrder: 2
+  - _card: {fileID: 11400000, guid: d9d2e09cae518774aaf50116e8fc410b, type: 2}
+    _isRequired: 0
+    _displayOrder: 3
