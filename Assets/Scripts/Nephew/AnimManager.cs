@@ -1,5 +1,6 @@
+using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class AnimManager : MonoBehaviour
 {
@@ -11,11 +12,23 @@ public class AnimManager : MonoBehaviour
     private readonly int hashWalk = Animator.StringToHash("Walk");
     private readonly int hashBalance = Animator.StringToHash("Balance");
 
-    private void Start()
+    private void Awake()
     {
         if (Instance != null) Destroy(gameObject);
 
         Instance = this;
+    }
+
+    public void PlayRandomAction()
+    {
+        Action[] randomActions = new Action[]
+        {
+            PlayIdle,
+            PlayBalance,
+        };
+
+        int randomIndex = Random.Range(0, randomActions.Length);
+        randomActions[randomIndex]();
     }
 
     public void PlayIdle()
