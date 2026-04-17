@@ -1,16 +1,33 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AnimManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static AnimManager Instance;
+    
+    [SerializeField] private Animator playerAnim;
+
+    private readonly int hashIdle = Animator.StringToHash("Idle");
+    private readonly int hashWalk = Animator.StringToHash("Walk");
+    private readonly int hashBalance = Animator.StringToHash("Balance");
+
+    private void Start()
     {
-        
+        if (Instance != null) Destroy(gameObject);
+
+        Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayIdle()
     {
-        
+        if (playerAnim != null) playerAnim.SetTrigger(hashIdle);
+    }
+    public void PlayWalk()
+    {
+        if (playerAnim != null) playerAnim.SetTrigger(hashWalk);
+    }
+    public void PlayBalance()
+    {
+        if (playerAnim != null) playerAnim.SetTrigger(hashBalance);
     }
 }
