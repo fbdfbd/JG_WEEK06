@@ -16,7 +16,7 @@ MonoBehaviour:
   _weekIndex: 1
   _title: "\uCCAB \uC8FC\uC758 \uC815\uB9AC"
   _summary: ...
-  _preTurn: {fileID: 0}
+  _preTurn: {fileID: 11400000, guid: bd1620e3bbe78d544a00a51a5bca057f, type: 2}
   _dayFlow: {fileID: 0}
   _nightFlow: {fileID: 0}
   _weekRules:

@@ -100,6 +100,57 @@ public sealed class WeekSelectionState
         return selections.ToArray();
     }
 
+    public WeekSelectionCategoryGroupPresentation[] BuildSelectionGroupPresentations(
+    IReadOnlyList<WeekCardEntryData> weekCardEntries,
+    string unknownCardTypeLabel)
+    {
+        WeekSelectionEntryPresentation[] selectionPresentations =
+            BuildSelectionPresentations(weekCardEntries, unknownCardTypeLabel);
+
+        if (selectionPresentations.Length == 0)
+        {
+            return Array.Empty<WeekSelectionCategoryGroupPresentation>();
+        }
+
+        List<SO_CardInfoTypeDefinition> orderedTypes = new();
+        List<string> orderedTypeNames = new();
+        List<List<WeekSelectionEntryPresentation>> groupedEntries = new();
+
+        foreach (WeekSelectionEntryPresentation presentation in selectionPresentations)
+        {
+            SO_CardInfoTypeDefinition cardType =
+                presentation.CardDefinition != null ? presentation.CardDefinition.CardType : null;
+
+            int groupIndex = orderedTypes.FindIndex(existingType => existingType == cardType);
+
+            if (groupIndex < 0)
+            {
+                orderedTypes.Add(cardType);
+                orderedTypeNames.Add(
+                    string.IsNullOrWhiteSpace(presentation.TypeName)
+                        ? unknownCardTypeLabel
+                        : presentation.TypeName);
+                groupedEntries.Add(new List<WeekSelectionEntryPresentation>());
+                groupIndex = groupedEntries.Count - 1;
+            }
+
+            groupedEntries[groupIndex].Add(presentation);
+        }
+
+        WeekSelectionCategoryGroupPresentation[] groups =
+            new WeekSelectionCategoryGroupPresentation[groupedEntries.Count];
+
+        for (int i = 0; i < groupedEntries.Count; i++)
+        {
+            groups[i] = new WeekSelectionCategoryGroupPresentation(
+                orderedTypes[i],
+                orderedTypeNames[i],
+                groupedEntries[i]);
+        }
+
+        return groups;
+    }
+
     public WeekSelectionEntryPresentation[] BuildSelectionPresentations(
         IReadOnlyList<WeekCardEntryData> weekCardEntries,
         string unknownCardTypeLabel)
