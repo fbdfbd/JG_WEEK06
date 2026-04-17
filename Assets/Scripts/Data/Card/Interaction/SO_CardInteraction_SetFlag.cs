@@ -5,10 +5,10 @@ using UnityEngine;
     menuName = "Scriptable Objects/Card/Interaction/SetFlag")]
 public class SO_CardInteraction_SetFlag : SO_CardInteractionDefinition
 {
-    [SerializeField] private EChildFlagType _flagType;
+    [SerializeField] private SO_FlagDefinition _flagDefinition;
 
     public override void Apply(RuntimeChildState childState)
     {
-        childState.SetFlag(_flagType);
+        childState.SetFlag(_flagDefinition);
     }
 }

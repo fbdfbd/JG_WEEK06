@@ -1,0 +1,9 @@
+event_id,step_id,line_order,speaker_id,text
+routine_letter_blocked,step_letter_blocked_01,0,speaker_nemo,오늘은 말하지 않은 게 오히려 더 크게 남는 것 같아.
+routine_outside_open,step_outside_open_01,0,speaker_nemo,바깥에는 어떤 공기가 있을까?
+story_letter_suspected,step_story_letter_01,0,speaker_nemo,그 편지 말이야. 왜 조금 이상했어.
+story_letter_suspected,step_story_letter_01,1,speaker_maid,오늘은 전부 말씀드리기 어려웠습니다.
+story_letter_suspected,step_story_letter_02,0,speaker_nemo,숨긴 게 있지.
+night_outside_interest,step_night_outside_01,0,speaker_nemo,바깥 이야기는 계속 생각나.
+night_outside_interest,step_night_outside_01,1,speaker_maid,아가씨께서 그렇게 궁금해하실 줄은 몰랐어요.
+night_outside_interest,step_night_outside_02,0,speaker_nemo,다음에는 같이 볼 수 있을까?

@@ -1,0 +1,5 @@
+event_id,week_id,event_kind,event_order,title,priority,first_step_id,on_completed_interaction_ids,related_information_type_ids,preferred_semantics
+routine_letter_blocked,week_001,routine,0,편지 루틴 이벤트,20,step_letter_blocked_01,,card_type_letter,Blocked
+routine_outside_open,week_001,routine,1,바깥 정보 루틴 이벤트,15,step_outside_open_01,,card_type_externalinfo,Direct|Modified
+story_letter_suspected,week_001,story,0,편지 의심 스토리 이벤트,30,step_story_letter_01,hidden_info_detected_flag,,
+night_outside_interest,week_001,private_dialogue,0,바깥에 대한 밤 대화,50,step_night_outside_01,reaction_log_night_promise,,

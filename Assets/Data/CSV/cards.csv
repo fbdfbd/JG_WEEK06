@@ -1,0 +1,5 @@
+card_id,card_type_id,title,original_text
+card_001_parentsletter,card_type_letter,부모의 편지,부모가 보내온 편지를 네모에게 어떻게 전달할지 정리한다.
+card_002_courtyardrumor,card_type_externalinfo,뜰 밖의 소문,하인들이 전해 들은 바깥 소문을 네모에게 어느 정도까지 이야기할지 정한다.
+card_003_tutorvisit,card_type_visitor,가정교사의 방문,방문자가 남긴 인상과 말을 네모에게 어떻게 전할지 고른다.
+card_004_lineagebook,card_type_textbook,가계도 교재,가문의 기록이 담긴 교재에서 무엇을 강조할지 결정한다.

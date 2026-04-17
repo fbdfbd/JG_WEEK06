@@ -1,0 +1,5 @@
+speaker_id,display_name,default_visual_state
+speaker_nemo,네모,Neutral
+speaker_maid,하인,Neutral
+speaker_parent,어머니,Trusting
+speaker_tutor,가정교사,Obedient

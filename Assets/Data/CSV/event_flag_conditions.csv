@@ -1,0 +1,4 @@
+event_id,mode,flag_id
+story_letter_suspected,required,letter_suspected
+story_letter_suspected,blocked,visitor_remembered
+night_outside_interest,required,external_interest

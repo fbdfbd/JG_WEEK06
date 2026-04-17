@@ -1,0 +1,13 @@
+card_id,option_order,semantic,label,presented_text,interaction_ids
+card_001_parentsletter,0,Direct,그대로 전달,편지를 거의 숨김 없이 그대로 읽어 준다.,trust_plus_1|reaction_log_letter_open
+card_001_parentsletter,1,Modified,완곡하게 전달,걱정스러운 문장을 덜어내고 정리해서 전한다.,curiosity_plus_1
+card_001_parentsletter,2,Blocked,보류한다,편지는 잠시 감춰 두고 오늘은 전하지 않는다.,anxiety_plus_1|letter_suspected_flag
+card_002_courtyardrumor,0,Direct,있는 그대로 말한다,바깥에서 들은 말과 분위기를 그대로 옮긴다.,outside_interest_bundle
+card_002_courtyardrumor,1,Modified,조금 누그러뜨린다,자극적인 부분을 덜어내고 핵심만 전한다.,trust_plus_1
+card_002_courtyardrumor,2,Blocked,말하지 않는다,네모를 흔들 수 있는 소문은 입 밖에 내지 않는다.,anxiety_plus_1
+card_003_tutorvisit,0,Direct,직접 들려준다,방문자의 말과 태도를 가감 없이 전한다.,trust_plus_1|visitor_remembered_flag
+card_003_tutorvisit,1,Modified,정리해서 들려준다,부드러운 인상만 골라 정리해서 전한다.,curiosity_plus_1
+card_003_tutorvisit,2,Blocked,꺼내지 않는다,방문 이야기를 오늘은 꺼내지 않는다.,anxiety_plus_1
+card_004_lineagebook,0,Direct,원문대로 읽는다,기록된 문장을 가능한 그대로 읽어 준다.,curiosity_plus_1
+card_004_lineagebook,1,Modified,맥락을 붙여 설명한다,불편할 수 있는 내용을 우회적으로 설명한다.,trust_plus_1|if_curiosity_3_then_trust_plus_1
+card_004_lineagebook,2,Blocked,해당 장은 넘긴다,오늘은 그 장을 읽지 않고 다른 부분으로 넘어간다.,anxiety_plus_1|hidden_info_detected_flag

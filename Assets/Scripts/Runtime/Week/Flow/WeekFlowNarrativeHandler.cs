@@ -1,0 +1,179 @@
+public sealed class WeekFlowNarrativeHandler
+{
+    private readonly WeekFlowRuntimeState _runtimeState;
+    private readonly WeekUiTextProvider _weekUiText;
+    private readonly WeekSelectionState _weekSelectionState;
+    private readonly WeekSequenceState _weekSequenceState;
+
+    public WeekFlowNarrativeHandler(
+        WeekFlowRuntimeState runtimeState,
+        WeekUiTextProvider weekUiText,
+        WeekSelectionState weekSelectionState,
+        WeekSequenceState weekSequenceState)
+    {
+        _runtimeState = runtimeState;
+        _weekUiText = weekUiText;
+        _weekSelectionState = weekSelectionState;
+        _weekSequenceState = weekSequenceState;
+    }
+
+    public WeekFlowActionResult CloseWeekFeedback()
+    {
+        return ContinuePostWeekFlow();
+    }
+
+    public WeekFlowActionResult ContinueInteractiveEvent()
+    {
+        RuntimeInteractiveEventSession eventSession = _runtimeState.CurrentEventSession;
+        if (eventSession == null)
+        {
+            return ContinuePostWeekFlow();
+        }
+
+        if (eventSession.CurrentStep?.Choices?.Length > 0 && !eventSession.HasPendingChoiceResult)
+        {
+            return WeekFlowActionResult.None;
+        }
+
+        if (eventSession.HasPendingChoiceResult)
+        {
+            eventSession.ClearChoiceResult();
+        }
+
+        if (eventSession.TryMoveToNextStep())
+        {
+            return BuildEventStepScreen();
+        }
+
+        CompleteCurrentEvent();
+        return ContinuePostWeekFlow();
+    }
+
+    public WeekFlowActionResult SelectInteractiveEventChoice(int choiceIndex)
+    {
+        RuntimeInteractiveEventSession eventSession = _runtimeState.CurrentEventSession;
+        if (eventSession?.CurrentStep?.Choices == null || eventSession.HasPendingChoiceResult)
+        {
+            return WeekFlowActionResult.None;
+        }
+
+        if (choiceIndex < 0 || choiceIndex >= eventSession.CurrentStep.Choices.Length)
+        {
+            return WeekFlowActionResult.None;
+        }
+
+        InteractiveEventChoiceData selectedChoice = eventSession.CurrentStep.Choices[choiceIndex];
+        eventSession.SelectChoice(selectedChoice);
+        GameplayInteractionExecutor.ApplyAll(selectedChoice.Interactions, _runtimeState.ChildState);
+
+        InteractiveEventChoiceResultPresentation result = WeekNarrativeResolver.CreateChoiceResultPresentation(selectedChoice, _weekUiText);
+        DialogueLinePresentation line = WeekNarrativeResolver.GetPrimaryDialogueLine(result.DialogueLines);
+        PublishStatusMessage(_weekUiText.GetPrivateDialogueChoiceAppliedMessage());
+
+        return WeekFlowActionResult.ReplaceScreen(WeekFlowScreen.CreateChoiceResult(
+            _weekSequenceState.CurrentWeekDefinition,
+            eventSession.EventDefinition,
+            selectedChoice,
+            result,
+            new NemoFeedbackPresentation(
+                line.SpeakerName,
+                WeekNarrativeResolver.GetVisualStateForCurrentState(_runtimeState.ChildState),
+                line.Text)));
+    }
+
+    private WeekFlowActionResult ContinuePostWeekFlow()
+    {
+        if (_runtimeState.CurrentEventSession != null || _runtimeState.TryStartNextEvent())
+        {
+            return BuildEventStepScreen();
+        }
+
+        if (_runtimeState.ShouldShowEndingAfterEvents)
+        {
+            return BuildEndingScreen();
+        }
+
+        if (_runtimeState.ShouldAdvanceToNextWeekAfterEvents)
+        {
+            MoveToNextWeek();
+        }
+        else
+        {
+            _runtimeState.ClearPendingEventState();
+        }
+
+        return WeekFlowActionResult.ClearScreen();
+    }
+
+    private WeekFlowActionResult BuildEventStepScreen()
+    {
+        RuntimeInteractiveEventSession eventSession = _runtimeState.CurrentEventSession;
+        if (eventSession?.CurrentStep == null)
+        {
+            return ContinuePostWeekFlow();
+        }
+
+        if (!eventSession.HasAppliedCurrentStep)
+        {
+            GameplayInteractionExecutor.ApplyAll(eventSession.CurrentStep.OnEnterInteractions, _runtimeState.ChildState);
+            eventSession.MarkCurrentStepApplied();
+        }
+
+        InteractiveEventPresentation presentation = WeekNarrativeResolver.CreatePresentation(eventSession, _runtimeState.ChildState, _weekUiText);
+        DialogueLinePresentation line = WeekNarrativeResolver.GetPrimaryDialogueLine(presentation.DialogueLines);
+
+        return WeekFlowActionResult.ReplaceScreen(WeekFlowScreen.CreateEventStep(
+            _weekSequenceState.CurrentWeekDefinition,
+            eventSession.EventDefinition,
+            eventSession.CurrentStep,
+            presentation,
+            new NemoFeedbackPresentation(line.SpeakerName, presentation.VisualState, line.Text)));
+    }
+
+    private void CompleteCurrentEvent()
+    {
+        GameplayInteractionExecutor.ApplyAll(
+            _runtimeState.CurrentEventSession.EventDefinition.OnCompletedInteractions,
+            _runtimeState.ChildState);
+        _runtimeState.ClearCurrentEventSession();
+    }
+
+    private WeekFlowActionResult BuildEndingScreen()
+    {
+        _runtimeState.ShouldShowEndingAfterEvents = false;
+        _runtimeState.HasReachedEnding = true;
+        EndingPresentation ending = EndingResolver.Resolve(_runtimeState.ChildState);
+        PublishStatusMessage(_weekUiText.GetEndingReachedMessage());
+
+        return WeekFlowActionResult.ReplaceScreen(WeekFlowScreen.CreateEnding(
+            _weekSequenceState.CurrentWeekDefinition,
+            ending,
+            new NemoFeedbackPresentation(ending.VisualState, ending.ClosingLine)));
+    }
+
+    private void MoveToNextWeek()
+    {
+        _runtimeState.ShouldAdvanceToNextWeekAfterEvents = false;
+        if (!_weekSequenceState.TryMoveToNextWeek())
+        {
+            _runtimeState.ClearPendingEventState();
+            return;
+        }
+
+        WeekCardEntryData[] entries = WeekFlowQueryUtility.GetCurrentWeekEntries(_weekSequenceState.CurrentWeekDefinition);
+        _weekSelectionState.ApplyWeekEntries(entries);
+        _weekSelectionState.ResetAllSelections(entries);
+        _runtimeState.LastWeekResult = null;
+        _runtimeState.ClearPendingEventState();
+
+        SO_WeekDefinition currentWeek = _weekSequenceState.CurrentWeekDefinition;
+        PublishStatusMessage(currentWeek == null
+            ? _weekUiText.GetMovedToNextWeekFallbackMessage()
+            : _weekUiText.GetReadyForWeekMessage(currentWeek.WeekIndex));
+    }
+
+    private void PublishStatusMessage(string statusMessage)
+    {
+        _runtimeState.SetStatusMessage(statusMessage);
+    }
+}
