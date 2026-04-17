@@ -21,3 +21,6 @@ MonoBehaviour:
   - _card: {fileID: 11400000, guid: c2000000000000000000000000000002, type: 2}
     _isRequired: 1
     _displayOrder: 0
+  - _card: {fileID: 11400000, guid: c2000000000000000000000000000007, type: 2}
+    _isRequired: 1
+    _displayOrder: 0
