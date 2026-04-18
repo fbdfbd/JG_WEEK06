@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -1}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1883426391937109193
@@ -421,6 +421,8 @@ MonoBehaviour:
   - {fileID: 162085941360120623}
   - {fileID: 6795609372262434096}
   - {fileID: 5724770817696699132}
+  _indexDefaultColor: {r: 1, g: 0.9171394, b: 0.65471697, a: 1}
+  _indexHighlightColor: {r: 1, g: 0.6740334, b: 0, a: 1}
   _titleText: {fileID: 9061720613080698812}
   _categoryText: {fileID: 6983525834827863384}
   _descText: {fileID: 3428813512333395369}

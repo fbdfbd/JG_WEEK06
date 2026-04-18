@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UI; // Graphic 사용 시 필요
 using System.Collections.Generic;
 using System;
 using TMPro;
@@ -9,6 +10,10 @@ public class UI_CardView : MonoBehaviour
     [Header("Index Panel")]
     [SerializeField] private Button[] _indexButtons;
     [SerializeField] private TextMeshProUGUI[] _indexTexts;
+
+    [Header("Color")]
+    [SerializeField] private Color _indexDefaultColor;
+    [SerializeField] private Color _indexHighlightColor;
 
     [Header("Content Panel - Title Panel")]
     [SerializeField] private TextMeshProUGUI _titleText;
@@ -103,6 +108,7 @@ public class UI_CardView : MonoBehaviour
         {
             _directButton.onClick.RemoveListener(OnDirectButtonClicked);
         }
+
         // 이전 / 다음 버튼 리스너 정리
         if (_prevButton != null)
         {
@@ -250,10 +256,44 @@ public class UI_CardView : MonoBehaviour
         // 현재 카드가 이미 선택 중인 옵션을 갖고 있다면 로컬 선택 상태 동기화
         SyncSelectedOptionIndex(currentCardData);
 
+        // 인덱스 버튼 색상 갱신
+        UpdateIndexButtonColors();
+
         // 옵션 버튼 / 네비게이션 버튼 / 설명 텍스트 렌더링
         UpdateSemanticButtons();
         UpdateNavigationButtons(currentGroup);
         RenderDescription(currentCardData);
+    }
+
+    // 선택된 인덱스 버튼만 하이라이트 색으로, 나머지는 디폴트 색으로 갱신
+    private void UpdateIndexButtonColors()
+    {
+        if (_indexButtons == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < _indexButtons.Length; i++)
+        {
+            Button button = _indexButtons[i];
+            if (button == null)
+            {
+                continue;
+            }
+
+            bool isSelected = button.gameObject.activeSelf &&
+                              _currentGroups != null &&
+                              i == _currentGroupIndex &&
+                              i < _currentGroups.Count;
+
+            Color targetColor = isSelected ? _indexHighlightColor : _indexDefaultColor;
+
+            Image image = button.GetComponent<Image>();
+            if (image != null)
+            {
+                image.color = targetColor;
+            }
+        }
     }
 
     // 현재 카드의 옵션 목록에서 semantic 별 인덱스를 캐싱
@@ -263,6 +303,7 @@ public class UI_CardView : MonoBehaviour
         _modifiedOptionIndex = FindOptionIndex(currentCardData.Options, ECardOptionSemantic.Modified);
         _blockedOptionIndex = FindOptionIndex(currentCardData.Options, ECardOptionSemantic.Blocked);
     }
+
     // 현재 카드의 선택 상태를 로컬 UI 상태와 동기화
     private void SyncSelectedOptionIndex(WeekSelectionEntryPresentation currentCardData)
     {
@@ -345,7 +386,6 @@ public class UI_CardView : MonoBehaviour
         _blockedOptionIndex = InvalidOptionIndex;
         _directOptionIndex = InvalidOptionIndex;
 
-
         if (_categoryText != null)
         {
             _categoryText.text = string.Empty;
@@ -380,10 +420,13 @@ public class UI_CardView : MonoBehaviour
         {
             _nextButton.interactable = false;
         }
+
         if (_directButton != null)
         {
             _directButton.gameObject.SetActive(false);
         }
+
+        UpdateIndexButtonColors();
     }
 
     // 현재 선택된 그룹을 안전하게 가져오기
