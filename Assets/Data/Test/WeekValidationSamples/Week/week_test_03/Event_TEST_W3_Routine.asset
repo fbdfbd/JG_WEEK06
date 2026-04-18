@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_TEST_W3_Routine
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: test_w3_routine_visitor_direct
-  _title: '[W3] RoutineEvent VisitorDirect'
+  _title: '[W3 이벤트] 루틴 - 방문객 직접 전달 조건'
   _priority: 100
   _conditions:
     _requiredFlags: []

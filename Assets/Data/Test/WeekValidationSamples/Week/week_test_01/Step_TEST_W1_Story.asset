@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: Step_TEST_W1_Story
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: '[W1][STORY] Triggered because LetterSuspected flag exists'
-  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: StoryEvent + required
-    flag condition."
+  _titleOverride: '[W1 스토리] 의심 플래그로 열리는 스토리'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: \uD544\uC218 \uD50C\uB798\uADF8\uAC00 \uC0DD\uAE30\uBA74 \uC2A4\uD1A0\uB9AC \uC774\uBCA4\uD2B8\uAC00 \uC5F4\uB9AC\uB294\uC9C0 \uD655\uC778."
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 759cb171cd7f43c4cafa8241466c376b, type: 2}
-    _text: '[W1][STORY] Required flag LetterSuspected was found.'
+    _text: '[대화 내용 1] 편지 의심 플래그가 생겨서 스토리 이벤트가 열렸습니다.'
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: '[W1][STORY] Story event is now active.'
-  _nemoLine: '[W1][STORY] Required flag LetterSuspected was found.'
+    _text: '[대화 내용 2] 지금 이 화면은 필수 플래그 조건 검증용 스토리입니다.'
+  _nemoLine: '[대화 내용 1] 편지 의심 플래그가 생겨서 스토리 이벤트가 열렸습니다.'
   _useCustomVisualState: 0
   _visualState: 0
   _onEnterInteractions:

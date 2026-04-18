@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
   _id: test_week_03
   _weekIndex: 3
-  _title: '[TEST WEEK 3] WeekStartGroup + StatCondition + EventComplete'
-  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
-    WeekStart group interaction\uC73C\uB85C Curiosity\uAC00 \uBA3C\uC800 \uC62C\uB77C\uAC00\uACE0,
-    \uADF8 \uB355\uBD84\uC5D0 StatCondition Story\uAC00 \uC5F4\uB9BD\uB2C8\uB2E4."
+  _title: '[테스트 3주차] 주차 시작 효과 / 스탯 조건 / 완료 후 연계'
+  _summary: "\uC8FC\uCC28 \uC2DC\uC791 \uD6A8\uACFC\uAC00 \uBA3C\uC800 \uC801\uC6A9\uB418\uACE0, \uADF8 \uACB0\uACFC\uB85C \uC2A4\uD0EF \uC870\uAC74 \uC774\uBCA4\uD2B8\uC640 \uC644\uB8CC \uD6C4 \uC5F0\uACC4 \uBC24 \uB300\uD654\uAC00 \uC774\uC5B4\uC9C0\uB294\uC9C0 \uD655\uC778\uD569\uB2C8\uB2E4."
   _preTurn: {fileID: 11400000, guid: eedc60c6eaf006741b011252ea008e33, type: 2}
   _dayFlow: {fileID: 11400000, guid: dba067611fb7eb84580a8862d07a8704, type: 2}
   _nightFlow: {fileID: 11400000, guid: 3691481ec920c6e488cfefa980b9cd6a, type: 2}

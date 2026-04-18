@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
   m_Name: WeekPreTurn_WeekDefinition_TEST_W3
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
-  _title: '[TEST WEEK 3] WeekStartGroup + StatCondition + EventComplete / PreTurn'
-  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
-    WeekStart group interaction\uC73C\uB85C Curiosity\uAC00 \uBA3C\uC800 \uC62C\uB77C\uAC00\uACE0,
-    \uADF8 \uB355\uBD84\uC5D0 StatCondition Story\uAC00 \uC5F4\uB9BD\uB2C8\uB2E4."
+  _title: '[테스트 3주차] 사전 안내'
+  _summary: "\uAE30\uBCF8 \uC120\uD0DD\uC73C\uB85C \uC2E4\uD589\uD558\uBA74 \uC8FC\uCC28 \uC2DC\uC791 \uD6A8\uACFC\uAC00 \uD638\uAE30\uC2EC\uC744 \uC62C\uB824 \uC2A4\uD0EF \uC870\uAC74 \uC2A4\uD1A0\uB9AC\uAC00 \uC5F4\uB9BD\uB2C8\uB2E4. \uC2A4\uD1A0\uB9AC \uC644\uB8CC \uD6C4 \uBC24 \uB300\uD654\uAE4C\uC9C0 \uC774\uC5B4\uC9C0\uB294\uC9C0 \uD655\uC778\uD558\uC138\uC694."
   _informationCards:
   - _card: {fileID: 11400000, guid: e7953f926dae98347823f37bd0830905, type: 2}
     _isRequired: 1

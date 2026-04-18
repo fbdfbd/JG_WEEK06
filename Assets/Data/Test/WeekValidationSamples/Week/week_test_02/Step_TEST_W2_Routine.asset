@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: Step_TEST_W2_Routine
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: '[W2][ROUTINE] Triggered because Textbook=Direct'
-  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: DayRoutineEvent
-    semantic direct \uB9E4\uCE6D."
+  _titleOverride: '[W2 루틴] 교과서 직접 전달 시 열리는 루틴'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: \uAD50\uACFC\uC11C \uCE74\uB4DC\uB97C \uC9C1\uC811 \uC804\uB2EC\uB85C \uACE8\uB790\uC744 \uB54C \uB8E8\uD2F4 \uC774\uBCA4\uD2B8\uAC00 \uC5F4\uB9AC\uB294\uC9C0 \uD655\uC778."
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 30dff0615a94165488df76001a28db9b, type: 2}
-    _text: '[W2][ROUTINE] Textbook direct semantic matched as expected.'
-  _nemoLine: '[W2][ROUTINE] Textbook direct semantic matched as expected.'
+    _text: '[대화 내용 1] 교과서 카드를 직접 전달로 선택해서 루틴 이벤트가 열렸습니다.'
+  _nemoLine: '[대화 내용 1] 교과서 카드를 직접 전달로 선택해서 루틴 이벤트가 열렸습니다.'
   _useCustomVisualState: 0
   _visualState: 1
   _onEnterInteractions:

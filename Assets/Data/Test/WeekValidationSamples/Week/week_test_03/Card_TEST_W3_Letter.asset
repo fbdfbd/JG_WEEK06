@@ -14,21 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_test_w3_letter
   _cardType: {fileID: 11400000, guid: 60991cf0e555eee4db260e84c4692e65, type: 2}
-  _title: '[W3][CARD] Default=Direct -> extra trust before conditional'
-  _originalText: "\uC774 \uCE74\uB4DC\uB294 \uD1B5\uACC4 \uBCC0\uD654 \uBE44\uAD50\uC6A9\uC785\uB2C8\uB2E4."
+  _title: '[W3 카드] 편지 카드 - 추가 스탯 비교용'
+  _originalText: "\uC774 \uCE74\uB4DC\uB294 \uC2A4\uD0EF \uBCC0\uD654\uB97C \uCD94\uAC00\uB85C \uC8FC\uC5B4 \uC870\uAC74 \uD1B5\uACFC/\uC2E4\uD328 \uBE44\uAD50\uB97C \uC26C\uAC8C \uBCF4\uB294 \uC6A9\uB3C4\uC785\uB2C8\uB2E4."
   _options:
   - _semantic: 0
-    _label: '[Default] Direct -> extra trust'
-    _presentedText: 'W3 TEST RESULT: Letter direct semantic applied.'
+    _label: '[기본 선택] 직접 전달 -> 신뢰 추가'
+    _presentedText: '테스트 결과: 편지 카드를 직접 전달로 처리했습니다.'
     _interactions:
     - {fileID: 11400000, guid: eae4044633908994ca5dd9b07b5c955c, type: 2}
   - _semantic: 1
-    _label: Modified -> curiosity compare
-    _presentedText: 'W3 TEST RESULT: Letter modified semantic applied.'
+    _label: '가공 전달 -> 호기심 추가 비교'
+    _presentedText: '테스트 결과: 편지 카드를 가공 전달로 처리했습니다.'
     _interactions:
     - {fileID: 11400000, guid: d58fd4653c271b2488a2bd8f7761b518, type: 2}
   - _semantic: 2
-    _label: Blocked -> anxiety compare
-    _presentedText: 'W3 TEST RESULT: Letter blocked semantic applied.'
+    _label: '차단 처리 -> 불안 추가 비교'
+    _presentedText: '테스트 결과: 편지 카드를 차단 처리했습니다.'
     _interactions:
     - {fileID: 11400000, guid: 45df65fdfdb6c9048a688b82fd984b28, type: 2}

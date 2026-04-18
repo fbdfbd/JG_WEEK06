@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_TEST_W2_Story
   m_EditorClassIdentifier: Assembly-CSharp::SO_StoryEventDefinition
   _id: test_w2_story_info_semantic
-  _title: '[W2] StoryEvent InformationSemantic'
+  _title: '[W2 이벤트] 스토리 - 정보 타입 + 시맨틱 조건'
   _priority: 90
   _conditions:
     _requiredFlags: []

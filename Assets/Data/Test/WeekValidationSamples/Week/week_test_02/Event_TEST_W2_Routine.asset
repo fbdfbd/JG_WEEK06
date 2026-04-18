@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_TEST_W2_Routine
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: test_w2_routine_textbook_direct
-  _title: '[W2] RoutineEvent TextbookDirect'
+  _title: '[W2 이벤트] 루틴 - 교과서 직접 전달 조건'
   _priority: 100
   _conditions:
     _requiredFlags: []

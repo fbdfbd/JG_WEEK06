@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f323fb213e29498f423733493a509, type: 3}
   m_Name: Interaction_TEST_Log_W3_Routine
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_AddReactionLog
-  _reactionText: '[W3] Routine event triggered by visitor direct semantic.'
+  _reactionText: '[W3 로그] 방문객 직접 전달 조건으로 루틴 이벤트가 열렸습니다.'

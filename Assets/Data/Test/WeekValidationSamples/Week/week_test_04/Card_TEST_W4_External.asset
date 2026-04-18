@@ -14,22 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_test_w4_external
   _cardType: {fileID: 11400000, guid: fb5f5a6ef4641de4eba3ccf6fd9d195e, type: 2}
-  _title: '[W4][CARD] Default=Modified -> alternate card compare'
-  _originalText: "\uC774 \uCE74\uB4DC\uB294 \uC120\uD0DD \uADF8\uB8F9/\uC0C1\uD0DC
-    \uBCC0\uD654 \uD655\uC778\uC6A9 \uBCF4\uC870 \uCE74\uB4DC\uC785\uB2C8\uB2E4."
+  _title: '[W4 카드] 외부 정보 카드 - 보조 비교용'
+  _originalText: "\uC774 \uCE74\uB4DC\uB294 \uC120\uD0DD \uADF8\uB8F9\uACFC \uC0C1\uD0DC \uBCC0\uD654\uB97C \uD655\uC778\uD558\uB294 \uBCF4\uC870 \uBE44\uAD50 \uCE74\uB4DC\uC785\uB2C8\uB2E4."
   _options:
   - _semantic: 1
-    _label: '[Default] Modified'
-    _presentedText: 'W4 TEST RESULT: External modified semantic applied.'
+    _label: '[기본 선택] 가공 전달'
+    _presentedText: '테스트 결과: 외부 정보 카드를 가공 전달로 처리했습니다.'
     _interactions:
     - {fileID: 11400000, guid: fffccd47899f617438b6dbd13f98fc28, type: 2}
   - _semantic: 0
-    _label: Direct
-    _presentedText: 'W4 TEST RESULT: External direct semantic applied.'
+    _label: '직접 전달'
+    _presentedText: '테스트 결과: 외부 정보 카드를 직접 전달로 처리했습니다.'
     _interactions:
     - {fileID: 11400000, guid: d58fd4653c271b2488a2bd8f7761b518, type: 2}
   - _semantic: 2
-    _label: Blocked
-    _presentedText: 'W4 TEST RESULT: External blocked semantic applied.'
+    _label: '차단 처리'
+    _presentedText: '테스트 결과: 외부 정보 카드를 차단 처리했습니다.'
     _interactions:
     - {fileID: 11400000, guid: 45df65fdfdb6c9048a688b82fd984b28, type: 2}

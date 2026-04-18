@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_TEST_W3_Story
   m_EditorClassIdentifier: Assembly-CSharp::SO_StoryEventDefinition
   _id: test_w3_story_stat_condition
-  _title: '[W3] StoryEvent StatCondition'
+  _title: '[W3 이벤트] 스토리 - 스탯 조건 통과'
   _priority: 95
   _conditions:
     _requiredFlags: []

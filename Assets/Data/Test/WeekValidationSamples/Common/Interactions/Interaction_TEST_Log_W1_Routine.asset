@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f323fb213e29498f423733493a509, type: 3}
   m_Name: Interaction_TEST_Log_W1_Routine
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_AddReactionLog
-  _reactionText: '[W1] Routine step OnEnter executed.'
+  _reactionText: '[W1 로그] 루틴 스텝 진입 상호작용이 실행되었습니다.'

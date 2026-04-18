@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
   _id: test_week_04
   _weekIndex: 4
-  _title: '[TEST WEEK 4] MultiStep + ChoiceBranch + BlockedFallback'
-  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
-    Multi-step Story\uAC00 \uC5F4\uB9AC\uACE0, HiddenInfoDetected \uB54C\uBB38\uC5D0
-    \uBC24 \uB300\uD654\uB294 fallback\uB9CC \uB0A8\uC2B5\uB2C8\uB2E4."
+  _title: '[테스트 4주차] 멀티 스텝 / 선택지 분기 / 차단 fallback'
+  _summary: "\uBA40\uD2F0 \uC2A4\uD15D \uC2A4\uD1A0\uB9AC, \uC120\uD0DD\uC9C0\uC5D0 \uB530\uB978 \uBD84\uAE30, \uCC28\uB2E8\uB41C \uBC24 \uB300\uD654 \uB300\uC2E0 fallback \uB300\uD654\uAC00 \uB098\uC624\uB294\uC9C0 \uD655\uC778\uD569\uB2C8\uB2E4."
   _preTurn: {fileID: 11400000, guid: 93a67ae761c5f19439f52127297586eb, type: 2}
   _dayFlow: {fileID: 11400000, guid: b740700255f999149b35b74ed79841df, type: 2}
   _nightFlow: {fileID: 11400000, guid: 7bdb1b60f56bd174b91e4dd6a63e4ba5, type: 2}

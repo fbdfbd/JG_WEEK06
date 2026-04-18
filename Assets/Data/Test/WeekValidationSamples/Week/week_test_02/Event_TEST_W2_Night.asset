@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_TEST_W2_Night
   m_EditorClassIdentifier: Assembly-CSharp::SO_PrivateDialogueDefinition
   _id: test_w2_night_info_count
-  _title: '[W2] NightDialogue InformationCount'
+  _title: '[W2 이벤트] 밤 대화 - 정보 타입 수량 조건'
   _priority: 80
   _conditions:
     _requiredFlags: []

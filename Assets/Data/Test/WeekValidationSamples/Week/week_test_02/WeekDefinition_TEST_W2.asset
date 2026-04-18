@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
   _id: test_week_02
   _weekIndex: 2
-  _title: '[TEST WEEK 2] InformationType + SemanticCondition'
-  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
-    \uC815\uBCF4 \uC870\uAC74 \uAE30\uBC18 Story/Night \uC774\uBCA4\uD2B8\uAC00 \uBAA8\uB450
-    \uC5F4\uB9BD\uB2C8\uB2E4. \uCD94\uCC9C \uAC80\uC99D: Textbook semantic\uC744
-    \uBC14\uAFD4\uC11C Story\uB9CC \uAEBC\uC9C0\uB294\uC9C0 \uBE44\uAD50."
+  _title: '[테스트 2주차] 정보 타입 / 시맨틱 필터'
+  _summary: "\uC815\uBCF4 \uD0C0\uC785 \uC870\uAC74\uACFC \uC2DC\uB9E8\uD2F1 \uD544\uD130\uAC00 \uAC01\uAC01 \uC5B4\uB5BB\uAC8C \uB3D9\uC791\uD558\uB294\uC9C0 \uBE44\uAD50\uD558\uB294 2\uC8FC\uCC28 \uD14C\uC2A4\uD2B8\uC785\uB2C8\uB2E4."
   _preTurn: {fileID: 11400000, guid: 21a4584708321fa45a2a32bdd7a05ce2, type: 2}
   _dayFlow: {fileID: 11400000, guid: fc0f63745936a2f42a0d51cd24654cf2, type: 2}
   _nightFlow: {fileID: 11400000, guid: bdbb16369b3a78c4c8f1257cf7e6dcd5, type: 2}

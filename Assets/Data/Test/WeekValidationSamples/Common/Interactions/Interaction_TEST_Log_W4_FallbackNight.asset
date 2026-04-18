@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f323fb213e29498f423733493a509, type: 3}
   m_Name: Interaction_TEST_Log_W4_FallbackNight
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_AddReactionLog
-  _reactionText: '[W4] Fallback night dialogue executed because the higher priority
-    one was blocked.'
+  _reactionText: '[W4 로그] 우선순위가 높은 밤 대화가 차단되어 fallback 대화가 실행되었습니다.'

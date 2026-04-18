@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_TEST_W4_NightFallback
   m_EditorClassIdentifier: Assembly-CSharp::SO_PrivateDialogueDefinition
   _id: test_w4_night_fallback
-  _title: '[W4] NightDialogue Fallback'
+  _title: '[W4 이벤트] 밤 대화 - fallback 이벤트'
   _priority: 100
   _conditions:
     _requiredFlags: []

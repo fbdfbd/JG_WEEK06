@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_TEST_W4_NightBlocked
   m_EditorClassIdentifier: Assembly-CSharp::SO_PrivateDialogueDefinition
   _id: test_w4_night_blocked
-  _title: '[W4] NightDialogue SHOULD_BE_BLOCKED'
+  _title: '[W4 이벤트] 밤 대화 - 차단되어야 하는 이벤트'
   _priority: 200
   _conditions:
     _requiredFlags: []

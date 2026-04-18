@@ -12,11 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
   m_Name: WeekPreTurn_WeekDefinition_TEST_W5
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
-  _title: '[TEST WEEK 5] Final Week + Ending / PreTurn'
-  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
-    Anxiety\uAC00 \uC62C\uB77C\uAC00 \uB9C8\uC9C0\uB9C9 \uC5D4\uB529 \uBE44\uAD50\uAC00
-    \uC26C\uC6CC\uC9D1\uB2C8\uB2E4. \uC774 \uC8FC\uCC28 \uC885\uB8CC \uD6C4 \uC5D4\uB529
-    \uD654\uBA74\uC774 \uBC14\uB85C \uB098\uC640\uC57C \uD569\uB2C8\uB2E4."
+  _title: '[테스트 5주차] 사전 안내'
+  _summary: "\uAE30\uBCF8 \uC120\uD0DD\uC73C\uB85C \uC2E4\uD589\uD558\uBA74 \uB9C8\uC9C0\uB9C9 \uC8FC\uCC28 \uC774\uBCA4\uD2B8\uB97C \uBAA8\uB450 \uAC70\uCE5C \uB4A4 \uC5D4\uB529 \uD654\uBA74\uAE4C\uC9C0 \uC774\uC5B4\uC9D1\uB2C8\uB2E4. \uD3B8\uC9C0/\uC678\uBD80 \uCE74\uB4DC \uC120\uD0DD\uC5D0 \uB530\uB77C \uBD84\uAE30 \uBE44\uAD50\uB3C4 \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
   _informationCards:
   - _card: {fileID: 11400000, guid: 07575b135e04b2445bbc5a3c4385923a, type: 2}
     _isRequired: 1

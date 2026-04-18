@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f323fb213e29498f423733493a509, type: 3}
   m_Name: Interaction_TEST_Log_W4_Step3
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_AddReactionLog
-  _reactionText: '[W4] Multi-step event Step3 reached from Choice A.'
+  _reactionText: '[W4 로그] 선택지 A 경로로 3단계 스텝에 도착했습니다.'

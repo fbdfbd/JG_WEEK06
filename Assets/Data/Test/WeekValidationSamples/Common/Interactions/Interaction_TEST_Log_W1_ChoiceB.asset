@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f323fb213e29498f423733493a509, type: 3}
   m_Name: Interaction_TEST_Log_W1_ChoiceB
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_AddReactionLog
-  _reactionText: '[W1] Choice B result applied.'
+  _reactionText: '[W1 로그] 선택지 B 결과가 적용되었습니다.'

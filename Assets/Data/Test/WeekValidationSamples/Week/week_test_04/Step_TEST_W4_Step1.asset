@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: Step_TEST_W4_Step1
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: '[W4][STORY] Step1 auto-continues to Step2'
-  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: Step.DefaultNextStep."
+  _titleOverride: '[W4 스토리] 1단계 - 계속하기로 2단계 이동'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: \uC120\uD0DD\uC9C0 \uC5C6\uC774 Continue \uD55C \uBC88\uC73C\uB85C 2\uB2E8\uACC4\uAC00 \uC5F4\uB9AC\uB294\uC9C0 \uD655\uC778."
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 5bb39217ef6e2284f84306acd528c0b3, type: 2}
-    _text: '[W4][STORY] Continue once and Step2 should open.'
-  _nemoLine: '[W4][STORY] Continue once and Step2 should open.'
+    _text: '[대화 내용 1] 여기서 계속하기를 누르면 자동으로 2단계 스텝이 열립니다.'
+  _nemoLine: '[대화 내용 1] 여기서 계속하기를 누르면 자동으로 2단계 스텝이 열립니다.'
   _useCustomVisualState: 0
   _visualState: 0
   _onEnterInteractions:

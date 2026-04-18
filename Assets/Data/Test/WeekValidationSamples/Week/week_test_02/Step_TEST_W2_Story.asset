@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: Step_TEST_W2_Story
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: '[W2][STORY] Triggered by InformationType + Semantic filter'
-  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: Information requirement
-    with semantic filter."
+  _titleOverride: '[W2 스토리] 정보 타입 + 시맨틱 필터 테스트'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: \uC815\uBCF4 \uD0C0\uC785 \uC870\uAC74\uACFC \uC2DC\uB9E8\uD2F1 \uD544\uD130\uAC00 \uD568\uAED8 \uAC80\uC0AC\uB418\uB294\uC9C0 \uD655\uC778."
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 30dff0615a94165488df76001a28db9b, type: 2}
-    _text: '[W2][STORY] Textbook direct count >= 1 check passed.'
+    _text: '[대화 내용 1] 교과서 직접 전달 정보가 1개 이상이라 스토리 조건을 통과했습니다.'
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: '[W2][STORY] Information semantic filter works.'
-  _nemoLine: '[W2][STORY] Textbook direct count >= 1 check passed.'
+    _text: '[대화 내용 2] 이 화면은 정보 타입과 시맨틱 필터가 동시에 맞아야 열립니다.'
+  _nemoLine: '[대화 내용 1] 교과서 직접 전달 정보가 1개 이상이라 스토리 조건을 통과했습니다.'
   _useCustomVisualState: 0
   _visualState: 1
   _onEnterInteractions:

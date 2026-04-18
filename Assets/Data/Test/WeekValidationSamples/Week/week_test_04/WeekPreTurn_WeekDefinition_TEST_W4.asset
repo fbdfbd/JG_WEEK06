@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
   m_Name: WeekPreTurn_WeekDefinition_TEST_W4
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
-  _title: '[TEST WEEK 4] MultiStep + ChoiceBranch + BlockedFallback / PreTurn'
-  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
-    Multi-step Story\uAC00 \uC5F4\uB9AC\uACE0, HiddenInfoDetected \uB54C\uBB38\uC5D0
-    \uBC24 \uB300\uD654\uB294 fallback\uB9CC \uB0A8\uC2B5\uB2C8\uB2E4."
+  _title: '[테스트 4주차] 사전 안내'
+  _summary: "\uAE30\uBCF8 \uC120\uD0DD\uC73C\uB85C \uC2E4\uD589\uD558\uBA74 \uBA40\uD2F0 \uC2A4\uD15D \uC2A4\uD1A0\uB9AC\uAC00 \uC5F4\uB9AC\uACE0, \uBC24 \uB300\uD654\uB294 \uCC28\uB2E8 \uB300\uD654\uB97C \uAC74\uB108\uB6F0\uACE0 fallback \uB300\uD654\uB9CC \uB0A8\uB294\uC9C0 \uD655\uC778\uD558\uC138\uC694."
   _informationCards:
   - _card: {fileID: 11400000, guid: 621fb34c0e469394fa2d2a316c77a036, type: 2}
     _isRequired: 1

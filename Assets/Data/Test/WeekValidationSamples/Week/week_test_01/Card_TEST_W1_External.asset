@@ -14,24 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_test_w1_external
   _cardType: {fileID: 11400000, guid: fb5f5a6ef4641de4eba3ccf6fd9d195e, type: 2}
-  _title: '[W1][CARD] Default=Direct -> NIGHT dialogue trigger'
-  _originalText: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
-    External=Direct\uAC00 \uC801\uC6A9\uB418\uC5B4 W1 \uBC24 \uB300\uD654 \uC774\uBCA4\uD2B8\uAC00
-    \uC5F4\uB9BD\uB2C8\uB2E4."
+  _title: '[W1 카드] 외부 정보 카드 - 기본 선택 시 밤 대화 열림'
+  _originalText: "\uAE30\uBCF8 \uC120\uD0DD\uC744 \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74 \uC678\uBD80 \uC815\uBCF4 \uCE74\uB4DC\uAC00 \uC9C1\uC811 \uC804\uB2EC \uCC98\uB9AC\uB418\uACE0, 1\uC8FC\uCC28 \uBC24 \uB300\uD654 \uC774\uBCA4\uD2B8\uAC00 \uC5F4\uB9BD\uB2C8\uB2E4."
   _options:
   - _semantic: 0
-    _label: '[Default] Direct -> trigger W1 night dialogue'
-    _presentedText: 'W1 TEST RESULT: External direct semantic applied.'
+    _label: '[기본 선택] 직접 전달 -> 밤 대화 확인'
+    _presentedText: '테스트 결과: 외부 정보 카드를 직접 전달로 처리했습니다.'
     _interactions:
     - {fileID: 11400000, guid: d58fd4653c271b2488a2bd8f7761b518, type: 2}
     - {fileID: 11400000, guid: e508ebd83a96c5243962c64a4c3539d0, type: 2}
   - _semantic: 1
-    _label: Modified -> compare no night flag
-    _presentedText: 'W1 TEST RESULT: External modified semantic applied.'
+    _label: '가공 전달 -> 밤 대화 미발생 비교'
+    _presentedText: '테스트 결과: 외부 정보 카드를 가공 전달로 처리했습니다.'
     _interactions:
     - {fileID: 11400000, guid: eae4044633908994ca5dd9b07b5c955c, type: 2}
   - _semantic: 2
-    _label: Blocked -> compare no night flag
-    _presentedText: 'W1 TEST RESULT: External blocked semantic applied.'
+    _label: '차단 처리 -> 밤 대화 미발생 비교'
+    _presentedText: '테스트 결과: 외부 정보 카드를 차단 처리했습니다.'
     _interactions:
     - {fileID: 11400000, guid: fffccd47899f617438b6dbd13f98fc28, type: 2}

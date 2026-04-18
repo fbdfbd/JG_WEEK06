@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
   _id: test_week_01
   _weekIndex: 1
-  _title: '[TEST WEEK 1] Semantic + RequiredFlag + ChoiceResult'
-  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
-    Routine, Story, Night\uAC00 \uBAA8\uB450 \uC5F4\uB9BD\uB2C8\uB2E4. \uCD94\uCC9C
-    \uAC80\uC99D: \uCE74\uB4DC \uC120\uD0DD \uD6C4 \uBC24 \uB300\uD654\uC5D0\uC11C
-    Choice A/B \uB458 \uB2E4 \uBE44\uAD50."
+  _title: "[\uD14C\uC2A4\uD2B8 1\uC8FC\uCC28] \uC2DC\uB9E8\uD2F1 / \uD544\uC218 \uD50C\uB798\uADF8
+    / \uC120\uD0DD \uACB0\uACFC"
+  _summary: "\uAE30\uBCF8 \uC120\uD0DD\uB9CC\uC73C\uB85C\uB3C4 \uB8E8\uD2F4, \uC2A4\uD1A0\uB9AC,
+    \uBC24 \uB300\uD654\uAC00 \uC21C\uC11C\uB300\uB85C \uC5F4\uB9AC\uB294\uC9C0 \uD655\uC778\uD569\uB2C8\uB2E4."
   _preTurn: {fileID: 11400000, guid: 54b290060c0fc6641817efd4e447aef3, type: 2}
   _dayFlow: {fileID: 11400000, guid: 23d2e97eb1dce2840b1709efc38d7ab3, type: 2}
   _nightFlow: {fileID: 11400000, guid: 8c9e5c5074652654291a2787836cb9d6, type: 2}
@@ -27,4 +26,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cbe8bf347d5b7b14bb62eccbcb071345, type: 2}
   _onWeekEndInteractions:
   - {fileID: 11400000, guid: e1c333fba5eb430449fd6b12ca741338, type: 2}
-  _cinematicProfile: {fileID: 0}
+  _cinematicProfile: {fileID: 11400000, guid: 0518e38b857d6ee409c1d5582ba0d067, type: 2}

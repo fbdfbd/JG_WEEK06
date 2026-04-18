@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f323fb213e29498f423733493a509, type: 3}
   m_Name: Interaction_TEST_Log_W4_Step1
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_AddReactionLog
-  _reactionText: '[W4] Multi-step event Step1 OnEnter executed.'
+  _reactionText: '[W4 로그] 멀티 스텝 1단계 진입 상호작용이 실행되었습니다.'

@@ -12,11 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
   m_Name: WeekPreTurn_WeekDefinition_TEST_W1
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
-  _title: '[TEST WEEK 1] Semantic + RequiredFlag + ChoiceResult / PreTurn'
-  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
-    Routine, Story, Night\uAC00 \uBAA8\uB450 \uC5F4\uB9BD\uB2C8\uB2E4. \uCD94\uCC9C
-    \uAC80\uC99D: \uCE74\uB4DC \uC120\uD0DD \uD6C4 \uBC24 \uB300\uD654\uC5D0\uC11C
-    Choice A/B \uB458 \uB2E4 \uBE44\uAD50."
+  _title: '[테스트 1주차] 사전 안내'
+  _summary: "\uAE30\uBCF8 \uC120\uD0DD\uC73C\uB85C \uC2E4\uD589\uD558\uBA74 \uB8E8\uD2F4, \uC2A4\uD1A0\uB9AC, \uBC24 \uB300\uD654\uAC00 \uBAA8\uB450 \uC5F4\uB9BD\uB2C8\uB2E4. \uBC24 \uB300\uD654\uC5D0\uC11C \uC120\uD0DD\uC9C0 A/B\uB97C \uBE44\uAD50\uD574 \uACB0\uACFC \uD654\uBA74\uACFC \uB2E4\uC74C \uC2A4\uD15D \uC774\uB3D9\uC744 \uD655\uC778\uD558\uC138\uC694."
   _informationCards:
   - _card: {fileID: 11400000, guid: a2aca76e1235b79448c354eb56c63bbe, type: 2}
     _isRequired: 1

@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: Step_TEST_W2_Night
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: '[W2][NIGHT] Triggered by InformationType count only'
-  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: Information requirement
-    without semantic filter."
+  _titleOverride: '[W2 밤 대화] 정보 타입 수량만 보는 테스트'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: \uC2DC\uB9E8\uD2F1\uC740 \uBB34\uC2DC\uD558\uACE0 \uC815\uBCF4 \uD0C0\uC785 \uC218\uB7C9\uB9CC \uAC80\uC0AC\uD558\uB294\uC9C0 \uD655\uC778."
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 5bb39217ef6e2284f84306acd528c0b3, type: 2}
-    _text: '[W2][NIGHT] HouseTalk count >= 1 check passed without semantic filter.'
-  _nemoLine: '[W2][NIGHT] HouseTalk count >= 1 check passed without semantic filter.'
+    _text: '[대화 내용 1] 가정 대화 타입 정보가 1개 이상이라 밤 대화가 열렸습니다.'
+  _nemoLine: '[대화 내용 1] 가정 대화 타입 정보가 1개 이상이라 밤 대화가 열렸습니다.'
   _useCustomVisualState: 0
   _visualState: 0
   _onEnterInteractions:

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f323fb213e29498f423733493a509, type: 3}
   m_Name: Interaction_TEST_Log_W3_Night
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_AddReactionLog
-  _reactionText: '[W3] Night dialogue unlocked by HiddenInfoDetected flag.'
+  _reactionText: '[W3 로그] 완료 후 생성된 플래그로 밤 대화가 열렸습니다.'

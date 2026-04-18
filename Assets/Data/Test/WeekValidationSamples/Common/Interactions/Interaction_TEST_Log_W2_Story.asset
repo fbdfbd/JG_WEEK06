@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f323fb213e29498f423733493a509, type: 3}
   m_Name: Interaction_TEST_Log_W2_Story
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_AddReactionLog
-  _reactionText: '[W2] Story event passed information semantic condition.'
+  _reactionText: '[W2 로그] 정보 타입 + 시맨틱 조건을 통과해 스토리 이벤트가 열렸습니다.'

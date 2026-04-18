@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: Step_TEST_W3_Night
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: '[W3][NIGHT] Triggered because HiddenInfoDetected flag exists'
-  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: EventComplete interaction
-    -> required flag chain."
+  _titleOverride: '[W3 밤 대화] 완료 후 플래그 연계 테스트'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: \uC2A4\uD1A0\uB9AC \uC644\uB8CC \uD6C4 \uC0DD\uC131\uB41C \uD50C\uB798\uADF8\uB85C \uBC24 \uB300\uD654\uAC00 \uC5F4\uB9AC\uB294\uC9C0 \uD655\uC778."
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: '[W3][NIGHT] HiddenInfoDetected flag was created by EventComplete interaction.'
-  _nemoLine: '[W3][NIGHT] HiddenInfoDetected flag was created by EventComplete interaction.'
+    _text: '[대화 내용 1] 스토리 완료 보상으로 숨겨진 정보 플래그가 생겨 밤 대화가 열렸습니다.'
+  _nemoLine: '[대화 내용 1] 스토리 완료 보상으로 숨겨진 정보 플래그가 생겨 밤 대화가 열렸습니다.'
   _useCustomVisualState: 0
   _visualState: 5
   _onEnterInteractions:

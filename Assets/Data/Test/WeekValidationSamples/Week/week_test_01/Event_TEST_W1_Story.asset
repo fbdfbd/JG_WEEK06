@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_TEST_W1_Story
   m_EditorClassIdentifier: Assembly-CSharp::SO_StoryEventDefinition
   _id: test_w1_story_flag_required
-  _title: '[W1] StoryEvent RequiredFlag'
+  _title: '[W1 이벤트] 스토리 - 필수 플래그 조건'
   _priority: 90
   _conditions:
     _requiredFlags:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Event_TEST_W5_Story
   m_EditorClassIdentifier: Assembly-CSharp::SO_StoryEventDefinition
   _id: test_w5_story_external_flag
-  _title: '[W5] StoryEvent FinalFlagCheck'
+  _title: '[W5 이벤트] 스토리 - 마지막 플래그 확인'
   _priority: 90
   _conditions:
     _requiredFlags:

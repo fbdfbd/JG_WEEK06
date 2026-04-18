@@ -12,22 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: Step_TEST_W4_Step2
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: '[W4][STORY] Step2 has choices and custom visual state'
-  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: DefaultNextStep
-    \uC774\uD6C4 Choice \uBD84\uAE30 + custom visual state."
+  _titleOverride: '[W4 스토리] 2단계 - 선택지 분기 테스트'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: 1\uB2E8\uACC4 \uC774\uD6C4 \uC120\uD0DD\uC9C0\uB85C \uACB0\uACFC \uD654\uBA74\uACFC \uBD84\uAE30 \uACBD\uB85C\uAC00 \uAC08\uB77C\uC9C0\uB294\uC9C0 \uD655\uC778."
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: '[W4][STORY] You are now on Step2. Pick A or B.'
-  _nemoLine: '[W4][STORY] You are now on Step2. Pick A or B.'
+    _text: '[대화 내용 1] 지금은 2단계입니다. 선택지 A와 B의 분기 결과를 비교해 보세요.'
+  _nemoLine: '[대화 내용 1] 지금은 2단계입니다. 선택지 A와 B의 분기 결과를 비교해 보세요.'
   _useCustomVisualState: 1
   _visualState: 5
   _onEnterInteractions: []
   _choices:
-  - _label: '[W4][CHOICE A] Result + move to Step3'
+  - _label: '[선택지 A] 결과 화면 후 3단계로 이동'
     _responseDialogueLines:
     - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-      _text: '[W4][CHOICE A] Step3 will open next.'
-    _responseLine: 'W4 TEST RESULT: Choice A selected.'
+      _text: '[결과 내용 1] 선택지 A를 골라서 다음에 3단계 스텝이 열립니다.'
+    _responseLine: '테스트 결과: 4주차 선택지 A를 선택했습니다.'
     _interactions:
     - {fileID: 11400000, guid: fffccd47899f617438b6dbd13f98fc28, type: 2}
     - {fileID: 11400000, guid: c8c2f88d5c42ac34d95fc6a614ae8ac2, type: 2}
@@ -35,11 +34,11 @@ MonoBehaviour:
     _resultCinematicCues:
       _enterCue: {fileID: 0}
       _exitCue: {fileID: 0}
-  - _label: '[W4][CHOICE B] Result + end event'
+  - _label: '[선택지 B] 결과 화면 후 이벤트 종료'
     _responseDialogueLines:
     - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-      _text: '[W4][CHOICE B] Event will end after this result screen.'
-    _responseLine: 'W4 TEST RESULT: Choice B selected.'
+      _text: '[결과 내용 1] 선택지 B를 골라서 이 결과 화면 뒤에 이벤트가 종료됩니다.'
+    _responseLine: '테스트 결과: 4주차 선택지 B를 선택했습니다.'
     _interactions:
     - {fileID: 11400000, guid: 45df65fdfdb6c9048a688b82fd984b28, type: 2}
     - {fileID: 11400000, guid: 9761ef2f582609649bd457e244926817, type: 2}
