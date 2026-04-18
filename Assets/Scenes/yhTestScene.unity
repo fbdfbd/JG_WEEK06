@@ -1161,7 +1161,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1146667015778317453, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
   m_PrefabInstance: {fileID: 2142583235}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &349305986
+--- !u!114 &349305988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1170,15 +1170,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 349305983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f1ee3ea8fb27ca40aeb447f0da4120c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b088a2bf3a73774f9ac76e6c8d5be67, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NephewController
-  walkSpeed: 3
-  leftEdge: {fileID: 539083791}
-  rightEdge: {fileID: 538385502}
-  idleWeight: 60
-  balanceWeight: 30
-  turnWeight: 10
+  m_EditorClassIdentifier: Assembly-CSharp::UI_NemoInteractionView
+  _nemoButton: {fileID: 349305989}
+--- !u!114 &349305989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349305983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &444067908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,6 +1909,7 @@ GameObject:
   - component: {fileID: 607516404}
   - component: {fileID: 607516403}
   - component: {fileID: 607516402}
+  - component: {fileID: 607516406}
   m_Layer: 5
   m_Name: Canvas_Interaction
   m_TagString: Untagged
@@ -1960,6 +2000,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &607516406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607516401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf7bf3d7c8598a498371b4a2ffb5e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI_InteractionScreenView
+  _nemoInteractionView: {fileID: 0}
+  _interactionPanel: {fileID: 1588875544}
 --- !u!1 &624039471
 GameObject:
   m_ObjectHideFlags: 0
@@ -4885,7 +4939,7 @@ MonoBehaviour:
   _weekDefinition: {fileID: 11400000, guid: b1000000000000000000000000000002, type: 2}
   _weekDefinitions: []
   _uiTextCatalog: {fileID: 11400000, guid: 38d96698d9988384d8259c51ec527e7f, type: 2}
-  _view: {fileID: 0}
+  _view: {fileID: 1850009227}
 --- !u!4 &1611669064
 Transform:
   m_ObjectHideFlags: 0
@@ -7372,18 +7426,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1146667015778317453, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 9286182970fc6754caf770ec58b19529, type: 2}
     - target: {fileID: 1883855158615417919, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
       propertyPath: m_Name
-      value: Girl
+      value: Nemo
       objectReference: {fileID: 0}
-    - target: {fileID: 7570601442479903548, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
+    - target: {fileID: 6241807886558569177, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
+      propertyPath: leftEdge
+      value: 
+      objectReference: {fileID: 539083791}
+    - target: {fileID: 6241807886558569177, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
+      propertyPath: rightEdge
+      value: 
+      objectReference: {fileID: 538385502}
     - target: {fileID: 7570601442479903548, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7424,17 +7478,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7570601442479903548, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1883855158615417919, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 349305986}
+      addedObject: {fileID: 349305989}
+    - targetCorrespondingSourceObject: {fileID: 1883855158615417919, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 349305988}
   m_SourcePrefab: {fileID: 100100000, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
 --- !u!1001 &3839356214184943288
 PrefabInstance:
