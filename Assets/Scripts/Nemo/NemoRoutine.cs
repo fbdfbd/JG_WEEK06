@@ -10,11 +10,11 @@ public class NemoRoutine
     private readonly float _walkSpeed;
     private readonly Transform _leftEdge;
     private readonly Transform _rightEdge;
+    private readonly Func<bool> _canRunRoutine;
 
     private readonly (Func<bool> behavior, int weight)[] _weightedBehaviors;
 
-    private Vector3 _moveDirection;
-    private bool _isDoingAction;
+    private Vector3 _moveDirection = Vector3.right;
 
     public NemoRoutine(
         Transform transform,
@@ -24,13 +24,15 @@ public class NemoRoutine
         Transform rightEdge,
         int idleWeight,
         int balanceWeight,
-        int turnWeight)
+        int turnWeight,
+        Func<bool> canRunRoutine)
     {
         _transform = transform;
         _anim = anim;
         _walkSpeed = walkSpeed;
         _leftEdge = leftEdge;
         _rightEdge = rightEdge;
+        _canRunRoutine = canRunRoutine;
 
         _weightedBehaviors = new (Func<bool>, int)[]
         {
@@ -54,20 +56,9 @@ public class NemoRoutine
         };
     }
 
-    public void ResetRoutineState()
-    {
-        _moveDirection = Vector3.right;
-        _isDoingAction = false;
-    }
-
-    public void StopAction()
-    {
-        _isDoingAction = true;
-    }
-
     public IEnumerator DailyRoutine()
     {
-        while (!_isDoingAction)
+        while (_canRunRoutine())
         {
             _anim.PlayWalk();
 
@@ -76,7 +67,7 @@ public class NemoRoutine
 
             while (timer < walkTime)
             {
-                if (_isDoingAction)
+                if (!_canRunRoutine())
                 {
                     yield break;
                 }
@@ -92,6 +83,11 @@ public class NemoRoutine
                 yield return null;
             }
 
+            if (!_canRunRoutine())
+            {
+                yield break;
+            }
+
             bool skipWait = RandomBehavior();
 
             if (skipWait)
@@ -101,7 +97,18 @@ public class NemoRoutine
             }
 
             float actionTime = Random.Range(2f, 5f);
-            yield return new WaitForSeconds(actionTime);
+            float actionTimer = 0f;
+
+            while (actionTimer < actionTime)
+            {
+                if (!_canRunRoutine())
+                {
+                    yield break;
+                }
+
+                actionTimer += Time.deltaTime;
+                yield return null;
+            }
 
             _anim.PlayWalk();
         }

@@ -4,6 +4,13 @@ using UnityEngine.EventSystems;
 
 public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
 {
+    public enum NemoState
+    {
+        Routine,
+        Interacting,
+        Event
+    }
+
     public static NemoEntity Instance { get; private set; }
 
     [Header("Animation")]
@@ -11,6 +18,8 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
 
     [Header("Interaction")]
     [SerializeField] private GameObject interactPanel;
+    [SerializeField] private RectTransform canvasRect;
+    [SerializeField] private Vector3 offset;
 
     [Header("Movement")]
     [SerializeField] private float walkSpeed = 3f;
@@ -29,6 +38,8 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
     private NemoRoutine _routine;
     private Coroutine _dailyRoutineCoroutine;
 
+    public NemoState CurrentState { get; private set; } = NemoState.Routine;
+
     public bool IsInitialized => _anim != null && _interact != null && _routine != null;
 
     private void Awake()
@@ -42,7 +53,7 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
         Instance = this;
 
         _anim = new NemoAnimation(playerAnimator);
-        _interact = new NemoInteract(interactPanel);
+        _interact = new NemoInteract(interactPanel, canvasRect, offset);
         _routine = new NemoRoutine(
             transform,
             _anim,
@@ -51,7 +62,8 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
             rightEdge,
             idleWeight,
             balanceWeight,
-            turnWeight
+            turnWeight,
+            CanRunRoutine
         );
     }
 
@@ -72,16 +84,68 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
         }
     }
 
+    private bool CanRunRoutine()
+    {
+        return CurrentState == NemoState.Routine;
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        _interact.HandlePointerClick(eventData);
+        Debug.Log($"OnPointerClick called. CurrentState = {CurrentState}");
+
+        if (eventData.button != PointerEventData.InputButton.Left) return;
+
+        if (CurrentState == NemoState.Event) return;
+
+        if (CurrentState == NemoState.Routine)
+        {
+            PauseRoutine();
+            return;
+        }
+
+        if (CurrentState == NemoState.Interacting)
+        {
+            ResumeRoutine();
+        }
+    }
+
+    public void PauseRoutine()
+    {
+        SetState(NemoState.Interacting);
+        PlayIdle();
+        OpenInteractionPanel();
+    }
+
+    public void ResumeRoutine()
+    {
+        CloseInteractionPanel();
+        SetState(NemoState.Routine);
+        StartDailyRoutine();
+    }
+
+    public void EnterEventState()
+    {
+        CloseInteractionPanel();
+        SetState(NemoState.Event);
+    }
+
+    public void FinishEvent()
+    {
+        SetState(NemoState.Routine);
+        StartDailyRoutine();
+    }
+
+    private void SetState(NemoState newState)
+    {
+        CurrentState = newState;
+        Debug.Log($"Nemo state changed to {CurrentState}");
     }
 
     public void StartDailyRoutine()
     {
         if (!IsInitialized)
         {
-            Debug.Log("클래스 중 하나가 없음");
+            Debug.LogError("클래스 중 하나가 없음");
             return;
         }
 
@@ -91,7 +155,6 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
         }
 
         Debug.Log("기본 애니메이션 동작 시작");
-        _routine.ResetRoutineState();
         _dailyRoutineCoroutine = StartCoroutine(_routine.DailyRoutine());
     }
 
@@ -102,13 +165,11 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
             StopCoroutine(_dailyRoutineCoroutine);
             _dailyRoutineCoroutine = null;
         }
-
-        _routine?.StopAction();
     }
 
     public void OpenInteractionPanel()
     {
-        _interact.OpenPanel();
+        _interact.OpenPanel(gameObject.transform);
     }
 
     public void CloseInteractionPanel()

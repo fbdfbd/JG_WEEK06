@@ -1167,6 +1167,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NemoEntity
   playerAnimator: {fileID: 349305984}
   interactPanel: {fileID: 1588875544}
+  canvasRect: {fileID: 607516405}
+  offset: {x: 0, y: 3.5, z: 0}
   walkSpeed: 3
   leftEdge: {fileID: 539083791}
   rightEdge: {fileID: 538385502}
