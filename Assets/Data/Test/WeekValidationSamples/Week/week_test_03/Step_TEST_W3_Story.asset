@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: Step_TEST_W3_Story
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: '[W3 스토리] 스탯 조건 통과 테스트'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: \uD638\uAE30\uC2EC/\uBD88\uC548 \uC2A4\uD0EF \uC870\uAC74, \uC870\uAC74\uBD80 OnEnter, \uC774\uBCA4\uD2B8 \uC644\uB8CC \uD6A8\uACFC\uB97C \uD568\uAED8 \uD655\uC778."
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: '[대화 내용 1] 현재 스탯이 조건을 만족해서 3주차 스토리 이벤트가 열렸습니다.'
+  - _speaker: {fileID: 11400000, guid: 30dff0615a94165488df76001a28db9b, type: 2}
+    _text: '[대화 내용 2] 이 스텝에 들어오면서 조건부 상호작용도 함께 실행됩니다.'
+  _nemoLine: '[대화 내용 1] 현재 스탯이 조건을 만족해서 3주차 스토리 이벤트가 열렸습니다.'
+  _useCustomVisualState: 0
+  _visualState: 1
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: e0956302fd363c748a9501da466e8fa0, type: 2}
+  - {fileID: 11400000, guid: 60158a8212fed8542adcd39ddd6ea375, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

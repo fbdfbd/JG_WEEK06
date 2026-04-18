@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edff9b7bd1a506a42a33e4d294868a53, type: 3}
+  m_Name: WeekDefinition_TEST_W4
+  m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
+  _id: test_week_04
+  _weekIndex: 4
+  _title: '[테스트 4주차] 멀티 스텝 / 선택지 분기 / 차단 fallback'
+  _summary: "\uBA40\uD2F0 \uC2A4\uD15D \uC2A4\uD1A0\uB9AC, \uC120\uD0DD\uC9C0\uC5D0 \uB530\uB978 \uBD84\uAE30, \uCC28\uB2E8\uB41C \uBC24 \uB300\uD654 \uB300\uC2E0 fallback \uB300\uD654\uAC00 \uB098\uC624\uB294\uC9C0 \uD655\uC778\uD569\uB2C8\uB2E4."
+  _preTurn: {fileID: 11400000, guid: 93a67ae761c5f19439f52127297586eb, type: 2}
+  _dayFlow: {fileID: 11400000, guid: b740700255f999149b35b74ed79841df, type: 2}
+  _nightFlow: {fileID: 11400000, guid: 7bdb1b60f56bd174b91e4dd6a63e4ba5, type: 2}
+  _weekRules: []
+  _onWeekStartInteractions: []
+  _onWeekEndInteractions: []
+  _cinematicProfile: {fileID: 0}

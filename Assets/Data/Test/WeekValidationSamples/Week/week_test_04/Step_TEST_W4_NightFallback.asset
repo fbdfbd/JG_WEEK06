@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: Step_TEST_W4_NightFallback
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: '[W4 밤 대화] fallback 대화 확인'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: \uB192\uC740 \uC6B0\uC120\uC21C\uC704 \uB300\uD654\uAC00 \uCC28\uB2E8\uB418\uBA74 fallback \uB300\uD654\uB9CC \uB0A8\uB294\uC9C0 \uD655\uC778."
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: 5bb39217ef6e2284f84306acd528c0b3, type: 2}
+    _text: '[대화 내용 1] 우선순위가 더 높은 밤 대화가 차단되어 fallback 대화가 대신 열렸습니다.'
+  _nemoLine: '[대화 내용 1] 우선순위가 더 높은 밤 대화가 차단되어 fallback 대화가 대신 열렸습니다.'
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: 7a6170b20f618424384873afeafd8c1b, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: Step_TEST_W3_Routine
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: '[W3 루틴] 방문객 직접 전달 시 열리는 루틴'
+  _bodyText: "\uD655\uC778 \uD3EC\uC778\uD2B8: \uBC29\uBB38\uAC1D \uC815\uBCF4\uB97C \uC9C1\uC811 \uC804\uB2EC\uB85C \uACE8\uB790\uC744 \uB54C \uB8E8\uD2F4 \uC774\uBCA4\uD2B8\uAC00 \uC5F4\uB9AC\uB294\uC9C0 \uD655\uC778."
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: 759cb171cd7f43c4cafa8241466c376b, type: 2}
+    _text: '[대화 내용 1] 방문객 카드를 직접 전달로 선택해서 3주차 루틴 이벤트가 열렸습니다.'
+  _nemoLine: '[대화 내용 1] 방문객 카드를 직접 전달로 선택해서 3주차 루틴 이벤트가 열렸습니다.'
+  _useCustomVisualState: 0
+  _visualState: 1
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: b6adef54e4400844fbba39ece02691a9, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

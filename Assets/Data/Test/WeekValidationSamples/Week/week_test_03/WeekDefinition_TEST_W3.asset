@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edff9b7bd1a506a42a33e4d294868a53, type: 3}
+  m_Name: WeekDefinition_TEST_W3
+  m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
+  _id: test_week_03
+  _weekIndex: 3
+  _title: '[테스트 3주차] 주차 시작 효과 / 스탯 조건 / 완료 후 연계'
+  _summary: "\uC8FC\uCC28 \uC2DC\uC791 \uD6A8\uACFC\uAC00 \uBA3C\uC800 \uC801\uC6A9\uB418\uACE0, \uADF8 \uACB0\uACFC\uB85C \uC2A4\uD0EF \uC870\uAC74 \uC774\uBCA4\uD2B8\uC640 \uC644\uB8CC \uD6C4 \uC5F0\uACC4 \uBC24 \uB300\uD654\uAC00 \uC774\uC5B4\uC9C0\uB294\uC9C0 \uD655\uC778\uD569\uB2C8\uB2E4."
+  _preTurn: {fileID: 11400000, guid: eedc60c6eaf006741b011252ea008e33, type: 2}
+  _dayFlow: {fileID: 11400000, guid: dba067611fb7eb84580a8862d07a8704, type: 2}
+  _nightFlow: {fileID: 11400000, guid: 3691481ec920c6e488cfefa980b9cd6a, type: 2}
+  _weekRules: []
+  _onWeekStartInteractions:
+  - {fileID: 11400000, guid: c84021ae55a6eb54b80a592f3091bdfa, type: 2}
+  - {fileID: 11400000, guid: dca4730c9c4bbab4abe01234c38a5f07, type: 2}
+  _onWeekEndInteractions: []
+  _cinematicProfile: {fileID: 0}
