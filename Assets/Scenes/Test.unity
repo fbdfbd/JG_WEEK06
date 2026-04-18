@@ -883,8 +883,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154673147}
-  - component: {fileID: 154673150}
-  - component: {fileID: 154673149}
   - component: {fileID: 154673148}
   m_Layer: 0
   m_Name: GameObject
@@ -917,37 +915,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 154673146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e53ad1f895cfc99429034ec04e258866, type: 3}
+  m_Script: {fileID: 11500000, guid: de6d7351983e67e42b6107d6887a1c29, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeekFlowTestController
---- !u!114 &154673149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154673146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7216522d879ee04380c0a3c1be56aa3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeekFlowDebugView
---- !u!114 &154673150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154673146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93167563d2f279a46b9bbff067ae7701, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeekFlowController
-  _weekDefinition: {fileID: 0}
-  _weekDefinitions: []
-  _uiTextCatalog: {fileID: 0}
-  _view: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::WeekFlowPlaytesterController
+  _weekDefinitions:
+  - {fileID: 11400000, guid: b1000000000000000000000000000001, type: 2}
+  - {fileID: 11400000, guid: b1000000000000000000000000000002, type: 2}
 --- !u!1 &181865457
 GameObject:
   m_ObjectHideFlags: 0
@@ -8937,15 +8910,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83278584, g: 1, b: 0.5415094, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 43a7d98bd4222b64e933596512dc09ad, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

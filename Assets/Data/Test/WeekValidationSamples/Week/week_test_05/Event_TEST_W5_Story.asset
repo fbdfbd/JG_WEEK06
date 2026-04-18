@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44809654f209aeb45acdc27cb42ed09d, type: 3}
+  m_Name: Event_TEST_W5_Story
+  m_EditorClassIdentifier: Assembly-CSharp::SO_StoryEventDefinition
+  _id: test_w5_story_external_flag
+  _title: '[W5] StoryEvent FinalFlagCheck'
+  _priority: 90
+  _conditions:
+    _requiredFlags:
+    - {fileID: 11400000, guid: 698ce6bfaf9d17d458bf4879b352cc26, type: 2}
+    _blockedFlags: []
+    _statRequirements: []
+    _informationRequirements: []
+  _firstStep: {fileID: 11400000, guid: 7a50967a01448314eab9e9854a4e1f99, type: 2}
+  _onCompletedInteractions: []
+  _cinematicProfile: {fileID: 0}

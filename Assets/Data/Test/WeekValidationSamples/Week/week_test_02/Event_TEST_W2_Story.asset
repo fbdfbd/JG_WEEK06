@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44809654f209aeb45acdc27cb42ed09d, type: 3}
+  m_Name: Event_TEST_W2_Story
+  m_EditorClassIdentifier: Assembly-CSharp::SO_StoryEventDefinition
+  _id: test_w2_story_info_semantic
+  _title: '[W2] StoryEvent InformationSemantic'
+  _priority: 90
+  _conditions:
+    _requiredFlags: []
+    _blockedFlags: []
+    _statRequirements: []
+    _informationRequirements:
+    - _informationType: {fileID: 11400000, guid: e8644e571406f564b9ea2d52094a16a5, type: 2}
+      _useSemanticFilter: 1
+      _semantic: 0
+      _minimumCount: 1
+  _firstStep: {fileID: 11400000, guid: e284fbbf8b2153f4d81f25a5e4459a90, type: 2}
+  _onCompletedInteractions: []
+  _cinematicProfile: {fileID: 0}
