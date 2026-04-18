@@ -627,51 +627,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145118263}
   m_CullTransparentMesh: 1
---- !u!1 &145433370
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 145433372}
-  - component: {fileID: 145433371}
-  m_Layer: 0
-  m_Name: Managers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &145433371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145433370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117deeb4d279a8d4db193f5911487459, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimManager
-  playerAnim: {fileID: 349305984}
---- !u!4 &145433372
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145433370}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.32575, y: 0.80214, z: -3.08696}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &149596104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1116,44 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1146667015778317453, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
   m_PrefabInstance: {fileID: 2142583235}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &349305988
+--- !u!70 &349305985
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349305983}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.108878136, y: 0.15465641}
+  m_Size: {x: 5.256975, y: 7.883869}
+  m_Direction: 0
+--- !u!114 &349305986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1170,54 +1162,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 349305983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b088a2bf3a73774f9ac76e6c8d5be67, type: 3}
+  m_Script: {fileID: 11500000, guid: 5732424556211cf4f95a683774ef7ae2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UI_NemoInteractionView
-  _nemoButton: {fileID: 349305989}
---- !u!114 &349305989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349305983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  m_EditorClassIdentifier: Assembly-CSharp::NemoEntity
+  playerAnimator: {fileID: 349305984}
+  interactPanel: {fileID: 1588875544}
+  walkSpeed: 3
+  leftEdge: {fileID: 539083791}
+  rightEdge: {fileID: 538385502}
+  idleWeight: 50
+  balanceWeight: 30
+  turnWeight: 20
 --- !u!1 &444067908
 GameObject:
   m_ObjectHideFlags: 0
@@ -7145,6 +7100,7 @@ GameObject:
   - component: {fileID: 2129607669}
   - component: {fileID: 2129607668}
   - component: {fileID: 2129607671}
+  - component: {fileID: 2129607672}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7270,6 +7226,22 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &2129607672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129607667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.Physics2DRaycaster
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!114 &2139925515 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4818098757004927416, guid: 6f4da7b5f8b4057449abc1784d9656f9, type: 3}
@@ -7478,16 +7450,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6241807886558569177, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1883855158615417919, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 349305989}
+      addedObject: {fileID: 349305985}
     - targetCorrespondingSourceObject: {fileID: 1883855158615417919, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 349305988}
+      addedObject: {fileID: 349305986}
   m_SourcePrefab: {fileID: 100100000, guid: 5370183b77991a94f9219d051a25d6ef, type: 3}
 --- !u!1001 &3839356214184943288
 PrefabInstance:
@@ -7786,7 +7759,6 @@ SceneRoots:
   - {fileID: 2129607670}
   - {fileID: 1064148588}
   - {fileID: 2142583235}
-  - {fileID: 145433372}
   - {fileID: 1079370856}
   - {fileID: 1850009226}
   - {fileID: 1989719530}
