@@ -8,7 +8,6 @@ public class UI_WeekFlowScreenView : MonoBehaviour
     [SerializeField] private UI_CharacterStatusView _characterStatusPanel;
     [SerializeField] private UI_TopView _topPanel;
     [SerializeField] private UI_BottomView _bottomPanel;
-    [SerializeField] private UI_SemanticView _semanticPanel;
 
     public event Action RunWeekRequested;
     public event Action<SO_CardInfoDefinition, int> CardOptionSelected;
@@ -111,11 +110,6 @@ public class UI_WeekFlowScreenView : MonoBehaviour
         if (_cardPanel != null)
         {
             _cardPanel.gameObject.SetActive(_isInfoPanelVisible);
-        }
-
-        if (_semanticPanel != null)
-        {
-            _semanticPanel.gameObject.SetActive(_isInfoPanelVisible);
         }
     }
 

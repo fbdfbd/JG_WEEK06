@@ -22,6 +22,7 @@ public class WeekFlowController : MonoBehaviour
     private WeekFlowCommandHandler _commandHandler;
     private WeekFlowNarrativeHandler _narrativeHandler;
     private WeekFlowCinematicDirector _cinematicDirector;
+    private WeekFlowCutsceneBridgeBase _cutsceneBridge;
     private WeekFlowScreen _currentScreen;
     private bool _isTransitionPlaying;
 
@@ -57,6 +58,7 @@ public class WeekFlowController : MonoBehaviour
         _commandHandler = new WeekFlowCommandHandler(_runtimeState, _weekUiText, _weekRunner, _weekSelectionState, _weekSequenceState);
         _narrativeHandler = new WeekFlowNarrativeHandler(_runtimeState, _weekUiText, _weekSelectionState, _weekSequenceState);
         _cinematicDirector = new WeekFlowCinematicDirector(_view, new WeekFlowCinematicResolver());
+        _cutsceneBridge = _view != null ? _view.GetCutsceneBridge() : null;
     }
 
     private void BindViewEvents()
@@ -144,11 +146,27 @@ public class WeekFlowController : MonoBehaviour
             if (_currentScreen != null)
             {
                 _presenter.PresentScreen(_currentScreen);
+                _view?.SetFlowScreenContext(_currentScreen, _runtimeState.ChildState, _runtimeState.LastWeekResult);
                 _presenter.PublishNemoFeedback(_currentScreen.NemoFeedback);
                 yield return _cinematicDirector.PlayScreenEnter(_currentScreen);
+                yield return PlayScreenEnterCutscene(_currentScreen);
+                yield return _view.PlayCurrentDialogueCutscene();
             }
         }
 
         _isTransitionPlaying = false;
+    }
+
+    private IEnumerator PlayScreenEnterCutscene(WeekFlowScreen screen)
+    {
+        if (_cutsceneBridge == null || screen == null)
+        {
+            yield break;
+        }
+
+        yield return _cutsceneBridge.Play(WeekFlowCutsceneRequest.CreateScreenEnter(
+            screen,
+            _runtimeState.ChildState,
+            _runtimeState.LastWeekResult));
     }
 }

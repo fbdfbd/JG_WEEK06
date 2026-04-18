@@ -26,10 +26,15 @@ public class UI_DialogueScreenView : MonoBehaviour
     private readonly List<string> _choiceLabels = new();
 
     private WeekFlowDialogueLogService _dialogueLogService;
+    private WeekFlowCutsceneBridgeBase _cutsceneBridge;
+    private WeekFlowScreen _currentScreen;
+    private RuntimeChildState _currentChildState;
+    private RuntimeWeekResult _currentWeekResult;
     private EDialogueLogSource _currentLogSource;
     private string _currentLogTitle = string.Empty;
     private int _currentDialogueIndex;
     private int _lastLoggedDialogueIndex = -1;
+    private Coroutine _currentDialogueCutsceneRoutine;
 
     private void Awake()
     {
@@ -94,6 +99,31 @@ public class UI_DialogueScreenView : MonoBehaviour
         _dialogueLogService = dialogueLogService;
     }
 
+    public void SetCutsceneBridge(WeekFlowCutsceneBridgeBase cutsceneBridge)
+    {
+        _cutsceneBridge = cutsceneBridge;
+    }
+
+    public void SetScreenContext(WeekFlowScreen screen, RuntimeChildState childState, RuntimeWeekResult lastWeekResult)
+    {
+        _currentScreen = screen;
+        _currentChildState = childState;
+        _currentWeekResult = lastWeekResult;
+    }
+
+    public System.Collections.IEnumerator PlayCurrentDialogueCutscene()
+    {
+        StopDialogueCutsceneRoutine(false);
+
+        if (!CanPlayCurrentDialogueCutscene())
+        {
+            RefreshInteractionButtons();
+            yield break;
+        }
+
+        yield return PlayCurrentDialogueCutsceneInternal();
+    }
+
     private void BindChoicePanelEvents()
     {
         if (_choicePanel == null)
@@ -147,6 +177,12 @@ public class UI_DialogueScreenView : MonoBehaviour
             return;
         }
 
+        if (TrySkipCurrentDialogueCutscene())
+        {
+            RefreshInteractionButtons();
+            return;
+        }
+
         if (TryMoveToNextDialogueLine())
         {
             return;
@@ -163,7 +199,7 @@ public class UI_DialogueScreenView : MonoBehaviour
         }
 
         _currentDialogueIndex++;
-        RefreshDialogue();
+        RefreshDialogue(true);
         RefreshInteractionButtons();
         return true;
     }
@@ -171,18 +207,22 @@ public class UI_DialogueScreenView : MonoBehaviour
     private void ShowView()
     {
         gameObject.SetActive(true);
-        RefreshDialogue();
+        RefreshDialogue(false);
         RefreshInteractionButtons();
     }
 
     private void ResetScreen()
     {
+        StopDialogueCutsceneRoutine(true);
         _dialogueLines.Clear();
         _choiceLabels.Clear();
         _currentDialogueIndex = 0;
         _lastLoggedDialogueIndex = -1;
         _currentLogSource = EDialogueLogSource.EventStep;
         _currentLogTitle = string.Empty;
+        _currentScreen = null;
+        _currentChildState = null;
+        _currentWeekResult = null;
 
         SetHeaderTexts(string.Empty, string.Empty, string.Empty);
 
@@ -328,6 +368,11 @@ public class UI_DialogueScreenView : MonoBehaviour
 
     private void RefreshDialogue()
     {
+        RefreshDialogue(false);
+    }
+
+    private void RefreshDialogue(bool shouldPlayCutscene)
+    {
         if (_dialogPanel == null)
         {
             return;
@@ -343,6 +388,11 @@ public class UI_DialogueScreenView : MonoBehaviour
         _dialogPanel.gameObject.SetActive(true);
         _dialogPanel.SetDialogue(line.SpeakerName, line.Text);
         AppendCurrentDialogueLineToLog(line);
+
+        if (shouldPlayCutscene)
+        {
+            StartCurrentDialogueCutscene();
+        }
     }
 
     private void RefreshInteractionButtons()
@@ -381,6 +431,11 @@ public class UI_DialogueScreenView : MonoBehaviour
             return false;
         }
 
+        if (IsBlockingDialogueCutscenePlaying())
+        {
+            return false;
+        }
+
         return _currentDialogueIndex >= _dialogueLines.Count - 1;
     }
 
@@ -409,5 +464,79 @@ public class UI_DialogueScreenView : MonoBehaviour
             line.Text));
 
         _lastLoggedDialogueIndex = _currentDialogueIndex;
+    }
+
+    private void StartCurrentDialogueCutscene()
+    {
+        StopDialogueCutsceneRoutine(false);
+
+        if (!CanPlayCurrentDialogueCutscene())
+        {
+            RefreshInteractionButtons();
+            return;
+        }
+
+        _currentDialogueCutsceneRoutine = StartCoroutine(PlayCurrentDialogueCutsceneRoutine());
+    }
+
+    private System.Collections.IEnumerator PlayCurrentDialogueCutsceneInternal()
+    {
+        yield return PlayCurrentDialogueCutsceneRoutine();
+    }
+
+    private System.Collections.IEnumerator PlayCurrentDialogueCutsceneRoutine()
+    {
+        if (!CanPlayCurrentDialogueCutscene())
+        {
+            _currentDialogueCutsceneRoutine = null;
+            yield break;
+        }
+
+        yield return _cutsceneBridge.Play(WeekFlowCutsceneRequest.CreateLineEnter(
+            _currentScreen,
+            _currentDialogueIndex,
+            _currentChildState,
+            _currentWeekResult));
+
+        _currentDialogueCutsceneRoutine = null;
+        RefreshInteractionButtons();
+    }
+
+    private bool CanPlayCurrentDialogueCutscene()
+    {
+        return _cutsceneBridge != null
+            && _currentScreen != null
+            && _dialogueLines.Count > 0
+            && _currentDialogueIndex >= 0
+            && _currentDialogueIndex < _dialogueLines.Count;
+    }
+
+    private bool TrySkipCurrentDialogueCutscene()
+    {
+        if (_cutsceneBridge == null)
+        {
+            return false;
+        }
+
+        return _cutsceneBridge.TrySkip();
+    }
+
+    private bool IsBlockingDialogueCutscenePlaying()
+    {
+        return _cutsceneBridge != null && _cutsceneBridge.IsBlocking;
+    }
+
+    private void StopDialogueCutsceneRoutine(bool stopBridge)
+    {
+        if (_currentDialogueCutsceneRoutine != null)
+        {
+            StopCoroutine(_currentDialogueCutsceneRoutine);
+            _currentDialogueCutsceneRoutine = null;
+        }
+
+        if (stopBridge && _cutsceneBridge != null)
+        {
+            _cutsceneBridge.StopImmediate();
+        }
     }
 }
