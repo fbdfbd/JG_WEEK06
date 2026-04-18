@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Art/BackGroundImage.meta
+guid: 85e16f493f52fcc43a07a082c6f0260b
+folderAsset: yes
+========
 guid: f6dcef73a254e9947b0a0e049ca873ea
+>>>>>>>> dev:Assets/Scenes/Main/InGame.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
