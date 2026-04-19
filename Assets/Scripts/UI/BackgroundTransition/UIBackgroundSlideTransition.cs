@@ -8,45 +8,31 @@ public enum SlideDirection
     FromLeftToRight,
 }
 
-public class UIBackgroundSlideTransition : MonoBehaviour
+public class UIBackgroundSlideTransition : UIBackgroundTransitionBase
 {
-    [SerializeField] private RectTransform viewport; // 보통 BackgroundRoot
+    [SerializeField] private RectTransform viewport;
     [SerializeField, Min(0f)] private float duration = 0.5f;
     [SerializeField] private SlideDirection direction = SlideDirection.FromRightToLeft;
     [SerializeField] private AnimationCurve easing = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
-    private Coroutine playingRoutine;
+    private Coroutine routine;
 
-    public bool IsPlaying => playingRoutine != null;
+    public override bool IsPlaying => routine != null;
 
-    public void Play(
+    public override void Play(
         RectTransform current,
         Vector2 currentBasePosition,
         RectTransform next,
         Vector2 nextBasePosition,
         Action onFinished)
     {
-        if (current == null || next == null)
+        if (routine != null)
         {
-            onFinished?.Invoke();
-            return;
+            StopCoroutine(routine);
+            routine = null;
         }
 
-        if (current.parent != next.parent)
-        {
-            Debug.LogWarning("배경 UI들은 반드시 같은 부모 아래에 있어야 합니다.");
-            onFinished?.Invoke();
-            return;
-        }
-
-        if (playingRoutine != null)
-        {
-            StopCoroutine(playingRoutine);
-            playingRoutine = null;
-        }
-
-        playingRoutine = StartCoroutine(
-            PlayRoutine(current, currentBasePosition, next, nextBasePosition, onFinished));
+        routine = StartCoroutine(PlayRoutine(current, currentBasePosition, next, nextBasePosition, onFinished));
     }
 
     private IEnumerator PlayRoutine(
@@ -56,24 +42,26 @@ public class UIBackgroundSlideTransition : MonoBehaviour
         Vector2 nextBasePosition,
         Action onFinished)
     {
-        RectTransform parentRect = current.parent as RectTransform;
+        if (current == null || next == null)
+        {
+            onFinished?.Invoke();
+            routine = null;
+            yield break;
+        }
 
-        if (viewport != null)
-            viewport.ForceUpdateRectTransforms();
-
-        if (parentRect != null)
-            parentRect.ForceUpdateRectTransforms();
-
-        float width = GetSlideWidth(parentRect);
-        Vector2 offset = GetOffset(width);
+        float width = GetWidth(next);
+        Vector2 offset = direction == SlideDirection.FromRightToLeft
+            ? new Vector2(width, 0f)
+            : new Vector2(-width, 0f);
 
         current.gameObject.SetActive(true);
         next.gameObject.SetActive(true);
 
-        // 중요: 새 배경을 제일 위로
+        current.localScale = Vector3.one;
+        next.localScale = Vector3.one;
+
         next.SetAsLastSibling();
 
-        // 시작 위치 세팅
         current.anchoredPosition = currentBasePosition;
         next.anchoredPosition = nextBasePosition + offset;
 
@@ -98,41 +86,26 @@ public class UIBackgroundSlideTransition : MonoBehaviour
             yield return null;
         }
 
-        // 최종 정리
         current.anchoredPosition = currentBasePosition;
         next.anchoredPosition = nextBasePosition;
 
         current.gameObject.SetActive(false);
         next.gameObject.SetActive(true);
-
-        // 끝난 뒤에도 현재 배경은 맨 위 유지
         next.SetAsLastSibling();
 
-        playingRoutine = null;
+        routine = null;
         onFinished?.Invoke();
     }
 
-    private float GetSlideWidth(RectTransform parentRect)
+    private float GetWidth(RectTransform target)
     {
         if (viewport != null)
             return viewport.rect.width;
 
-        if (parentRect != null)
-            return parentRect.rect.width;
+        RectTransform parent = target.parent as RectTransform;
+        if (parent != null)
+            return parent.rect.width;
 
         return Screen.width;
-    }
-
-    private Vector2 GetOffset(float width)
-    {
-        switch (direction)
-        {
-            case SlideDirection.FromLeftToRight:
-                return new Vector2(-width, 0f);
-
-            case SlideDirection.FromRightToLeft:
-            default:
-                return new Vector2(width, 0f);
-        }
     }
 }

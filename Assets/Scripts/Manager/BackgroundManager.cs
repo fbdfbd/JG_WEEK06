@@ -14,6 +14,13 @@ public enum BackgroundType
     Study,
 }
 
+public enum BackgroundTransitionMode
+{
+    None,
+    Slide,
+    Pop,
+}
+
 public class BackgroundManager : MonoBehaviour
 {
     public static BackgroundManager I { get; private set; }
@@ -28,9 +35,15 @@ public class BackgroundManager : MonoBehaviour
         [NonSerialized] public Vector2 initialAnchoredPosition;
     }
 
+    [Header("Backgrounds")]
     [SerializeField] private BackgroundEntry[] backgrounds;
     [SerializeField] private BackgroundType defaultBackground;
-    [SerializeField] private UIBackgroundSlideTransition transition;
+
+    [Header("Transition")]
+    [SerializeField] private BackgroundTransitionMode transitionMode = BackgroundTransitionMode.Slide;
+    [SerializeField] private UINoBackgroundTransition noTransition;
+    [SerializeField] private UIBackgroundSlideTransition slideTransition;
+    [SerializeField] private UIBackgroundPopTransition popTransition;
 
     private readonly Dictionary<BackgroundType, BackgroundEntry> backgroundMap = new();
 
@@ -47,6 +60,7 @@ public class BackgroundManager : MonoBehaviour
         }
 
         I = this;
+
         BuildMap();
         Initialize(defaultBackground);
     }
@@ -64,6 +78,8 @@ public class BackgroundManager : MonoBehaviour
 
         if (currentEntry != null && currentEntry.type == type)
             return;
+
+        UIBackgroundTransitionBase transition = GetSelectedTransition();
 
         if (currentEntry == null || transition == null)
         {
@@ -93,6 +109,27 @@ public class BackgroundManager : MonoBehaviour
             return;
 
         ShowBackground(defaultBackground);
+    }
+
+    public void SetTransitionMode(BackgroundTransitionMode mode)
+    {
+        transitionMode = mode;
+    }
+
+    private UIBackgroundTransitionBase GetSelectedTransition()
+    {
+        switch (transitionMode)
+        {
+            case BackgroundTransitionMode.None:
+                return noTransition;
+
+            case BackgroundTransitionMode.Pop:
+                return popTransition;
+
+            case BackgroundTransitionMode.Slide:
+            default:
+                return slideTransition;
+        }
     }
 
     private void BuildMap()
@@ -127,15 +164,17 @@ public class BackgroundManager : MonoBehaviour
                 continue;
             }
 
-            entry.rect = entry.targetImage.rectTransform;
+            RectTransform rect = entry.targetImage.rectTransform;
 
-            if (entry.rect == null)
+            if (rect == null)
             {
                 Debug.LogWarning($"backgrounds[{i}] ({entry.type}) 의 RectTransform을 찾을 수 없습니다.");
                 continue;
             }
 
-            entry.initialAnchoredPosition = entry.rect.anchoredPosition;
+            entry.rect = rect;
+            entry.initialAnchoredPosition = rect.anchoredPosition;
+
             backgroundMap.Add(entry.type, entry);
         }
     }
@@ -147,7 +186,11 @@ public class BackgroundManager : MonoBehaviour
 
         foreach (BackgroundEntry entry in backgroundMap.Values)
         {
+            if (entry.rect == null)
+                continue;
+
             entry.rect.anchoredPosition = entry.initialAnchoredPosition;
+            entry.rect.localScale = Vector3.one;
             entry.targetImage.gameObject.SetActive(entry.type == startType);
         }
 
@@ -162,9 +205,13 @@ public class BackgroundManager : MonoBehaviour
     {
         foreach (BackgroundEntry entry in backgroundMap.Values)
         {
+            if (entry.rect == null)
+                continue;
+
             bool shouldShow = entry.type == nextEntry.type;
 
             entry.rect.anchoredPosition = entry.initialAnchoredPosition;
+            entry.rect.localScale = Vector3.one;
             entry.targetImage.gameObject.SetActive(shouldShow);
         }
 
