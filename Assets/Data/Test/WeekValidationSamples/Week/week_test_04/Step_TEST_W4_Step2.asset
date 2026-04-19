@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: Step_TEST_W4_Step2
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: '[W4][STORY] Step2 has choices and custom visual state'
+  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: DefaultNextStep
+    \uC774\uD6C4 Choice \uBD84\uAE30 + custom visual state."
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: '[W4][STORY] You are now on Step2. Pick A or B.'
+  _nemoLine: '[W4][STORY] You are now on Step2. Pick A or B.'
+  _useCustomVisualState: 1
+  _visualState: 5
+  _onEnterInteractions: []
+  _choices:
+  - _label: '[W4][CHOICE A] Result + move to Step3'
+    _responseDialogueLines:
+    - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+      _text: '[W4][CHOICE A] Step3 will open next.'
+    _responseLine: 'W4 TEST RESULT: Choice A selected.'
+    _interactions:
+    - {fileID: 11400000, guid: fffccd47899f617438b6dbd13f98fc28, type: 2}
+    - {fileID: 11400000, guid: c8c2f88d5c42ac34d95fc6a614ae8ac2, type: 2}
+    _nextStep: {fileID: 11400000, guid: c074f5538602d7b4dae9a599ca9634b6, type: 2}
+    _resultCinematicCues:
+      _enterCue: {fileID: 0}
+      _exitCue: {fileID: 0}
+  - _label: '[W4][CHOICE B] Result + end event'
+    _responseDialogueLines:
+    - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+      _text: '[W4][CHOICE B] Event will end after this result screen.'
+    _responseLine: 'W4 TEST RESULT: Choice B selected.'
+    _interactions:
+    - {fileID: 11400000, guid: 45df65fdfdb6c9048a688b82fd984b28, type: 2}
+    - {fileID: 11400000, guid: 9761ef2f582609649bd457e244926817, type: 2}
+    _nextStep: {fileID: 0}
+    _resultCinematicCues:
+      _enterCue: {fileID: 0}
+      _exitCue: {fileID: 0}
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

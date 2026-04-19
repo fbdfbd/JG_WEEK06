@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: Step_TEST_W1_Routine
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: '[W1][ROUTINE] Triggered because Letter=Blocked'
+  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: DayRoutineEvent
+    + related type + preferred semantic."
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: '[W1][ROUTINE] Letter card was Blocked, so this routine event fired.'
+  _nemoLine: '[W1][ROUTINE] Letter card was Blocked, so this routine event fired.'
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: a14d4e8e8cf29b84ea2f56d14903d912, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: Card_TEST_W1_External
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_test_w1_external
+  _cardType: {fileID: 11400000, guid: fb5f5a6ef4641de4eba3ccf6fd9d195e, type: 2}
+  _title: '[W1][CARD] Default=Direct -> NIGHT dialogue trigger'
+  _originalText: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
+    External=Direct\uAC00 \uC801\uC6A9\uB418\uC5B4 W1 \uBC24 \uB300\uD654 \uC774\uBCA4\uD2B8\uAC00
+    \uC5F4\uB9BD\uB2C8\uB2E4."
+  _options:
+  - _semantic: 0
+    _label: "\uC678\uBD80 \uC18C\uBB38 \uD5C8"
+    _presentedText: 'W1 TEST RESULT: External direct semantic applied.'
+    _interactions:
+    - {fileID: 11400000, guid: d58fd4653c271b2488a2bd8f7761b518, type: 2}
+    - {fileID: 11400000, guid: e508ebd83a96c5243962c64a4c3539d0, type: 2}
+  - _semantic: 1
+    _label: Modified -> compare no night flag
+    _presentedText: 'W1 TEST RESULT: External modified semantic applied.'
+    _interactions:
+    - {fileID: 11400000, guid: eae4044633908994ca5dd9b07b5c955c, type: 2}
+  - _semantic: 2
+    _label: Blocked -> compare no night flag
+    _presentedText: 'W1 TEST RESULT: External blocked semantic applied.'
+    _interactions:
+    - {fileID: 11400000, guid: fffccd47899f617438b6dbd13f98fc28, type: 2}
