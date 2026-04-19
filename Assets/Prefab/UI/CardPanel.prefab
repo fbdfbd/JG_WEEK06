@@ -359,6 +359,8 @@ GameObject:
   - component: {fileID: 4103388834606208775}
   - component: {fileID: 6690145041292561239}
   - component: {fileID: 1317325393020401590}
+  - component: {fileID: 1920450169981575664}
+  - component: {fileID: 3263018914077032081}
   m_Layer: 5
   m_Name: CardPanel
   m_TagString: Untagged
@@ -435,6 +437,47 @@ MonoBehaviour:
   _directButton: {fileID: 0}
   _prevButton: {fileID: 3307420377179144425}
   _nextButton: {fileID: 6364990973900315815}
+--- !u!114 &1920450169981575664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259159961197314196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a00e1919234a6444b13abb0011a42dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI_CardShowEffect
+  root: {fileID: 0}
+  visual: {fileID: 0}
+  canvasGroup: {fileID: 3263018914077032081}
+  playOpenOnEnable: 1
+  ignoreTimeScale: 1
+  moveFrom: {x: -40, y: -40}
+  hiddenScale: {x: 0.85, y: 0.85, z: 1}
+  openDuration: 0.32
+  closeDuration: 0.22
+  openEase: 9
+  closeEase: 8
+  onOpened:
+    m_PersistentCalls:
+      m_Calls: []
+  onClosed:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!225 &3263018914077032081
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259159961197314196}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1419449815642609191
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9528302, g: 0.8335757, b: 0.50787646, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -1,0 +1,129 @@
+using DG.Tweening;
+using TMPro;
+using UnityEngine;
+
+public class UI_ChildStateToastItem : MonoBehaviour
+{
+    [SerializeField] private CanvasGroup _canvasGroup;
+    [SerializeField] private RectTransform _rectTransform;
+    [SerializeField] private TextMeshProUGUI _messageText;
+    [SerializeField] private float _fadeInDuration = 0.12f;
+    [SerializeField] private float _moveDuration = 0.55f;
+    [SerializeField] private float _moveDistance = 50f;
+
+    private Tween _playingTween;
+    private Vector2 _defaultPosition;
+    private bool _initialized;
+
+    private void Awake()
+    {
+        CacheReferences();
+        HideImmediate();
+    }
+
+    private void OnDestroy()
+    {
+        StopCurrentTween();
+    }
+
+    public void Play(string message)
+    {
+        CacheReferences();
+        StopCurrentTween();
+
+        if (_messageText != null)
+        {
+            _messageText.text = message;
+        }
+
+        gameObject.SetActive(true);
+
+        if (_rectTransform != null)
+        {
+            _rectTransform.anchoredPosition = _defaultPosition;
+        }
+
+        if (_canvasGroup != null)
+        {
+            _canvasGroup.alpha = 0f;
+        }
+
+        Sequence sequence = DOTween.Sequence();
+
+        if (_canvasGroup != null)
+        {
+            sequence.Append(_canvasGroup.DOFade(1f, _fadeInDuration));
+        }
+
+        if (_rectTransform != null)
+        {
+            sequence.Join(_rectTransform.DOAnchorPosY(
+                _defaultPosition.y + _moveDistance,
+                _moveDuration).SetEase(Ease.OutQuad));
+        }
+
+        if (_canvasGroup != null)
+        {
+            sequence.Append(_canvasGroup.DOFade(0f, _moveDuration).SetEase(Ease.InQuad));
+        }
+
+        sequence.OnComplete(HideImmediate);
+        _playingTween = sequence;
+    }
+
+    private void CacheReferences()
+    {
+        if (_initialized)
+        {
+            return;
+        }
+
+        if (_rectTransform == null)
+        {
+            _rectTransform = GetComponent<RectTransform>();
+        }
+
+        if (_canvasGroup == null)
+        {
+            _canvasGroup = GetComponent<CanvasGroup>();
+        }
+
+        if (_rectTransform != null)
+        {
+            _defaultPosition = _rectTransform.anchoredPosition;
+        }
+
+        _initialized = true;
+    }
+
+    private void HideImmediate()
+    {
+        if (_canvasGroup != null)
+        {
+            _canvasGroup.alpha = 0f;
+        }
+
+        if (_rectTransform != null)
+        {
+            _rectTransform.anchoredPosition = _defaultPosition;
+        }
+
+        gameObject.SetActive(false);
+        _playingTween = null;
+    }
+
+    private void StopCurrentTween()
+    {
+        if (_playingTween == null)
+        {
+            return;
+        }
+
+        if (_playingTween.IsActive())
+        {
+            _playingTween.Kill();
+        }
+
+        _playingTween = null;
+    }
+}

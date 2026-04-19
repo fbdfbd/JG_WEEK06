@@ -14,6 +14,9 @@ public class RuntimeChildState
     private readonly HashSet<SO_FlagDefinition> _flags = new();
     private readonly List<string> _reactionLogs = new();
 
+    public event Action<StatChangeInfo> StatChanged;
+    public event Action<FlagChangeInfo> FlagChanged;
+
     public RuntimeChildState()
     {
         InitializeDefaultStats();
@@ -35,7 +38,15 @@ public class RuntimeChildState
 
     public void SetStat(EChildStatusType statType, int value)
     {
-        _stats[statType] = ClampStat(value);
+        int previousValue = GetStat(statType);
+        int currentValue = ClampStat(value);
+        if (previousValue == currentValue)
+        {
+            return;
+        }
+
+        _stats[statType] = currentValue;
+        StatChanged?.Invoke(new StatChangeInfo(statType, previousValue, currentValue));
     }
 
     public void AddStat(EChildStatusType statType, int amount)
@@ -65,7 +76,10 @@ public class RuntimeChildState
             return;
         }
 
-        _flags.Add(flagDefinition);
+        if (_flags.Add(flagDefinition))
+        {
+            FlagChanged?.Invoke(new FlagChangeInfo(flagDefinition, true));
+        }
     }
 
     public void RemoveFlag(SO_FlagDefinition flagDefinition)
@@ -75,7 +89,10 @@ public class RuntimeChildState
             return;
         }
 
-        _flags.Remove(flagDefinition);
+        if (_flags.Remove(flagDefinition))
+        {
+            FlagChanged?.Invoke(new FlagChangeInfo(flagDefinition, false));
+        }
     }
 
     public void AddReactionLog(string reactionText)
@@ -115,6 +132,33 @@ public class RuntimeChildState
 
         return value;
     }
+}
+
+public readonly struct StatChangeInfo
+{
+    public StatChangeInfo(EChildStatusType statType, int previousValue, int currentValue)
+    {
+        StatType = statType;
+        PreviousValue = previousValue;
+        CurrentValue = currentValue;
+    }
+
+    public EChildStatusType StatType { get; }
+    public int PreviousValue { get; }
+    public int CurrentValue { get; }
+    public int Delta => CurrentValue - PreviousValue;
+}
+
+public readonly struct FlagChangeInfo
+{
+    public FlagChangeInfo(SO_FlagDefinition flagDefinition, bool added)
+    {
+        FlagDefinition = flagDefinition;
+        Added = added;
+    }
+
+    public SO_FlagDefinition FlagDefinition { get; }
+    public bool Added { get; }
 }
 
 public enum EChildStatusType

@@ -5,10 +5,11 @@ public sealed class WeekFlowRuntimeState
 {
     private readonly List<SO_InteractiveEventDefinition> _pendingEvents = new();
     private int _nextEventIndex;
+    public event Action<RuntimeChildState> ChildStateReplaced;
 
     public WeekFlowRuntimeState()
     {
-        ChildState = new RuntimeChildState();
+        SetChildState(new RuntimeChildState(), false);
         ClearPendingEventState();
         StatusMessage = "Week flow is ready.";
     }
@@ -23,7 +24,7 @@ public sealed class WeekFlowRuntimeState
 
     public void ResetChildState()
     {
-        ChildState = new RuntimeChildState();
+        SetChildState(new RuntimeChildState(), true);
         LastWeekResult = null;
         HasReachedEnding = false;
         ClearPendingEventState();
@@ -72,6 +73,15 @@ public sealed class WeekFlowRuntimeState
     public void SetStatusMessage(string statusMessage)
     {
         StatusMessage = statusMessage;
+    }
+
+    private void SetChildState(RuntimeChildState childState, bool notify)
+    {
+        ChildState = childState;
+        if (notify)
+        {
+            ChildStateReplaced?.Invoke(ChildState);
+        }
     }
 }
 
