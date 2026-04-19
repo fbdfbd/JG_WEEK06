@@ -143,8 +143,10 @@ public class NemoRoutine
             return false;
         }
 
-        return _transform.position.x >= _rightEdge.position.x
-            || _transform.position.x <= _leftEdge.position.x;
+        bool hitRightEdge = _transform.position.x >= _rightEdge.position.x && _moveDirection == Vector3.right;
+        bool hitLeftEdge = _transform.position.x <= _leftEdge.position.x && _moveDirection == Vector3.left;
+
+        return hitRightEdge || hitLeftEdge;
     }
 
     private bool RandomBehavior()
