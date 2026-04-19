@@ -44,8 +44,9 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (Instance != null)
         {
+            Debug.Log("Instance가 null이 아님");
             Destroy(gameObject);
             return;
         }
