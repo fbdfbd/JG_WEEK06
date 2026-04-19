@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
+  m_Name: WeekPreTurn_WeekDefinition_TEST_W3
+  m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
+  _title: '[TEST WEEK 3] WeekStartGroup + StatCondition + EventComplete / PreTurn'
+  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
+    WeekStart group interaction\uC73C\uB85C Curiosity\uAC00 \uBA3C\uC800 \uC62C\uB77C\uAC00\uACE0,
+    \uADF8 \uB355\uBD84\uC5D0 StatCondition Story\uAC00 \uC5F4\uB9BD\uB2C8\uB2E4."
+  _informationCards:
+  - _card: {fileID: 11400000, guid: b8ba4f04e0f665f4c840704a417191ae, type: 2}
+    _isRequired: 1
+    _displayOrder: 0
+  - _card: {fileID: 11400000, guid: d0bb9fdf1a72bf24f98bd614352712d7, type: 2}
+    _isRequired: 1
+    _displayOrder: 1

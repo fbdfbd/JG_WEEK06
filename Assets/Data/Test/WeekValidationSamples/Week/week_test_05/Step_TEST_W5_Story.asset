@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: Step_TEST_W5_Story
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: '[W5][STORY] Final story before ending'
+  _bodyText: "\uD14C\uC2A4\uD2B8 \uD655\uC778 \uD3EC\uC778\uD2B8: \uB9C8\uC9C0\uB9C9
+    \uC8FC\uCC28 \uC2A4\uD1A0\uB9AC \uC2E4\uD589 \uD6C4 \uC5D4\uB529\uC73C\uB85C
+    \uC790\uC5F0\uC2A4\uB7FD\uAC8C \uC774\uC5B4\uC9C0\uB294\uC9C0 \uD655\uC778."
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: 759cb171cd7f43c4cafa8241466c376b, type: 2}
+    _text: '[W5][STORY] Final story event triggered before ending.'
+  _nemoLine: '[W5][STORY] Final story event triggered before ending.'
+  _useCustomVisualState: 1
+  _visualState: 2
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: 7ec8e8fff5b0e49408a75434b009be69, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

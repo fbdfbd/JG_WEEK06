@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edff9b7bd1a506a42a33e4d294868a53, type: 3}
+  m_Name: WeekDefinition_TEST_W3
+  m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
+  _id: test_week_03
+  _weekIndex: 3
+  _title: '[TEST WEEK 3] WeekStartGroup + StatCondition + EventComplete'
+  _summary: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
+    WeekStart group interaction\uC73C\uB85C Curiosity\uAC00 \uBA3C\uC800 \uC62C\uB77C\uAC00\uACE0,
+    \uADF8 \uB355\uBD84\uC5D0 StatCondition Story\uAC00 \uC5F4\uB9BD\uB2C8\uB2E4."
+  _preTurn: {fileID: 11400000, guid: 0fe89896d76482242a48926f6153a7cf, type: 2}
+  _dayFlow: {fileID: 11400000, guid: 02c05c71eecfa8342b6626adc56cc471, type: 2}
+  _nightFlow: {fileID: 11400000, guid: e7f7378278f48b645a1070e3c7dcfa57, type: 2}
+  _weekRules: []
+  _onWeekStartInteractions:
+  - {fileID: 11400000, guid: 4f7e444ffe5829f40976e3eddee74522, type: 2}
+  - {fileID: 11400000, guid: 579d5e94803382f42b4f65262b0396b9, type: 2}
+  _onWeekEndInteractions: []
+  _cinematicProfile: {fileID: 0}
