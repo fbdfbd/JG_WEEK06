@@ -128,12 +128,6 @@ public sealed class WeekFlowCommandHandler
             return ContinueAfterWeekFlow();
         }
 
-        if (!eventSession.HasAppliedCurrentStep)
-        {
-            GameplayInteractionExecutor.ApplyAll(eventSession.CurrentStep.OnEnterInteractions, _runtimeState.ChildState);
-            eventSession.MarkCurrentStepApplied();
-        }
-
         InteractiveEventPresentation presentation = WeekNarrativeResolver.CreatePresentation(
             eventSession,
             _runtimeState.ChildState,

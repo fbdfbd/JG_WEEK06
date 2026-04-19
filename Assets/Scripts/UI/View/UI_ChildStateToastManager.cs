@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class UI_ChildStateToastManager : MonoBehaviour
@@ -8,6 +9,7 @@ public class UI_ChildStateToastManager : MonoBehaviour
 
     private RuntimeChildState _childState;
     private int _nextToastIndex;
+    private readonly Queue<string> _queuedToastMessages = new();
     private WeekUiTextProvider _weekUiText;
 
     private void Awake()
@@ -28,6 +30,7 @@ public class UI_ChildStateToastManager : MonoBehaviour
         }
 
         _weekFlowController.ChildStateSourceChanged += HandleChildStateSourceChanged;
+        _weekFlowController.FlowPresentationCompleted += HandleFlowPresentationCompleted;
         BindChildState(_weekFlowController.CurrentChildState);
     }
 
@@ -36,9 +39,11 @@ public class UI_ChildStateToastManager : MonoBehaviour
         if (_weekFlowController != null)
         {
             _weekFlowController.ChildStateSourceChanged -= HandleChildStateSourceChanged;
+            _weekFlowController.FlowPresentationCompleted -= HandleFlowPresentationCompleted;
         }
 
         BindChildState(null);
+        _queuedToastMessages.Clear();
     }
 
     private void HandleChildStateSourceChanged(RuntimeChildState childState)
@@ -73,6 +78,24 @@ public class UI_ChildStateToastManager : MonoBehaviour
             return;
         }
 
+        _queuedToastMessages.Enqueue(BuildStatMessage(changeInfo));
+    }
+
+    private void HandleFlowPresentationCompleted()
+    {
+        while (_queuedToastMessages.Count > 0)
+        {
+            PlayToast(_queuedToastMessages.Dequeue());
+        }
+    }
+
+    private void PlayToast(string message)
+    {
+        if (string.IsNullOrWhiteSpace(message) || _toastItems == null || _toastItems.Length == 0)
+        {
+            return;
+        }
+
         UI_ChildStateToastItem toastItem = _toastItems[_nextToastIndex % _toastItems.Length];
         _nextToastIndex++;
 
@@ -81,7 +104,7 @@ public class UI_ChildStateToastManager : MonoBehaviour
             return;
         }
 
-        toastItem.Play(BuildStatMessage(changeInfo));
+        toastItem.Play(message);
     }
 
     private string BuildStatMessage(StatChangeInfo changeInfo)

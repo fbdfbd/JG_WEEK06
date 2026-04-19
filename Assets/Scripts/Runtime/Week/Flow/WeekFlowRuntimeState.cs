@@ -96,12 +96,18 @@ public sealed class RuntimeInteractiveEventSession
     public SO_InteractiveEventDefinition EventDefinition { get; }
     public SO_InteractiveEventStepDefinition CurrentStep { get; private set; }
     public InteractiveEventChoiceData SelectedChoice { get; private set; }
-    public bool HasAppliedCurrentStep { get; private set; }
+    public bool HasAppliedCurrentStepEffects { get; private set; }
+    public bool HasAppliedCurrentStep => HasAppliedCurrentStepEffects;
     public bool HasPendingChoiceResult => SelectedChoice != null;
+
+    public void MarkCurrentStepEffectsApplied()
+    {
+        HasAppliedCurrentStepEffects = true;
+    }
 
     public void MarkCurrentStepApplied()
     {
-        HasAppliedCurrentStep = true;
+        MarkCurrentStepEffectsApplied();
     }
 
     public void SelectChoice(InteractiveEventChoiceData choice)
@@ -124,7 +130,7 @@ public sealed class RuntimeInteractiveEventSession
 
         CurrentStep = nextStep;
         SelectedChoice = null;
-        HasAppliedCurrentStep = false;
+        HasAppliedCurrentStepEffects = false;
         return true;
     }
 

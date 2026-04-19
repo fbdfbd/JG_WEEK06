@@ -35,6 +35,8 @@ public sealed class WeekFlowNarrativeHandler
             return WeekFlowActionResult.None;
         }
 
+        ApplyCurrentStepEffectsIfNeeded(eventSession);
+
         if (eventSession.HasPendingChoiceResult)
         {
             eventSession.ClearChoiceResult();
@@ -118,12 +120,6 @@ public sealed class WeekFlowNarrativeHandler
             return ContinuePostWeekFlow();
         }
 
-        if (!eventSession.HasAppliedCurrentStep)
-        {
-            GameplayInteractionExecutor.ApplyAll(eventSession.CurrentStep.OnEnterInteractions, _runtimeState.ChildState);
-            eventSession.MarkCurrentStepApplied();
-        }
-
         InteractiveEventPresentation presentation = WeekNarrativeResolver.CreatePresentation(eventSession, _runtimeState.ChildState, _weekUiText);
         DialogueLinePresentation line = WeekNarrativeResolver.GetPrimaryDialogueLine(presentation.DialogueLines);
 
@@ -133,6 +129,17 @@ public sealed class WeekFlowNarrativeHandler
             eventSession.CurrentStep,
             presentation,
             new NemoFeedbackPresentation(line.SpeakerName, presentation.VisualState, line.Text)));
+    }
+
+    private void ApplyCurrentStepEffectsIfNeeded(RuntimeInteractiveEventSession eventSession)
+    {
+        if (eventSession == null || eventSession.HasAppliedCurrentStepEffects)
+        {
+            return;
+        }
+
+        GameplayInteractionExecutor.ApplyAll(eventSession.CurrentStep.OnEnterInteractions, _runtimeState.ChildState);
+        eventSession.MarkCurrentStepEffectsApplied();
     }
 
     private void CompleteCurrentEvent()
