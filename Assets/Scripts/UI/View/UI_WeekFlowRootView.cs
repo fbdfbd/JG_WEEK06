@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class UI_WeekFlowRootView : WeekFlowViewBase
@@ -24,11 +25,19 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
     [Header("Log")]
     [SerializeField] private Button _openLogButton;
 
+    [Header("Advance Input")]
+    [SerializeField] private InputAction _advanceAction = new("Advance", InputActionType.Button, "<Keyboard>/space");
+    [SerializeField] private float _advanceHoldDelay = 0.35f;
+    [SerializeField] private float _advanceRepeatInterval = 0.08f;
+
     private EDialogueContinueRoute _dialogueContinueRoute;
     private readonly WeekFlowDialogueLogService _dialogueLogService = new();
+    private bool _isAdvanceHeld;
+    private float _nextAdvanceRepeatTime;
 
     private void Awake()
     {
+        EnsureAdvanceAction();
         InitializePanels();
         SetMainCanvasVisible(true);
         BindWeekScreenEvents();
@@ -37,11 +46,33 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         HideTransientViews();
     }
 
+    private void OnEnable()
+    {
+        BindAdvanceInput();
+    }
+
     private void OnDestroy()
     {
+        UnbindAdvanceInput();
         UnbindWeekScreenEvents();
         UnbindDialogueScreenEvents();
         UnbindLogEvents();
+    }
+
+    private void OnDisable()
+    {
+        UnbindAdvanceInput();
+    }
+
+    private void Update()
+    {
+        if (!_isAdvanceHeld || Time.unscaledTime < _nextAdvanceRepeatTime)
+        {
+            return;
+        }
+
+        TryAdvance();
+        _nextAdvanceRepeatTime = Time.unscaledTime + Mathf.Max(0.01f, _advanceRepeatInterval);
     }
 
     public override void RenderWeekHeader(WeekHeaderPresentation presentation)
@@ -284,6 +315,21 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         RaiseCardOptionSelected(cardDefinition, optionIndex);
     }
 
+    public bool TryAdvance()
+    {
+        if (TrySkipCurrentTransition())
+        {
+            return true;
+        }
+
+        if (_dialogueScreenView == null)
+        {
+            return false;
+        }
+
+        return _dialogueScreenView.TryAdvance();
+    }
+
     private void HandleDialogueContinueRequested()
     {
         if (TrySkipCurrentTransition())
@@ -321,6 +367,65 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         }
 
         return _transitionPlayer.TrySkipCurrent();
+    }
+
+    private void BindAdvanceInput()
+    {
+        EnsureAdvanceAction();
+        if (_advanceAction == null)
+        {
+            return;
+        }
+
+        _advanceAction.performed -= HandleAdvancePerformed;
+        _advanceAction.canceled -= HandleAdvanceCanceled;
+        _advanceAction.performed += HandleAdvancePerformed;
+        _advanceAction.canceled += HandleAdvanceCanceled;
+
+        if (!_advanceAction.enabled)
+        {
+            _advanceAction.Enable();
+        }
+    }
+
+    private void UnbindAdvanceInput()
+    {
+        _isAdvanceHeld = false;
+
+        if (_advanceAction == null)
+        {
+            return;
+        }
+
+        _advanceAction.performed -= HandleAdvancePerformed;
+        _advanceAction.canceled -= HandleAdvanceCanceled;
+
+        if (_advanceAction.enabled)
+        {
+            _advanceAction.Disable();
+        }
+    }
+
+    private void HandleAdvancePerformed(InputAction.CallbackContext context)
+    {
+        TryAdvance();
+        _isAdvanceHeld = true;
+        _nextAdvanceRepeatTime = Time.unscaledTime + Mathf.Max(0f, _advanceHoldDelay);
+    }
+
+    private void HandleAdvanceCanceled(InputAction.CallbackContext context)
+    {
+        _isAdvanceHeld = false;
+    }
+
+    private void EnsureAdvanceAction()
+    {
+        if (_advanceAction != null)
+        {
+            return;
+        }
+
+        _advanceAction = new InputAction("Advance", InputActionType.Button, "<Keyboard>/space");
     }
 }
 
