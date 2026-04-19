@@ -17,8 +17,8 @@ MonoBehaviour:
     _moment: 0
     _useScreenType: 0
     _screenType: 1
-    _weekId: test_week_01
-    _eventId: test_w1_night_external_interest
+    _weekId: 
+    _eventId: event_101_child_excursion_garden_01_direct
     _stepName: 
     _dialogueIndex: -1
     _choiceLabel: 
