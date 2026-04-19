@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public sealed class WeekFlowCommandHandler
@@ -41,18 +40,11 @@ public sealed class WeekFlowCommandHandler
 
         try
         {
-            Dictionary<EChildStatusType, int> previousStats = WeekFlowQueryUtility.CaptureCurrentStats(_runtimeState.ChildState);
             _runtimeState.ChildState.ClearReactionLogs();
 
             RuntimeWeekSelection[] selections = _weekSelectionState.BuildSelections(
                 WeekFlowQueryUtility.GetCurrentWeekEntries(currentWeekDefinition));
             _runtimeState.LastWeekResult = _weekRunner.RunWeek(currentWeekDefinition, _runtimeState.ChildState, selections);
-
-            WeekFeedbackPresentation feedback = WeekFeedbackResolver.Resolve(
-                currentWeekDefinition,
-                _runtimeState.LastWeekResult,
-                _runtimeState.ChildState,
-                previousStats);
 
             _runtimeState.SetPendingEvents(WeekNarrativeResolver.ResolvePendingEvents(
                 currentWeekDefinition,
@@ -62,10 +54,7 @@ public sealed class WeekFlowCommandHandler
             _runtimeState.ShouldAdvanceToNextWeekAfterEvents = !_runtimeState.ShouldShowEndingAfterEvents;
 
             PublishStatusMessage(_weekUiText.GetWeekCompletedMessage(currentWeekDefinition.WeekIndex));
-            return WeekFlowActionResult.ReplaceScreen(WeekFlowScreen.CreateWeekFeedback(
-                currentWeekDefinition,
-                feedback,
-                ResolveWeekFeedbackNemo()));
+            return ContinueAfterWeekFlow();
         }
         catch (Exception exception)
         {
@@ -102,16 +91,94 @@ public sealed class WeekFlowCommandHandler
         return WeekFlowActionResult.RefreshOnly();
     }
 
-    private NemoFeedbackPresentation ResolveWeekFeedbackNemo()
-    {
-        RuntimeResolvedCardRecord lastResolvedCard = _runtimeState.LastWeekResult.ResolvedCards.Count > 0
-            ? _runtimeState.LastWeekResult.ResolvedCards[_runtimeState.LastWeekResult.ResolvedCards.Count - 1]
-            : null;
-        return NemoFeedbackResolver.Resolve(_runtimeState.ChildState, lastResolvedCard);
-    }
-
     private void PublishStatusMessage(string statusMessage)
     {
         _runtimeState.SetStatusMessage(statusMessage);
+    }
+
+    private WeekFlowActionResult ContinueAfterWeekFlow()
+    {
+        if (_runtimeState.CurrentEventSession != null || _runtimeState.TryStartNextEvent())
+        {
+            return BuildEventStepScreen();
+        }
+
+        if (_runtimeState.ShouldShowEndingAfterEvents)
+        {
+            return BuildEndingScreen();
+        }
+
+        if (_runtimeState.ShouldAdvanceToNextWeekAfterEvents)
+        {
+            MoveToNextWeek();
+        }
+        else
+        {
+            _runtimeState.ClearPendingEventState();
+        }
+
+        return WeekFlowActionResult.ClearScreen();
+    }
+
+    private WeekFlowActionResult BuildEventStepScreen()
+    {
+        RuntimeInteractiveEventSession eventSession = _runtimeState.CurrentEventSession;
+        if (eventSession?.CurrentStep == null)
+        {
+            return ContinueAfterWeekFlow();
+        }
+
+        if (!eventSession.HasAppliedCurrentStep)
+        {
+            GameplayInteractionExecutor.ApplyAll(eventSession.CurrentStep.OnEnterInteractions, _runtimeState.ChildState);
+            eventSession.MarkCurrentStepApplied();
+        }
+
+        InteractiveEventPresentation presentation = WeekNarrativeResolver.CreatePresentation(
+            eventSession,
+            _runtimeState.ChildState,
+            _weekUiText);
+        DialogueLinePresentation line = WeekNarrativeResolver.GetPrimaryDialogueLine(presentation.DialogueLines);
+
+        return WeekFlowActionResult.ReplaceScreen(WeekFlowScreen.CreateEventStep(
+            _weekSequenceState.CurrentWeekDefinition,
+            eventSession.EventDefinition,
+            eventSession.CurrentStep,
+            presentation,
+            new NemoFeedbackPresentation(line.SpeakerName, presentation.VisualState, line.Text)));
+    }
+
+    private WeekFlowActionResult BuildEndingScreen()
+    {
+        _runtimeState.ShouldShowEndingAfterEvents = false;
+        _runtimeState.HasReachedEnding = true;
+        EndingPresentation ending = EndingResolver.Resolve(_runtimeState.ChildState);
+        PublishStatusMessage(_weekUiText.GetEndingReachedMessage());
+
+        return WeekFlowActionResult.ReplaceScreen(WeekFlowScreen.CreateEnding(
+            _weekSequenceState.CurrentWeekDefinition,
+            ending,
+            new NemoFeedbackPresentation(ending.VisualState, ending.ClosingLine)));
+    }
+
+    private void MoveToNextWeek()
+    {
+        _runtimeState.ShouldAdvanceToNextWeekAfterEvents = false;
+        if (!_weekSequenceState.TryMoveToNextWeek())
+        {
+            _runtimeState.ClearPendingEventState();
+            return;
+        }
+
+        WeekCardEntryData[] entries = WeekFlowQueryUtility.GetCurrentWeekEntries(_weekSequenceState.CurrentWeekDefinition);
+        _weekSelectionState.ApplyWeekEntries(entries);
+        _weekSelectionState.ResetAllSelections(entries);
+        _runtimeState.LastWeekResult = null;
+        _runtimeState.ClearPendingEventState();
+
+        SO_WeekDefinition currentWeek = _weekSequenceState.CurrentWeekDefinition;
+        PublishStatusMessage(currentWeek == null
+            ? _weekUiText.GetMovedToNextWeekFallbackMessage()
+            : _weekUiText.GetReadyForWeekMessage(currentWeek.WeekIndex));
     }
 }

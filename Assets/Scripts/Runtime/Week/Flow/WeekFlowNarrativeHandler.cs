@@ -81,6 +81,11 @@ public sealed class WeekFlowNarrativeHandler
                 line.Text)));
     }
 
+    private void PublishStatusMessage(string statusMessage)
+    {
+        _runtimeState.SetStatusMessage(statusMessage);
+    }
+
     private WeekFlowActionResult ContinuePostWeekFlow()
     {
         if (_runtimeState.CurrentEventSession != null || _runtimeState.TryStartNextEvent())
@@ -170,10 +175,5 @@ public sealed class WeekFlowNarrativeHandler
         PublishStatusMessage(currentWeek == null
             ? _weekUiText.GetMovedToNextWeekFallbackMessage()
             : _weekUiText.GetReadyForWeekMessage(currentWeek.WeekIndex));
-    }
-
-    private void PublishStatusMessage(string statusMessage)
-    {
-        _runtimeState.SetStatusMessage(statusMessage);
     }
 }
