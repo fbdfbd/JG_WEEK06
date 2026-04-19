@@ -110,6 +110,28 @@ public class RuntimeChildState
         _reactionLogs.Clear();
     }
 
+    public RuntimeChildState CreateCopy()
+    {
+        RuntimeChildState copy = new();
+        copy._stats.Clear();
+
+        foreach (KeyValuePair<EChildStatusType, int> statEntry in _stats)
+        {
+            copy._stats[statEntry.Key] = statEntry.Value;
+        }
+
+        copy._flags.Clear();
+        foreach (SO_FlagDefinition flag in _flags)
+        {
+            copy._flags.Add(flag);
+        }
+
+        copy._reactionLogs.Clear();
+        copy._reactionLogs.AddRange(_reactionLogs);
+
+        return copy;
+    }
+
     private void InitializeDefaultStats()
     {
         foreach (EChildStatusType statType in AllStatTypes)

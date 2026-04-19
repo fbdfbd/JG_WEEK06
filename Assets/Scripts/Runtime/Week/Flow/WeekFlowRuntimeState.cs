@@ -96,9 +96,15 @@ public sealed class RuntimeInteractiveEventSession
     public SO_InteractiveEventDefinition EventDefinition { get; }
     public SO_InteractiveEventStepDefinition CurrentStep { get; private set; }
     public InteractiveEventChoiceData SelectedChoice { get; private set; }
+    public bool HasAppliedLinkedCardRewards { get; private set; }
     public bool HasAppliedCurrentStepEffects { get; private set; }
     public bool HasAppliedCurrentStep => HasAppliedCurrentStepEffects;
     public bool HasPendingChoiceResult => SelectedChoice != null;
+
+    public void MarkLinkedCardRewardsApplied()
+    {
+        HasAppliedLinkedCardRewards = true;
+    }
 
     public void MarkCurrentStepEffectsApplied()
     {

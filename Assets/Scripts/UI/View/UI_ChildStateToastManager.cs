@@ -6,11 +6,14 @@ public class UI_ChildStateToastManager : MonoBehaviour
     [SerializeField] private WeekFlowController _weekFlowController;
     [SerializeField] private SO_WeekUiTextCatalog _weekUiTextCatalog;
     [SerializeField] private UI_ChildStateToastItem[] _toastItems;
+    [SerializeField] private float _burstSpeedMultiplier = 1.35f;
 
     private RuntimeChildState _childState;
     private int _nextToastIndex;
-    private readonly Queue<string> _queuedToastMessages = new();
+    private readonly Queue<string> _pendingToastMessages = new();
+    private readonly Queue<string> _readyToastMessages = new();
     private WeekUiTextProvider _weekUiText;
+    private Coroutine _toastSequenceCoroutine;
 
     private void Awake()
     {
@@ -43,7 +46,9 @@ public class UI_ChildStateToastManager : MonoBehaviour
         }
 
         BindChildState(null);
-        _queuedToastMessages.Clear();
+        StopToastSequence();
+        _pendingToastMessages.Clear();
+        _readyToastMessages.Clear();
     }
 
     private void HandleChildStateSourceChanged(RuntimeChildState childState)
@@ -78,33 +83,107 @@ public class UI_ChildStateToastManager : MonoBehaviour
             return;
         }
 
-        _queuedToastMessages.Enqueue(BuildStatMessage(changeInfo));
+        _pendingToastMessages.Enqueue(BuildStatMessage(changeInfo));
     }
 
     private void HandleFlowPresentationCompleted()
     {
-        while (_queuedToastMessages.Count > 0)
+        ShowQueuedToastsImmediately();
+    }
+
+    public void ShowQueuedToastsImmediately()
+    {
+        while (_pendingToastMessages.Count > 0)
         {
-            PlayToast(_queuedToastMessages.Dequeue());
+            _readyToastMessages.Enqueue(_pendingToastMessages.Dequeue());
+        }
+
+        if (_toastSequenceCoroutine == null && _readyToastMessages.Count > 0)
+        {
+            _toastSequenceCoroutine = StartCoroutine(ProcessToastSequence());
         }
     }
 
-    private void PlayToast(string message)
+    private System.Collections.IEnumerator ProcessToastSequence()
     {
-        if (string.IsNullOrWhiteSpace(message) || _toastItems == null || _toastItems.Length == 0)
+        while (_readyToastMessages.Count > 0)
+        {
+            string message = _readyToastMessages.Dequeue();
+            bool isToastCompleted = false;
+
+            if (!PlayToast(message, () => isToastCompleted = true))
+            {
+                continue;
+            }
+
+            yield return new WaitUntil(() => isToastCompleted);
+        }
+
+        _toastSequenceCoroutine = null;
+    }
+
+    private bool PlayToast(string message, System.Action onCompleted)
+    {
+        if (string.IsNullOrWhiteSpace(message) || !TryGetNextToastItem(out UI_ChildStateToastItem toastItem))
+        {
+            return false;
+        }
+
+        UI_ChildStateToastItem.PlaybackProfile playbackProfile = ResolvePlaybackProfile(toastItem);
+        toastItem.Play(message, playbackProfile, onCompleted);
+        return true;
+    }
+
+    private UI_ChildStateToastItem.PlaybackProfile ResolvePlaybackProfile(UI_ChildStateToastItem toastItem)
+    {
+        UI_ChildStateToastItem.PlaybackProfile defaultProfile = toastItem.GetDefaultPlaybackProfile();
+        if (_readyToastMessages.Count == 0 || _burstSpeedMultiplier <= 1f)
+        {
+            return defaultProfile;
+        }
+
+        float speedMultiplier = _burstSpeedMultiplier;
+        return new UI_ChildStateToastItem.PlaybackProfile(
+            defaultProfile.FadeInDuration / speedMultiplier,
+            defaultProfile.MoveDuration / speedMultiplier,
+            defaultProfile.MoveDistance);
+    }
+
+    private bool TryGetNextToastItem(out UI_ChildStateToastItem toastItem)
+    {
+        toastItem = null;
+
+        if (_toastItems == null || _toastItems.Length == 0)
+        {
+            return false;
+        }
+
+        for (int i = 0; i < _toastItems.Length; i++)
+        {
+            UI_ChildStateToastItem candidate = _toastItems[_nextToastIndex % _toastItems.Length];
+            _nextToastIndex++;
+
+            if (candidate == null)
+            {
+                continue;
+            }
+
+            toastItem = candidate;
+            return true;
+        }
+
+        return false;
+    }
+
+    private void StopToastSequence()
+    {
+        if (_toastSequenceCoroutine == null)
         {
             return;
         }
 
-        UI_ChildStateToastItem toastItem = _toastItems[_nextToastIndex % _toastItems.Length];
-        _nextToastIndex++;
-
-        if (toastItem == null)
-        {
-            return;
-        }
-
-        toastItem.Play(message);
+        StopCoroutine(_toastSequenceCoroutine);
+        _toastSequenceCoroutine = null;
     }
 
     private string BuildStatMessage(StatChangeInfo changeInfo)

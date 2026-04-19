@@ -8,6 +8,7 @@ public class NemoWeeklyDialogController : MonoBehaviour
 {
     [SerializeField] private SO_WeeklyTalkCatalog _weeklyTalkCatalog;
     [SerializeField] private WeekFlowController _weekFlowController;
+    [SerializeField] private UI_ChildStateToastManager _toastManager;
 
     [SerializeField] private UI_WeeklyDialogPanel _dialogPanel;
     [SerializeField] private GameObject _interactionPanel;
@@ -40,6 +41,7 @@ public class NemoWeeklyDialogController : MonoBehaviour
 
     private void Start()
     {
+        ResolveToastManager();
         Refresh();
     }
 
@@ -192,6 +194,7 @@ public class NemoWeeklyDialogController : MonoBehaviour
             PlayCurrentTalkParticle();
             TextRefresh();
             ApplyCurrentTalkStat();
+            _toastManager?.ShowQueuedToastsImmediately();
             _weeklyDialogFinised = false;
         }
 
@@ -205,5 +208,15 @@ public class NemoWeeklyDialogController : MonoBehaviour
     public void OnClickFlagButton()
     {
 
+    }
+
+    private void ResolveToastManager()
+    {
+        if (_toastManager != null)
+        {
+            return;
+        }
+
+        _toastManager = FindAnyObjectByType<UI_ChildStateToastManager>();
     }
 }

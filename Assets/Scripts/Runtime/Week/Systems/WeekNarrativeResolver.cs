@@ -16,6 +16,22 @@ public static class WeekNarrativeResolver
         return pendingEvents.ToArray();
     }
 
+    public static RuntimeResolvedCardRecord[] ResolveLinkedCards(
+        SO_InteractiveEventDefinition eventDefinition,
+        RuntimeWeekResult weekResult)
+    {
+        if (eventDefinition == null || weekResult?.ResolvedCards == null)
+        {
+            return Array.Empty<RuntimeResolvedCardRecord>();
+        }
+
+        return weekResult.ResolvedCards
+            .Where(resolvedCard => resolvedCard != null)
+            .Where(resolvedCard => resolvedCard.HasPendingEventReward)
+            .Where(resolvedCard => IsCardLinkedToEvent(eventDefinition, resolvedCard))
+            .ToArray();
+    }
+
     public static InteractiveEventPresentation CreatePresentation(
         RuntimeInteractiveEventSession eventSession,
         RuntimeChildState childState,
@@ -172,6 +188,23 @@ public static class WeekNarrativeResolver
                MeetsInformationRequirements(informationControlResult, conditions);
     }
 
+    private static bool IsCardLinkedToEvent(
+        SO_InteractiveEventDefinition eventDefinition,
+        RuntimeResolvedCardRecord resolvedCard)
+    {
+        if (eventDefinition == null || resolvedCard?.CardDefinition?.CardType == null || resolvedCard.SelectedOption == null)
+        {
+            return false;
+        }
+
+        if (eventDefinition is SO_DayRoutineEventDefinition routineEvent)
+        {
+            return MatchesRoutineEvent(routineEvent, resolvedCard);
+        }
+
+        return MatchesInformationRequirements(eventDefinition.Conditions, resolvedCard);
+    }
+
     private static bool HasRequiredFlags(RuntimeChildState childState, WeekEventConditionData conditions)
     {
         return conditions?.RequiredFlags == null || conditions.RequiredFlags.All(childState.HasFlag);
@@ -213,6 +246,43 @@ public static class WeekNarrativeResolver
             int count = informationControlResult.CountSelectionsForType(requirement.InformationType, semanticFilter);
             return count >= requirement.MinimumCount;
         });
+    }
+
+    private static bool MatchesRoutineEvent(
+        SO_DayRoutineEventDefinition routineEvent,
+        RuntimeResolvedCardRecord resolvedCard)
+    {
+        if (routineEvent?.RelatedInformationTypes == null || routineEvent.RelatedInformationTypes.Length == 0)
+        {
+            return false;
+        }
+
+        bool matchesCardType = routineEvent.RelatedInformationTypes.Contains(resolvedCard.CardDefinition.CardType);
+        if (!matchesCardType)
+        {
+            return false;
+        }
+
+        if (routineEvent.PreferredSemantics == null || routineEvent.PreferredSemantics.Length == 0)
+        {
+            return true;
+        }
+
+        return routineEvent.PreferredSemantics.Contains(resolvedCard.SelectedOption.Semantic);
+    }
+
+    private static bool MatchesInformationRequirements(
+        WeekEventConditionData conditions,
+        RuntimeResolvedCardRecord resolvedCard)
+    {
+        if (conditions?.InformationRequirements == null || conditions.InformationRequirements.Length == 0)
+        {
+            return false;
+        }
+
+        return conditions.InformationRequirements.Any(requirement =>
+            requirement.InformationType == resolvedCard.CardDefinition.CardType &&
+            (!requirement.UseSemanticFilter || requirement.Semantic == resolvedCard.SelectedOption.Semantic));
     }
 
     private static int ResolveRoutineMatchScore(

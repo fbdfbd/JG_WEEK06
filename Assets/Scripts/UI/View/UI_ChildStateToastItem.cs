@@ -1,9 +1,25 @@
+using System;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
 public class UI_ChildStateToastItem : MonoBehaviour
 {
+    [Serializable]
+    public struct PlaybackProfile
+    {
+        public float FadeInDuration;
+        public float MoveDuration;
+        public float MoveDistance;
+
+        public PlaybackProfile(float fadeInDuration, float moveDuration, float moveDistance)
+        {
+            FadeInDuration = fadeInDuration;
+            MoveDuration = moveDuration;
+            MoveDistance = moveDistance;
+        }
+    }
+
     [SerializeField] private CanvasGroup _canvasGroup;
     [SerializeField] private RectTransform _rectTransform;
     [SerializeField] private TextMeshProUGUI _messageText;
@@ -26,7 +42,12 @@ public class UI_ChildStateToastItem : MonoBehaviour
         StopCurrentTween();
     }
 
-    public void Play(string message)
+    public void Play(string message, Action onCompleted = null)
+    {
+        Play(message, GetDefaultPlaybackProfile(), onCompleted);
+    }
+
+    public void Play(string message, PlaybackProfile playbackProfile, Action onCompleted = null)
     {
         CacheReferences();
         StopCurrentTween();
@@ -52,23 +73,32 @@ public class UI_ChildStateToastItem : MonoBehaviour
 
         if (_canvasGroup != null)
         {
-            sequence.Append(_canvasGroup.DOFade(1f, _fadeInDuration));
+            sequence.Append(_canvasGroup.DOFade(1f, playbackProfile.FadeInDuration));
         }
 
         if (_rectTransform != null)
         {
             sequence.Join(_rectTransform.DOAnchorPosY(
-                _defaultPosition.y + _moveDistance,
-                _moveDuration).SetEase(Ease.OutQuad));
+                _defaultPosition.y + playbackProfile.MoveDistance,
+                playbackProfile.MoveDuration).SetEase(Ease.OutQuad));
         }
 
         if (_canvasGroup != null)
         {
-            sequence.Append(_canvasGroup.DOFade(0f, _moveDuration).SetEase(Ease.InQuad));
+            sequence.Append(_canvasGroup.DOFade(0f, playbackProfile.MoveDuration).SetEase(Ease.InQuad));
         }
 
-        sequence.OnComplete(HideImmediate);
+        sequence.OnComplete(() =>
+        {
+            HideImmediate();
+            onCompleted?.Invoke();
+        });
         _playingTween = sequence;
+    }
+
+    public PlaybackProfile GetDefaultPlaybackProfile()
+    {
+        return new PlaybackProfile(_fadeInDuration, _moveDuration, _moveDistance);
     }
 
     private void CacheReferences()

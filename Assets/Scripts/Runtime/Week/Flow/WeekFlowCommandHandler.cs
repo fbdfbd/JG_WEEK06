@@ -46,9 +46,10 @@ public sealed class WeekFlowCommandHandler
                 WeekFlowQueryUtility.GetCurrentWeekEntries(currentWeekDefinition));
             _runtimeState.LastWeekResult = _weekRunner.RunWeek(currentWeekDefinition, _runtimeState.ChildState, selections);
 
+            RuntimeChildState eventResolutionChildState = _runtimeState.LastWeekResult.EventResolutionChildState ?? _runtimeState.ChildState;
             _runtimeState.SetPendingEvents(WeekNarrativeResolver.ResolvePendingEvents(
                 currentWeekDefinition,
-                _runtimeState.ChildState,
+                eventResolutionChildState,
                 _runtimeState.LastWeekResult.InformationControlResult));
             _runtimeState.ShouldShowEndingAfterEvents = _weekSequenceState.IsCurrentWeekFinal;
             _runtimeState.ShouldAdvanceToNextWeekAfterEvents = !_runtimeState.ShouldShowEndingAfterEvents;
@@ -128,6 +129,8 @@ public sealed class WeekFlowCommandHandler
             return ContinueAfterWeekFlow();
         }
 
+        ApplyLinkedCardRewardsIfNeeded(eventSession);
+
         InteractiveEventPresentation presentation = WeekNarrativeResolver.CreatePresentation(
             eventSession,
             _runtimeState.ChildState,
@@ -140,6 +143,25 @@ public sealed class WeekFlowCommandHandler
             eventSession.CurrentStep,
             presentation,
             new NemoFeedbackPresentation(line.SpeakerName, presentation.VisualState, line.Text)));
+    }
+
+    private void ApplyLinkedCardRewardsIfNeeded(RuntimeInteractiveEventSession eventSession)
+    {
+        if (eventSession == null || eventSession.HasAppliedLinkedCardRewards)
+        {
+            return;
+        }
+
+        RuntimeResolvedCardRecord[] linkedCards = WeekNarrativeResolver.ResolveLinkedCards(
+            eventSession.EventDefinition,
+            _runtimeState.LastWeekResult);
+
+        foreach (RuntimeResolvedCardRecord linkedCard in linkedCards)
+        {
+            linkedCard.TryApplyPendingEventReward(_runtimeState.ChildState);
+        }
+
+        eventSession.MarkLinkedCardRewardsApplied();
     }
 
     private WeekFlowActionResult BuildEndingScreen()
