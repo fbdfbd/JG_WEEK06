@@ -195,7 +195,7 @@ MonoBehaviour:
   m_text: 00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0274355956a51f844835c7a1ede84a4e, type: 2}
-  m_sharedMaterial: {fileID: 1195476227497891349, guid: 0274355956a51f844835c7a1ede84a4e, type: 2}
+  m_sharedMaterial: {fileID: 754523312936537175, guid: 0274355956a51f844835c7a1ede84a4e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_text: "\uC2A4\uD15F \uC774\uB984"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0274355956a51f844835c7a1ede84a4e, type: 2}
-  m_sharedMaterial: {fileID: 1195476227497891349, guid: 0274355956a51f844835c7a1ede84a4e, type: 2}
+  m_sharedMaterial: {fileID: 754523312936537175, guid: 0274355956a51f844835c7a1ede84a4e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
