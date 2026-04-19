@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: card_102_child_excursion_garden_02
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_102_child_excursion_garden_02
+  _cardType: {fileID: 11400000, guid: dbafb5c030c34524294075dd28cedafe, type: 2}
+  _title: "\uC815\uC6D0 2\uCC28 \uBC29\uBB38"
+  _originalText: "\uBE44\uAC00 \uADF8\uCE5C \uB2E4\uC74C \uB0A0, \uBC18\uC9DD\uC774\uB294
+    \uC815\uC6D0\uC5D0\uC11C \uB2EC\uD33D\uC774\uB97C \uBC1C\uACAC\uD55C \uB4A4\uC758
+    \uB450 \uBC88\uC9F8 \uC815\uC6D0 \uC678\uCD9C."
+  _options:
+  - _semantic: 2
+    _label: "\uD1B5\uC81C\uD55C\uB2E4"
+    _presentedText: "\uC816\uC740 \uBC14\uB2E5\uACFC \uB2EC\uD33D\uC774\uB97C \uC774\uC720\uB85C
+      \uC190\uB300\uC9C0 \uBABB\uD558\uAC8C \uD55C\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: 7e9e7c466b743084c8fdfed064fa2fb3, type: 2}
+    - {fileID: 11400000, guid: 3767dfb8845aead42b17c728fe339544, type: 2}
+  - _semantic: 0
+    _label: "\uD5C8\uB77D\uD55C\uB2E4"
+    _presentedText: "\uC815\uC6D0\uC0AC\uAC00 \uB098\uBB47\uC78E\uC744 \uAC74\uB124\uBA70
+      \uC870\uC2EC\uC2A4\uB7FD\uAC8C \uAD00\uCC30\uD558\uAC8C \uD55C\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: f4ea349d76ad73e488dcc5448ce0e451, type: 2}
+    - {fileID: 11400000, guid: 3767dfb8845aead42b17c728fe339544, type: 2}

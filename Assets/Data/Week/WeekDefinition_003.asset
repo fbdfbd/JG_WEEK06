@@ -16,98 +16,10 @@ MonoBehaviour:
   _weekIndex: 3
   _title: "\uBE48\uCE78\uC774 \uB4DC\uB7EC\uB098\uB294 \uC8FC"
   _summary: ...
-  _cardEntries:
-  - _card: {fileID: 11400000, guid: c2000000000000000000000000000011, type: 2}
-    _isRequired: 1
-    _displayOrder: 0
-  - _card: {fileID: 11400000, guid: c2000000000000000000000000000012, type: 2}
-    _isRequired: 1
-    _displayOrder: 1
-  - _card: {fileID: 11400000, guid: c2000000000000000000000000000013, type: 2}
-    _isRequired: 1
-    _displayOrder: 2
-  - _card: {fileID: 11400000, guid: c2000000000000000000000000000014, type: 2}
-    _isRequired: 1
-    _displayOrder: 3
-  - _card: {fileID: 11400000, guid: c2000000000000000000000000000015, type: 2}
-    _isRequired: 1
-    _displayOrder: 4
+  _preTurn: {fileID: 11400000, guid: e368e26427f398c45a80a0c16cf5c732, type: 2}
+  _dayFlow: {fileID: 0}
+  _nightFlow: {fileID: 0}
   _weekRules: []
   _onWeekStartInteractions: []
   _onWeekEndInteractions: []
-  _fixedEvent:
-    _title: "\uCC98\uC74C \uC0DD\uAE34 \uCDA9\uB3CC"
-    _situationText: "\uAD50\uC7AC\uC5D0\uC11C \uBCF8 \uC124\uBA85\uACFC \uBC29\uBB38\uC790\uC758
-      \uB9D0\uC774 \uC5B4\uAE0B\uB098\uB294 \uC21C\uAC04, \uB124\uBAA8\uB294 \uAC19\uC740
-      \uC774\uC57C\uAE30\uAC00 \uB450 \uAC1C\uC758 \uC5BC\uAD74\uC744 \uAC16\uACE0
-      \uC788\uB2E4\uB294 \uC0AC\uC2E4\uC744 \uCC98\uC74C \uC758\uC2DD\uD55C\uB2E4."
-    _reactions:
-    - _dominantStat: 0
-      _reactionText: "\uB124\uBAA8\uB294 \uB458 \uC911 \uD558\uB098\uAC00 \uB354
-        \uC815\uD655\uD558\uACA0\uC9C0\uB9CC, \uACB0\uAD6D \uC9D1 \uC548\uC758 \uC124\uBA85\uC774
-        \uB9DE\uC744 \uAC70\uB77C \uBBFF\uACE0 \uC2F6\uC5B4 \uD588\uB2E4."
-      _statDeltas:
-      - _statType: 0
-        _amount: 1
-      - _statType: 2
-        _amount: 1
-    - _dominantStat: 1
-      _reactionText: "\uB124\uBAA8\uB294 \uBB38\uC7A5\uC744 \uBA38\uB9BF\uC18D\uC5D0
-        \uB098\uB780\uD788 \uB193\uACE0 \uC5B4\uB290 \uCABD\uC774 \uC228\uAE34 \uB9D0\uC778\uC9C0
-        \uB05D\uAE4C\uC9C0 \uD30C\uACE0\uB4E4\uAE30 \uC2DC\uC791\uD588\uB2E4."
-      _statDeltas:
-      - _statType: 1
-        _amount: 1
-      - _statType: 0
-        _amount: -1
-    - _dominantStat: 2
-      _reactionText: "\uB124\uBAA8\uB294 \uB204\uAC00 \uD2C0\uB9B0 \uB9D0\uC744 \uD588\uB294\uC9C0\uBCF4\uB2E4,
-        \uC544\uBB34\uB3C4 \uC790\uC2E0\uC5D0\uAC8C \uC81C\uB300\uB85C \uB9D0\uD574\uC8FC\uC9C0
-        \uC54A\uB294\uB2E4\uB294 \uC0AC\uC2E4\uC5D0 \uBA3C\uC800 \uD754\uB4E4\uB838\uB2E4."
-      _statDeltas:
-      - _statType: 2
-        _amount: 1
-      - _statType: 0
-        _amount: -1
-    - _dominantStat: 3
-      _reactionText: "\uB124\uBAA8\uB294 \uC785\uBC16\uC5D0 \uB0B4\uC9C4 \uC54A\uC558\uC9C0\uB9CC,
-        \uC55E\uC73C\uB85C\uB294 \uBA3C\uC800 \uBBFF\uAE30\uBCF4\uB2E4 \uBA3C\uC800
-        \uAE30\uC5B5\uD574 \uB450\uC5B4\uC57C\uACA0\uB2E4\uACE0 \uB9C8\uC74C\uBA39\uC5C8\uB2E4."
-      _statDeltas:
-      - _statType: 3
-        _amount: 1
-      - _statType: 1
-        _amount: 1
-  _privateDialogue:
-    _title: "\uCC45\uACFC \uD604\uC2E4 \uC0AC\uC774"
-    _openingLine: "\uCC45\uC5D0\uC120 \uB2E4\uB974\uAC8C \uC801\uD600 \uC788\uC5C8\uC5B4.
-      \uB458 \uB2E4 \uB9DE\uC744 \uC218\uB294 \uC5C6\uB294 \uAC70\uC9C0?"
-    _choices:
-    - _label: "\uCC45\uC774 \uD56D\uC0C1 \uC804\uBD80\uB294 \uC544\uB2C8\uB77C\uACE0
-        \uC124\uBA85\uD55C\uB2E4"
-      _responseLine: "\uB124\uBAA8\uB294 \uC870\uAE08 \uC548\uC2EC\uD588\uC9C0\uB9CC,
-        \uC774\uC81C\uB294 \uCC45\uB3C4 \uC0AC\uB78C\uB3C4 \uADF8\uB300\uB85C \uBBFF\uAE30
-        \uC5B4\uB835\uB2E4\uACE0 \uB290\uAF08\uB2E4."
-      _statDeltas:
-      - _statType: 1
-        _amount: 1
-      - _statType: 0
-        _amount: -1
-    - _label: "\uB124\uBAA8\uAC00 \uB108\uBB34 \uC608\uBBFC\uD558\uB2E4\uACE0 \uB2EC\uB79C\uB2E4"
-      _responseLine: "\uB124\uBAA8\uB294 \uC785\uC744 \uB2EB\uC558\uC9C0\uB9CC, \uC790\uC2E0\uC774
-        \uB290\uB080 \uC774\uC0C1\uD568\uC744 \uD63C\uC790 \uD488\uAC8C \uB418\uC5C8\uB2E4."
-      _statDeltas:
-      - _statType: 2
-        _amount: 1
-      - _statType: 3
-        _amount: 1
-    - _label: "\uC9C1\uC811 \uD655\uC778\uD558\uB294 \uB0A0\uC774 \uC62C \uAC70\uB77C\uACE0
-        \uC57D\uC18D\uD55C\uB2E4"
-      _responseLine: "\uB124\uBAA8\uB294 \uC544\uC9C1 \uAE30\uB2E4\uB824 \uBCF4\uAE30\uB85C
-        \uD588\uC9C0\uB9CC, \uADF8 \uC57D\uC18D\uC744 \uC78A\uC9C0 \uC54A\uACA0\uB2E4\uACE0
-        \uC870\uC6A9\uD788 \uB9C8\uC74C\uBA39\uC5C8\uB2E4."
-      _statDeltas:
-      - _statType: 0
-        _amount: 1
-      - _statType: 1
-        _amount: 1
+  _cinematicProfile: {fileID: 0}

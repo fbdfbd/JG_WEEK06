@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_110_child_excursion_study_01_modified__step_110_child_excursion_study_01_modified_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uB0B4\uC11C\uC7AC 1\uCC28 - \uB300\uCCB4"
+  _bodyText: "\uC11C\uC7AC \uC548 \uB300\uC2E0 \uC5F0\uC2B5\uC6A9 \uAE43\uD39C\uC744
+    \uAC74\uB124\uBA70 \uBE44\uC2B7\uD55C \uCCB4\uD5D8\uC73C\uB85C \uB2EC\uB79C\uB2E4."
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: 84ffa10995c48764388074048cfd595e, type: 2}
+    _text: "\uC8FC\uC778\uB2D8, \uC11C\uC7AC \uC548\uC740 \uC548 \uB429\uB2C8\uB2E4."
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uC5D0\uC5D0\u2026"
+  - _speaker: {fileID: 11400000, guid: 84ffa10995c48764388074048cfd595e, type: 2}
+    _text: "\uB300\uC2E0 \uBC31\uC791\uB2D8\uAED8\uC11C \uC4F0\uC2DC\uB294 \uAC83\uACFC
+      \uBE44\uC2B7\uD55C \uAE43\uD39C\uC744 \uD558\uB098 \uBCF4\uC5EC\uB4DC\uB9B4\uAE4C\uC694?"
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uC9C4\uC9DC\uC694?"
+  - _speaker: {fileID: 11400000, guid: 84ffa10995c48764388074048cfd595e, type: 2}
+    _text: "\uC608. \uC789\uD06C\uB294 \uBB3B\uD788\uC9C0 \uC54A\uACE0, \uC7A1\uC544\uB9CC
+      \uBCF4\uC2DC\uB294 \uAC81\uB2C8\uB2E4."
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uC751! \uADF8\uAC70 \uD574 \uBCFC\uB798\uC694."
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uC6B0\uC640. \uD754\uB4E4\uD754\uB4E4\uD574."
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uB098\uB3C4 \uBC31\uC791\uB2D8 \uAC19\uC544."
+  _nemoLine: "\uC8FC\uC778\uB2D8, \uC11C\uC7AC \uC548\uC740 \uC548 \uB429\uB2C8\uB2E4."
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions: []
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

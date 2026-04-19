@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: card_107_child_excursion_basement_02
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_107_child_excursion_basement_02
+  _cardType: {fileID: 11400000, guid: dbafb5c030c34524294075dd28cedafe, type: 2}
+  _title: "\uC9C0\uD558\uC2E4 2\uCC28 \uBC29\uBB38"
+  _originalText: "\uAD74\uB7EC\uAC04 \uACF5\uC744 \uB530\uB77C \uC9C0\uD558\uC2E4
+    \uBB38 \uC55E\uC5D0 \uB2E4\uC2DC \uC11C\uB294 \uB450 \uBC88\uC9F8 \uBC29\uBB38."
+  _options:
+  - _semantic: 2
+    _label: "\uD1B5\uC81C\uD55C\uB2E4"
+    _presentedText: "\uC548\uCABD \uC815\uB9AC\uAC00 \uB35C \uB05D\uB0AC\uB2E4\uACE0
+      \uD558\uBA70 \uB9C9\uB294\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: 7e9e7c466b743084c8fdfed064fa2fb3, type: 2}
+    - {fileID: 11400000, guid: 3767dfb8845aead42b17c728fe339544, type: 2}
+  - _semantic: 0
+    _label: "\uD5C8\uB77D\uD55C\uB2E4"
+    _presentedText: "\uBB38\uC744 \uC870\uAE08 \uB354 \uC5F4\uC5B4 \uC800\uC7A5\uACE0
+      \uC548\uCABD\uC744 \uBCF4\uC5EC \uC900\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: f4ea349d76ad73e488dcc5448ce0e451, type: 2}
+    - {fileID: 11400000, guid: 3767dfb8845aead42b17c728fe339544, type: 2}
+    - {fileID: 11400000, guid: 7e9e7c466b743084c8fdfed064fa2fb3, type: 2}

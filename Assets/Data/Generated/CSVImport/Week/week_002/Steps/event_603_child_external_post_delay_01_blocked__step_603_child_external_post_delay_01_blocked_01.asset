@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_603_child_external_post_delay_01_blocked__step_603_child_external_post_delay_01_blocked_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uC6B0\uD3B8 \uC9C0\uC5F0 - \uCC28\uB2E8"
+  _bodyText: "\uC6B0\uD3B8 \uC9C0\uC5F0 \uC548\uB0B4\uBB38\uC744 \uBCF4\uC5EC \uC8FC\uC9C0
+    \uC54A\uACE0 \uBE44 \uC598\uAE30 \uC815\uB3C4\uB85C\uB9CC \uB118\uAE34\uB2E4."
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uADF8\uAC74 \uB610 \uBB50\uC57C?"
+  - _speaker: {fileID: 11400000, guid: 5bb39217ef6e2284f84306acd528c0b3, type: 2}
+    _text: "\uBCC4\uAC70 \uC544\uB2D9\uB2C8\uB2E4, \uC8FC\uC778\uB2D8. \uBE44\uAC00
+      \uB9CE\uC774 \uC628\uB2E4\uB294 \uB0B4\uC6A9\uC774\uC5D0\uC694."
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uD750\uC751."
+  _nemoLine: "\uADF8\uAC74 \uB610 \uBB50\uC57C?"
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions: []
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

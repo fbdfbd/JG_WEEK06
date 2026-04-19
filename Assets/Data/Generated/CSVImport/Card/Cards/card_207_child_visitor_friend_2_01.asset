@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: card_207_child_visitor_friend_2_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_207_child_visitor_friend_2_01
+  _cardType: {fileID: 11400000, guid: 7e3b393c621280e459460f44ff349d9c, type: 2}
+  _title: "\uCE5C\uAD6C2 \uCCAB \uB9CC\uB0A8"
+  _originalText: "\uC58C\uC804\uD558\uACE0 \uC608\uC758 \uBC14\uB978 \uCE5C\uAD6C2\uB97C
+    \uCC98\uC74C \uB9CC\uB09C\uB2E4."
+  _options:
+  - _semantic: 2
+    _label: "\uD1B5\uC81C\uD55C\uB2E4"
+    _presentedText: "\uC624\uB298\uC740 \uC778\uC0AC\uB9CC \uD558\uAC8C \uD55C\uB2E4."
+    _interactions: []
+  - _semantic: 0
+    _label: "\uD5C8\uB77D\uD55C\uB2E4"
+    _presentedText: "\uCE5C\uAD6C2\uAC00 \uC637\uC758 \uBA3C\uC9C0\uB97C \uD138\uC5B4
+      \uC8FC\uBA70 \uC5B4\uC0C9\uD55C \uB300\uD654\uB97C \uB098\uB208\uB2E4."
+    _interactions: []

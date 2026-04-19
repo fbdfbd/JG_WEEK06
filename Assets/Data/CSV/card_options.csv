@@ -1,4 +1,4 @@
-card_id,option_order,semantic,label,presented_text,interaction_ids
+﻿card_id,option_order,semantic,label,presented_text,interaction_ids
 card_001_parentsletter,0,Direct,그대로 전달,편지를 거의 숨김 없이 그대로 읽어 준다.,trust_plus_1|reaction_log_letter_open
 card_001_parentsletter,1,Modified,완곡하게 전달,걱정스러운 문장을 덜어내고 정리해서 전한다.,curiosity_plus_1
 card_001_parentsletter,2,Blocked,보류한다,편지는 잠시 감춰 두고 오늘은 전하지 않는다.,anxiety_plus_1|letter_suspected_flag
@@ -11,3 +11,90 @@ card_003_tutorvisit,2,Blocked,꺼내지 않는다,방문 이야기를 오늘은 
 card_004_lineagebook,0,Direct,원문대로 읽는다,기록된 문장을 가능한 그대로 읽어 준다.,curiosity_plus_1
 card_004_lineagebook,1,Modified,맥락을 붙여 설명한다,불편할 수 있는 내용을 우회적으로 설명한다.,trust_plus_1|if_curiosity_3_then_trust_plus_1
 card_004_lineagebook,2,Blocked,해당 장은 넘긴다,오늘은 그 장을 읽지 않고 다른 부분으로 넘어간다.,anxiety_plus_1|hidden_info_detected_flag
+card_101_child_excursion_garden_01,0,Blocked,통제한다,후문 쪽 접근을 막고 안전을 이유로 돌려세운다.,obedience_plus_1
+card_101_child_excursion_garden_01,1,Direct,허락한다,멀리서 지키는 경비 아래 후문 너머 호수 쪽까지 나가 본다.,curiosity_plus_1
+card_102_child_excursion_garden_02,0,Blocked,통제한다,젖은 바닥과 달팽이를 이유로 손대지 못하게 한다.,obedience_plus_1|trust_plus_1
+card_102_child_excursion_garden_02,1,Direct,허락한다,정원사가 나뭇잎을 건네며 조심스럽게 관찰하게 한다.,curiosity_plus_1|trust_plus_1
+card_103_child_excursion_garden_rain_01,0,Blocked,통제한다,백작의 명령을 이유로 비 오는 정원 출입을 막는다.,anxiety_plus_1|obedience_plus_1
+card_103_child_excursion_garden_rain_01,1,Direct,허락한다,우산을 준비해 주고 비 오는 정원 구경을 허락한다.,curiosity_plus_1|trust_plus_1
+card_104_child_excursion_lake_01,0,Blocked,통제한다,무서운 짐승이 나온다고 알려 주며 후문 쪽을 막는다.,trust_plus_1
+card_104_child_excursion_lake_01,1,Direct,허락한다,뒤따르던 경비가 개입하지만 결국 호수 쪽에서 길을 잃고 불안을 겪는다.,anxiety_plus_1
+card_105_child_excursion_lake_02,0,Blocked,통제한다,물가가 위험하다고 막아 세운다.,obedience_plus_1|trust_plus_1
+card_105_child_excursion_lake_02,1,Direct,허락한다,돌길 끝까지 다가가 수면을 구경하게 한다.,curiosity_plus_1|trust_plus_1
+card_105_child_excursion_lake_02,2,Modified,대체한다,호숫가 대신 떠온 물로 작은 호수 구경을 시켜 준다.,trust_plus_1|obedience_plus_1
+card_106_child_excursion_basement_01,0,Blocked,통제한다,물건이 많고 위험하다며 완전히 막는다.,anxiety_plus_1|obedience_plus_1
+card_106_child_excursion_basement_01,1,Direct,허락한다,입구 쪽 상자 뒤까지만 숨을 수 있게 허락한다.,curiosity_plus_1|trust_plus_1|obedience_plus_1
+card_107_child_excursion_basement_02,0,Blocked,통제한다,안쪽 정리가 덜 끝났다고 하며 막는다.,obedience_plus_1|trust_plus_1
+card_107_child_excursion_basement_02,1,Direct,허락한다,문을 조금 더 열어 저장고 안쪽을 보여 준다.,curiosity_plus_1|trust_plus_1|obedience_plus_1
+card_108_child_excursion_library_01,0,Blocked,통제한다,높은 책은 위험하고 아직 어렵다며 그림책으로 돌린다.,anxiety_plus_1|obedience_plus_1|trust_plus_1
+card_108_child_excursion_library_01,1,Direct,허락한다,서고관리인이 책을 내려 주어 조심히 볼 수 있게 한다.,curiosity_plus_1|trust_plus_1
+card_108_child_excursion_library_01,2,Modified,대체한다,반짝이는 다른 동물 그림책으로 관심을 옮겨 준다.,trust_plus_1|obedience_plus_1
+card_109_child_excursion_library_02,0,Blocked,통제한다,책이 너무 오래돼 훼손될 수 있다며 막는다.,obedience_plus_1|trust_plus_1
+card_109_child_excursion_library_02,1,Direct,허락한다,뒤에서 지켜보는 가운데 직접 펼쳐 보게 한다.,curiosity_plus_1|trust_plus_1
+card_110_child_excursion_study_01,0,Blocked,통제한다,백작의 중요한 물건이 있다며 문 앞에서 돌려세운다.,obedience_plus_1
+card_110_child_excursion_study_01,1,Direct,허락한다,문 앞에서 잠깐 들여다보게 하되 손대진 못하게 한다.,curiosity_plus_1
+card_110_child_excursion_study_01,2,Modified,대체한다,연습용 깃펜을 쥐여 주며 비슷한 체험으로 달랜다.,trust_plus_1|obedience_plus_1
+card_111_child_excursion_study_02,0,Blocked,통제한다,업무용 문서라며 보지 못하게 한다.,obedience_plus_1
+card_111_child_excursion_study_02,1,Direct,허락한다,문 앞에서 밀랍 봉인의 의미를 설명해 준다.,curiosity_plus_1
+card_201_child_visitor_cousin_1_01,0,Blocked,통제한다,응접실 출입을 막고 인사만 하게 한다.,obedience_plus_1
+card_201_child_visitor_cousin_1_01,1,Direct,허락한다,사촌1을 직접 만나 사탕 상자를 선물받는다.,trust_plus_1
+card_202_child_visitor_cousin_1_02,0,Blocked,통제한다,오늘은 오래 머물지 못하게 한다.,obedience_plus_1
+card_202_child_visitor_cousin_1_02,1,Direct,허락한다,태엽 새 장난감을 보여 주며 함께 시간을 보낸다.,curiosity_plus_1|trust_plus_1
+card_203_child_visitor_cousin_2_01,0,Blocked,통제한다,오늘은 인사만 하라고 제지한다.,obedience_plus_1|trust_plus_1
+card_203_child_visitor_cousin_2_01,1,Direct,허락한다,낯을 가리는 사촌2와 어색하게나마 대화를 나눈다.,curiosity_plus_1|trust_plus_1
+card_204_child_visitor_cousin_2_02,0,Blocked,통제한다,오늘은 길게 놀 수 없다고 제지한다.,obedience_plus_1|trust_plus_1
+card_204_child_visitor_cousin_2_02,1,Direct,허락한다,숨바꼭질 이야기를 나누며 다음 약속을 한다.,trust_plus_1
+card_205_child_visitor_friend_1_01,0,Blocked,통제한다,오늘은 인사만 하라고 한다.,obedience_plus_1|trust_plus_1
+card_205_child_visitor_friend_1_01,1,Direct,허락한다,숨바꼭질하며 금세 시끌벅적해진다.,curiosity_plus_1|trust_plus_1
+card_206_child_visitor_friend_1_02,0,Blocked,통제한다,많이 뛰면 안 된다며 짧게만 놀게 한다.,trust_plus_1
+card_206_child_visitor_friend_1_02,1,Direct,허락한다,술래잡기를 하며 서로의 속도를 확인한다.,curiosity_plus_1|trust_plus_1
+card_207_child_visitor_friend_2_01,0,Blocked,통제한다,오늘은 인사만 하게 한다.,
+card_207_child_visitor_friend_2_01,1,Direct,허락한다,친구2가 옷의 먼지를 털어 주며 어색한 대화를 나눈다.,
+card_208_child_visitor_friend_2_02,0,Blocked,통제한다,짧게만 인사하라는 말 끝에 서로 날을 세운다.,anxiety_plus_1
+card_208_child_visitor_friend_2_02,1,Direct,허락한다,손수건을 건네며 네모 스스로 먼지를 닦게 한다.,trust_plus_1
+card_209_child_visitor_friend_3_01,0,Blocked,통제한다,오늘은 짧게 인사만 하게 한다.,
+card_209_child_visitor_friend_3_01,1,Direct,허락한다,창가에서 함께 이상한 비유를 주고받는다.,
+card_210_child_visitor_friend_3_02,0,Blocked,통제한다,짧게 인사만 나누고 헤어진다.,trust_plus_1
+card_210_child_visitor_friend_3_02,1,Direct,허락한다,꽃병과 먹을 것 비유를 이어 가며 웃는다.,curiosity_plus_1
+card_301_child_letter_friend_1_01,0,Blocked,보류한다,친구1의 편지는 오늘 전하지 않는다.,obedience_plus_1
+card_301_child_letter_friend_1_01,1,Modified,요약해서 전한다,신나는 부분을 골라 부드럽게 읽어 준다.,trust_plus_1
+card_301_child_letter_friend_1_01,2,Direct,그대로 읽는다,편지의 들뜬 말투를 거의 그대로 읽어 준다.,curiosity_plus_1|trust_plus_1
+card_302_child_letter_friend_2_01,0,Blocked,보류한다,친구2의 편지는 오늘 전하지 않는다.,obedience_plus_1
+card_302_child_letter_friend_2_01,1,Modified,정리해서 전한다,조언이 되는 부분만 골라 정리해서 들려준다.,trust_plus_1
+card_302_child_letter_friend_2_01,2,Direct,그대로 읽는다,조금 뾰족하지만 솔직한 문장을 그대로 읽어 준다.,curiosity_plus_1
+card_303_child_letter_friend_3_01,0,Blocked,보류한다,친구3의 편지는 오늘 전하지 않는다.,obedience_plus_1
+card_303_child_letter_friend_3_01,1,Modified,정리해서 전한다,엉뚱한 비유는 줄이고 뜻만 전한다.,trust_plus_1
+card_303_child_letter_friend_3_01,2,Direct,그대로 읽는다,이상한 비유까지 살려서 그대로 읽어 준다.,curiosity_plus_1
+card_304_child_letter_cousin_2_01,0,Blocked,보류한다,사촌2의 편지는 오늘 전하지 않는다.,obedience_plus_1
+card_304_child_letter_cousin_2_01,1,Modified,부드럽게 전한다,짧은 약속의 뜻만 부드럽게 정리해 전한다.,trust_plus_1
+card_304_child_letter_cousin_2_01,2,Direct,그대로 읽는다,짧지만 솔직한 문장을 그대로 읽어 준다.,trust_plus_1
+card_501_child_textbook_etiquette,0,Blocked,오늘은 미룬다,오늘 수업은 쉬고 다른 일정을 우선한다.,obedience_plus_1
+card_501_child_textbook_etiquette,1,Direct,기본부터 가르친다,"인사와 바른 자세, 식사 자리 예절을 차근차근 익힌다.",trust_plus_1
+card_501_child_textbook_etiquette,2,Modified,놀이처럼 익힌다,딱딱한 규칙 대신 따라 하기 쉬운 놀이처럼 익힌다.,curiosity_plus_1
+card_502_child_textbook_story_letters,0,Blocked,오늘은 미룬다,글자 수업은 다음으로 미룬다.,obedience_plus_1
+card_502_child_textbook_story_letters,1,Direct,차근차근 읽힌다,짧은 동화와 쉬운 글자부터 함께 읽는다.,trust_plus_1
+card_502_child_textbook_story_letters,2,Modified,흥미 위주로 읽힌다,글자보다 이야기와 그림 위주로 관심을 붙잡는다.,curiosity_plus_1
+card_503_child_textbook_flowers_bugs,0,Blocked,오늘은 미룬다,관찰 수업은 다음으로 넘긴다.,obedience_plus_1
+card_503_child_textbook_flowers_bugs,1,Direct,있는 그대로 가르친다,"꽃과 벌레, 새의 이름과 특징을 차분히 알려 준다.",trust_plus_1
+card_503_child_textbook_flowers_bugs,2,Modified,호기심 위주로 가르친다,신기한 생물부터 보여 주며 흥미를 끌어낸다.,curiosity_plus_1
+card_504_child_textbook_posture_footwork,0,Blocked,오늘은 미룬다,몸가짐 수련은 다음으로 미룬다.,obedience_plus_1
+card_504_child_textbook_posture_footwork,1,Direct,기본대로 익힌다,바른 자세와 가벼운 움직임을 반복해 익힌다.,trust_plus_1
+card_504_child_textbook_posture_footwork,2,Modified,장난처럼 익힌다,놀이처럼 움직이며 중심 잡기를 익힌다.,curiosity_plus_1
+card_401_child_house_talk_lake_wolf,0,Blocked,감춘다,늑대 이야기는 네모에게 들리지 않게 넘긴다.,
+card_401_child_house_talk_lake_wolf,1,Direct,들려준다,후문 쪽엔 늑대가 돌아다닌다고 조심시키며 말한다.,
+card_402_child_house_talk_study,0,Blocked,감춘다,백작의 서재 분위기 이야기는 얼버무린다.,
+card_402_child_house_talk_study,1,Direct,들려준다,백작의 서재 앞에서는 다들 조용해진다고 솔직히 말한다.,
+card_403_child_house_talk_cousin_1,0,Blocked,감춘다,방문자 소문은 흘려 넘긴다.,
+card_403_child_house_talk_cousin_1,1,Direct,들려준다,오늘 백작의 사촌분이 온다고 알려 준다.,
+card_404_child_house_talk_backgate_wind,0,Blocked,감춘다,후문 바람 이야기는 굳이 꺼내지 않는다.,
+card_404_child_house_talk_backgate_wind,1,Direct,들려준다,후문 바람이 심해 우산도 뒤집힌다고 알려 준다.,
+card_601_child_external_festival_01,0,Blocked,차단한다,축제 소식은 대수롭지 않게 얼버무린다.,
+card_601_child_external_festival_01,1,Direct,들려준다,"축제와 간식, 노래 이야기를 들려준다.",
+card_602_child_external_festival_02,0,Blocked,차단한다,이번에도 시끄러운 축제 이야기라며 넘긴다.,
+card_602_child_external_festival_02,1,Direct,들려준다,공연 소식까지 전하며 외출 욕구를 자극한다.,
+card_603_child_external_post_delay_01,0,Blocked,차단한다,별거 아니라며 비 이야기로 돌린다.,obedience_plus_1|trust_plus_1
+card_603_child_external_post_delay_01,1,Direct,들려준다,길이 질어 우편이 늦는 사정을 자세히 설명한다.,curiosity_plus_1|trust_plus_1
+card_604_child_external_kingdom_news_01,0,Blocked,차단한다,먼 데 다녀온 사람 이야기라며 짧게 넘긴다.,obedience_plus_1|trust_plus_1
+card_604_child_external_kingdom_news_01,1,Direct,들려준다,미스터 임과 북쪽 마수의 이야기를 자세히 전한다.,curiosity_plus_1|trust_plus_1
+card_605_child_external_kingdom_news_02,0,Blocked,차단한다,또 그 사람 이야기라며 짧게 넘긴다.,
+card_605_child_external_kingdom_news_02,1,Direct,들려준다,이상하지만 멋있다는 후속 소문까지 전한다.,

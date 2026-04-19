@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edff9b7bd1a506a42a33e4d294868a53, type: 3}
+  m_Name: week_005
+  m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
+  _id: week_005
+  _weekIndex: 5
+  _title: "\uCCAD\uC18C\uB144\uAE30 2\uC8FC\uCC28"
+  _summary: "\uCCAD\uC18C\uB144\uAE30 \uB450 \uBC88\uC9F8 \uC8FC\uCC28"
+  _preTurn: {fileID: 11400000, guid: 1cea0e7acf0a811419823506f9dd2d0d, type: 2}
+  _dayFlow: {fileID: 11400000, guid: 83ccd117e38bf0649a2e5d7afe992ca4, type: 2}
+  _nightFlow: {fileID: 11400000, guid: 45f8525b03252564bb30c811d4798e6e, type: 2}
+  _weekRules: []
+  _onWeekStartInteractions: []
+  _onWeekEndInteractions: []
+  _cinematicProfile: {fileID: 0}

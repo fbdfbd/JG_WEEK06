@@ -10,10 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82477aacd1d46994fa0595b03679138c, type: 3}
-  m_Name: WeekDayFlow_week_001
+  m_Name: week_001_DayFlow
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDayFlowDefinition
   _routineEvents:
   - {fileID: 11400000, guid: 5df423a9995ddce458ddf43eb4ef9700, type: 2}
+  - {fileID: 11400000, guid: e139ad73aaac8ff4b8fc8a193b3b5881, type: 2}
   - {fileID: 11400000, guid: 9a69a3b38d9c56b4988b5bbd16e10d9e, type: 2}
+  - {fileID: 11400000, guid: b5f602a3d71c1fd4f8da03a6376d66df, type: 2}
+  - {fileID: 11400000, guid: 85aa5d1da15b6674b83dc9328980724c, type: 2}
+  - {fileID: 11400000, guid: f619d409430c16d47860fd9c7bd1d715, type: 2}
+  - {fileID: 11400000, guid: dc57ac93a2aab6a4d951cbf0ab358051, type: 2}
+  - {fileID: 11400000, guid: c993bf36157ebfe4abce27f38b376906, type: 2}
+  - {fileID: 11400000, guid: 6acfc44801c238740af4e3864eb97807, type: 2}
+  - {fileID: 11400000, guid: 110cf7b6f20df6a4584dc17700fa9482, type: 2}
+  - {fileID: 11400000, guid: 04442ea3c46782141b4234353a2eee95, type: 2}
+  - {fileID: 11400000, guid: 65fedded7968b6d4f9033fc817b4645e, type: 2}
   _storyEvents:
   - {fileID: 11400000, guid: db055adb067fc364d93da26dd0eecdd4, type: 2}

@@ -26,7 +26,7 @@ MonoBehaviour:
       _useMaximum: 1
       _maximumValue: 4
     _informationRequirements:
-    - _informationType: {fileID: 11400000, guid: fb5f5a6ef4641de4eba3ccf6fd9d195e, type: 2}
+    - _informationType: {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
       _useSemanticFilter: 0
       _semantic: 0
       _minimumCount: 1

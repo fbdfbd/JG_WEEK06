@@ -24,5 +24,5 @@ MonoBehaviour:
   _onCompletedInteractions: []
   _cinematicProfile: {fileID: 0}
   _relatedInformationTypes:
-  - {fileID: 11400000, guid: fb5f5a6ef4641de4eba3ccf6fd9d195e, type: 2}
+  - {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
   _preferredSemantics: 0000000001000000
