@@ -9,6 +9,9 @@ public class UI_WeekFlowScreenView : MonoBehaviour
     [SerializeField] private UI_TopView _topPanel;
     [SerializeField] private UI_BottomView _bottomPanel;
 
+    [SerializeField] private GameObject _semanticPanel;
+    [SerializeField] private UI_CanvasGroupVisibilityEffect _semanticPanelEffect;
+
     public event Action RunWeekRequested;
     public event Action<SO_CardInfoDefinition, int> CardOptionSelected;
 
@@ -16,6 +19,7 @@ public class UI_WeekFlowScreenView : MonoBehaviour
 
     private void Awake()
     {
+        ResolveSemanticPanelEffect();
         BindCardPanelEvents();
         BindBottomPanelEvents();
     }
@@ -107,10 +111,67 @@ public class UI_WeekFlowScreenView : MonoBehaviour
     {
         _isInfoPanelVisible = !_isInfoPanelVisible;
 
-        if (_cardPanel != null)
+        SetSemanticPanelVisible(_isInfoPanelVisible);
+        SetCardPanelVisible(_isInfoPanelVisible);
+    }
+
+    private void SetCardPanelVisible(bool visible)
+    {
+        if (_cardPanel == null)
         {
-            _cardPanel.gameObject.SetActive(_isInfoPanelVisible);
+            return;
         }
+
+        GameObject go = _cardPanel.gameObject;
+
+        if (_cardPanel.TryGetComponent<UI_CardShowEffect>(out var effect))
+        {
+            if (visible)
+            {
+                go.SetActive(true);
+                effect.PlayOpen();
+            }
+            else
+            {
+                effect.Close();
+            }
+        }
+        else
+        {
+            go.SetActive(visible);
+        }
+    }
+
+    private void SetSemanticPanelVisible(bool visible)
+    {
+        if (_semanticPanelEffect != null)
+        {
+            if (visible)
+            {
+                _semanticPanelEffect.Open();
+            }
+            else
+            {
+                _semanticPanelEffect.Close();
+            }
+
+            return;
+        }
+
+        if (_semanticPanel != null)
+        {
+            _semanticPanel.SetActive(visible);
+        }
+    }
+
+    private void ResolveSemanticPanelEffect()
+    {
+        if (_semanticPanelEffect != null || _semanticPanel == null)
+        {
+            return;
+        }
+
+        _semanticPanel.TryGetComponent(out _semanticPanelEffect);
     }
 
     private void HandleNextDayButtonClicked()

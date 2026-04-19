@@ -14,9 +14,9 @@ public class WeekFlowController : MonoBehaviour
 
     private readonly WeekRunner _weekRunner = new();
     private readonly WeekSelectionState _weekSelectionState = new();
-    private readonly WeekSequenceState _weekSequenceState = new();
+    public static readonly WeekSequenceState _weekSequenceState = new();
 
-    private WeekFlowRuntimeState _runtimeState;
+    public static WeekFlowRuntimeState _runtimeState;
     private WeekUiTextProvider _weekUiText;
     private WeekFlowPresenter _presenter;
     private WeekFlowCommandHandler _commandHandler;
@@ -25,6 +25,10 @@ public class WeekFlowController : MonoBehaviour
     private WeekFlowCutsceneBridgeBase _cutsceneBridge;
     private WeekFlowScreen _currentScreen;
     private bool _isTransitionPlaying;
+
+    public event Action<SO_WeekDefinition> WeekChanged;
+    public SO_WeekDefinition CurrentWeekDefinition => _weekSequenceState.CurrentWeekDefinition;
+
 
     protected virtual void Awake()
     {
@@ -151,6 +155,7 @@ public class WeekFlowController : MonoBehaviour
         if (previousWeek != currentWeek)
         {
             yield return _cinematicDirector.PlayWeekChangeIn(currentWeek);
+            WeekChanged?.Invoke(currentWeek);
         }
 
         if (result.ShouldReplaceScreen)

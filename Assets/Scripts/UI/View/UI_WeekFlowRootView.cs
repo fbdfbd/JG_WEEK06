@@ -19,6 +19,7 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
     [SerializeField] private UI_WeekFlowTransitionPlayer _transitionPlayer;
     [SerializeField] private WeekFlowCutsceneBridgeBase _cutsceneBridge;
     [SerializeField] private CanvasGroup _mainCanvasGroup;
+    [SerializeField] private GameObject _nemo;
 
     [Header("Log")]
     [SerializeField] private Button _openLogButton;
@@ -136,6 +137,12 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
             return;
         }
 
+        if(_nemo == null)
+        {
+            return;
+        }
+
+        _nemo.SetActive(visible);
         _mainCanvasGroup.alpha = visible ? 1f : 0f;
         _mainCanvasGroup.interactable = visible;
         _mainCanvasGroup.blocksRaycasts = visible;
