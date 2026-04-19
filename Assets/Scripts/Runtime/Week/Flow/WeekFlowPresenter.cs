@@ -44,13 +44,12 @@ public sealed class WeekFlowPresenter
 
     public void PublishChildState()
     {
-        WeekStatPresentation[] statPresentations =
-        {
-            new(EChildStatusType.Trust, _weekUiText.GetStatLabel(EChildStatusType.Trust), _runtimeState.ChildState.GetStat(EChildStatusType.Trust)),
-            new(EChildStatusType.Curiosity, _weekUiText.GetStatLabel(EChildStatusType.Curiosity), _runtimeState.ChildState.GetStat(EChildStatusType.Curiosity)),
-            new(EChildStatusType.Anxiety, _weekUiText.GetStatLabel(EChildStatusType.Anxiety), _runtimeState.ChildState.GetStat(EChildStatusType.Anxiety)),
-            new(EChildStatusType.Obedience, _weekUiText.GetStatLabel(EChildStatusType.Obedience), _runtimeState.ChildState.GetStat(EChildStatusType.Obedience)),
-        };
+        WeekStatPresentation[] statPresentations = RuntimeChildState.AllStatTypes
+            .Select(statType => new WeekStatPresentation(
+                statType,
+                _weekUiText.GetStatLabel(statType),
+                _runtimeState.ChildState.GetStat(statType)))
+            .ToArray();
 
         string[] flagNames = _runtimeState.ChildState.Flags
             .Select(flagDefinition => flagDefinition != null && !string.IsNullOrWhiteSpace(flagDefinition.DisplayName)

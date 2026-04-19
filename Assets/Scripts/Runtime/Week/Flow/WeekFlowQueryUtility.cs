@@ -19,12 +19,6 @@ public static class WeekFlowQueryUtility
 
     public static Dictionary<EChildStatusType, int> CaptureCurrentStats(RuntimeChildState childState)
     {
-        return new Dictionary<EChildStatusType, int>
-        {
-            { EChildStatusType.Trust, childState.GetStat(EChildStatusType.Trust) },
-            { EChildStatusType.Curiosity, childState.GetStat(EChildStatusType.Curiosity) },
-            { EChildStatusType.Anxiety, childState.GetStat(EChildStatusType.Anxiety) },
-            { EChildStatusType.Obedience, childState.GetStat(EChildStatusType.Obedience) },
-        };
+        return RuntimeChildState.AllStatTypes.ToDictionary(statType => statType, childState.GetStat);
     }
 }

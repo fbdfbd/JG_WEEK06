@@ -15,5 +15,5 @@ MonoBehaviour:
   _id: Test
   _style: 2
   _duration: 0.5
-  _ease: 14
+  _ease: 3
   _blockInput: 1

@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UI; // Graphic 사용 시 필요
 using System.Collections.Generic;
 using System;
 using TMPro;
@@ -21,6 +20,7 @@ public class UI_CardView : MonoBehaviour
 
     [Header("Content Panel - Desc Panel")]
     [SerializeField] private TextMeshProUGUI _descText;
+    [SerializeField] private TextMeshProUGUI _mainDescText;
 
     [Header("Content Panel - Options")]
     [SerializeField] private Button _modifiedButton;
@@ -123,9 +123,25 @@ public class UI_CardView : MonoBehaviour
 
     public void SetCardGroups(IReadOnlyList<WeekSelectionCategoryGroupPresentation> groups)
     {
+        SO_CardInfoDefinition previousCardDefinition = null;
+        SO_CardInfoTypeDefinition previousCardType = null;
+        int previousGroupIndex = _currentGroupIndex;
+        int previousCardIndexInGroup = _currentCardIndexInGroup;
+
+        if (TryGetCurrentCardData(out WeekSelectionEntryPresentation currentCardData))
+        {
+            previousCardDefinition = currentCardData.CardDefinition;
+            previousCardType = currentCardData.CardDefinition != null
+                ? currentCardData.CardDefinition.CardType
+                : null;
+        }
+        else if (TryGetCurrentGroup(out WeekSelectionCategoryGroupPresentation currentGroup))
+        {
+            previousCardType = currentGroup.CardType;
+        }
+
         _currentGroups = groups;
-        _currentGroupIndex = 0;
-        _currentCardIndexInGroup = 0;
+        RestoreCurrentPosition(previousCardDefinition, previousCardType, previousGroupIndex, previousCardIndexInGroup);
 
         for (int i = 0; i < _indexButtons.Length; i++)
         {
@@ -146,6 +162,91 @@ public class UI_CardView : MonoBehaviour
         }
 
         UpdateCurrentGroupedCard();
+    }
+
+    private void RestoreCurrentPosition(
+        SO_CardInfoDefinition previousCardDefinition,
+        SO_CardInfoTypeDefinition previousCardType,
+        int previousGroupIndex,
+        int previousCardIndexInGroup)
+    {
+        if (_currentGroups == null || _currentGroups.Count == 0)
+        {
+            _currentGroupIndex = 0;
+            _currentCardIndexInGroup = 0;
+            return;
+        }
+
+        if (TryRestoreCardPosition(previousCardDefinition))
+        {
+            return;
+        }
+
+        if (TryRestoreGroupPosition(previousCardType))
+        {
+            return;
+        }
+
+        _currentGroupIndex = Mathf.Clamp(previousGroupIndex, 0, _currentGroups.Count - 1);
+        int cardCount = _currentGroups[_currentGroupIndex].Entries != null
+            ? _currentGroups[_currentGroupIndex].Entries.Count
+            : 0;
+        _currentCardIndexInGroup = cardCount > 0
+            ? Mathf.Clamp(previousCardIndexInGroup, 0, cardCount - 1)
+            : 0;
+    }
+
+    private bool TryRestoreCardPosition(SO_CardInfoDefinition previousCardDefinition)
+    {
+        if (previousCardDefinition == null || _currentGroups == null)
+        {
+            return false;
+        }
+
+        for (int groupIndex = 0; groupIndex < _currentGroups.Count; groupIndex++)
+        {
+            IReadOnlyList<WeekSelectionEntryPresentation> entries = _currentGroups[groupIndex].Entries;
+            if (entries == null)
+            {
+                continue;
+            }
+
+            for (int cardIndex = 0; cardIndex < entries.Count; cardIndex++)
+            {
+                if (entries[cardIndex].CardDefinition != previousCardDefinition)
+                {
+                    continue;
+                }
+
+                _currentGroupIndex = groupIndex;
+                _currentCardIndexInGroup = cardIndex;
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private bool TryRestoreGroupPosition(SO_CardInfoTypeDefinition previousCardType)
+    {
+        if (_currentGroups == null)
+        {
+            return false;
+        }
+
+        for (int groupIndex = 0; groupIndex < _currentGroups.Count; groupIndex++)
+        {
+            if (_currentGroups[groupIndex].CardType != previousCardType)
+            {
+                continue;
+            }
+
+            _currentGroupIndex = groupIndex;
+            _currentCardIndexInGroup = 0;
+            return true;
+        }
+
+        return false;
     }
 
     // [로컬 UI 상태 변경] 인덱스 버튼 클릭 시 현재 그룹과 첫 카드로 이동
@@ -367,9 +468,11 @@ public class UI_CardView : MonoBehaviour
         {
             // 현재 선택된 옵션의 PresentedText를 설명 영역에 렌더링
             CardOptionData selectedOption = currentCardData.Options[_selectedOptionIndex];
+            _mainDescText.text = currentCardData.OriginalText;
             if (selectedOption != null && !string.IsNullOrWhiteSpace(selectedOption.PresentedText))
             {
                 _descText.text = selectedOption.PresentedText;
+                
                 return;
             }
         }

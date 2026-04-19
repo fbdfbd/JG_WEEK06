@@ -18,9 +18,9 @@ MonoBehaviour:
     \uC26C\uC6CC\uC9D1\uB2C8\uB2E4. \uC774 \uC8FC\uCC28 \uC885\uB8CC \uD6C4 \uC5D4\uB529
     \uD654\uBA74\uC774 \uBC14\uB85C \uB098\uC640\uC57C \uD569\uB2C8\uB2E4."
   _informationCards:
-  - _card: {fileID: 11400000, guid: f051bbf4270777944ad6a53867e569e7, type: 2}
+  - _card: {fileID: 11400000, guid: 07575b135e04b2445bbc5a3c4385923a, type: 2}
     _isRequired: 1
     _displayOrder: 0
-  - _card: {fileID: 11400000, guid: fa46437ffb536a341b0cf144f2b2ac8c, type: 2}
+  - _card: {fileID: 11400000, guid: be35c3a2ec9b72447ae7dc8e75afa42e, type: 2}
     _isRequired: 1
     _displayOrder: 1

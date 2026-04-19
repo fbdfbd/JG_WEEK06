@@ -119,6 +119,7 @@ public sealed class WeekUiTextProvider
         return statType switch
         {
             EChildStatusType.Trust => GetValue(_catalog?.TrustLabel, "신뢰"),
+            EChildStatusType.Affinity => GetValue(_catalog?.AffinityLabel, "친밀도"),
             EChildStatusType.Curiosity => GetValue(_catalog?.CuriosityLabel, "호기심"),
             EChildStatusType.Anxiety => GetValue(_catalog?.AnxietyLabel, "불안"),
             EChildStatusType.Obedience => GetValue(_catalog?.ObedienceLabel, "순응"),

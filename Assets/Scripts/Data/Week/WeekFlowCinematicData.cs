@@ -24,6 +24,7 @@ public class SO_WeekFlowCutsceneCatalog : ScriptableObject
 [Serializable]
 public class WeekFlowCutsceneEntryData
 {
+    [SerializeField] private string _displayName = string.Empty;
     [SerializeField] private EWeekFlowCutsceneMoment _moment = EWeekFlowCutsceneMoment.ScreenEnter;
     [SerializeField] private bool _useScreenType;
     [SerializeField] private EWeekFlowScreenType _screenType = EWeekFlowScreenType.EventStep;

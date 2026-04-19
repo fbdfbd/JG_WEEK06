@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +18,7 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
     [SerializeField] private UI_DialogueLogPanel _dialogueLogPanel;
     [SerializeField] private UI_WeekFlowTransitionPlayer _transitionPlayer;
     [SerializeField] private WeekFlowCutsceneBridgeBase _cutsceneBridge;
+    [SerializeField] private CanvasGroup _mainCanvasGroup;
 
     [Header("Log")]
     [SerializeField] private Button _openLogButton;
@@ -29,6 +29,7 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
     private void Awake()
     {
         InitializePanels();
+        SetMainCanvasVisible(true);
         BindWeekScreenEvents();
         BindDialogueScreenEvents();
         BindLogEvents();
@@ -126,6 +127,18 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         }
 
         _dialogueScreenView.HideView();
+    }
+
+    public override void SetMainCanvasVisible(bool visible)
+    {
+        if (_mainCanvasGroup == null)
+        {
+            return;
+        }
+
+        _mainCanvasGroup.alpha = visible ? 1f : 0f;
+        _mainCanvasGroup.interactable = visible;
+        _mainCanvasGroup.blocksRaycasts = visible;
     }
 
     public override WeekFlowCutsceneBridgeBase GetCutsceneBridge()
@@ -301,265 +314,6 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         }
 
         return _transitionPlayer.TrySkipCurrent();
-    }
-}
-
-public abstract class WeekFlowCutscenePlayerBase : MonoBehaviour
-{
-    [SerializeField] private string _cutsceneId = string.Empty;
-    [SerializeField] private bool _isBlocking = true;
-
-    public string CutsceneId => _cutsceneId;
-    public bool IsBlocking => _isBlocking;
-    public abstract bool IsPlaying { get; }
-
-    public virtual bool CanPlay(WeekFlowCutsceneRequest request)
-    {
-        return true;
-    }
-
-    public abstract IEnumerator Play(WeekFlowCutsceneRequest request);
-    public abstract bool TrySkip();
-    public abstract void StopImmediate();
-}
-
-public class UI_WeekFlowCutsceneBridge : WeekFlowCutsceneBridgeBase
-{
-    [SerializeField] private SO_WeekFlowCutsceneCatalog _catalog;
-    [SerializeField] private WeekFlowCutscenePlayerBase[] _players;
-
-    private readonly Dictionary<string, WeekFlowCutscenePlayerBase> _playerLookup = new();
-    private readonly WeekFlowCutsceneResolver _resolver = new();
-    private WeekFlowCutscenePlayerBase _activePlayer;
-
-    public override bool IsPlaying => _activePlayer != null && _activePlayer.IsPlaying;
-    public override bool IsBlocking => IsPlaying && _activePlayer.IsBlocking;
-
-    private void Awake()
-    {
-        CachePlayers();
-    }
-
-    private void OnValidate()
-    {
-        CachePlayers();
-    }
-
-    public override IEnumerator Play(WeekFlowCutsceneRequest request)
-    {
-        CachePlayers();
-
-        if (!_resolver.TryResolveCutsceneId(request, _catalog, out string cutsceneId))
-        {
-            yield break;
-        }
-
-        if (!_playerLookup.TryGetValue(cutsceneId, out WeekFlowCutscenePlayerBase player) || player == null)
-        {
-            yield break;
-        }
-
-        if (!player.CanPlay(request))
-        {
-            yield break;
-        }
-
-        if (_activePlayer != null && _activePlayer != player)
-        {
-            _activePlayer.StopImmediate();
-            _activePlayer = null;
-        }
-
-        _activePlayer = player;
-        yield return player.Play(request);
-
-        if (_activePlayer == player)
-        {
-            _activePlayer = null;
-        }
-    }
-
-    public override bool TrySkip()
-    {
-        if (_activePlayer == null)
-        {
-            return false;
-        }
-
-        return _activePlayer.TrySkip();
-    }
-
-    public override void StopImmediate()
-    {
-        if (_activePlayer == null)
-        {
-            return;
-        }
-
-        _activePlayer.StopImmediate();
-        _activePlayer = null;
-    }
-
-    private void CachePlayers()
-    {
-        _playerLookup.Clear();
-
-        if (_players == null || _players.Length == 0)
-        {
-            _players = GetComponentsInChildren<WeekFlowCutscenePlayerBase>(true);
-        }
-
-        for (int index = 0; index < _players.Length; index++)
-        {
-            WeekFlowCutscenePlayerBase player = _players[index];
-            if (player == null || string.IsNullOrWhiteSpace(player.CutsceneId))
-            {
-                continue;
-            }
-
-            _playerLookup[player.CutsceneId] = player;
-        }
-    }
-}
-
-public class UI_BasicCutscenePlayer : WeekFlowCutscenePlayerBase
-{
-    [SerializeField] private RectTransform _target;
-    [SerializeField] private CanvasGroup _canvasGroup;
-    [SerializeField] private Vector2 _startOffset = new(0f, -80f);
-    [SerializeField] private float _duration = 0.25f;
-    [SerializeField] private Ease _ease = Ease.OutCubic;
-    [SerializeField] private bool _useFade = true;
-
-    private Tween _activeTween;
-    private Vector2 _defaultAnchoredPosition;
-    private float _defaultAlpha = 1f;
-    private bool _isInitialized;
-
-    public override bool IsPlaying => _activeTween != null && _activeTween.IsActive() && _activeTween.IsPlaying();
-
-    private void Awake()
-    {
-        CacheDefaults();
-    }
-
-    private void OnDestroy()
-    {
-        KillTween(false);
-    }
-
-    public override IEnumerator Play(WeekFlowCutsceneRequest request)
-    {
-        CacheDefaults();
-        KillTween(false);
-
-        if (_target == null && _canvasGroup == null)
-        {
-            yield break;
-        }
-
-        Sequence sequence = DOTween.Sequence();
-
-        if (_target != null)
-        {
-            _target.anchoredPosition = _defaultAnchoredPosition + _startOffset;
-            sequence.Join(_target.DOAnchorPos(_defaultAnchoredPosition, _duration).SetEase(_ease));
-        }
-
-        if (_useFade && _canvasGroup != null)
-        {
-            _canvasGroup.alpha = 0f;
-            sequence.Join(_canvasGroup.DOFade(_defaultAlpha, _duration).SetEase(_ease));
-        }
-
-        _activeTween = sequence;
-
-        while (IsPlaying)
-        {
-            yield return null;
-        }
-
-        ApplyCompletedState();
-        KillTween(false);
-    }
-
-    public override bool TrySkip()
-    {
-        if (!IsPlaying)
-        {
-            return false;
-        }
-
-        KillTween(true);
-        ApplyCompletedState();
-        return true;
-    }
-
-    public override void StopImmediate()
-    {
-        KillTween(false);
-        RestoreDefaultState();
-    }
-
-    private void CacheDefaults()
-    {
-        if (_isInitialized)
-        {
-            return;
-        }
-
-        if (_target != null)
-        {
-            _defaultAnchoredPosition = _target.anchoredPosition;
-        }
-
-        if (_canvasGroup != null)
-        {
-            _defaultAlpha = _canvasGroup.alpha;
-        }
-
-        _isInitialized = true;
-    }
-
-    private void ApplyCompletedState()
-    {
-        if (_target != null)
-        {
-            _target.anchoredPosition = _defaultAnchoredPosition;
-        }
-
-        if (_canvasGroup != null && _useFade)
-        {
-            _canvasGroup.alpha = _defaultAlpha;
-        }
-    }
-
-    private void RestoreDefaultState()
-    {
-        if (_target != null)
-        {
-            _target.anchoredPosition = _defaultAnchoredPosition;
-        }
-
-        if (_canvasGroup != null)
-        {
-            _canvasGroup.alpha = _defaultAlpha;
-        }
-    }
-
-    private void KillTween(bool complete)
-    {
-        if (_activeTween == null)
-        {
-            return;
-        }
-
-        if (_activeTween.IsActive())
-        {
-            _activeTween.Kill(complete);
-        }
-
-        _activeTween = null;
     }
 }
 

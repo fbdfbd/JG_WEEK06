@@ -38,6 +38,7 @@ public class SO_WeekUiTextCatalog : ScriptableObject
 
     [Header("Stat Label")]
     [SerializeField] private string _trustLabel = "신뢰";
+    [SerializeField] private string _affinityLabel = "친밀도";
     [SerializeField] private string _curiosityLabel = "호기심";
     [SerializeField] private string _anxietyLabel = "불안";
     [SerializeField] private string _obedienceLabel = "순응";
@@ -64,6 +65,7 @@ public class SO_WeekUiTextCatalog : ScriptableObject
     public string NoEffectSummary => _noEffectSummary;
     public string LegacyNarrativeEffectMessage => _legacyNarrativeEffectMessage;
     public string TrustLabel => _trustLabel;
+    public string AffinityLabel => _affinityLabel;
     public string CuriosityLabel => _curiosityLabel;
     public string AnxietyLabel => _anxietyLabel;
     public string ObedienceLabel => _obedienceLabel;
