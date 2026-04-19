@@ -93,6 +93,7 @@ public static class WeekNarrativeResolver
         return dominantStat switch
         {
             EChildStatusType.Trust => ENemoVisualState.Trusting,
+            EChildStatusType.Affinity => ENemoVisualState.Trusting,
             EChildStatusType.Curiosity => ENemoVisualState.Curious,
             EChildStatusType.Anxiety => ENemoVisualState.Anxious,
             EChildStatusType.Obedience => ENemoVisualState.Obedient,

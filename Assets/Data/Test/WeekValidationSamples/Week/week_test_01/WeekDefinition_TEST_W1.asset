@@ -27,4 +27,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cbe8bf347d5b7b14bb62eccbcb071345, type: 2}
   _onWeekEndInteractions:
   - {fileID: 11400000, guid: e1c333fba5eb430449fd6b12ca741338, type: 2}
-  _cinematicProfile: {fileID: 0}
+  _cinematicProfile: {fileID: 11400000, guid: 0518e38b857d6ee409c1d5582ba0d067, type: 2}

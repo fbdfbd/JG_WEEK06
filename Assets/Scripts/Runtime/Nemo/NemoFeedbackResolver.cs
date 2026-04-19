@@ -43,6 +43,7 @@ public static class NemoFeedbackResolver
     private static ENemoVisualState ResolveVisualState(RuntimeChildState childState)
     {
         int trust = childState.GetStat(EChildStatusType.Trust);
+        int affinity = childState.GetStat(EChildStatusType.Affinity);
         int curiosity = childState.GetStat(EChildStatusType.Curiosity);
         int anxiety = childState.GetStat(EChildStatusType.Anxiety);
         int obedience = childState.GetStat(EChildStatusType.Obedience);
@@ -57,7 +58,7 @@ public static class NemoFeedbackResolver
             return ENemoVisualState.Anxious;
         }
 
-        if (trust >= 4)
+        if (trust >= 4 || affinity >= 4)
         {
             return ENemoVisualState.Trusting;
         }
@@ -199,6 +200,7 @@ public static class NemoFeedbackResolver
         return dominantStat switch
         {
             EChildStatusType.Trust => "아직은 여기 말을 믿고 싶어.",
+            EChildStatusType.Affinity => "이제는 조금 더 가까이 다가가 보고 싶어.",
             EChildStatusType.Curiosity => "조금만 더 보면 알 수 있을 것 같아.",
             EChildStatusType.Anxiety => "모르는 게 많아질수록 더 조용해져.",
             EChildStatusType.Obedience => "지금은 들은 대로 기억할래.",
