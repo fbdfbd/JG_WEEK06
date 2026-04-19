@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82477aacd1d46994fa0595b03679138c, type: 3}
+  m_Name: week_002_DayFlow
+  m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDayFlowDefinition
+  _routineEvents:
+  - {fileID: 11400000, guid: ebf5a5e69a7326c4e8d20d6f3a1d81f0, type: 2}
+  - {fileID: 11400000, guid: 8a9bc9fedd41986478bb6e944bcb5a8c, type: 2}
+  - {fileID: 11400000, guid: e1a0ccdd0f6d3434eb15c81006f9aef4, type: 2}
+  - {fileID: 11400000, guid: d25c42b7113205241973b6bbd36834f5, type: 2}
+  - {fileID: 11400000, guid: db1bf506193f5734a8b6f8f10122673c, type: 2}
+  - {fileID: 11400000, guid: e59d98849c8bbbc4a80a09819890b51c, type: 2}
+  - {fileID: 11400000, guid: b7c739b498ed0844bbd6f6a78b5189ce, type: 2}
+  - {fileID: 11400000, guid: a76cba860293f57479094cdb221613c1, type: 2}
+  - {fileID: 11400000, guid: 24b20ef0f2877e64488ef96c08fd0c37, type: 2}
+  - {fileID: 11400000, guid: adc86174848a28b48b87a03e1fa13518, type: 2}
+  - {fileID: 11400000, guid: 03073ed61b1caaa4cbc58b7c56840492, type: 2}
+  - {fileID: 11400000, guid: b20cf1d3cbd38164b8029d2ab5b2d4de, type: 2}
+  - {fileID: 11400000, guid: cc278796543da274d9437d188a23bfe4, type: 2}
+  - {fileID: 11400000, guid: efac270fa416b144d9a14edf01ffd848, type: 2}
+  - {fileID: 11400000, guid: 4ff2a8ec304d02d4aa367292ef8e7d4d, type: 2}
+  - {fileID: 11400000, guid: 1cd47278b9109ba478ba59a7803ac1cc, type: 2}
+  _storyEvents: []

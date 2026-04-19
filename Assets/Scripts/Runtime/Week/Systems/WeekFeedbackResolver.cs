@@ -113,6 +113,7 @@ public static class WeekFeedbackResolver
         return dominantStat switch
         {
             EChildStatusType.Trust => "네모는 아직 집 안의 설명을 믿고 있지만, 그 믿음의 모양이 조금씩 달라지고 있다.",
+            EChildStatusType.Affinity => "네모는 오늘 받은 마음의 결을 통해, 누군가와 조금 더 가까워질 수 있다는 감각을 붙잡고 있다.",
             EChildStatusType.Curiosity => "네모는 오늘 받은 이야기들 사이에서, 아직 말해지지 않은 조각을 찾고 있다.",
             EChildStatusType.Anxiety => "네모는 무사히 하루를 지냈지만, 설명되지 않은 분위기를 오래 붙잡고 있다.",
             EChildStatusType.Obedience => "네모는 조용히 받아들이고 있지만, 그 조용함 역시 기억으로 남고 있다.",
@@ -126,12 +127,25 @@ public static class WeekFeedbackResolver
     {
         StringBuilder builder = new();
 
-        AppendDelta(builder, "신뢰", childState.GetStat(EChildStatusType.Trust) - previousStats[EChildStatusType.Trust]);
-        AppendDelta(builder, "호기심", childState.GetStat(EChildStatusType.Curiosity) - previousStats[EChildStatusType.Curiosity]);
-        AppendDelta(builder, "불안", childState.GetStat(EChildStatusType.Anxiety) - previousStats[EChildStatusType.Anxiety]);
-        AppendDelta(builder, "순응", childState.GetStat(EChildStatusType.Obedience) - previousStats[EChildStatusType.Obedience]);
+        foreach (EChildStatusType statType in RuntimeChildState.AllStatTypes)
+        {
+            AppendDelta(builder, GetStatLabel(statType), childState.GetStat(statType) - previousStats[statType]);
+        }
 
         return builder.Length == 0 ? "이번 주엔 직접적인 수치 변화는 없었다." : builder.ToString().Trim();
+    }
+
+    private static string GetStatLabel(EChildStatusType statType)
+    {
+        return statType switch
+        {
+            EChildStatusType.Trust => "신뢰",
+            EChildStatusType.Affinity => "친밀도",
+            EChildStatusType.Curiosity => "호기심",
+            EChildStatusType.Anxiety => "불안",
+            EChildStatusType.Obedience => "순응",
+            _ => statType.ToString(),
+        };
     }
 
     private static void AppendDelta(StringBuilder builder, string label, int delta)

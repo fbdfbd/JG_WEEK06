@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: Card_TEST_W1_Letter
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_test_w1_letter
+  _cardType: {fileID: 11400000, guid: 60991cf0e555eee4db260e84c4692e65, type: 2}
+  _title: '[W1][CARD] Default=Blocked -> ROUTINE + STORY trigger'
+  _originalText: "\uAE30\uBCF8 \uC120\uD0DD \uADF8\uB300\uB85C \uC2E4\uD589\uD558\uBA74
+    Letter=Blocked\uAC00 \uC801\uC6A9\uB418\uC5B4 W1 \uB8E8\uD2F4 \uC774\uBCA4\uD2B8\uC640
+    \uC2A4\uD1A0\uB9AC \uC774\uBCA4\uD2B8\uAC00 \uB458 \uB2E4 \uC5F4\uB9BD\uB2C8\uB2E4."
+  _options:
+  - _semantic: 2
+    _label: '[Default] Blocked -> trigger W1 routine/story'
+    _presentedText: 'W1 TEST RESULT: Blocked semantic applied.'
+    _interactions:
+    - {fileID: 11400000, guid: ef650ad1696ffbc479eac006a59dc893, type: 2}
+    - {fileID: 11400000, guid: d72db4aac3c5ae24e863e37de93f45f7, type: 2}
+  - _semantic: 0
+    _label: Direct -> compare no routine/story flag
+    _presentedText: 'W1 TEST RESULT: Direct semantic applied.'
+    _interactions:
+    - {fileID: 11400000, guid: 17418335702098e41836ff62ac51558d, type: 2}
+  - _semantic: 1
+    _label: Modified -> alternate semantic
+    _presentedText: 'W1 TEST RESULT: Modified semantic applied.'
+    _interactions:
+    - {fileID: 11400000, guid: b6985c48338967948b2558467da353e1, type: 2}

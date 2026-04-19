@@ -122,9 +122,21 @@ public class WeekFlowController : MonoBehaviour
     {
         _isTransitionPlaying = true;
 
-        if (result.ShouldReplaceScreen && _currentScreen != null)
+        WeekFlowScreen previousScreen = _currentScreen;
+        WeekFlowScreen nextScreen = result.NextScreen;
+        bool shouldShowMainCanvas = result.ShouldReplaceScreen
+            ? nextScreen == null
+            : previousScreen == null;
+
+        if (result.ShouldReplaceScreen && previousScreen != null)
         {
-            yield return _cinematicDirector.PlayScreenExit(_currentScreen);
+            yield return _cinematicDirector.PlayScreenExit(previousScreen);
+
+            if (ShouldExitEventCutscene(previousScreen, nextScreen))
+            {
+                yield return PlayEventExitCutscene(previousScreen);
+            }
+
             _presenter.HideFlowScreens();
         }
 
@@ -133,6 +145,7 @@ public class WeekFlowController : MonoBehaviour
             yield return _cinematicDirector.PlayWeekChangeOut(previousWeek);
         }
 
+        _view?.SetMainCanvasVisible(shouldShowMainCanvas);
         _presenter.RefreshAll();
 
         if (previousWeek != currentWeek)
@@ -142,11 +155,17 @@ public class WeekFlowController : MonoBehaviour
 
         if (result.ShouldReplaceScreen)
         {
-            _currentScreen = result.NextScreen;
+            _currentScreen = nextScreen;
             if (_currentScreen != null)
             {
                 _presenter.PresentScreen(_currentScreen);
                 _view?.SetFlowScreenContext(_currentScreen, _runtimeState.ChildState, _runtimeState.LastWeekResult);
+
+                if (ShouldEnterEventCutscene(previousScreen, _currentScreen))
+                {
+                    yield return PlayEventEnterCutscene(_currentScreen);
+                }
+
                 _presenter.PublishNemoFeedback(_currentScreen.NemoFeedback);
                 yield return _cinematicDirector.PlayScreenEnter(_currentScreen);
                 yield return PlayScreenEnterCutscene(_currentScreen);
@@ -155,6 +174,32 @@ public class WeekFlowController : MonoBehaviour
         }
 
         _isTransitionPlaying = false;
+    }
+
+    private IEnumerator PlayEventEnterCutscene(WeekFlowScreen screen)
+    {
+        if (_cutsceneBridge == null || screen?.EventDefinition == null)
+        {
+            yield break;
+        }
+
+        yield return _cutsceneBridge.Play(WeekFlowCutsceneRequest.CreateEventEnter(
+            screen,
+            _runtimeState.ChildState,
+            _runtimeState.LastWeekResult));
+    }
+
+    private IEnumerator PlayEventExitCutscene(WeekFlowScreen screen)
+    {
+        if (_cutsceneBridge == null || screen?.EventDefinition == null)
+        {
+            yield break;
+        }
+
+        yield return _cutsceneBridge.Play(WeekFlowCutsceneRequest.CreateEventExit(
+            screen,
+            _runtimeState.ChildState,
+            _runtimeState.LastWeekResult));
     }
 
     private IEnumerator PlayScreenEnterCutscene(WeekFlowScreen screen)
@@ -168,5 +213,38 @@ public class WeekFlowController : MonoBehaviour
             screen,
             _runtimeState.ChildState,
             _runtimeState.LastWeekResult));
+    }
+
+    private static bool ShouldEnterEventCutscene(WeekFlowScreen previousScreen, WeekFlowScreen nextScreen)
+    {
+        return nextScreen?.EventDefinition != null && !IsSameEvent(previousScreen, nextScreen);
+    }
+
+    private static bool ShouldExitEventCutscene(WeekFlowScreen previousScreen, WeekFlowScreen nextScreen)
+    {
+        return previousScreen?.EventDefinition != null && !IsSameEvent(previousScreen, nextScreen);
+    }
+
+    private static bool IsSameEvent(WeekFlowScreen first, WeekFlowScreen second)
+    {
+        if (first?.EventDefinition == null || second?.EventDefinition == null)
+        {
+            return false;
+        }
+
+        if (ReferenceEquals(first.EventDefinition, second.EventDefinition))
+        {
+            return true;
+        }
+
+        string firstEventId = first.EventDefinition.Id;
+        string secondEventId = second.EventDefinition.Id;
+
+        if (!string.IsNullOrWhiteSpace(firstEventId) || !string.IsNullOrWhiteSpace(secondEventId))
+        {
+            return string.Equals(firstEventId, secondEventId, StringComparison.OrdinalIgnoreCase);
+        }
+
+        return string.Equals(first.EventDefinition.name, second.EventDefinition.name, StringComparison.OrdinalIgnoreCase);
     }
 }

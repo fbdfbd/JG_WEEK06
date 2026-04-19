@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: card_002_courtyardrumor
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_002_courtyardrumor
-  _cardType: {fileID: 11400000, guid: fb5f5a6ef4641de4eba3ccf6fd9d195e, type: 2}
+  _cardType: {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
   _title: "\uB730 \uBC16\uC758 \uC18C\uBB38"
   _originalText: "\uD558\uC778\uB4E4\uC774 \uC804\uD574 \uB4E4\uC740 \uBC14\uAE65
     \uC18C\uBB38\uC744 \uB124\uBAA8\uC5D0\uAC8C \uC5B4\uB290 \uC815\uB3C4\uAE4C\uC9C0
