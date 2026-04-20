@@ -165,8 +165,12 @@ public sealed class WeekFlowNarrativeHandler
 
     private void CompleteCurrentEvent()
     {
+        SO_InteractiveEventDefinition eventDefinition = _runtimeState.CurrentEventSession.EventDefinition;
         GameplayInteractionExecutor.ApplyAll(
-            _runtimeState.CurrentEventSession.EventDefinition.OnCompletedInteractions,
+            eventDefinition.OnCompletedInteractions,
+            _runtimeState.ChildState);
+        WeekEventRuntimeAugmentationService.ApplyOnCompleted(
+            eventDefinition,
             _runtimeState.ChildState);
         _runtimeState.ClearCurrentEventSession();
     }
