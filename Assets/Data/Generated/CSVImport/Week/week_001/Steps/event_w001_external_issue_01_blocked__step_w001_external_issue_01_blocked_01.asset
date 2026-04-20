@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w001_external_issue_01_blocked__step_w001_external_issue_01_blocked_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uBB38\uC81C 1\uCC28 - \uD1B5\uC81C"
+  _bodyText: "(\uD558\uB140\uAC00 \uD604\uAD00 \uADFC\uCC98\uC5D0\uC11C \uC6B0\uD3B8
+    \uAFB8\uB7EC\uBBF8\uB97C \uC815\uB9AC\uD558\uACE0 \uC788\uB2E4.)\n        \n       
+    (\uD558\uB140\uB294 \uC6B0\uD3B8\uC774 \uB2A6\uC5B4\uC9C4\uB2E4\uB294 \uC548\uB0B4\uBB38\uC744
+    \uBC1C\uACAC\uD588\uB2E4.)\n        \n\n\uB124\uBAA8 : \uADF8\uAC74 \uB610 \uBB50\uC57C?\n           
+    \n            \uD558\uB140 : \uBCC4\uAC70 \uC544\uB2D9\uB2C8\uB2E4, \uC8FC\uC778\uB2D8.
+    \uBE44\uAC00 \uB9CE\uC774 \uC628\uB2E4\uB294 \uB0B4\uC6A9\uC774\uC5D0\uC694.\n           
+    \n            \uB124\uBAA8 : \uD750\uC751."
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: ff5f7b941b95fc04ba6f3a7a49b04f4a, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

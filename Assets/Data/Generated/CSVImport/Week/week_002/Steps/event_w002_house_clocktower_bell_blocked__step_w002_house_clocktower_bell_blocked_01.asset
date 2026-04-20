@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w002_house_clocktower_bell_blocked__step_w002_house_clocktower_bell_blocked_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uC2DC\uACC4\uD0D1 \uC885\uC18C\uB9AC \uC18C\uBB38 - \uD1B5\uC81C"
+  _bodyText: "(\uACC4\uB2E8 \uC544\uB798. \uC0AC\uC6A9\uC778 \uB458\uC774 \uB192\uC740
+    \uCC9C\uC7A5\uC744 \uC62C\uB824\uB2E4\uBCF8\uB2E4.)\n        \n        \uC0AC\uC6A9\uC7781
+    : \uC5B4\uC82F\uBC24\uC5D4 \uC885\uC774 \uD55C \uBC88 \uB354 \uC6B8\uB9B0 \uAC83
+    \uAC19\uB358\uB370.\n        \n        \uC0AC\uC6A9\uC7782 : \uB098\uB3C4 \uB4E4\uC5C8\uC5B4.
+    \uC2DC\uACC4\uD0D1\uC774 \uB610 \uC2EC\uC220 \uBD80\uB838\uB098 \uBD10.\n       
+    \n        \uB124\uBAA8 : \uC885\uC774 \uC65C \uB354 \uC6B8\uB824?\n        \n\n\uC0AC\uC6A9\uC7781
+    : \uC544\uBB34\uAC83\uB3C4 \uC544\uB2D9\uB2C8\uB2E4, \uC8FC\uC778\uB2D8.\n       
+    \n        \uC0AC\uC6A9\uC7782 : \uADF8\uB0E5 \uC81C\uAC00 \uC798\uBABB \uB4E4\uC5C8\uB098
+    \uBD05\uB2C8\uB2E4.\n        \n        \uB124\uBAA8 : \uADFC\uB370 \uBC29\uAE08
+    \uB354 \uC6B8\uB838\uB2E4\uBA70.\n        \n        \uC0AC\uC6A9\uC7781 : \uBC24\uC5D4
+    \uC18C\uB9AC\uAC00 \uB2E4 \uC774\uC0C1\uD558\uAC8C \uB4E4\uB9B4 \uB54C\uAC00
+    \uC788\uC9C0\uC694."
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: 5d4a27f7c59a0ec4aaad50b865bb7ae2, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

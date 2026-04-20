@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: "card_textbook_young_\uC7A5\uCE58_\uC124\uACC4\uC640_\uAE30\uCD08_\uACF5\uD559"
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: "card_textbook_young_\uC7A5\uCE58_\uC124\uACC4\uC640_\uAE30\uCD08_\uACF5\uD559"
+  _cardType: {fileID: 11400000, guid: e8644e571406f564b9ea2d52094a16a5, type: 2}
+  _title: "\uC7A5\uCE58 \uC124\uACC4\uC640 \uAE30\uCD08 \uACF5\uD559"
+  _originalText: "\uC720\uB144\uAE30\uC758 \u2018\uBAB8\uAC00\uC9D0\uACFC \uBC1C\uB180\uB9BC\u2019\uC774
+    \uC2E0\uCCB4 \uD6C8\uB828\uC774\uC5C8\uB2E4\uBA74, \uC774\uC81C\uB294 \uB3C4\uAD6C\uC640
+    \uC7A5\uCE58\uB97C \uD65C\uC6A9\uD574 \uC8FC\uBCC0 \uD658\uACBD\uC744 \uBC14\uAFB8\uB294
+    \uBC95\uC744 \uBC30\uC6CC. \uC800\uD0DD\uC758 \uBD84\uC218\uB300\uB098 \uC2DC\uACC4\uD0D1\uC774
+    \uC5B4\uB5BB\uAC8C \uB3CC\uC544\uAC00\uB294\uC9C0 \uC6D0\uB9AC\uB97C \uBC30\uC6B0\uACE0
+    \uC9C1\uC811 \uC791\uC740 \uBAA8\uD615\uC744 \uB9CC\uB4E4\uC5B4\uBCF4\uAE30\uB3C4
+    \uD574. - a. \uAC70\uBD80 (\uD1B5\uC81C)"
+  _options:
+  - _semantic: 2
+    _label: "\uAC00\uBCCD\uAC8C \uB118\uAE34\uB2E4"
+    _presentedText: "\uC7A5\uCE58 \uC124\uACC4\uC640 \uAE30\uCD08 \uACF5\uD559 \uAD50\uC7AC\uB294
+      \uC624\uB298 \uAC00\uBCCD\uAC8C\uB9CC \uD6D1\uACE0 \uB118\uC5B4\uAC04\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: 7e9e7c466b743084c8fdfed064fa2fb3, type: 2}
+  - _semantic: 1
+    _label: "\uC27D\uAC8C \uD480\uC5B4\uC900\uB2E4"
+    _presentedText: "\uC7A5\uCE58 \uC124\uACC4\uC640 \uAE30\uCD08 \uACF5\uD559 \uB0B4\uC6A9\uC744
+      \uC774\uD574\uD558\uAE30 \uC27D\uAC8C \uD480\uC5B4\uC11C \uC804\uB2EC\uD55C\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: 3767dfb8845aead42b17c728fe339544, type: 2}
+  - _semantic: 0
+    _label: "\uCC28\uBD84\uD788 \uC77D\uD78C\uB2E4"
+    _presentedText: "\uC7A5\uCE58 \uC124\uACC4\uC640 \uAE30\uCD08 \uACF5\uD559 \uAD50\uC7AC
+      \uB0B4\uC6A9\uC744 \uCC28\uBD84\uD788 \uC77D\uACE0 \uADF8\uB300\uB85C \uC775\uD788\uAC8C
+      \uD55C\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: f4ea349d76ad73e488dcc5448ce0e451, type: 2}

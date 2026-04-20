@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: card_w008_house_main
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_w008_house_main
+  _cardType: {fileID: 11400000, guid: ce3bff0c6c6a2844998d0c18806d6b74, type: 2}
+  _title: "8\uC8FC\uCC28 \uC18C\uBB38"
+  _originalText: "(\uC548\uAC1C \uB080 \uC0C8\uBCBD\uC758 \uCC3D\uAC00. \uD558\uB140
+    \uB458\uC774 \uC815\uC6D0 \uCABD '\uBE44\uADF9\uC758 \uC232' \uBC29\uD5A5\uC744
+    \uBCF4\uBA70 \uBAB8\uC744 \uB5A8\uACE0 \uC788\uB2E4.) \uD558\uB140 1 : \uB4E4\uC5C8\uC5B4?
+    \uBC14\uB78C \uC18C\uB9AC\uB77C\uAE30\uC5D4 \uB108\uBB34 \uCC98\uB7C9\uD55C \uB178\uB7AB\uC18C\uB9AC
+    \uAC19\uC558\uC5B4."
+  _options:
+  - _semantic: 2
+    _label: "\uD1B5\uC81C"
+    _presentedText: "\uD1B5\uC81C"
+    _interactions: []
+  - _semantic: 0
+    _label: "\uD5C8\uB77D"
+    _presentedText: "\uD5C8\uB77D"
+    _interactions: []
+  - _semantic: 1
+    _label: "\uC218\uC815"
+    _presentedText: "\uC218\uC815"
+    _interactions: []

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w002_visitor_friend_3_direct__step_w002_visitor_friend_3_direct_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uCE5C\uAD6C3 2\uCC28 \uB9CC\uB0A8 - \uD5C8\uB77D"
+  _bodyText: "(\uCE5C\uAD6C3\uC774 \uCC3D\uAC00 \uB300\uC2E0 \uACC4\uB2E8 \uB09C\uAC04\uC5D0
+    \uAE30\uB300 \uC11C \uC788\uB2E4.)\n        \n                    \uCE5C\uAD6C3
+    : \uC624\uB298 \uAD6C\uB984\uC740 \uB9CC\uB450 \uAC19\uC544.\n        \n                   
+    \uB124\uBAA8 : \uC800\uBC88\uC5D4 \uBE75 \uC544\uB2C8\uC5C8\uC5B4?\n        \n                   
+    \uCE5C\uAD6C3 : \uC624\uB298\uC740 \uB9CC\uB450\uC57C.\n        \n\n\uCE5C\uAD6C3
+    : \uC800 \uAF43\uBCD1\uC740 \uD30C\uB974\uD398 \uAC19\uC544.\n        \n                       
+    \uB124\uBAA8 : \uB610 \uBA39\uB294 \uAC70\uC57C?\n        \n                       
+    \uCE5C\uAD6C3 : \uC751. \uADF8\uB807\uC796\uC544.\n        \n                       
+    \uB124\uBAA8 : \uB10C \uB9E8\uB0A0 \uBA39\uB294 \uAC70 \uAC19\uB300.\n       
+    \n                        \uCE5C\uAD6C3 : \uADF8\uB7FC \uB108\uB294 \uBB50 \uAC19\uC544?\n       
+    \n                        \uB124\uBAA8 : \uB09C\u2026 \uC798 \uBAA8\uB974\uACA0\uC5B4.\n       
+    \n                        (\uB124\uBAA8\uB294 \uC6C3\uB2E4\uAC00 \uCE5C\uAD6C3
+    \uD314\uC744 \uD22D \uCE5C\uB2E4.)"
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: f4ea349d76ad73e488dcc5448ce0e451, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

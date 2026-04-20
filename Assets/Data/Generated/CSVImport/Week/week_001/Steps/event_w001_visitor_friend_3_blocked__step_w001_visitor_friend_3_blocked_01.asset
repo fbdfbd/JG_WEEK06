@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w001_visitor_friend_3_blocked__step_w001_visitor_friend_3_blocked_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uCE5C\uAD6C3 1\uCC28 \uB9CC\uB0A8 - \uD1B5\uC81C"
+  _bodyText: "(\uBCF5\uB3C4 \uB05D. \uB610\uB798 \uC544\uC774 \uD558\uB098\uAC00
+    \uCC3D\uD2C0\uC5D0 \uC5BC\uAD74\uC744 \uBC14\uC9DD \uBD99\uC774\uACE0 \uBC16\uC744
+    \uBCF4\uACE0 \uC788\uB2E4.)\n        \n                    \uB124\uBAA8 : \uC5B4?
+    \uC548\uB155? \uB10C \uB204\uAD6C\uC57C?\n        \n                    \uCE5C\uAD6C3
+    : \uC800 \uAD6C\uB984 \uBD10. \uBE75 \uAC19\uC544.\n        \n                   
+    \uB124\uBAA8 : \uBE75?\n        \n                    \uCE5C\uAD6C3 : \uC751.
+    \uB72F\uC5B4 \uBA39\uACE0 \uC2F6\uC5B4.\n        \n                    \uB124\uBAA8
+    :  \uB108\uB3C4? \uB098\uB3C4 \uADF8\uB7F0 \uC0DD\uAC01 \uB4E0\uC801 \uC788\uC5B4\n       
+    \n                    \uC800 \uC544\uC774\uB294 \uCC98\uC74C \uBCF4\uB294 \uC0AC\uB78C\uD558\uACE0\uB3C4
+    \uAE08\uBC29 \uB9D0\uC744 \uC11E\uACE0, \uAC00\uB054 \uC5C9\uB6B1\uD55C \uC18C\uB9AC\uB97C
+    \uD55C\uB2E4\uACE0 \uB4E4\uC740 \uC801\uC774 \uC788\uB2E4.\n        \n\n(\uB124\uBAA8\uAC00
+    \uAC00\uAE4C\uC774 \uAC00\uB824 \uD558\uC790 \uD558\uB140\uAC00 \uBD80\uB4DC\uB7FD\uAC8C
+    \uB9C9\uB294\uB2E4.)\n        \n                        \uD558\uB140 : \uC8FC\uC778\uB2D8,
+    \uC624\uB298\uC740 \uC9E7\uAC8C \uC778\uC0AC\uB9CC \uD558\uC154\uC57C \uD569\uB2C8\uB2E4.\n       
+    \n                        \uB124\uBAA8 : \uC65C\uC694?\n        \n                       
+    \uD558\uB140 : \uC8FC\uC778\uB2D8.\n        \n                        \uB124\uBAA8
+    : \uC5D0\uC774\u2026\n        \n                        \uB124\uBAA8 : \uC548\uB155.\n       
+    \n                        \uCE5C\uAD6C3 : \uC548\uB155! \uB2E4\uC74C\uC5D4 \uAC19\uC774
+    \uBCF4\uC790!\n        \n                        ~~"
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: ff5f7b941b95fc04ba6f3a7a49b04f4a, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

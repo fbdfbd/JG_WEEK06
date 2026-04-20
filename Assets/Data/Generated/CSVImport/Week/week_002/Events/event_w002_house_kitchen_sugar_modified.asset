@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6b5be06421b454a82b7e83feaf94ed, type: 3}
+  m_Name: event_w002_house_kitchen_sugar_modified
+  m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
+  _id: event_w002_house_kitchen_sugar_modified
+  _title: "\uC8FC\uBC29\uC758 \uC124\uD0D5 \uC18C\uBB38 - \uC218\uC815"
+  _priority: 10
+  _conditions:
+    _requiredFlags: []
+    _blockedFlags: []
+    _statRequirements: []
+    _informationRequirements:
+    - _informationType: {fileID: 11400000, guid: ce3bff0c6c6a2844998d0c18806d6b74, type: 2}
+      _useSemanticFilter: 1
+      _semantic: 1
+      _minimumCount: 1
+  _firstStep: {fileID: 11400000, guid: f0a76f7b3d471df4aaa40ee268e0db18, type: 2}
+  _onCompletedInteractions:
+  - {fileID: 11400000, guid: fb73229a293757b42b9e5ada47af95c7, type: 2}
+  _cinematicProfile: {fileID: 0}
+  _relatedInformationTypes:
+  - {fileID: 11400000, guid: ce3bff0c6c6a2844998d0c18806d6b74, type: 2}
+  _preferredSemantics: 01000000

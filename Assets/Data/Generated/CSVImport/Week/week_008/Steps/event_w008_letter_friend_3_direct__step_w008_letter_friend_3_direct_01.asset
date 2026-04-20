@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w008_letter_friend_3_direct__step_w008_letter_friend_3_direct_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uCE5C\uAD6C3 \uD3B8\uC9C0 8\uC8FC\uCC28 - \uD5C8\uB77D"
+  _bodyText: "(\uD558\uB140\uAC00 \uBD09\uD22C\uB97C \uB4E4\uACE0 \uC628\uB2E4. \uBD09\uD22C
+    \uADC0\uD241\uC774\uC5D0 \uB178\uB780 \uC789\uD06C \uC790\uAD6D\uC774 \uBC88\uC838
+    \uC788\uACE0, '\uBE44\uBC00 \uC2E0\uD638 2\uD0C4'\uC774\uB77C\uACE0 \uC801\uD600
+    \uC788\uB2E4.)\n        \uD558\uB140 : \uC8FC\uC778\uB2D8 \uC55E\uC73C\uB85C
+    \uC628 \uD3B8\uC9C0\uC785\uB2C8\uB2E4. \uC774\uBC88\uC5D4 \uC789\uD06C \uC694\uC815\uC774
+    \uC544\uB2C8\uB77C \uD587\uBE5B \uC694\uC815 \uC774\uC57C\uAE30\uB77C\uB294\uB370\uC694?\n       
+    \n\n\uD558\uB140 : \uC9C0\uB09C\uBC88\uC5D0 \uB9CC\uB09C \uCE5C\uAD6C\uBD84\uC774
+    \uD587\uBE5B\uC744 \uC774\uC6A9\uD55C \uBE44\uBC00 \uC791\uC804\uC744 \uC9F0\uB2E4\uACE0
+    \uD569\uB2C8\uB2E4.\n        \uB124\uBAA8 : \uD587\uBE5B \uC791\uC804? \uADF8\uAC8C
+    \uBB54\uB370?\n        (\uD558\uB140\uAC00 \uBD09\uD22C\uB97C \uD3BC\uCE5C\uB2E4.)\n       
+    \uB124\uBAA8\uC57C! \uB0B4\uC77C \uC815\uC624\uC5D0 \uC11C\uC7AC \uAC70\uC6B8\uB85C
+    \uD587\uBE5B\uC744 \uBC18\uC0AC\uD574\uC11C \uBC16\uC73C\uB85C \uC3F4\uC918!
+    \uADF8\uB7FC \uB0B4\uAC00 \uBC16\uC5D0\uC11C \uAC70\uC6B8\uB85C \uC2E0\uD638\uB97C
+    \uBCF4\uB0BC\uAC8C. \uC774\uAC74 '\uC5B4\uB978\uC774 \uB418\uAE30 \uC804 \uB9C8\uC9C0\uB9C9
+    \uBE44\uBC00 \uC791\uC804'\uC774\uC57C. \uBC31\uC791\uB2D8\uB3C4 \uC6B0\uB9AC
+    \uC2E0\uD638\uB97C \uBCF4\uBA74 \"\uC624, \uB0B4 \uC870\uCE74\uAC00 \uBC8C\uC368
+    \uBE5B\uC758 \uB9C8\uBC95\uC0AC\uAC00 \uB410\uAD70!\" \uD558\uACE0 \uAC10\uD0C4\uD558\uC2E4\uAC78?\n       
+    \uB124\uBAA8 : \uBE5B\uC758 \uB9C8\uBC95\uC0AC! \uB098 \uC9C4\uC9DC \uD560 \uC218
+    \uC788\uC5B4!\n        \uD558\uB140 : \uC815\uB9D0 \uAE30\uBC1C\uD55C \uC0DD\uAC01\uC774\uB124\uC694.
+    \uBC31\uC791\uB2D8\uB3C4 \uC8FC\uC778\uB2D8\uC758 \uBC1D\uC740 \uBAA8\uC2B5\uC744
+    \uBCF4\uC2DC\uBA74 \uAE30\uBED0\uD558\uC2E4 \uAC81\uB2C8\uB2E4.\n        \uB124\uBAA8
+    : \uC751! \uC774\uB530\uAC00 \uAC70\uC6B8 \uB2E6\uC544\uB194\uC57C\uACA0\uB2E4.
+    \uC791\uC804 \uC131\uACF5\uD574\uC57C \uD558\uB2C8\uAE4C!"
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: a5a321391a7f0264e83961e8e2440638, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

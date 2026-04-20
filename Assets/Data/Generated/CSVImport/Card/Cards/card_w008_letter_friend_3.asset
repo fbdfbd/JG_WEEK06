@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: card_w008_letter_friend_3
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_w008_letter_friend_3
+  _cardType: {fileID: 11400000, guid: 60991cf0e555eee4db260e84c4692e65, type: 2}
+  _title: "\uCE5C\uAD6C3 \uD3B8\uC9C0 8\uC8FC\uCC28"
+  _originalText: "(\uD558\uB140\uAC00 \uBD09\uD22C\uB97C \uB4E4\uACE0 \uC628\uB2E4.
+    \uBD09\uD22C \uADC0\uD241\uC774\uC5D0 \uB178\uB780 \uC789\uD06C \uC790\uAD6D\uC774
+    \uBC88\uC838 \uC788\uACE0, '\uBE44\uBC00 \uC2E0\uD638 2\uD0C4'\uC774\uB77C\uACE0
+    \uC801\uD600 \uC788\uB2E4.) \uD558\uB140 : \uC8FC\uC778\uB2D8 \uC55E\uC73C\uB85C
+    \uC628 \uD3B8\uC9C0\uC785\uB2C8\uB2E4. \uC774\uBC88\uC5D4 \uC789\uD06C \uC694\uC815\uC774
+    \uC544\uB2C8\uB77C \uD587\uBE5B \uC694\uC815 \uC774\uC57C\uAE30\uB77C\uB294\uB370\uC694?"
+  _options:
+  - _semantic: 2
+    _label: "\uD1B5\uC81C"
+    _presentedText: "\uD1B5\uC81C"
+    _interactions: []
+  - _semantic: 0
+    _label: "\uD5C8\uB77D"
+    _presentedText: "\uD5C8\uB77D"
+    _interactions: []
+  - _semantic: 1
+    _label: "\uC218\uC815"
+    _presentedText: "\uC218\uC815"
+    _interactions: []

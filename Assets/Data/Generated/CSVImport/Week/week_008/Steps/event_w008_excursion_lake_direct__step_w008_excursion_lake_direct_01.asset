@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w008_excursion_lake_direct__step_w008_excursion_lake_direct_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uD638\uC218 8\uCC28 \uBC29\uBB38 - \uD5C8\uB77D"
+  _bodyText: "(\uD638\uC218 \uAC74\uB108\uD3B8 \uC232\uAE38. \uD3C9\uC18C\uC5D4 \uBCF4\uC774\uC9C0
+    \uC54A\uB358 \uAC80\uC740 \uC637\uC758 \uC0AC\uB0B4\uB4E4\uC774 \uC9C0\uB3C4\uB97C
+    \uD3BC\uCCD0\uB193\uACE0 \uD638\uC218\uC758 \uC9C0\uD615\uC744 \uC0B4\uD53C\uACE0
+    \uC788\uB2E4.)\n        \uD558\uB140 1 : \uC5B4\uBA38, \uC800 \uC0AC\uB78C\uB4E4\uC740
+    \uB204\uAD6C\uC8E0? \uC6B0\uB9AC \uC800\uD0DD \uC0AC\uB78C\uC774 \uC544\uB2CC
+    \uAC83 \uAC19\uC740\uB370...\n        \uD558\uB140 2 : \uC27F, \uC0AC\uCD0C 1\uB2D8\uC774
+    \uBCF4\uB0B8 \uCE21\uB7C9\uC0AC\uB4E4\uC774\uB798\uC694. \uD638\uC218 \uADFC\uCC98\uC5D0
+    \uBCC4\uC7A5\uC744 \uC9C0\uC744 \uACC4\uD68D\uC774\uB77C\uB358\uB370...\n       
+    \n\n\uD558\uB140 1 : \uC0AC\uCD0C 1\uB2D8\uC774 \uBC8C\uC368\uBD80\uD130 \uC774
+    \uD638\uC218\uAD8C\uC744 \uD0D0\uB0B4\uC2DC\uB294 \uBAA8\uC591\uC774\uC5D0\uC694.\n       
+    \uB124\uBAA8 :  \uC800 \uC0AC\uB78C\uB4E4\uC774 \uB0B4 \uD5C8\uB77D\uB3C4 \uC5C6\uC774
+    \uB0A8\uC758 \uC9D1 \uD638\uC218\uB97C \uC5FF\uBCF4\uB294 \uAC70\uC57C?\n       
+    \uD558\uB140 2 : \uC544\uC774\uACE0, \uC8FC\uC778\uB2D8 \uC55E\uC778\uB370 \uC81C\uAC00
+    \uC2E4\uC5B8\uC744 \uD588\uB124\uC694. \uADF8\uB0E5 \uC18C\uBB38\uC77C \uBFD0\uC774\uC5D0\uC694,
+    \uB108\uBB34 \uB9C8\uC74C \uC4F0\uC9C0 \uB9C8\uC138\uC694.\n        \uB124\uBAA8
+    :  \uC544\uB2C8, \uC800 \uC0AC\uB78C\uB4E4\uC774 \uC6B0\uB9AC \uD638\uC218\uB97C
+    \uB9C8\uC74C\uB300\uB85C \uAC74\uB4DC\uB9AC\uAC8C \uB450\uC9C4 \uC54A\uC744 \uAC70\uC57C."
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: 7e8a58bb3ab8b5440a4be57ce5a52c93, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}
