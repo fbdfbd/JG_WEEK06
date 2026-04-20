@@ -50,10 +50,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -108,9 +108,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 9
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -166,10 +166,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 3
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -224,10 +224,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -282,10 +282,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -340,10 +340,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 9
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -398,10 +398,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 9
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -456,10 +456,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -514,10 +514,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 4
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -572,10 +572,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -630,10 +630,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -688,10 +688,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -746,10 +746,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 11
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -804,10 +804,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -862,10 +862,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 9
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -920,9 +920,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 10
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -978,10 +978,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1036,10 +1036,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 9
-  _rightCharacter: 1
-  _centerCharacter: 0
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1094,9 +1094,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 9
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -1152,10 +1152,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 4
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1268,10 +1268,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 11
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1326,10 +1326,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1384,10 +1384,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1442,10 +1442,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 2
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1500,10 +1500,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1558,9 +1558,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 10
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -1616,10 +1616,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 9
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1674,10 +1674,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 5
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1732,9 +1732,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 9
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -1790,10 +1790,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1848,9 +1848,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 9
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -1906,9 +1906,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 9
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -1964,10 +1964,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2022,10 +2022,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2080,9 +2080,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 9
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -2138,10 +2138,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2254,10 +2254,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2312,9 +2312,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 10
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -2370,10 +2370,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2428,10 +2428,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 3
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2486,9 +2486,9 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 10
-  _rightCharacter: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
   _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
@@ -2544,10 +2544,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 0
-  _leftCharacter: 9
-  _rightCharacter: 1
-  _centerCharacter: 0
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2683,10 +2683,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2741,10 +2741,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2799,10 +2799,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 9
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2857,10 +2857,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 6
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2915,10 +2915,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 10
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2973,10 +2973,10 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 6
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
