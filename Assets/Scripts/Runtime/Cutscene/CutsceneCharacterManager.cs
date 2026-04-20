@@ -19,6 +19,24 @@ public enum CutsceneCharacterType
     StoreKeeper,
 }
 
+public enum CutsceneParticleType
+{
+    None,
+    Happy,
+    Heart,
+    Line,
+    Melancholy,
+    Sad,
+}
+
+public enum CutsceneCharacterPos
+{
+    None,
+    Left,
+    Center,
+    Right,
+}
+
 public class CutsceneCharacterManager : MonoBehaviour
 {
     public static CutsceneCharacterManager I { get; private set; }
@@ -40,8 +58,16 @@ public class CutsceneCharacterManager : MonoBehaviour
         public GameObject prefab;
     }
 
+    [Serializable]
+    private class ParticlePrefabEntry
+    {
+        public CutsceneParticleType type;
+        public ParticleSystem target;
+    }
+
     [Header("Character Prefabs")]
     [SerializeField] private CharacterPrefabEntry[] _characterPrefabs = Array.Empty<CharacterPrefabEntry>();
+    [SerializeField] private ParticlePrefabEntry[] _particlePrefabs = Array.Empty<ParticlePrefabEntry>();
 
     [Header("Spawn Points")]
     [SerializeField] private Transform _leftSpawnPoint;
@@ -51,6 +77,7 @@ public class CutsceneCharacterManager : MonoBehaviour
     private GameObject _leftCharacterInstance;
     private GameObject _rightCharacterInstance;
     private GameObject _centerCharacterInstance;
+    private ParticleSystem _readyParticle;
 
     public void ShowLeft(CutsceneCharacterType characterType)
     {
@@ -122,6 +149,32 @@ public class CutsceneCharacterManager : MonoBehaviour
         _rightCharacterInstance = null;
     }
 
+    public void PlayParticleOnLeft(CutsceneParticleType particleType)
+    {
+        PlayParticle(particleType, _leftCharacterInstance);
+    }
+    public void PlayParticleOnCenter(CutsceneParticleType particleType)
+    {
+        PlayParticle(particleType, _centerCharacterInstance);
+    }
+    public void PlayParticleOnRight(CutsceneParticleType particleType)
+    {
+        PlayParticle(particleType, _rightCharacterInstance);
+    }
+
+    public void PlayParticle(CutsceneParticleType particleType, GameObject character)
+    {
+        if (particleType == CutsceneParticleType.None) return;
+        if (character == null) return;
+
+        ParticleSystem particle = FindParticlePrefab(particleType);
+        if(particle == null) return;
+
+        particle.gameObject.transform.position = character.transform.position;
+
+        particle.Play();
+    }
+
     public GameObject GetLeftInstance()
     {
         return _leftCharacterInstance;
@@ -171,6 +224,22 @@ public class CutsceneCharacterManager : MonoBehaviour
             if (entry.type != characterType) continue;
 
             return entry.prefab;
+        }
+
+        return null;
+    }
+
+    private ParticleSystem FindParticlePrefab(CutsceneParticleType particleType)
+    {
+        if (particleType == CutsceneParticleType.None) return null;
+
+        for (int i = 0; i < _particlePrefabs.Length; i++)
+        {
+            ParticlePrefabEntry entry = _particlePrefabs[i];
+            if (entry == null) continue;
+            if (entry.type != particleType) continue;
+
+            return entry.target;
         }
 
         return null;
