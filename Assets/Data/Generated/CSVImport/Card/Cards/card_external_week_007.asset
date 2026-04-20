@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_external_week_007
   _cardType: {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
-  _title: "w007 7\uC8FC\uCC28"
-  _originalText: "w007 \uAD00\uB828 \uC774\uBCA4\uD2B8. \uB124\uBAA8\uAC00 \uC5B4\uB5BB\uAC8C
-    \uD589\uB3D9\uD560\uC9C0 \uC120\uD0DD\uD55C\uB2E4."
+  _title: "\uCCA0\uAC11 \uAE30\uBCD1\uB300 \uC18C\uBB38"
+  _originalText: "\uAD6D\uACBD\uC758 \uCCA0\uAC11 \uAE30\uBCD1\uB300\uC640 \uC131\uC778\uC2DD
+    \uC8FC\uBCC0\uC758 \uAE34\uC7A5 \uC18C\uBB38\uC774 \uB3C8\uB2E4. \uC804\uC7C1\uCC98\uB7FC
+    \uB290\uB07C\uAC8C \uD560\uC9C0 \uBCF4\uD638\uC758 \uC9D5\uD6C4\uCC98\uB7FC \uB4E4\uB824\uC904\uC9C0
+    \uC815\uD55C\uB2E4."
   _options:
   - _semantic: 2
     _label: "\uC18C\uC2DD\uC744 \uCC28\uB2E8\uD55C\uB2E4"

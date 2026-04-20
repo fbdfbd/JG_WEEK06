@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,6 +34,9 @@ public class BackgroundManager : MonoBehaviour
         public BackgroundType type;
         public Image targetImage;
 
+        [Tooltip("Use the same key for visually identical backgrounds. If empty, the sprite reference is used.")]
+        public string visualKey;
+
         [NonSerialized] public RectTransform rect;
         [NonSerialized] public Vector2 initialAnchoredPosition;
     }
@@ -51,7 +55,9 @@ public class BackgroundManager : MonoBehaviour
 
     private BackgroundEntry currentEntry;
     private BackgroundType currentBackground;
+    private string currentVisualToken;
     private bool isTransitioning;
+    private Coroutine pendingHideRoutine;
 
     private void Awake()
     {
@@ -69,9 +75,11 @@ public class BackgroundManager : MonoBehaviour
 
     public void ShowBackground(BackgroundType type)
     {
+        CancelPendingHide();
+
         if (isTransitioning)
         {
-            Debug.LogWarning("지금 배경 전환 중입니다.");
+            Debug.LogWarning("Background transition is already playing.");
             return;
         }
 
@@ -80,6 +88,14 @@ public class BackgroundManager : MonoBehaviour
 
         if (currentEntry != null && currentEntry.type == type)
             return;
+
+        string nextVisualToken = GetVisualToken(nextEntry);
+
+        if (currentEntry != null && currentVisualToken == nextVisualToken)
+        {
+            currentBackground = type;
+            return;
+        }
 
         UIBackgroundTransitionBase transition = GetSelectedTransition();
 
@@ -101,6 +117,7 @@ public class BackgroundManager : MonoBehaviour
             {
                 currentEntry = nextEntry;
                 currentBackground = nextEntry.type;
+                currentVisualToken = nextVisualToken;
                 isTransitioning = false;
             });
     }
@@ -110,7 +127,7 @@ public class BackgroundManager : MonoBehaviour
         if (currentBackground != type)
             return;
 
-        ShowBackground(defaultBackground);
+        ScheduleHideToDefault();
     }
 
     public void SetTransitionMode(BackgroundTransitionMode mode)
@@ -124,10 +141,8 @@ public class BackgroundManager : MonoBehaviour
         {
             case BackgroundTransitionMode.None:
                 return noTransition;
-
             case BackgroundTransitionMode.Pop:
                 return popTransition;
-
             case BackgroundTransitionMode.Slide:
             default:
                 return slideTransition;
@@ -140,7 +155,7 @@ public class BackgroundManager : MonoBehaviour
 
         if (backgrounds == null || backgrounds.Length == 0)
         {
-            Debug.LogWarning("backgrounds 배열이 비어 있습니다.");
+            Debug.LogWarning("The backgrounds array is empty.");
             return;
         }
 
@@ -150,19 +165,19 @@ public class BackgroundManager : MonoBehaviour
 
             if (entry == null)
             {
-                Debug.LogWarning($"backgrounds[{i}]가 null입니다.");
+                Debug.LogWarning($"backgrounds[{i}] is null.");
                 continue;
             }
 
             if (entry.targetImage == null)
             {
-                Debug.LogWarning($"backgrounds[{i}] ({entry.type}) 의 Image가 비어 있습니다.");
+                Debug.LogWarning($"backgrounds[{i}] ({entry.type}) is missing its Image reference.");
                 continue;
             }
 
             if (backgroundMap.ContainsKey(entry.type))
             {
-                Debug.LogWarning($"중복된 배경 타입입니다: {entry.type}");
+                Debug.LogWarning($"Duplicate background type found: {entry.type}");
                 continue;
             }
 
@@ -170,7 +185,7 @@ public class BackgroundManager : MonoBehaviour
 
             if (rect == null)
             {
-                Debug.LogWarning($"backgrounds[{i}] ({entry.type}) 의 RectTransform을 찾을 수 없습니다.");
+                Debug.LogWarning($"backgrounds[{i}] ({entry.type}) is missing its RectTransform.");
                 continue;
             }
 
@@ -200,6 +215,7 @@ public class BackgroundManager : MonoBehaviour
 
         currentEntry = startEntry;
         currentBackground = startType;
+        currentVisualToken = GetVisualToken(startEntry);
         isTransitioning = false;
     }
 
@@ -221,20 +237,63 @@ public class BackgroundManager : MonoBehaviour
 
         currentEntry = nextEntry;
         currentBackground = nextEntry.type;
+        currentVisualToken = GetVisualToken(nextEntry);
         isTransitioning = false;
+    }
+
+    private void ScheduleHideToDefault()
+    {
+        CancelPendingHide();
+        pendingHideRoutine = StartCoroutine(HideToDefaultNextFrame());
+    }
+
+    private void CancelPendingHide()
+    {
+        if (pendingHideRoutine == null)
+            return;
+
+        StopCoroutine(pendingHideRoutine);
+        pendingHideRoutine = null;
+    }
+
+    private IEnumerator HideToDefaultNextFrame()
+    {
+        // Let the next screen request its background before falling back to default.
+        yield return null;
+        pendingHideRoutine = null;
+
+        if (currentBackground == defaultBackground)
+            yield break;
+
+        ShowBackground(defaultBackground);
+    }
+
+    private string GetVisualToken(BackgroundEntry entry)
+    {
+        if (entry == null || entry.targetImage == null)
+            return string.Empty;
+
+        if (!string.IsNullOrWhiteSpace(entry.visualKey))
+            return entry.visualKey;
+
+        Sprite sprite = entry.targetImage.sprite;
+        if (sprite != null)
+            return $"sprite:{sprite.GetInstanceID()}";
+
+        return $"image:{entry.targetImage.GetInstanceID()}";
     }
 
     private bool TryGetEntry(BackgroundType type, out BackgroundEntry entry)
     {
         if (!backgroundMap.TryGetValue(type, out entry))
         {
-            Debug.LogWarning($"등록되지 않은 배경 타입입니다: {type}");
+            Debug.LogWarning($"Background type is not registered: {type}");
             return false;
         }
 
         if (entry == null || entry.targetImage == null || entry.rect == null)
         {
-            Debug.LogWarning($"배경 참조가 비어 있습니다: {type}");
+            Debug.LogWarning($"Background reference is incomplete: {type}");
             return false;
         }
 

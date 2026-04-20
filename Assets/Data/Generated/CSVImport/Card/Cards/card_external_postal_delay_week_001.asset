@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: card_external_postal_delay_week_001
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_external_postal_delay_week_001
+  _cardType: {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
+  _title: "\uC6B0\uD3B8 \uC9C0\uC5F0 \uC18C\uC2DD"
+  _originalText: "\uBE44 \uB54C\uBB38\uC5D0 \uC6B0\uD3B8\uC774 \uB2A6\uC5B4\uC9C4\uB2E4\uB294
+    \uC18C\uC2DD\uC744 \uB124\uBAA8\uC5D0\uAC8C \uC5B4\uB5BB\uAC8C \uC804\uD560\uC9C0
+    \uC815\uD55C\uB2E4."
+  _options:
+  - _semantic: 2
+    _label: "\uC18C\uC2DD\uC744 \uCC28\uB2E8\uD55C\uB2E4"
+    _presentedText: "\uC678\uBD80 \uC18C\uC2DD\uC744 \uB124\uBAA8\uC5D0\uAC8C \uB4E4\uB824\uC8FC\uC9C0
+      \uC54A\uB294\uB2E4."
+    _interactions: []
+  - _semantic: 0
+    _label: "\uC18C\uC2DD\uC744 \uC804\uB2EC\uD55C\uB2E4"
+    _presentedText: "\uC678\uBD80 \uC18C\uC2DD\uC744 \uC790\uC138\uD788 \uB4E4\uB824\uC900\uB2E4."
+    _interactions: []

@@ -15,8 +15,10 @@ MonoBehaviour:
   _id: card_excursion_lake_week_006
   _cardType: {fileID: 11400000, guid: dbafb5c030c34524294075dd28cedafe, type: 2}
   _title: "\uD638\uC218 6\uC8FC\uCC28"
-  _originalText: "\uD638\uC218\uC5D0\uC11C \uB124\uBAA8\uAC00 \"...\uC624. \uC9C4\uC9DC
-    \uCC28\uAC11\uB2E4.\" \uBC18\uC751\uD55C\uB2E4."
+  _originalText: "\uC57D\uCD08 \uC8FC\uBA38\uB2C8\uB85C \uC815\uD654\uB41C \uB9D1\uC740
+    \uD638\uC218\uB97C \uBCF8\uB2E4. \uC9C1\uC811 \uC190\uC744 \uB300\uAC8C \uD560\uC9C0
+    \uC548\uC804\uD55C \uBC29\uC2DD\uC73C\uB85C\uB9CC \uB290\uB07C\uAC8C \uD560\uC9C0
+    \uC815\uD55C\uB2E4."
   _options:
   - _semantic: 2
     _label: "\uBC29\uBB38\uC744 \uB9C9\uB294\uB2E4"

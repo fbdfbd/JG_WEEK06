@@ -16,7 +16,9 @@ MonoBehaviour:
   _title: friend_2 Direct
   _priority: 10
   _conditions:
-    _requiredFlags: []
+    _requiredFlags:
+    - {fileID: 11400000, guid: a50b60655135ca046858d31e7bb92e86, type: 2}
+    - {fileID: 11400000, guid: f35cd9bc1c680a04c96ce86028591f0d, type: 2}
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:

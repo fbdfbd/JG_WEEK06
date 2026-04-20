@@ -4,6 +4,8 @@ using System.Linq;
 
 public static class WeekNarrativeResolver
 {
+    private const string NarratorSpeakerId = "speaker_narrator";
+
     public static SO_InteractiveEventDefinition[] ResolvePendingEvents(
         SO_WeekDefinition weekDefinition,
         RuntimeChildState childState,
@@ -421,6 +423,11 @@ public static class WeekNarrativeResolver
         if (speaker == null)
         {
             return NemoFeedbackResolver.DefaultSpeakerName;
+        }
+
+        if (string.Equals(speaker.Id, NarratorSpeakerId, StringComparison.OrdinalIgnoreCase))
+        {
+            return string.Empty;
         }
 
         if (!string.IsNullOrWhiteSpace(speaker.DisplayName))

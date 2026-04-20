@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_week_005_external_w005_direct__step_event_week_005_external_w005_direct
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: w005 Direct
+  _titleOverride: "\uADF8\uB9BC\uC790 \uAE30\uC0AC \uC18C\uBB38 \uD5C8\uAC00"
   _bodyText: "external w005 Direct \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: bb92d18cb19ba9944ac71077eb8aa4c5, type: 2}

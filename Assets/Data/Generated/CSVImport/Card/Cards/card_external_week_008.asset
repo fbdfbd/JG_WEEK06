@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_external_week_008
   _cardType: {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
-  _title: "\uC0C1\uC778___\uC0AC\uC2E4\uC740 8\uC8FC\uCC28"
-  _originalText: "\uC0C1\uC778___\uC0AC\uC2E4\uC740 \uAD00\uB828 \uC774\uBCA4\uD2B8.
-    \uB124\uBAA8\uAC00 \uC5B4\uB5BB\uAC8C \uD589\uB3D9\uD560\uC9C0 \uC120\uD0DD\uD55C\uB2E4."
+  _title: "\uC0AC\uB77C\uC9C4 \uC655\uB140 \uC18C\uBB38"
+  _originalText: "\uC218\uB3C4\uC758 \uC815\uBCC0\uACFC \uC0AC\uB77C\uC9C4 \uC655\uB140
+    \uC774\uC57C\uAE30\uAC00 \uD37C\uC9C4\uB2E4. \uC704\uD5D8\uD55C \uC815\uCE58
+    \uC18C\uBB38\uC73C\uB85C \uC804\uD560\uC9C0 \uBAA8\uD5D8\uB2F4\uCC98\uB7FC \uB4E4\uB824\uC904\uC9C0
+    \uC815\uD55C\uB2E4."
   _options:
   - _semantic: 2
     _label: "\uC18C\uC2DD\uC744 \uCC28\uB2E8\uD55C\uB2E4"
