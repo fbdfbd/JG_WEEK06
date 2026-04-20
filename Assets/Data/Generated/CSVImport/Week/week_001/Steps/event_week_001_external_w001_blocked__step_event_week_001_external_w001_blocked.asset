@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_week_001_external_w001_blocked__step_event_week_001_external_w001_blocked
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: "\uC678\uBD80 \uC815\uBCF4 \uD1B5\uC81C"
+  _titleOverride: "\uCD95\uC81C \uC815\uBCF4 \uD1B5\uC81C"
   _bodyText: "external w001 Blocked \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}

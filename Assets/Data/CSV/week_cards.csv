@@ -1,4 +1,4 @@
-﻿week_id,display_order,card_id,is_required
+week_id,display_order,card_id,is_required
 week_001,0,card_excursion_garden_week_001,true
 week_001,1,card_excursion_lake_week_001,true
 week_001,2,card_excursion_basement_week_001,true

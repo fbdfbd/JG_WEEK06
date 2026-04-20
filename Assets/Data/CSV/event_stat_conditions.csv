@@ -1,3 +1,3 @@
-﻿event_id,stat_type,use_minimum,minimum_value,use_maximum,maximum_value
+event_id,stat_type,use_minimum,minimum_value,use_maximum,maximum_value
 night_outside_interest,Trust,true,1,true,4
 story_letter_suspected,Curiosity,true,2,false,0

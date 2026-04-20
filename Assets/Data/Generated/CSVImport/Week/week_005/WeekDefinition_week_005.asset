@@ -23,4 +23,4 @@ MonoBehaviour:
   _onWeekStartInteractions: []
   _onWeekEndInteractions:
   - {fileID: 11400000, guid: 96733dbfc8a0c624c968f7979310772f, type: 2}
-  _cinematicProfile: {fileID: 11400000, guid: 0518e38b857d6ee409c1d5582ba0d067, type: 2}
+  _cinematicProfile: {fileID: 11400000, guid: 5fa827b912c3b454abbb35db0f722cf2, type: 2}

@@ -16,8 +16,7 @@ MonoBehaviour:
   _title: cousin_2 Modified
   _priority: 10
   _conditions:
-    _requiredFlags:
-    - {fileID: 11400000, guid: d86676a6ee3759a458213fc17b38626e, type: 2}
+    _requiredFlags: []
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:

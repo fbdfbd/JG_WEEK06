@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: speaker_gardener
   m_EditorClassIdentifier: Assembly-CSharp::SO_DialogueSpeakerDefinition
   _id: speaker_gardener
-  _displayName: "\uC815\uC6D0\uC0AC"
+  _displayName: "\uC5D0\uB2E8(\uC815\uC6D0\uC0AC)"
   _defaultVisualState: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   _bodyText: "visitor friend_1 Direct \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
-    _text: "(\uB124\uBAA8\uAC00 \uCE5C\uAD6C 1\uC5D0\uAC8C \uBC31\uC791\uC758 \uCC45\uC0C1
+    _text: "(\uB124\uBAA8\uAC00 \uB9C9\uC2A4\uC5D0\uAC8C \uBC31\uC791\uC758 \uCC45\uC0C1
       \uC704\uC5D0 \uB193\uC778 \uD654\uB824\uD55C \uB3CB\uBCF4\uAE30\uB97C \uAC74\uB124\uC900\uB2E4.)"
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
     _text: "\uCE7C\uC740 \uC548 \uB3FC\uB3C4 \uC774\uAC74 \uBD10\uB3C4 \uB3FC. \uC774\uAC78\uB85C
@@ -30,7 +30,7 @@ MonoBehaviour:
     _text: "(\uBFCC\uB4EF\uD574\uD558\uBA70) \uADF8\uCE58? \uB098\uC911\uC5D0 \uBC31\uC791\uB2D8
       \uAE30\uBD84 \uC88B\uC73C\uC2E4 \uB54C \uC800\uAE30 \uC788\uB294 \uBCF4\uBB3C\uD568\uB3C4
       \uBCF4\uC5EC\uB2EC\uB77C\uACE0 \uD574\uBCFC\uAC8C."
-  _nemoLine: "(\uB124\uBAA8\uAC00 \uCE5C\uAD6C 1\uC5D0\uAC8C \uBC31\uC791\uC758 \uCC45\uC0C1
+  _nemoLine: "(\uB124\uBAA8\uAC00 \uB9C9\uC2A4\uC5D0\uAC8C \uBC31\uC791\uC758 \uCC45\uC0C1
     \uC704\uC5D0 \uB193\uC778 \uD654\uB824\uD55C \uB3CB\uBCF4\uAE30\uB97C \uAC74\uB124\uC900\uB2E4.)"
   _useCustomVisualState: 0
   _visualState: 0

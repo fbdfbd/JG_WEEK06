@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: event_week_001_house_talk_cousin1_rumor_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_001_house_talk_cousin1_rumor_modified
-  _title: "\uC0AC\uCD0C1_\uAD00\uB828_\uC18C\uBB38 Modified"
+  _title: "\uCE74\uC774\uC628_\uAD00\uB828_\uC18C\uBB38 Modified"
   _priority: 10
   _conditions:
     _requiredFlags: []

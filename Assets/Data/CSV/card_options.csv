@@ -1,4 +1,4 @@
-﻿card_id,option_order,semantic,label,presented_text,interaction_ids
+card_id,option_order,semantic,label,presented_text,interaction_ids
 card_004_lineagebook,0,Direct,원문대로 읽는다,기록된 문장을 가능한 그대로 읽어 준다.,curiosity_plus_1
 card_004_lineagebook,1,Modified,맥락을 붙여 설명한다,불편할 수 있는 내용을 우회적으로 설명한다.,trust_plus_1|if_curiosity_3_then_trust_plus_1
 card_004_lineagebook,2,Blocked,해당 장은 넘긴다,오늘은 그 장을 읽지 않고 다른 부분으로 넘어간다.,anxiety_plus_1|hidden_info_detected_flag
