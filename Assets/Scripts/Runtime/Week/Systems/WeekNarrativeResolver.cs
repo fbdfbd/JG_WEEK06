@@ -294,8 +294,9 @@ public static class WeekNarrativeResolver
         SO_DayRoutineEventDefinition routineEvent,
         RuntimeResolvedCardRecord resolvedCard)
     {
-        return TryResolveLinkedCardId(routineEvent?.Id, out string linkedCardId) &&
-               string.Equals(resolvedCard?.CardDefinition?.Id, linkedCardId, StringComparison.OrdinalIgnoreCase) &&
+        SO_CardInfoDefinition linkedCard = routineEvent?.LinkedCard;
+        return linkedCard != null &&
+               string.Equals(resolvedCard?.CardDefinition?.Id, linkedCard.Id, StringComparison.OrdinalIgnoreCase) &&
                MeetsRoutineInformationRequirements(routineEvent.Conditions, resolvedCard) &&
                MatchesRoutineEvent(routineEvent, resolvedCard);
     }
@@ -339,7 +340,8 @@ public static class WeekNarrativeResolver
         SO_DayRoutineEventDefinition routineEvent,
         IReadOnlyDictionary<string, RuntimeResolvedCardRecord> resolvedCardLookup)
     {
-        if (!TryResolveLinkedCardId(routineEvent?.Id, out string linkedCardId) ||
+        string linkedCardId = routineEvent?.LinkedCard?.Id;
+        if (string.IsNullOrWhiteSpace(linkedCardId) ||
             resolvedCardLookup == null ||
             !resolvedCardLookup.TryGetValue(linkedCardId, out RuntimeResolvedCardRecord resolvedCard))
         {
@@ -367,30 +369,6 @@ public static class WeekNarrativeResolver
 
         return lookup;
     }
-
-    private static bool TryResolveLinkedCardId(string eventId, out string linkedCardId)
-    {
-        linkedCardId = null;
-        if (string.IsNullOrWhiteSpace(eventId) || !eventId.StartsWith("event_", StringComparison.OrdinalIgnoreCase))
-        {
-            return false;
-        }
-
-        string[] semanticSuffixes = { "_direct", "_blocked", "_modified" };
-        foreach (string semanticSuffix in semanticSuffixes)
-        {
-            if (!eventId.EndsWith(semanticSuffix, StringComparison.OrdinalIgnoreCase))
-            {
-                continue;
-            }
-
-            linkedCardId = "card_" + eventId.Substring("event_".Length, eventId.Length - "event_".Length - semanticSuffix.Length);
-            return true;
-        }
-
-        return false;
-    }
-
     private static ENemoVisualState ResolveVisualState(
         SO_InteractiveEventStepDefinition step,
         RuntimeChildState childState)

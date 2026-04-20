@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_GroupStatDelta
   _interactions:
   - {fileID: 11400000, guid: f4ea349d76ad73e488dcc5448ce0e451, type: 2}
-  - {fileID: 11400000, guid: 32788686f4e767846b3977ab0279ddd5, type: 2}
+  - {fileID: 11400000, guid: dbbd99b4d6277784791690fa1fbfd53c, type: 2}

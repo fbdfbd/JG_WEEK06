@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
   _id: week_006
   _weekIndex: 6
-  _title: "\uC5B4\uB9B0\uC774\uAE30 6\uC8FC\uCC28"
-  _summary: "\uC5B4\uB9B0\uC774\uAE30 6\uC8FC\uCC28 \uC9C4\uD589"
+  _title: "\uC5B4\uB9B0\uC774\uAE30 3\uC8FC\uCC28"
+  _summary: "\uC5B4\uB9B0\uC774\uAE30 \uC138 \uBC88\uC9F8 \uC8FC\uCC28"
   _preTurn: {fileID: 11400000, guid: 04be3cd04c66b1d4fa74c934917db000, type: 2}
   _dayFlow: {fileID: 11400000, guid: 285b186694008bc449359e4edb9bc1fb, type: 2}
   _nightFlow: {fileID: 11400000, guid: 1e5c5e0d4f7bc224b9147fbd2287a172, type: 2}
   _weekRules: []
   _onWeekStartInteractions: []
-  _onWeekEndInteractions: []
+  _onWeekEndInteractions:
+  - {fileID: 11400000, guid: 2c2318ec54181ec4db513657ba18b4c5, type: 2}
   _cinematicProfile: {fileID: 0}

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: external_interest
   m_EditorClassIdentifier: Assembly-CSharp::SO_FlagDefinition
   _id: external_interest
-  _displayName: "\uC678\uBD80 \uC815\uBCF4 \uAD00\uC2EC"
-  _description: "\uC678\uBD80 \uC815\uBCF4\uC5D0 \uAD00\uC2EC\uC744 \uAC00\uC9D0"
+  _displayName: "\uBC14\uAE65 \uAD00\uC2EC"
+  _description: "\uB124\uBAA8\uAC00 \uC9D1 \uBC16\uC758 \uC815\uBCF4\uC640 \uC138\uACC4\uC5D0
+    \uC9C0\uC18D\uC801\uC73C\uB85C \uAD00\uC2EC\uC744 \uBCF4\uC774\uB294 \uC0C1\uD0DC"

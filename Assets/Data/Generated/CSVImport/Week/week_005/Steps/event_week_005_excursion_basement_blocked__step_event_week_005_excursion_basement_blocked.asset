@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_week_005_excursion_basement_blocked__step_event_week_005_excursion_basement_blocked
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: basement Blocked
+  _bodyText: "excursion basement Blocked \uB8E8\uD2B8"
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
+    _text: "(\uCC3D\uACE0\uC9C0\uAE30\uAC00 \uAE09\uD788 \uAE30\uB465 \uC55E\uC5D0
+      \uC11C\uC11C \uC2DC\uC57C\uB97C \uAC00\uB9B0\uB2E4.)"
+  - _speaker: {fileID: 11400000, guid: fecbee78e68de874dbc9bec96e9344c0, type: 2}
+    _text: "\uC8FC\uC778\uB2D8, \uC774\uCABD\uC740 \uBCF4\uC2E4 \uAC8C \uC5C6\uC2B5\uB2C8\uB2E4."
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uC544\uB2CC\uB370. \uBB54\uAC00 \uC788\uC5C8\uB294\uB370."
+  - _speaker: {fileID: 11400000, guid: fecbee78e68de874dbc9bec96e9344c0, type: 2}
+    _text: "\uADF8\uB0E5 \uC624\uB798\uB41C \uD45C\uC2DC\uB4E4\uC785\uB2C8\uB2E4."
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uAE30\uB465\uC5D0 \uC65C \uD45C\uC2DC\uB97C \uD574."
+  _nemoLine: "(\uCC3D\uACE0\uC9C0\uAE30\uAC00 \uAE09\uD788 \uAE30\uB465 \uC55E\uC5D0
+    \uC11C\uC11C \uC2DC\uC57C\uB97C \uAC00\uB9B0\uB2E4.)"
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions: []
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

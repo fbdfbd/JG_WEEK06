@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_FlagDefinition
   _id: visitor_remembered
   _displayName: "\uBC29\uBB38\uC790 \uAE30\uC5B5"
-  _description: "\uBC29\uBB38\uC790\uB97C \uAE30\uC5B5\uD568"
+  _description: "\uC911\uC694 \uBC29\uBB38\uC790\uC5D0 \uB300\uD55C \uC778\uC0C1\uC774
+    \uC624\uB798 \uB0A8\uC544 \uC788\uB294 \uC0C1\uD0DC"

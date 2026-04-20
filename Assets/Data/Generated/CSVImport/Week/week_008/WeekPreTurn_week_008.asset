@@ -15,63 +15,63 @@ MonoBehaviour:
   _title: 
   _summary: 
   _informationCards:
-  - _card: {fileID: 11400000, guid: 70c432201d63e8545958bb99453687a8, type: 2}
+  - _card: {fileID: 11400000, guid: 2ee4cfbfb8b2c814795394d82a292fab, type: 2}
     _isRequired: 1
     _displayOrder: 0
-  - _card: {fileID: 11400000, guid: 2f50fa44e523e684db4cf6fdd21b75f2, type: 2}
+  - _card: {fileID: 11400000, guid: 91e4d807eede7c44da77d24f4ef32336, type: 2}
     _isRequired: 1
     _displayOrder: 1
-  - _card: {fileID: 11400000, guid: ba421ca3ec5ce4143af2ed1e18534d50, type: 2}
+  - _card: {fileID: 11400000, guid: a35d482b8e5f12c4ea677051cbfaa9bf, type: 2}
     _isRequired: 1
     _displayOrder: 2
-  - _card: {fileID: 11400000, guid: d4861b406408ccf46a34fb68e5b15633, type: 2}
+  - _card: {fileID: 11400000, guid: 7762361197341c243a18c10f99782598, type: 2}
     _isRequired: 1
     _displayOrder: 3
-  - _card: {fileID: 11400000, guid: e9b42603f5752f544a0b30c615a13735, type: 2}
+  - _card: {fileID: 11400000, guid: aa683105f645b0b4bbf3671372748f96, type: 2}
     _isRequired: 1
     _displayOrder: 4
-  - _card: {fileID: 11400000, guid: 36aa49c3284ab2e43ab2e8df9328b60d, type: 2}
+  - _card: {fileID: 11400000, guid: b517fe22c6b575a44adba195d16e721e, type: 2}
     _isRequired: 1
     _displayOrder: 5
-  - _card: {fileID: 11400000, guid: 5f9dc2b257570064385c2f7c0439e94c, type: 2}
+  - _card: {fileID: 11400000, guid: 2c41618b431d4094c8268a2e0ff2b1b9, type: 2}
     _isRequired: 1
     _displayOrder: 6
-  - _card: {fileID: 11400000, guid: 7ea682c17c8f8fc47bdf88934b1fac1f, type: 2}
+  - _card: {fileID: 11400000, guid: 92d5df39dd2aff242a984101102e9a94, type: 2}
     _isRequired: 1
     _displayOrder: 7
-  - _card: {fileID: 11400000, guid: 6b7fb97ae67bb1e4ab31c8db0f66746c, type: 2}
+  - _card: {fileID: 11400000, guid: 089356f2130d0d24c9fbaf3bd96057f4, type: 2}
     _isRequired: 1
     _displayOrder: 8
-  - _card: {fileID: 11400000, guid: 7392209d6b0258c469b1ca8e025c5bb8, type: 2}
+  - _card: {fileID: 11400000, guid: 1c99606d13fd13c4583279e0ff2dd17a, type: 2}
     _isRequired: 1
     _displayOrder: 9
-  - _card: {fileID: 11400000, guid: 3d3b69890034a9c4381d3f852165224e, type: 2}
+  - _card: {fileID: 11400000, guid: 749207782cc12f849b19b4137f741ed1, type: 2}
     _isRequired: 1
     _displayOrder: 10
-  - _card: {fileID: 11400000, guid: 46947aba3cd7a4946af70402d6b8ab2d, type: 2}
+  - _card: {fileID: 11400000, guid: cacf201057713e142b147dc913ecd568, type: 2}
     _isRequired: 1
     _displayOrder: 11
-  - _card: {fileID: 11400000, guid: 8925beb4e1443cc459c52c3e54d57bc2, type: 2}
+  - _card: {fileID: 11400000, guid: cf2ba48738a18e94abd0cc88b3ea6064, type: 2}
     _isRequired: 1
     _displayOrder: 12
-  - _card: {fileID: 11400000, guid: a5b6fcb74b0edf34784c05e364705f7b, type: 2}
+  - _card: {fileID: 11400000, guid: 180d19a379f2ae0468c8123ac992a847, type: 2}
     _isRequired: 1
     _displayOrder: 13
-  - _card: {fileID: 11400000, guid: d8469fd910392624d9dcd1aab8130c88, type: 2}
+  - _card: {fileID: 11400000, guid: 4e21c976ce0623246a051645d2a73d23, type: 2}
     _isRequired: 1
     _displayOrder: 14
-  - _card: {fileID: 11400000, guid: 5f50d939ff6cbc04aab2041ba0cce332, type: 2}
+  - _card: {fileID: 11400000, guid: bcd9f85a9a913c84e94eb6c4c0d6a7ef, type: 2}
     _isRequired: 1
     _displayOrder: 15
-  - _card: {fileID: 11400000, guid: 356b3941d9501824eaf894927b41f066, type: 2}
+  - _card: {fileID: 11400000, guid: 7872a6719bf500b4c894267646e420d1, type: 2}
     _isRequired: 0
     _displayOrder: 16
-  - _card: {fileID: 11400000, guid: faa8ecb64e588124a8c845345a92b31c, type: 2}
+  - _card: {fileID: 11400000, guid: 2431442d440bc6846bd477acf282ff8e, type: 2}
     _isRequired: 0
     _displayOrder: 17
-  - _card: {fileID: 11400000, guid: 27b9c57068685e24c98bb01d04685873, type: 2}
+  - _card: {fileID: 11400000, guid: 5d6b1bd2f5e1b5946ad9bd9994d5ff51, type: 2}
     _isRequired: 0
     _displayOrder: 18
-  - _card: {fileID: 11400000, guid: b41f7da546600d7469bf260aee33bfc9, type: 2}
+  - _card: {fileID: 11400000, guid: 5292f01fa25407842b37ee98babc76b0, type: 2}
     _isRequired: 0
     _displayOrder: 19

@@ -1,187 +1,148 @@
 ﻿card_id,card_type_id,title,original_text
-card_001_parentsletter,card_type_letter,부모 편지,원본 PM 편지 카드
-card_002_courtyardrumor,card_type_external_info,바깥 소문,원본 PM 외부 소문 카드
-card_003_tutorvisit,card_type_visitor,방문자 메모,원본 PM 방문자 카드
-card_004_lineagebook,card_type_textbook,가계 기록서,원본 PM 교재 카드
-card_w001_letter_friend_1_placeholder,card_type_letter,친구1 편지 대기,아직 도착한 편지가 없다.
-card_w001_letter_friend_2_placeholder,card_type_letter,친구2 편지 대기,아직 도착한 편지가 없다.
-card_w001_letter_friend_3_placeholder,card_type_letter,친구3 편지 대기,아직 도착한 편지가 없다.
-card_w001_letter_cousin_2_placeholder,card_type_letter,사촌2 편지 대기,아직 도착한 편지가 없다.
-card_textbook_child_인사와_식사_예절,card_type_textbook,인사와 식사 예절,"귀족가 아이로서 가장 먼저 배우는 기본 예절. 인사하는 법, 바르게 앉는 법, 식사 자리에서 조용히 행동하는 법을 익힌다."
-card_textbook_child_동화와_글자,card_type_textbook,동화와 글자,"짧은 동화와 쉬운 글자를 통해 읽기와 쓰기의 기초를 배우는 교재. 도서관, 편지, 기록과 자연스럽게 연결되는 기본 과목이다."
-card_textbook_child_꽃과_벌레_관찰,card_type_textbook,꽃과 벌레 관찰,"정원과 저택 주변에서 볼 수 있는 꽃, 벌레, 새 같은 것들을 배우는 교재. 네모의 호기심과 아이다운 감성을 살리기 좋은 과목이다."
-card_textbook_child_몸가짐과_발놀림,card_type_textbook,몸가짐과 발놀림,"몸을 바르게 세우고 중심을 잡는 기초 수련 교재. 장난처럼 보이지만, 넘어지지 않는 법, 짧게 물러나는 법, 가볍게 발을 뻗는 법 같은 기본 움직임을 익힌다."
-card_textbook_young_별자리와_항해술,card_type_textbook,별자리와 항해술,"유년기의 ‘꽃과 벌레 관찰’이 땅 위를 봤다면, 이제는 밤하늘을 보며 넓은 세상을 꿈꾸는 과목이야. 나중에 여행을 가거나 길을 잃지 않는 법을 배워. - a. 거부 (통제)"
-card_textbook_young_체전과_승마_기초,card_type_textbook,체전과 승마 기초,"유년기의 ‘몸가짐과 발놀림’이 심화되어, 이제는 동물을 다루고 활동적으로 몸을 움직이는 활기찬 수업이야. - a. 거부 (통제)"
-card_textbook_young_요리와_배식의_원리,card_type_textbook,요리와 배식의 원리,"유년기의 ‘식사 예절’에서 발전해, 음식이 만들어지는 과정과 영양을 배우는 시간이야. 가끔은 직접 간단한 간식을 만들어보기도 해. - a. 거부 (통제)"
-card_textbook_young_장치_설계와_기초_공학,card_type_textbook,장치 설계와 기초 공학,"유년기의 ‘몸가짐과 발놀림’이 신체 훈련이었다면, 이제는 도구와 장치를 활용해 주변 환경을 바꾸는 법을 배워. 저택의 분수대나 시계탑이 어떻게 돌아가는지 원리를 배우고 직접 작은 모형을 만들어보기도 해. - a. 거부 (통제)"
-card_textbook_teen_제국법과_영지_행정,card_type_textbook,제국법과 영지 행정,"단순히 예절을 배우는 단계를 넘어, 영민들 사이의 갈등을 해결하고 법을 집행하는 법을 배워. 백작님의 뒤를 이을 후계자에게 가장 중요한 과목이야. - a. 거부 (통제)"
-card_textbook_teen_외교술과_수사학,card_type_textbook,외교술과 수사학,다른 가문의 귀족들이나 제국 사절들을 상대하며 영지의 이익을 지키는 말하기 기술이야. 사촌 1처럼 뱀 같은 자들의 말속에 숨겨진 의도를 파악하는 법도 배워. - a. 거부 (통제)
-card_textbook_teen_화폐_경제와_회계_기초,card_type_textbook,화폐 경제와 회계 기초,영지의 돈 흐름을 파악하고 예산을 짜는 법을 배워. 사기와 횡령을 막고 영지를 풍요롭게 만들기 위해 필수적인 과목이지. - a. 거부 (통제)
-card_textbook_teen_군사_전략과_방어_진형,card_type_textbook,군사 전략과 방어 진형,"영지를 침략으로부터 지키기 위한 병법이야. 직접 칼을 휘두르는 것보다, 군대를 어떻게 배치하고 지형을 활용할지 머리 쓰는 법을 배워. - a. 거부 (통제)"
-card_w001_excursion_garden,card_type_excursion,정원 1차 방문,"(쨍한 점심. 정원을 걷던 네모가 나비를 발견한다.) 네모 : 와, 나비다."
-card_w002_excursion_garden,card_type_excursion,정원 2차 방문,"(비가 그친 다음 날. 정원 바닥엔 아직 물방울이 남아 있고, 잎사귀 끝에서 빗물이 또르르 떨어진다.) 네모 : 우와. 오늘은 반짝반짝하네."
-card_w003_excursion_garden,card_type_excursion,정원 3차 방문,(해가 기울 무렵. 정원 분수대 물줄기 끝에 작고 옅은 무지개가 걸려 있다.) 네모 : 어?
-card_w001_excursion_lake,card_type_excursion,호수 1차 방문,"(쨍한 점심. 정원을 걷던 네모가 나비를 발견한다.) 네모 : 와, 나비다."
-card_w002_excursion_lake,card_type_excursion,호수 2차 방문,(맑은 날. 네모가 뒤쪽 길 너머로 햇빛에 반짝이는 호수를 발견한다.) 네모 : 우와. 물이 반짝반짝해.
-card_w003_excursion_lake,card_type_excursion,호수 3차 방문,(바람이 잔잔한 오후. 갈대 사이로 오리 한 쌍과 작은 새끼들이 물 위를 천천히 지나간다.) 네모 : 어? 저기 봐.
-card_w001_excursion_basement,card_type_excursion,지하실 1차 방문,(네모가 사용인과 숨바꼭질을 하고 있다.) 네모 : 꼭꼭 숨어라…
-card_w002_excursion_basement,card_type_excursion,지하실 2차 방문,(복도를 달리던 네모 앞에 작은 공이 또르르 굴러간다. 공은 지하실 문 앞에서 멈춘다.) 네모 : 어? 잡았다.
-card_w003_excursion_basement,card_type_excursion,지하실 3차 방문,(저녁 무렵. 지하실 문틈에서 서늘한 바람이 새어 나온다. 안쪽 어둠 속에선 푸른 빛이 아주 약하게 깜빡인다.) 네모 : 어? 저 안에 뭐 살아? ㅇㅁㅇ
-card_w001_excursion_library,card_type_excursion,도서관 1차 방문,(네모가 저택 내부 도서관 문을 빼꼼 연다.) 네모 : 우와…
-card_w002_excursion_library,card_type_excursion,도서관 2차 방문,(네모가 도서관 안쪽을 돌아다니다 먼지가 두껍게 쌓인 오래된 책을 발견한다.) 네모 : 어? 이것도 봐도 되나?
-card_w003_excursion_library,card_type_excursion,도서관 3차 방문,"(도서관 깊숙한 자리. 서고관리인이 두꺼운 책 한 권을 펼치자, 검은 종이 위에 작은 별점들이 하나씩 떠오른다. 빛수정 램프가 페이지 위를 비추고 있다.) 네모 : 우와. 책 안에 밤이 들어 있네."
-card_w001_excursion_study,card_type_excursion,내서재 1차 방문,"(네모가 복도를 걷다가 플레이어의 서재 문 앞에 멈춘다. 문은 살짝 열려 있고, 안쪽 책상 위엔 반짝이는 깃펜과 인장이 보인다.) 네모 : 어?"
-card_w002_excursion_study,card_type_excursion,내서재 2차 방문,(네모가 백작님 서재 앞을 지나가다 책상 위 편지 봉투를 본다.) 네모 : 어? 이번엔 종이가 많네.
-card_w003_excursion_study,card_type_excursion,내서재 3차 방문,(서재 문이 조금 열려 있다. 안쪽에서 비서가 작은 놋그릇 위에 붉은 밀랍을 녹이고 있다. 그릇 밑의 열석이 은은하게 달아올라 있다.) 네모 : 어?
-card_w004_excursion_garden,card_type_excursion,정원 4차 방문,(해 질 무렵의 정원. 온실 옆 화단에 닫혀 있던 희고 긴 꽃봉오리들이 하나둘 벌어지기 시작한다. 정원사는 작은 온열석을 화단 가장자리에 묻고 있다.) 네모 : 어? 아까까진 다 닫혀 있었는데.
-card_w005_excursion_garden,card_type_excursion,정원 5차 방문,(맑은 오전. 네모가 정원 가장자리 벤치에 앉아 책장을 넘기고 있다. 그때 작은 산새 한 마리가 난간에 내려앉는다.) 네모 : 어?
-card_w006_excursion_garden,card_type_excursion,정원 6차 방문,"6차 방문 (한낮의 정원. 햇빛은 강한데 이상할 만큼 벌레가 없다. 꽃은 많은데도 윙윙거리는 소리도, 잎을 갉아 먹은 흔적도 잘 보이지 않는다.)"
-card_w004_excursion_lake,card_type_excursion,호수 4차 방문,"(해가 거의 진 저녁. 호숫가 난간을 따라 작은 유리등이 하나씩 켜지기 시작한다. 불꽃처럼 흔들리지도 않고, 달빛처럼 은은하게 물 위에 길을 만든다.) 네모 : 어? 저거 원래 있었나."
-card_w005_excursion_lake,card_type_excursion,호수 5차 방문,"(맑은 오전. 호숫가 갈대 끝에 얇은 색종이 조각 몇 장이 걸려 있다. 물가엔 타다 남은 가는 막대와, 금가루가 남은 종이껍질이 젖은 채 들러붙어 있다.) 네모 : 어?"
-card_w006_excursion_lake,card_type_excursion,호수 6차 방문,"(햇빛이 잘 드는 오후. 호숫가 가까운 물은 유난히 맑아서, 바닥의 잔돌까지 또렷하게 보인다. 얕은 쪽엔 작은 약초 주머니 몇 개가 돌에 묶여 살짝 흔들리고 있다.) 네모 : 물이 오늘 엄청 맑네."
-card_w004_excursion_basement,card_type_excursion,지하실 4차 방문,"(비 오는 날 오후. 지하실 입구 근처 벽에 햇빛 대신 작은 조명석 불빛이 맺혀 있다. 네모는 그 빛 아래, 벽 한쪽에 어설픈 선과 동그라미가 그려진 걸 발견한다.) 네모 : 어?"
-card_w005_excursion_basement,card_type_excursion,지하실 5차 방문,"(늦은 오후. 지하실 안쪽 기둥 하나에 가느다란 선들이 여러 개 나 있다. 어떤 건 연필선 같고, 어떤 건 칼끝으로 살짝 새긴 듯 얕다. 선 옆엔 날짜처럼 보이는 작은 숫자도 있다.) 네모 : 어? 이건 또 뭐야."
-card_w006_excursion_basement,card_type_excursion,지하실 6차 방문,(저녁 무렵. 지하실 안쪽 선반엔 와인병들이 가지런히 누워 있다. 병목마다 연도표와 작은 메모가 달려 있다. 네모는 그중 가장 앞줄에 놓인 병 하나를 유심히 본다.) 네모 : 이건 왜 다 눕혀 놔?
-card_w004_excursion_library,card_type_excursion,도서관 4차 방문,"(네모가 높은 선반에 꽂힌 낡은 역사서를 보며 까치발을 들고 있다. 손이 닿을락 말락 하는 순간, 뒤에서 누군가 대신 책을 꺼내 네모의 머리 위로 쓱 내민다.) 네모 : 앗, 감사합니..."
-card_w005_excursion_library,card_type_excursion,도서관 5차 방문,(네모가 철학 책을 읽다가 한 페이지에서 멈춘다. 난해한 문장 옆 여백에 아주 작고 정갈한 필체로 주석이 달러 있다.) 네모 : 이 글씨... 백작님 글씨잖아.
-card_w006_excursion_library,card_type_excursion,도서관 6차 방문,"(늦은 밤, 네모가 도서관 구석 소파에서 책을 얼굴에 덮은 채 잠들어 있다. 깨어보니 어깨에 묵직하고 따뜻한 외투가 덮여 있고, 탁자 위 촛불은 거의 다 타들어 가고 있다.) 네모 : ...음."
-card_w007_excursion_garden,card_type_excursion,정원 7차 방문,"(정원 안쪽, 유년기 때 심었던 어린나무가 이제 네모의 키를 훌쩍 넘겨 무성하게 자라 있다.) 하녀 : 주인님, 기억나세요? 이 나무 주인님이 요만할 때 같이 심었잖아요. 이제는 주인님을 지켜줄 만큼 든든해졌네요."
-card_w008_excursion_garden,card_type_excursion,정원 8차 방문,"(분수대 근처 화단. 평소와 달리 흙이 거칠게 파여 있고 낯선 가죽 장화 자국이 선명하게 남아 있다.) 하녀 1 : 이상하네, 정원사들은 이런 거친 신발을 안 신는데..."
-card_w009_excursion_garden,card_type_excursion,정원 9차 방문,"(정원 온실 옆, 네모가 좋아하는 꽃들이 만개한 곳에 작은 테이블과 찻잔 세트가 준비되어 있다.) 하녀 : 주인님, 오늘은 날씨가 너무 좋아서 여기서 차를 마시는 건 어떨까요? 주인님이 직접 고른 꽃차예요."
-card_w001_visitor_cousin_1,card_type_visitor,사촌1 1차 만남,(사용인들이 응접실을 분주히 정리하고 있다.) 네모 : 어? 오늘 손님 와요?
-card_w002_visitor_cousin_1,card_type_visitor,사촌1 2차 만남,(응접실에서 사촌1이 네모를 보며 웃는다. 이번엔 처음보다 더 자연스럽게 말을 건다.) 사촌1 : 또 만나는구나.
-card_w003_visitor_cousin_1,card_type_visitor,사촌1 3차 만남,(응접실. 사촌1이 차를 마시며 네모를 보자 먼저 손짓한다. 테이블 위엔 작은 나무 상자가 하나 놓여 있다.) 사촌1 : 또 만나는구나.
-card_w001_visitor_cousin_2,card_type_visitor,사촌2 1차 만남,(응접실 한쪽. 사촌1 옆에 또래 아이 하나가 가만히 서 있다.) 네모 : 어? 저 애는 누구야?
-card_w002_visitor_cousin_2,card_type_visitor,사촌2 2차 만남,(사촌2가 이번엔 지난번보다 덜 경계한다.) 네모 : 안녕.
-card_w003_visitor_cousin_2,card_type_visitor,사촌2 3차 만남,"(응접실 한쪽. 사촌2가 테이블보 끝을 만지작거리다가 네모를 보자 먼저 눈을 피했다가, 다시 슬쩍 본다.) 네모 : 안녕."
-card_w001_visitor_friend_1,card_type_visitor,친구1 1차 만남,(정원 근처 응접실 앞. 또래 아이 하나가 혼자 복도 장식품을 구경하며 서 있다.) 네모 : 어?
-card_w002_visitor_friend_1,card_type_visitor,친구1 2차 만남,(친구1은 이번에도 먼저 네모를 발견하고 뛰어온다.) 친구1 : 네모! 또 왔다!
-card_w003_visitor_friend_1,card_type_visitor,친구1 3차 만남,(복도 중간. 친구1이 바닥 타일 사이 선 위를 한 발로 폴짝폴짝 뛰고 있다.) 친구1 : 네모! 빨리 와!
-card_w001_visitor_friend_2,card_type_visitor,친구2 1차 만남,(응접실 한쪽. 또래 아이 하나가 옷매무새를 만지며 가만히 서 있다.) 네모 : 어? 쟤는 왜 저렇게 가만히 있어?
-card_w002_visitor_friend_2,card_type_visitor,친구2 2차 만남,"(친구2는 오늘도 단정하게 서 있지만, 지난번보다 네모를 덜 경계한다.) 네모 : 안녕."
-card_w003_visitor_friend_2,card_type_visitor,친구2 3차 만남,(응접실 창가. 친구2가 손수건을 네모 반듯하게 접고 있다. 옆엔 작은 리본 하나가 놓여 있다.) 네모 : 뭐 해?
-card_w001_visitor_friend_3,card_type_visitor,친구3 1차 만남,(복도 끝. 또래 아이 하나가 창틀에 얼굴을 바짝 붙이고 밖을 보고 있다.) 네모 : 어? 안녕? 넌 누구야?
-card_w002_visitor_friend_3,card_type_visitor,친구3 2차 만남,(친구3이 창가 대신 계단 난간에 기대 서 있다.) 친구3 : 오늘 구름은 만두 같아.
-card_w003_visitor_friend_3,card_type_visitor,친구3 3차 만남,"(복도 벽에 오후 햇빛이 길게 들어온다. 친구3이 두 손을 벽에 비춰 이상한 그림자를 만들고 있다.) 친구3 : 네모, 빨리 와."
-card_w004_visitor_cousin_1,card_type_visitor,사촌1 4차 만남,"(백작이 자리를 비운 서재. 사촌 1이 소파에 늘어져 있다가 네모가 들어오자 주머니에서 화려하게 포장된 상자를 꺼낸다.) 사촌 1 : 야, 네모! 너희 백작님은 여전하시냐? 아주 저택을 감옥으로 만들어 놨네. 자, 이건 오다 주운 거다."
-card_w005_visitor_cousin_1,card_type_visitor,사촌1 5차 만남,"(사촌 1이 서재 창문을 활짝 열고 밖을 내다보며 네모를 부른다. 백작은 항상 환기할 때만 문을 열지만, 사촌 1은 바람 그 자체를 즐긴다.) 사촌 1 : 네모야, 이쪽으로 와봐. 여기서 보면 저 멀리 성문 밖 시장이 보이지? 저기서 파는 양꼬치 냄새가 여기까지 나는 것 같지 않냐?"
-card_w006_visitor_cousin_1,card_type_visitor,사촌1 6차 만남,"(사촌 1이 여행길에 썼던 낡은 모자를 백작의 책상 위에 툭 던져놓는다. 백작의 정갈한 책상에 어울리지 않는 흙먼지 묻은 모자다.) 사촌 1 : 네모야, 삼촌 이번에 북부 고원 다녀왔는데 말이야. 이 모자에 거기 냄새가 배어 있을 거다. 한번 맡아볼래?"
-card_w004_visitor_cousin_2,card_type_visitor,사촌2 4차 만남,"(백작의 서재, 사촌 2가 문앞에서 쭈뼛거리며 들어오지 못하고 있다. 네모가 발견하고 그를 안으로 끌어당긴다.) 네모 : 야, 사촌 2! 왜 거기 서 있어? 그냥 들어와. 백작님 지금 안 계셔."
-card_w005_visitor_cousin_2,card_type_visitor,사촌2 5차 만남,"(네모와 사촌 2가 백작의 커다란 지도를 함께 보고 있다. 사촌 2는 지도의 크기에 압도된 듯 손을 벌벌 떤다.) 사촌 2 : 네모야, 세상은 정말 이렇게 넓어? 나는 우리 집 앞마당도 무서운데..."
-card_w006_visitor_cousin_2,card_type_visitor,사촌2 6차 만남,"(네모가 백작의 화려한 깃펜을 사촌 2에게 쥐여준다. 사촌 2는 떨리는 손으로 종이 귀퉁이에 작은 꽃 그림을 그린다.) 사촌 2 : 네모야, 이거 진짜 부드럽게 써진다... 근데 이거 내가 써도 되는 거야? 백작님이 보시면..."
-card_w004_visitor_friend_1,card_type_visitor,친구1 4차 만남,"(백작이 없는 사이, 네모가 친구 1을 데리고 서재로 몰래 들어온다. 친구 1은 서재의 웅장함에 감탄하며 이곳저곳을 들쑤신다.) 친구 1 : 와, 네모! 너네 아저씨 서재 진짜 끝내준다! 저 칼 뭐야? 진짜 베여?"
-card_w005_visitor_friend_1,card_type_visitor,친구1 5차 만남,"(두 소년이 백작의 영지 지도를 펼쳐놓고 머리를 맞대고 있다. 친구 1이 지도 위의 한 지점을 콕 찍으며 눈을 빛낸다.) 친구 1 : 네모, 여기 봐! 저번에 우리 아빠가 말해준 비밀 동굴이 여기쯤일걸? 우리 내일 여기로 모험 가자!"
-card_w006_visitor_friend_1,card_type_visitor,친구1 6차 만남,"(친구 1이 백작의 고급 만년필을 구경하다가 실수로 잉크 병을 엎지를 뻔한다. 다행히 네모가 순발력 있게 병을 붙잡는다.) 친구 1 : 윽, 하마터면 큰일 날 뻔했다! 이거 쏟았으면 나 진짜 백작님한테 목이 달아났을지도 몰라."
-card_w004_visitor_friend_2,card_type_visitor,친구2 4차 만남,"(서재 소파에 네모와 친구 2가 나란히 앉아 각자 책을 읽고 있다. 너무 조용해서 시계추 소리만 들리는 가운데, 친구 2가 조심스럽게 입을 연다.) 친구 2 : 네모야, 여기는 정말... 세상에서 제일 조용한 곳 같아. 책장이 넘어가는 소리도 크게 들려."
-card_w005_visitor_friend_2,card_type_visitor,친구2 5차 만남,(친구 2가 서재 창가에 서서 밖을 멍하니 바라보고 있다. 네모가 그 옆으로 다가가 같이 창밖 영지를 내려다본다.) 친구 2 : 저기 멀리 보이는 호수 말이야... 거기 진짜 전설의 물고기가 살아? 우리 아빠가 옛날 책에서 봤대.
-card_w006_visitor_friend_2,card_type_visitor,친구2 6차 만남,(친구 2가 백작의 고급 깃펜을 신기한 듯 바라본다. 네모는 친구 2에게 깃펜을 쥐여주며 한 번 써보라고 권한다.) 네모 : 이거 진짜 부드러워. 네가 좋아하는 시 한 구절 적어봐.
-card_w004_visitor_friend_3,card_type_visitor,친구3 4차 만남,"(백작이 없는 서재. 친구 3은 백작의 책상 근처를 서성이며 신기한 도구들을 관찰하고 있다. 경비대장의 날카로운 시선이 꽂히지만, 친구 3은 아랑곳하지 않는다.) 친구 3 : 야, 네모. 이 돋보기는 왜 이렇게 커? 이걸로 보면 백작님 얼굴도 이만큼 크게 보여?"
-card_w005_visitor_friend_3,card_type_visitor,친구3 5차 만남,"(두 소년이 지도를 보며 이야기를 나누고 있다. 친구 3은 지도의 지형보다는 그 안에 숨어 있을 법한 괴물들에 더 관심이 많다.) 친구 3 : 야, 여기 이 깊은 숲 있지? 여기 분명히 머리 세 개 달린 개가 살 거야. 우리 아빠가 그랬어, 여기 들어가면 아무도 못 나온다고."
-card_w007_visitor_cousin_1,card_type_visitor,사촌1 7차 만남,"(백작님이 자리를 비운 서재. 사촌 1이 소파에 앉아 붉은 보석이 박힌 인장을 만지작거리다 네모가 들어오자 소름 끼치는 미소를 지으며 건넨다.) 사촌 1 : 야, 네모. 이거 원래 네 진짜 부모님이 마지막까지 쥐고 있던 거다. 백작님은 ""사고로 유실됐다""고 하셨지? 근데 왜 이게 내 손에 있을까?"
-card_w008_visitor_cousin_1,card_type_visitor,사촌1 8차 만남,"(사촌 1이 서재 창문을 거칠게 열고 저 멀리 어두운 숲을 가리킨다. 유년기에는 양꼬치를 말하던 그 입에서 이제는 잔인한 폭로가 흘러나온다.)사촌 1 : 저기 숲 보이지? 백작님이 ""위험하니 절대 가지 마라""고 신신당부하던 곳. 거기가 네 부모님의 마차가 전복된 곳이야. 근데 웃기지 않아? 그날 백작님의 기사단이 딱 그 "
-card_w009_visitor_cousin_1,card_type_visitor,사촌1 9차 만남,"(사촌 1이 피와 흙이 엉겨 붙은 낡은 모자를 백작님의 정갈한 책상 위, 백작님의 서명이 적힌 서류들 위에 던져놓는다. 서재의 우아한 장미 향수 냄새가 순식간에 비릿한 피 냄새로 더럽혀진다.) 사촌 1 : 야, 네모. 이 모자 냄새 맡아봐. 이게 네 아버지가 마지막으로 흘린 피 냄새다. 백작님이 맨날 뿌려대는 그 가식적인"
-card_w007_visitor_cousin_2,card_type_visitor,사촌2 7차 만남,"(백작님이 자리를 비운 서재. 사촌 2가 문앞에서 들어오지 못하고 머뭇거리고 있어. 사촌 1이 휘저어 놓은 비릿한 공기가 아직 남아있는데, 사촌 2는 네모의 안색을 살피며 작은 주머니를 내밀어.) 사촌 2 : 네모야... 안색이 왜 그래? 우리 아빠가 또 이상한 소리 하고 갔어? 여기... 이거 먹고 기운 내. 네가 좋아"
-card_w008_visitor_cousin_2,card_type_visitor,사촌2 8차 만남,"(네모와 사촌 2가 백작님의 영지 지도를 보고 있어. 사촌 1이 가리켰던 그 '비극의 숲' 근처에서 네모의 손길이 멈춰. 사촌 2는 겁에 질린 눈으로 지도를 바라봐.) 사촌 2 : 네모야, 우리 아빠가 그러는데 저 숲은 저주받았대. 백작님이 저기를 폐쇄한 건 괴물이 나와서가 아니라... 누군가의 비명 소리가 들려서라고.."
-card_w009_visitor_cousin_2,card_type_visitor,사촌2 9차 만남,"(네모가 백작님의 소중한 깃펜을 만지작거리다 사촌 2에게 건네. 사촌 2는 사촌 1이 가져온 피 묻은 모자를 보고 몸을 벌벌 떨고 있어.) 사촌 2 : 저 모자... 우리 아빠 방에 있던 건데... 네모야, 저기 묻은 거 진짜 피야? 우리 아빠가 정말... 네 부모님을..."
-card_w007_visitor_friend_1,card_type_visitor,친구1 7차 만남,"(성인식을 앞둔 어느 날, 서재에 노을이 깊게 드리워져 있다. 친구 1이 평소보다 정중한 차림으로 들어와 백작님의 책상 위에 작은 주머니를 놓는다. 그 안에는 어릴 적 두 사람이 함께 모았던 반짝이는 조약돌들과 비밀 지도 조각들이 들어있다.) 친구 1 : 네모야, 이제 내일부터는 네가 이 영지의 공식적인 후계자가 되겠지?"
-card_w008_visitor_friend_1,card_type_visitor,친구1 8차 만남,"(사촌 1이 '부모님의 비극'이라며 가리켰던 그 숲을 친구 1과 함께 창밖으로 바라보고 있어. 네모의 눈빛이 흔들리자, 친구 1은 네모의 어깨에 손을 얹어.) 친구 1 : 네모야, 사촌 1이 하는 얘기 들었어. 저 숲에서 기사단이 방관했다고? 그건 말도 안 돼. 우리 아버지가 그때 기사단 말단이었는데, 백작님은 그날 네 "
-card_w009_visitor_friend_1,card_type_visitor,친구1 9차 만남,"(성인식 전날 밤, 친구 1이 정중하게 서재 문을 두드리고 들어와. 두 사람은 이제 더 이상 숨바꼭질하듯 놀던 아이들이 아니야. 친구 1은 백작님의 서재에 어울리는 정중한 인사를 건네.) 친구 1 : 네모야, 이제 내일이면 넌 이 서재의 정식 주인이자 백작님의 후계자가 되겠지? 사촌 1 같은 사람들이 아무리 흔들어도 넌 "
-card_w007_visitor_friend_2,card_type_visitor,친구2 7차 만남,"(백작님의 서재, 네모가 산더미 같은 법무 서류에 파묻혀 있다. 친구 2가 차분한 걸음으로 들어와 네모의 책상 위에 따뜻한 찻잔을 놓는다.) 친구 2 : 네모, 사촌 1이 다녀갔다면서? 그 인간이 하는 말은 절반의 진실에 아홉 배의 거짓을 섞은 독이야. 백작님이 너한테 이 많은 서류를 읽게 하는 건, 네가 나중에 누구에게"
-card_w008_visitor_friend_2,card_type_visitor,친구2 8차 만남,"(네모와 친구 2가 서재 창가에서 정원을 내려다본다. 사촌 1이 '감옥'이라 불렀던 높은 담벼락을 보며 친구 2가 입을 연다.) 친구  : 저 담장이 답답해 보일 수도 있겠지만, 저건 널 가두는 게 아니라 외부의 시기심으로부터 널 보호하는 방패야. 백작님은 네가 충분히 자라기 전까지 세상의 풍파를 대신 맞고 계신 거지."
-card_w009_visitor_friend_2,card_type_visitor,친구2 9차 만남,"(성인식 전날 밤, 서재의 공기는 엄숙하면서도 따뜻하다. 친구 2가 백작님이 네모를 위해 준비한 화려한 정복을 보며 감탄한다. 건 게임에서의 마지막 방문이자, 아이로서 나누는 마지막 대화다.) 친구 2 : 네모, 드디어 내일이네. 사촌 1의 이간질도, 사촌 2의 불안함도 이제 너를 흔들지 못해. 넌 이미 백작님의 훌륭한 "
-card_w007_visitor_friend_3,card_type_visitor,친구3 7차 만남,"친구 3 : 야, 네모! 오늘도 그 딱딱한 책이랑 씨름 중이냐? 밖은 벌써 봄바람이 불어서 꽃이 지천으로 피었는데 말이야. 사촌 1 그 인간이 서재에 피비린내가 나네 어쩌네 헛소리하고 갔다며? 자, 이 꽃 향기나 맡아봐. 이게 진짜 세상 냄새지!"
-card_w008_visitor_friend_3,card_type_visitor,친구3 8차 만남,"(네모와 친구 3이 서재 벽에 걸린 영지 지도를 보고 있다. 친구 3은 백작님이 철저하게 관리하는 영지 곳곳의 '숨은 명소'들을 손가락으로 짚어준다.) 친구 3 : 네모야, 백작님이 여기 숲이랑 계곡을 왜 이렇게 엄격하게 통제하시는지 알아? 예전에 사고가 있었다고는 하지만, 사실은 이곳의 생태계를 보존해서 나중에 네가 물"
-card_w009_visitor_friend_3,card_type_visitor,친구3 9차 만남,"(성인식 바로 전날 밤. 서재의 촛불이 고요하게 타오르고 있다. 친구 3은 오늘만큼은 창문이 아닌 정문으로, 백작님의 허락을 받고 당당하게 들어온다. 그의 손에는 어릴 적 네모와 함께 놀던 낡은 나무 칼이 들려 있다.) 친구 3 : 네모, 이제 내일이면 넌 진짜 백작님의 후계자로서 사람들 앞에 서겠지. 이 나무 칼... "
-card_w002_letter_friend_1,card_type_letter,친구1 편지 2주차,(현관 쪽에서 하녀가 작은 봉투 하나를 받아 든다. 봉투 겉에는 삐뚤빼뚤한 글씨가 적혀 있다.) 하녀 : 또래 손님 쪽에서 온 편지네요.
-card_w003_letter_friend_1,card_type_letter,친구1 편지 3주차,(하녀가 손때가 좀 묻은 봉투를 들고 온다. 봉투 모서리엔 엉성한 별표가 몇 개 그려져 있다.)
-card_w002_letter_friend_2,card_type_letter,친구2 편지 2주차,"(하녀가 단정한 봉투 하나를 받아 든다. 봉투는 반듯하게 접혀 있고, 글씨도 작고 고르게 쓰여 있다.) 하녀 : 또래 손님 쪽에서 편지가 왔네요."
-card_w003_letter_friend_2,card_type_letter,친구2 편지 3주차,"(하녀가 단정한 봉투 하나를 받아 든다. 봉투는 반듯하게 접혀 있고, 글씨도 작고 고르게 쓰여 있다.) 하녀 : 저번 손님 쪽에서 편지가 왔네."
-card_w002_letter_friend_3,card_type_letter,친구3 편지 2주차,(하녀가 알록달록한 봉투 하나를 받아 든다. 봉투 겉엔 작은 구름 모양 낙서가 그려져 있다.) 하녀 : 또래 손님 쪽에서 온 편지네요.
-card_w003_letter_friend_3,card_type_letter,친구3 편지 3주차,(하녀가 구겨진 듯하면서도 알록달록한 봉투를 들고 온다. 봉투엔 이번엔 별이 아니라 물결 같은 선이 잔뜩 그려져 있다.) 하녀 : 주인님 앞으로 온 편지입니다.
-card_w007_letter_friend_1,card_type_letter,친구1 편지 7주차,- (하녀가 붉은 진흙이 묻은 거친 봉투를 들고 온다. 봉투 끝에는 작은 깃털 하나가 꽂혀 있다.) 하녀 : 또래 손님 쪽에서 온 편지네요. 이번엔 숲이라도 헤치고 온 모양입니다.
-card_w008_letter_friend_1,card_type_letter,친구1 편지 8주차,(하녀가 두툼한 봉투를 들고 온다. 봉투 겉에 '경비대장님 눈 감아!'라고 아주 크게 적혀 있다.)
-card_w009_letter_friend_1,card_type_letter,친구1 편지 9주차,(하녀가 정갈한 봉투를 들고 온다. 겉에는 '최후의 계약서'라고 비장하게 적혀 있다.)
-card_w007_letter_friend_2,card_type_letter,친구2 편지 7주차,- (하녀가 은은한 꽃 향이 나는 단정한 봉투를 들고 온다. 봉투 귀퉁이에 '오독(誤讀) 주의'라고 적혀 있다.)
-card_w008_letter_friend_2,card_type_letter,친구2 편지 8주차,(하녀가 조금 두꺼운 편지를 들고 온다. 안에는 빳빳하게 말린 꽃잎 책갈피가 들어 있다.)
-card_w009_letter_friend_2,card_type_letter,친구2 편지 9주차,(하녀가 금색 실로 묶인 아주 고급스러운 봉투를 들고 온다. 겉에는 '성인(成人)의 서약'이라 적혀 있다.)
-card_w007_letter_friend_3,card_type_letter,친구3 편지 7주차,"(하녀가 알록달록한 꽃잎이 여기저기 붙은 봉투를 들고 온다. 봉투 겉면에는 연필로 그린 우스꽝스러운 사촌 1의 얼굴이 그려져 있고, 그 위에 '바보'라고 적혀 있다.) 하녀 : 또래 손님 쪽에서 온 편지네요. 그림 솜씨가 여전하십니다."
-card_w008_letter_friend_3,card_type_letter,친구3 편지 8주차,"(하녀가 봉투를 들고 온다. 봉투 귀퉁이에 노란 잉크 자국이 번져 있고, '비밀 신호 2탄'이라고 적혀 있다.) 하녀 : 주인님 앞으로 온 편지입니다. 이번엔 잉크 요정이 아니라 햇빛 요정 이야기라는데요?"
-card_w009_letter_friend_3,card_type_letter,친구3 편지 9주차,(하녀가 아주 화려한 낙서와 무지개색 잉크가 가득한 봉투를 들고 온다. 봉투엔 '네모를 위한 은하수 지도'라고 적혀 있다.) 하녀 : 이제 정말 마지막 편지인 것 같습니다. 내용이 아주 벅차네요.
-card_w007_letter_cousin_2,card_type_letter,사촌2 편지 7주차,(하녀가 작은 손수건에 싸인 편지를 들고 온다. 손수건에선 달콤한 향기가 난다.)
-card_w008_letter_cousin_2,card_type_letter,사촌2 편지 8주차,(하녀가 바다 냄새가 물씬 풍기는 봉투를 들고 온다. 안에는 조개껍데기 하나가 들어 있다.)
-card_w009_letter_cousin_2,card_type_letter,사촌2 편지 9주차,(하녀가 아주 얇고 섬세한 종이로 된 편지를 들고 온다. 봉투에 '영원한 비밀 친구'라고 적혀 있다.)
-card_w001_house_lake_wolf,card_type_house_talk,호수 관련 소문,(복도 구석. 하녀 둘이 작은 목소리로 이야기하고 있다.) 하녀1 : 후문 쪽 문제를 빨리 해결하면 좋겠는데…
-card_w001_house_study,card_type_house_talk,내서재 관련 소문,(서재 앞 복도. 하녀 둘이 발소리를 죽이며 지나가고 있다.) 하녀1 : 서재 앞만 오면 왜 이렇게 숨이 작아지는지 몰라.
-card_w001_house_cousin_1,card_type_house_talk,사촌1 관련 소문,하녀1 : 오늘 그분 오신다며? 하녀2 : 응. 괜히 실수 없게 해야지.
-card_w001_house_backgate_wind,card_type_house_talk,후문 바람 관련 소문,(현관 쪽 복도. 하녀 둘이 젖은 우산을 털며 투덜거린다.) 하녀1 : 후문 쪽 바람은 우산이랑 원수야.
-card_w002_house_kitchen_sugar,card_type_house_talk,주방의 설탕 소문,(주방 앞 복도. 하녀 둘이 빈 설탕 단지를 들여다보며 수군거린다.) 하녀1 : 또 줄었어.
-card_w002_house_laundry_ribbon,card_type_house_talk,세탁실 리본 소문,(세탁실 앞. 하녀 둘이 색 리본을 정리하며 한숨 쉰다.) 하녀1 : 이상하지. 분명 짝 맞춰 뒀는데.
-card_w002_house_teacup,card_type_house_talk,응접실 찻잔 소문,(응접실 앞. 하녀 둘이 찻잔을 천으로 닦고 있다.) 하녀1 : 이 잔은 오늘 꺼내면 안 되지?
-card_w002_house_clocktower_bell,card_type_house_talk,시계탑 종소리 소문,(계단 아래. 사용인 둘이 높은 천장을 올려다본다.) 사용인1 : 어젯밤엔 종이 한 번 더 울린 것 같던데.
-card_w003_house_attic_window,card_type_house_talk,다락 창문 소문,(다락 계단 아래. 하녀 둘이 먼지를 털며 이야기한다.) 하녀1 : 오늘도 다락 창문이 열려 있었대.
-card_w003_house_greenhouse_glass,card_type_house_talk,온실 유리 소문,(정원 옆 통로. 정원사 둘이 유리창을 닦으며 중얼거린다.) 정원사1 : 또 금 갔네.
-card_w003_house_fountain_fish,card_type_house_talk,분수대 물고기 소문,(정원 안쪽. 하녀 둘이 분수대를 들여다보며 쑥덕인다.) 하녀1 : 오늘도 한 마리 안 보이지?
-card_w003_house_candlestick,card_type_house_talk,촛대 소문,(저녁 무렵 복도. 하녀 둘이 촛대를 옮기며 속삭인다.) 하녀1 : 어제 여기 촛농이 더 많았던 것 같은데.
-card_w004_house_main,card_type_house_talk,4주차,(늦은 오후 복도. 하녀 둘이 벽에 걸린 커다란 초상화를 힐끗거리며 빠르게 걷고 있다.) 하녀1 : 저번에 닦을 때 분명 왼쪽을 보고 있었는데...
-card_w005_house_main,card_type_house_talk,5주차,(밤의 그림자가 내려앉은 계단 아래. 하인 둘이 악기실 쪽을 보며 속삭인다.) 하인1 : 어제 들었어? 아무도 없는데 건반 소리가 났다니까.
-card_w006_house_main,card_type_house_talk,6주차,"(주방 근처 복도. 하녀 둘이 앞치마를 털며 어리둥절한 표정을 짓고 있다.) 하녀1 : 분명히 식탁 위에 뒀는데, 깜빡하는 사이에 없어졌어."
-card_w007_house_main,card_type_house_talk,7주차 소문,"(늦은 밤, 서재로 향하는 복도. 하인 둘이 촛불을 든 채 벽면의 오래된 장식장을 조사하고 있다.) 하인 1 : 분명히 이 복도는 스무 걸음이면 끝났는데, 어제는 서른 걸음을 걸어도 문이 안 나오더라고."
-card_w008_house_main,card_type_house_talk,8주차 소문,(안개 낀 새벽의 창가. 하녀 둘이 정원 쪽 '비극의 숲' 방향을 보며 몸을 떨고 있다.) 하녀 1 : 들었어? 바람 소리라기엔 너무 처량한 노랫소리 같았어.
-card_w009_house_main,card_type_house_talk,9주차 소문,"(성인식 전날 밤, 주방 근처. 하인들이 굳게 닫힌 연회장 문을 보며 속삭인다.) 하인 1 : 내일 성인식 때 백작님이 주인님께 주실 가문의 가보 말이야... 그게 스스로 주인을 선택한다는 게 진짜일까?"
-card_w001_external_news_01,card_type_external_info,소식 1차,(하녀가 바깥에서 들은 이야기를 정리하고 있다.) 하녀가 축제를 홍보하는 글을 발견했다.
-card_w002_external_news_02,card_type_external_info,소식 2차,하녀는 축제 전단 뒤쪽에 공연 시간표가 적힌 걸 발견했다.)
-card_w003_external_news_03a,card_type_external_info,소식 3차-1,"별빛 비눗방울 악사 (현관 근처. 하녀 둘이 장바구니를 정리하다가, 반짝이는 얇은 종이 전단 한 장을 펼친다. 종이엔 커다란 비눗방울 안에 별이 떠 있는 그림이 그려져 있다.)"
-card_w003_external_news_03b,card_type_external_info,소식 3차-2,설탕 성 무너진 이야기 (부엌 옆 복도. 하녀 둘이 웃음을 참다가 결국 입을 막는다. 쟁반 위엔 설탕가루가 조금 남은 과자 조각이 있다.)
-card_w001_external_issue_01,card_type_external_info,문제 1차,(하녀가 현관 근처에서 우편 꾸러미를 정리하고 있다.) (하녀는 우편이 늦어진다는 안내문을 발견했다.)
-card_w001_external_headline_01,card_type_external_info,뉴스 1차,하녀가 바깥 소식이 적힌 전단을 들고 있다.) (전단에는 왕국의 유명한 미스터 임이 북쪽 마수들의 우두머리를 해치우고 돌아왔다는 글이 적혀 있다.)
-card_w002_external_headline_02,card_type_external_info,뉴스 2차,(하녀가 새 전단을 보고 웃는다.)
-card_w003_external_headline_03,card_type_external_info,뉴스 3차,(하녀 둘이 복도에서 전단 하나를 붙잡고 웃음을 참는다. 전단 위엔 커다랗게 그려진 미스터 임 얼굴이 반쯤 옆으로 돌아가 있다. 괜히 잘생긴 척하는 각도다.) 네모 : 뭐야?
-card_w004_external_main,card_type_external_info,4차,"(뒷마당 담장 너머, 땔감을 실어 나르는 마부가 정원사에게 담배를 빌리며 수군거린다.) 마부 : 저기 북쪽 숲 깊은 곳에 사람이 살고 있다는 거 알아? 밤마다 이상한 불빛이 번쩍인다니까."
-card_w005_external_main,card_type_external_info,5차,"(성문 근처, 보부상이 짐을 풀며 하녀들에게 시장 통 소식을 전한다.) 보부상 : 이번에 이웃 마을 영주네 창고가 털렸다지 뭐야? 그런데 신기하게도 금화만 쏙 빼가고 가난한 사람들 집 앞에 뒀다더군."
-card_w006_external_main,card_type_external_info,6차,"(응접실 밖, 멀리서 온 손님의 마부가 저택 마부들과 둘러앉아 이야기한다.) 마부1 : 이번에 손님 모시고 오면서 들었는데, 바다 건너엔 길바닥이 전부 금으로 깔린 도시가 있다며?"
-card_w007_external_main,card_type_external_info,7차,"국경의 긴장과 철갑 기병대 (저택 뒷문, 식자재를 납품하는 상인이 경비병에게 은밀하게 가죽 주머니를 건네며 속삭인다.)"
-card_w008_external_main,card_type_external_info,8차,"수도의 정변과 사라진 왕녀 (응접실 밖 복도, 수도에서 온 사절의 마부가 저택 하인들과 심각한 표정으로 대화한다.)"
-card_w009_external_main,card_type_external_info,9차,"백작님의 비밀 유언장 (성인식 전날 밤, 집무실 근처 어두운 복도. 변호사와 집사가 낮은 목소리로 서류를 확인한다.)"
-card_w002_letter_cousin_2_placeholder,card_type_letter,사촌2 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w003_letter_cousin_2_placeholder,card_type_letter,사촌2 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w004_letter_friend_1_placeholder,card_type_letter,친구1 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w004_letter_friend_2_placeholder,card_type_letter,친구2 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w004_letter_friend_3_placeholder,card_type_letter,친구3 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w004_letter_cousin_2_placeholder,card_type_letter,사촌2 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w005_letter_friend_1_placeholder,card_type_letter,친구1 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w005_letter_friend_2_placeholder,card_type_letter,친구2 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w005_letter_friend_3_placeholder,card_type_letter,친구3 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w005_letter_cousin_2_placeholder,card_type_letter,사촌2 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w006_letter_friend_1_placeholder,card_type_letter,친구1 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w006_letter_friend_2_placeholder,card_type_letter,친구2 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w006_letter_friend_3_placeholder,card_type_letter,친구3 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w006_letter_cousin_2_placeholder,card_type_letter,사촌2 편지 대기,이번 주엔 도착한 편지가 없다.
-card_w004_excursion_study,card_type_excursion,내서재 4차 방문,"(백작이 잠시 자리를 비운 서재. 네모가 심심한 듯 백작의 책상 주변을 서성이다가, 평소 엄격하게 잠겨 있던 제일 아래쪽 서류함이 아주 살짝 열려 있는 것을 발견한다.) 네모 : 어? 여기 항상 잠겨 있었는데."
-card_w005_excursion_study,card_type_excursion,내서재 5차 방문,"(백작의 책상 위, 가장 중요한 직인함 옆에 낡은 액자 하나가 놓여 있다. 네모가 다가가 보니, 6살 때 서툴게 그린 백작의 얼굴과 '아저씨 바보'라고 적힌 낙서 서류가 소중하게 끼워져 있다.) 네모 : 으악, 이게 왜 아직도 여기 있어!"
-card_w006_excursion_study,card_type_excursion,내서재 6차 방문,"(밤늦은 시간, 네모가 백작에게 물어볼 것이 있어 서재 문을 살짝 밀고 들어온다. 백작은 자리에 없지만, 커다란 가죽 의자에는 방금 전까지 누군가 앉아 있었던 듯한 온기가 남아 있다.) 네모 : 아저씨? ...안 계시네."
-card_w007_excursion_lake,card_type_excursion,호수 7차 방문,"(잔잔한 호숫가. 네모가 물가에 서서 비친 자신의 모습을 물끄러미 바라보고 있다. 유년기보다 훌쩍 자란 키와 차분하게 땋아 내린 머리칼, 기품 있는 자태가 수면에 비친다.) 하녀 : 주인님, 이제는 정말 아름다운 영애가 다 되셨어요. 호수에 비친 모습이 백작님을 꼭 닮아 아주 단단하고 우아해 보이십니다."
-card_w008_excursion_lake,card_type_excursion,호수 8차 방문,"(호수 건너편 숲길. 평소엔 보이지 않던 검은 옷의 사내들이 지도를 펼쳐놓고 호수의 지형을 살피고 있다.) 하녀 1 : 어머, 저 사람들은 누구죠? 우리 저택 사람이 아닌 것 같은데..."
-card_w009_excursion_lake,card_type_excursion,호수 9차 방문,"(호숫가 가장자리에 세워진 낡은 비석 앞. 가문의 초대 안주인이 세웠다는 맹세의 문구가 새겨져 있다.) 하녀 : 이제 곧 성인이 되시네요, 주인님. 이 호수 앞에서 가문의 영애로서 맹세했던 선대들의 이야기를 기억하시나요?"
-card_w007_excursion_basement,card_type_excursion,지하실 7차 방문,"(어두운 지하실 안쪽. 화려한 본관과 달리, 이곳에는 빛이 바래고 찢어진 옛 선대들의 초상화와 낡은 가구들이 천으로 덮여 있다.) 하녀 : 콜록, 여기는 먼지가 너무 많아요, 주인님. 치맛자락이 상할 테니 그만 올라가시는 게 어떨까요?"
-card_w008_excursion_basement,card_type_excursion,지하실 8차 방문,"(와인 저장고 너머, 평소엔 비어있던 구역에 아무런 문장이 찍히지 않은 크고 묵직한 나무 상자들이 잔뜩 쌓여 있다.) 하녀 1 : 어라? 못 보던 상자들이네. 요리사님이 새로 식자재를 주문하셨나?"
-card_w009_excursion_basement,card_type_excursion,지하실 9차 방문,"(지하실 깊은 곳, 갑자기 틈새로 불어온 찬바람에 하녀가 들고 있던 촛불이 훅 꺼져버린다. 사방이 완전한 칠흑 같은 어둠에 잠긴다.) 하녀 : 꺄악! 주, 주인님! 죄송해요, 불이 꺼졌어요! 어떡하죠?"
-card_w007_excursion_library,card_type_excursion,도서관 7차 방문,"(천장까지 닿은 높은 서가 사이. 네모가 사다리에 올라가 두꺼운 영지 관리법 전집을 꺼낸다. 유년기엔 그림책만 보던 아이가 이제는 복잡한 법전과 통계 수치를 읽어내고 있다.) 하녀 : 주인님, 그런 딱딱한 책만 보시면 머리 아프지 않으세요? 저기 창가 쪽에 요즘 유행하는 연애 소설도 새로 들어왔던데."
-card_w008_excursion_library,card_type_excursion,도서관 8차 방문,"(금서 구역 근처, 평소엔 잘 열지 않는 가문 기록 보관소의 서랍이 살짝 열려 있다. 그 안에는 사촌 1의 인장이 찍힌 낯선 계약서 초안들이 흩어져 있다.) 하녀 1 : 이상하다. 이 서류들은 백작님 허락 없이는 꺼낼 수 없는 것들인데..."
-card_w009_excursion_library,card_type_excursion,도서관 9차 방문,"(노을이 지는 오후, 도서관의 스테인드글라스를 통해 일곱 빛깔의 햇살이 서가에 내려앉는다. 네모가 창가 자리에 앉아 조용히 시집을 읽고 있다.) 하녀 : 주인님, 노을빛에 비친 모습이 마치 그림 같아요. 정말 평화로워 보이시네요."
-card_w007_excursion_study,card_type_excursion,내서재 7차 방문,"(서재 책상 위에 유년기 시절 아끼던 작은 인형과 지금은 손때 묻은 두꺼운 경제학 서적이 나란히 놓여 있다. 주인님은 이제 의자에 앉아도 발이 바닥에 닿지 않던 꼬마가 아니다.) 하녀 : 주인님, 이 인형은 이제 다른 곳으로 옮겨둘까요? 이제는 중요한 서류들이 많아서 자리가 좁아 보이네요."
-card_w008_excursion_study,card_type_excursion,내서재 8차 방문,"(서재 한가운데, 사촌 1이 성인식 축하 선물이라며 미리 보내온 화려한 괘종시계가 놓여 있다. 시계의 초침 소리가 평소보다 유독 크게 들려온다.) 하녀 1 : 사촌 1님이 보내신 시계라는데, 너무 화려해서 우리 서재 분위기랑은 조금 안 어울리는 것 같기도 해요."
-card_w009_excursion_study,card_type_excursion,내서재 9차 방문,"(늦은 밤, 서재에 홀로 앉아 촛불을 켠 채 가문의 비밀 장부를 살피던 주인님. 갑자기 창밖에서 불어온 바람에 촛불이 일렁이며 벽에 큰 그림자가 진다.) 하녀 : 주인님, 아직 안 주무셨어요? 너무 무리하시면 내일 수련에 지장이 생길 텐데..."
-card_w004_letter_friend_1,card_type_letter,친구1 편지 4주차,(현관 쪽에서 하녀가 흙이 살짝 묻은 봉투를 받아 든다. 봉투 입구에는 나뭇잎 하나가 끼워져 있다.) 하녀 : 또래 손님 쪽에서 온 편지네요. 이번엔 밖에서 한참 놀다 보냈나 봅니다.
-card_w005_letter_friend_1,card_type_letter,친구1 편지 5주차,"(하녀가 봉투를 들고 온다. 이번엔 봉투가 좀 구겨져 있고, 겉에 '경비대장 아저씨 몰래!'라고 작게 적혀 있다.) 하녀 : 주인님 앞으로 온 편지입니다. 꽤나 장난스러운 문구가 적혀 있네요."
-card_w006_letter_friend_1,card_type_letter,친구1 편지 6주차,(하녀가 빳빳한 봉투를 들고 온다. 봉투 겉에는 '계약서'라고 큼지막하게 적혀 있다.) 하녀 : 이번엔 아주 중요한 편지인 모양입니다.
-card_w004_letter_friend_2,card_type_letter,친구2 편지 4주차,(하녀가 아주 정갈하게 밀봉된 봉투를 들고 온다. 봉투 귀퉁이에는 '답장 필히 바람'이라고 작게 적혀 있다.) 하녀 : 또래 손님 쪽에서 온 편지네요. 종이에서 은은한 종이 냄새가 납니다.
-card_w005_letter_friend_2,card_type_letter,친구2 편지 5주차,(하녀가 하얀 봉투를 들고 온다. 지난번보다 조금 더 두툼한 느낌이다.) 하녀 : 또래 손님 쪽에서 온 편지입니다. 이번엔 꽤 길게 쓴 모양이네요.
-card_w006_letter_friend_2,card_type_letter,친구2 편지 6주차,(하녀가 단정한 봉투를 들고 온다. 봉투 겉면에는 '네모만 읽을 것'이라고 큼직하게 적혀 있다.) 하녀 : 이번 편지는 유독 신경을 많이 쓴 것 같습니다.
-card_w004_letter_friend_3,card_type_letter,친구3 편지 4주차,(하녀가 알록달록한 봉투를 들고 온다. 봉투 겉면에는 연필로 그린 험악하게 생긴 괴물 그림이 그려져 있다.) 하녀 : 또래 손님 쪽에서 온 편지네요. 그림이 아주 독특합니다.
-card_w005_letter_friend_3,card_type_letter,친구3 편지 5주차,(하녀가 봉투를 들고 온다. 봉투 귀퉁이에 보라색 잉크 자국이 번져 있다.) 하녀 : 주인님 앞으로 온 편지입니다. 이번엔 잉크를 좀 흘린 모양이네요.
-card_w006_letter_friend_3,card_type_letter,친구3 편지 6주차,(하녀가 아주 화려한 낙서가 가득한 봉투를 들고 온다. 봉투엔 '네모에게 주는 마법 도안'이라고 적혀 있다.) 하녀 : 이번엔 아주 작별 인사가 담긴 중요한 편지인 것 같습니다.
-card_w004_letter_cousin_2,card_type_letter,사촌2 편지 4주차,"(하녀가 아주 작고 향긋한 꽃향기가 나는 봉투를 받아 든다. 글씨가 조금 더 단정해졌지만, 여전히 조심스러운 필체다.) 하녀 : 사촌 주인님 쪽에서 온 편지네요. 봉투 사이에 작은 말린 꽃잎이 끼어 있습니다."
-card_w005_letter_cousin_2,card_type_letter,사촌2 편지 5주차,(하녀가 봉투를 들고 온다. 봉투 안에서 딱딱하고 작은 무언가가 만져지는 느낌이다.) 하녀 : 주인님 앞으로 온 편지입니다. 이번엔 편지 말고 다른 것도 들어있는 것 같네요.
-card_w006_letter_cousin_2,card_type_letter,사촌2 편지 6주차,"(하녀가 작은 봉투를 들고 온다. 봉투는 아주 깨끗하고, 종이 접힌 모양도 무척 정성스럽다.) 하녀 : 이번엔 아주 진심 어린 인사가 담긴 편지인 것 같습니다."
-card_w006_visitor_friend_3,card_type_visitor,친구3 6차 만남,원문 미작성으로 임시 카드만 추가했다.
+card_001_parentsletter,card_type_letter,부모의 편지,부모가 보내온 편지를 네모에게 어떻게 전달할지 결정한다.
+card_002_courtyardrumor,card_type_external_info,뜰 밖의 소문,하인들이 전해 들은 바깥 소문을 네모에게 어느 정도 전달할지 정한다.
+card_003_tutorvisit,card_type_visitor,가정교사의 방문,방문자가 남긴 인상과 말을 네모에게 어떻게 전달할지 결정한다.
+card_004_lineagebook,card_type_textbook,가계도 교재,가문의 기록이 담긴 교재에서 무엇을 강조할지 결정한다.
+card_textbook_etiquette,card_type_textbook,인사와 식사 예절,귀족가 기본 예절을 배우는 교재. 인사법과 식사 자리 예절을 익힌다.
+card_textbook_story,card_type_textbook,동화와 글자,짧은 동화로 읽기와 쓰기의 기초를 배우는 교재.
+card_textbook_nature,card_type_textbook,꽃과 벌레 관찰,정원 주변의 꽃과 벌레를 관찰하고 배우는 교재.
+card_textbook_posture,card_type_textbook,몸가짐과 발놀림,바른 자세와 균형 잡기를 익히는 기초 수련 교재.
+card_textbook_astronomy,card_type_textbook,별자리와 항해술,밤하늘 별자리를 보며 넓은 세상을 꿈꾸는 과목.
+card_textbook_riding,card_type_textbook,체전과 승마 기초,말을 다루고 활동적으로 몸을 움직이는 수업.
+card_textbook_cooking,card_type_textbook,요리와 배식의 원리,음식이 만들어지는 과정과 영양을 배우는 시간.
+card_textbook_engineering,card_type_textbook,장치 설계와 기초 공학,저택의 분수대와 시계탑 원리를 배우고 모형을 만드는 과목.
+card_textbook_law,card_type_textbook,제국법과 영지 행정,영민 간 갈등을 해결하고 법을 집행하는 법을 배우는 과목.
+card_textbook_diplomacy,card_type_textbook,외교술과 수사학,다른 귀족과 사절을 상대하며 영지를 지키는 말하기 기술.
+card_textbook_economics,card_type_textbook,화폐 경제와 회계 기초,영지의 돈 흐름을 파악하고 예산을 짜는 법을 배운다.
+card_textbook_military,card_type_textbook,군사 전략과 방어 진형,영지를 침략으로부터 지키기 위한 병법을 배운다.
+card_excursion_basement_week_001,card_type_excursion,지하실 1주차,"지하실에서 네모가 ""그럼 여기 조금만은요?"" 반응한다."
+card_excursion_basement_week_002,card_type_excursion,지하실 2주차,"지하실에서 네모가 ""진짜요?"" 반응한다."
+card_excursion_basement_week_003,card_type_excursion,지하실 3주차,"지하실에서 네모가 ""응."" 반응한다."
+card_excursion_basement_week_004,card_type_excursion,지하실 4주차,"지하실에서 네모가 ""내가?"" 반응한다."
+card_excursion_basement_week_005,card_type_excursion,지하실 5주차,"지하실에서 네모가 ""...내 키?"" 반응한다."
+card_excursion_basement_week_006,card_type_excursion,지하실 6주차,"지하실에서 네모가 ""그래서 ‘얼마 안 남았다’고 적은 거야?"" 반응한다."
+card_excursion_basement_week_007,card_type_excursion,지하실 7주차,"지하실에서 네모가 ""어려운 결정... 그래서 오해를 받고 이곳에 남겨지신 "" 반응한다."
+card_excursion_basement_week_008,card_type_excursion,지하실 8주차,"지하실에서 네모가 ""우리 아버지도 모르게 짐을 들여놨다고? 이 안에 뭐가 "" 반응한다."
+card_excursion_basement_week_009,card_type_excursion,지하실 9주차,"지하실에서 네모가 ""이리 와, 내 손 잡아. 내가 길을 아니까 입구 쪽으로"" 반응한다."
+card_excursion_garden_week_001,card_type_excursion,정원 1주차,"정원에서 네모가 ""나비 어디 갔지?"" 반응한다."
+card_excursion_garden_week_002,card_type_excursion,정원 2주차,"정원에서 네모가 ""우와. 나뭇가지?"" 반응한다."
+card_excursion_garden_week_003,card_type_excursion,정원 3주차,"정원에서 네모가 ""여기서도 보여?"" 반응한다."
+card_excursion_garden_week_004,card_type_excursion,정원 4주차,"정원에서 네모가 ""여기서도 보여."" 반응한다."
+card_excursion_garden_week_005,card_type_excursion,정원 5주차,"정원에서 네모가 ""누가?"" 반응한다."
+card_excursion_garden_week_006,card_type_excursion,정원 6주차,"정원에서 네모가 ""그래서 오늘 벌레가 없는 거야?"" 반응한다."
+card_excursion_garden_week_007,card_type_excursion,정원 7주차,"정원에서 네모가 ""히히, 나중엔 여기 의자도 가져다 놓고 책도 읽고 싶어"" 반응한다."
+card_excursion_garden_week_008,card_type_excursion,정원 8주차,"정원에서 네모가 ""사촌 1님이 왜 사람들을 여기까지 보내신 거야?"" 반응한다."
+card_excursion_garden_week_009,card_type_excursion,정원 9주차,정원 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_excursion_lake_week_001,card_type_excursion,호수 1주차,"호수에서 네모가 ""우와, 열려 있네."" 반응한다."
+card_excursion_lake_week_002,card_type_excursion,호수 2주차,"호수에서 네모가 ""응!"" 반응한다."
+card_excursion_lake_week_003,card_type_excursion,호수 3주차,"호수에서 네모가 ""응. 안 넘을게."" 반응한다."
+card_excursion_lake_week_004,card_type_excursion,호수 4주차,"호수에서 네모가 ""알겠어."" 반응한다."
+card_excursion_lake_week_005,card_type_excursion,호수 5주차,"호수에서 네모가 ""...진짜 그날 거구나."" 반응한다."
+card_excursion_lake_week_006,card_type_excursion,호수 6주차,"호수에서 네모가 ""...오. 진짜 차갑다."" 반응한다."
+card_excursion_lake_week_007,card_type_excursion,호수 7주차,"호수에서 네모가 ""나중에 성인식 때 입을 드레스도 이 호수 색깔이랑 비슷"" 반응한다."
+card_excursion_lake_week_008,card_type_excursion,호수 8주차,"호수에서 네모가 ""저 사람들이 내 허락도 없이 남의 집 호수를 엿보는 거"" 반응한다."
+card_excursion_lake_week_009,card_type_excursion,호수 9주차,"호수에서 네모가 ""응. 나중에 어떤 파도가 밀려와도, 이 호수처럼 흔들림"" 반응한다."
+card_excursion_library_week_001,card_type_excursion,도서관 1주차,"도서관에서 네모가 ""응. 저 반짝이는 거."" 반응한다."
+card_excursion_library_week_002,card_type_excursion,도서관 2주차,"도서관에서 네모가 ""진짜요?"" 반응한다."
+card_excursion_library_week_003,card_type_excursion,도서관 3주차,"도서관에서 네모가 ""진짜?"" 반응한다."
+card_excursion_library_week_004,card_type_excursion,도서관 4주차,"도서관에서 네모가 ""...어쩐지, 요즘 까치발 안 들어도 된다 했어."" 반응한다."
+card_excursion_library_week_005,card_type_excursion,도서관 5주차,"도서관에서 네모가 ""'저는 이 구절이 오히려 위로가 되는데요?'"" 반응한다."
+card_excursion_library_week_006,card_type_excursion,도서관 6주차,"도서관에서 네모가 ""코코아... 아직 조금 따뜻하네."" 반응한다."
+card_excursion_library_week_007,card_type_excursion,도서관 7주차,"도서관에서 네모가 ""(미소 지으며) 나중에 내가 멋진 주인이 되면, 도서관"" 반응한다."
+card_excursion_library_week_008,card_type_excursion,도서관 8주차,"도서관에서 네모가 ""(심각한 표정으로 서류 내용을 훑으며) 사촌 1님이 왜"" 반응한다."
+card_excursion_library_week_009,card_type_excursion,도서관 9주차,"도서관에서 네모가 ""고마워. 그 미래를 위해서 지금 이 순간을 잊지 않고 "" 반응한다."
+card_excursion_study_week_001,card_type_excursion,내서재 1주차,"내서재에서 네모가 ""응. 저 반짝이는 거 보고 싶어요."" 반응한다."
+card_excursion_study_week_002,card_type_excursion,내서재 2주차,"내서재에서 네모가 ""응."" 반응한다."
+card_excursion_study_week_003,card_type_excursion,내서재 3주차,"내서재에서 네모가 ""우와."" 반응한다."
+card_excursion_study_week_004,card_type_excursion,내서재 4주차,"내서재에서 네모가 ""내 전용 집게까지 갖다 놓으셨네."" 반응한다."
+card_excursion_study_week_005,card_type_excursion,내서재 5주차,"내서재에서 네모가 ""이건 또 뭐야? 새로 그리라는 건가?"" 반응한다."
+card_excursion_study_week_006,card_type_excursion,내서재 6주차,"내서재에서 네모가 ""이건... 서재 제일 높은 곳에 있는 간식장 열쇠인데?"" 반응한다."
+card_excursion_study_week_007,card_type_excursion,내서재 7주차,"내서재에서 네모가 ""내가 관리해야 할 땅이니까, 내 손으로 그린 지도를 보"" 반응한다."
+card_excursion_study_week_008,card_type_excursion,내서재 8주차,"내서재에서 네모가 ""맞아. 내 공간인데 사촌 1님이 옆에서 지켜보고 있는 "" 반응한다."
+card_excursion_study_week_009,card_type_excursion,내서재 9주차,"내서재에서 네모가 ""내가 아니면 누가 우리 저택을 지키겠어. 조금만 더 보"" 반응한다."
+card_external_week_001,card_type_external_info,w001 1주차,"w001에서 네모가 ""그거 뭐야?"" 반응한다."
+card_external_week_002,card_type_external_info,w002 2주차,"w002에서 네모가 ""또 그 축제야?"" 반응한다."
+card_external_week_003,card_type_external_info,w003 3주차,"w003에서 네모가 ""이름이 이상해."" 반응한다."
+card_external_week_004,card_type_external_info,w004 4주차,"w004에서 네모가 ""마법사? 진짜로 지팡이 흔들면 마법이 나와?"" 반응한다."
+card_external_week_005,card_type_external_info,w005 5주차,"w005에서 네모가 ""얼굴이 없어? 진짜 그림자처럼 다니나 봐!"" 반응한다."
+card_external_week_006,card_type_external_info,w006 6주차,"w006에서 네모가 ""한 달이나? 그럼 거기 가면 진짜 하늘을 날 수 있어?"" 반응한다."
+card_external_week_007,card_type_external_info,w007 7주차,w007 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_external_week_008,card_type_external_info,상인___사실은 8주차,상인___사실은 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_external_week_009,card_type_external_info,마부_1___실 9주차,마부_1___실 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_house_talk_week_001,card_type_house_talk,호수_관련_소문 1주차,"호수_관련_소문에서 네모가 ""늑대?"" 반응한다."
+card_house_talk_week_002,card_type_house_talk,주방의_설탕_소 2주차,"주방의_설탕_소에서 네모가 ""누가 먹었어?"" 반응한다."
+card_house_talk_week_003,card_type_house_talk,다락_창문_소문 3주차,"다락_창문_소문에서 네모가 ""그럼 누가 열었어?"" 반응한다."
+card_house_talk_week_004,card_type_house_talk,w004 4주차,"w004에서 네모가 ""진짜? 나를 보고 계신 거야?"" 반응한다."
+card_house_talk_week_005,card_type_house_talk,w005 5주차,"w005에서 네모가 ""피아노도 심심해?"" 반응한다."
+card_house_talk_week_006,card_type_house_talk,w006 6주차,"w006에서 네모가 ""요정이 숟가락을 가져가?"" 반응한다."
+card_house_talk_week_007,card_type_house_talk,w007 7주차,w007 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_house_talk_week_008,card_type_house_talk,하인_1___아 8주차,하인_1___아 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_house_talk_week_009,card_type_house_talk,하녀_1___사 9주차,하녀_1___사 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_letter_cousin_2_week_002,card_type_letter,사촌2 2주차,"사촌2에서 네모가 ""누구 거야?"" 반응한다."
+card_letter_cousin_2_week_003,card_type_letter,사촌2 3주차,"사촌2에서 네모가 ""또?"" 반응한다."
+card_letter_cousin_2_week_005,card_type_letter,사촌2 5주차,"사촌2에서 네모가 ""선물? 뭔데? 빨리 읽어 줘."" 반응한다."
+card_letter_cousin_2_week_006,card_type_letter,사촌2 6주차,"사촌2에서 네모가 ""마지막? 왜? 이제 안 온대?"" 반응한다."
+card_letter_cousin_2_week_008,card_type_letter,사촌2 8주차,"사촌2에서 네모가 ""조개껍데기다! 진짜 예뻐."" 반응한다."
+card_letter_cousin_2_week_009,card_type_letter,사촌2 9주차,"사촌2에서 네모가 ""이제 어른 되면 걔랑 못 노는 거야?"" 반응한다."
+card_letter_friend_1_week_002,card_type_letter,친구1 2주차,"친구1에서 네모가 ""나한테?"" 반응한다."
+card_letter_friend_1_week_003,card_type_letter,친구1 3주차,"친구1에서 네모가 ""읽어 줘. 빨리."" 반응한다."
+card_letter_friend_1_week_005,card_type_letter,친구1 5주차,"친구1에서 네모가 ""빨리, 빨리! 뭐라고 썼어?"" 반응한다."
+card_letter_friend_1_week_006,card_type_letter,친구1 6주차,"친구1에서 네모가 ""계약서? 그게 뭐야?"" 반응한다."
+card_letter_friend_1_week_008,card_type_letter,친구1 8주차,"친구1에서 네모가 ""뭔데? 또 탈출이야?"" 반응한다."
+card_letter_friend_1_week_009,card_type_letter,친구1 9주차,"친구1에서 네모가 ""최후의 계약서? 뭐야, 무서워!"" 반응한다."
+card_letter_friend_2_week_002,card_type_letter,친구2 2주차,"친구2에서 네모가 ""나한테?"" 반응한다."
+card_letter_friend_2_week_003,card_type_letter,친구2 3주차,"친구2에서 네모가 ""나한테?"" 반응한다."
+card_letter_friend_2_week_005,card_type_letter,친구2 5주차,"친구2에서 네모가 ""응! 빨리 읽어 줘."" 반응한다."
+card_letter_friend_2_week_006,card_type_letter,친구2 6주차,"친구2에서 네모가 ""미래? 어른 된 다음 얘기야?"" 반응한다."
+card_letter_friend_2_week_008,card_type_letter,친구2 8주차,"친구2에서 네모가 ""책갈피? 예쁘다!"" 반응한다."
+card_letter_friend_2_week_009,card_type_letter,친구2 9주차,"친구2에서 네모가 ""미래의 동반자?"" 반응한다."
+card_letter_friend_3_week_002,card_type_letter,친구3 2주차,"친구3에서 네모가 ""또 나한테?"" 반응한다."
+card_letter_friend_3_week_003,card_type_letter,친구3 3주차,"친구3에서 네모가 ""또 뭐 닮았대?"" 반응한다."
+card_letter_friend_3_week_005,card_type_letter,친구3 5주차,"친구3에서 네모가 ""요정? 잉크에 요정이 살아?"" 반응한다."
+card_letter_friend_3_week_006,card_type_letter,친구3 6주차,"친구3에서 네모가 ""비법? 그게 뭐야?"" 반응한다."
+card_letter_friend_3_week_008,card_type_letter,친구3 8주차,"친구3에서 네모가 ""햇빛 작전? 그게 뭔데?"" 반응한다."
+card_letter_friend_3_week_009,card_type_letter,친구3 9주차,"친구3에서 네모가 ""모험 지도?"" 반응한다."
+card_visitor_cousin_1_week_001,card_type_visitor,사촌1 1주차,"사촌1에서 네모가 ""안녕하세요."" 반응한다."
+card_visitor_cousin_1_week_002,card_type_visitor,사촌1 2주차,"사촌1에서 네모가 ""우와. 뭐야?"" 반응한다."
+card_visitor_cousin_1_week_003,card_type_visitor,사촌1 3주차,"사촌1에서 네모가 ""응."" 반응한다."
+card_visitor_cousin_1_week_004,card_type_visitor,사촌1 4주차,"사촌1에서 네모가 ""우와... 진짜 예뻐요. 칼 모양이네요?"" 반응한다."
+card_visitor_cousin_1_week_005,card_type_visitor,사촌1 5주차,"사촌1에서 네모가 ""삼촌은 저기 나가면 뭐부터 해요? 진짜 양꼬치부터 먹어"" 반응한다."
+card_visitor_cousin_1_week_006,card_type_visitor,사촌1 6주차,"사촌1에서 네모가 ""우와, 앞이 하나도 안 보여요! 삼촌은 이런 걸 쓰고 "" 반응한다."
+card_visitor_cousin_1_week_007,card_type_visitor,사촌1 7주차,"사촌1에서 네모가 ""(인장을 꽉 쥐며) 백작님이 숨기는 게 있다면 내가 직"" 반응한다."
+card_visitor_cousin_1_week_008,card_type_visitor,사촌1 8주차,"사촌1에서 네모가 ""(눈을 가늘게 뜨며) 만약 백작님이 나를 속인 거라면,"" 반응한다."
+card_visitor_cousin_1_week_009,card_type_visitor,사촌1 9주차,"사촌1에서 네모가 ""(백작님의 깃펜을 사촌 1의 목 근처로 겨누며) 진실이"" 반응한다."
+card_visitor_cousin_2_week_001,card_type_visitor,사촌2 1주차,"사촌2에서 네모가 ""안녕."" 반응한다."
+card_visitor_cousin_2_week_002,card_type_visitor,사촌2 2주차,"사촌2에서 네모가 ""저번에 사탕 좋아한다며."" 반응한다."
+card_visitor_cousin_2_week_003,card_type_visitor,사촌2 3주차,"사촌2에서 네모가 ""뭐 주는데?"" 반응한다."
+card_visitor_cousin_2_week_004,card_type_visitor,사촌2 4주차,"사촌2에서 네모가 ""이거 먹어봐. 백작님이 나 주려고 숨겨두신 건데, 너니"" 반응한다."
+card_visitor_cousin_2_week_005,card_type_visitor,사촌2 5주차,"사촌2에서 네모가 ""봐봐, 이게 우리야. 지금은 이 작은 서재에 있지만, "" 반응한다."
+card_visitor_cousin_2_week_006,card_type_visitor,사촌2 6주차,"사촌2에서 네모가 ""봐, '네모랑 사촌 2'. 이렇게 적어두면 우리 나중에"" 반응한다."
+card_visitor_cousin_2_week_007,card_type_visitor,사촌2 7주차,"사촌2에서 네모가 ""(사탕을 입에 넣으며) 견디는 게 아냐. 살아남으려고 "" 반응한다."
+card_visitor_cousin_2_week_008,card_type_visitor,사촌2 8주차,"사촌2에서 네모가 ""상관없어. 이 지도가 없어도 난 내 발로 직접 저 숲에"" 반응한다."
+card_visitor_cousin_2_week_009,card_type_visitor,사촌2 9주차,"사촌2에서 네모가 ""(사촌 2의 어깨를 감싸며) 알아. 그래서 우리끼리 힘"" 반응한다."
+card_visitor_friend_1_week_001,card_type_visitor,친구1 1주차,"친구1에서 네모가 ""진짜요?"" 반응한다."
+card_visitor_friend_1_week_002,card_type_visitor,친구1 2주차,"친구1에서 네모가 ""좋아!"" 반응한다."
+card_visitor_friend_1_week_003,card_type_visitor,친구1 3주차,"친구1에서 네모가 ""어어? 잠깐!"" 반응한다."
+card_visitor_friend_1_week_004,card_type_visitor,친구1 4주차,"친구1에서 네모가 ""칼은 안 돼도 이건 봐도 돼. 이걸로 보면 글자가 이만"" 반응한다."
+card_visitor_friend_1_week_005,card_type_visitor,친구1 5주차,"친구1에서 네모가 ""좋아, 우리만 아는 표시야. 나중에 백작님한테 허락받고"" 반응한다."
+card_visitor_friend_1_week_006,card_type_visitor,친구1 6주차,"친구1에서 네모가 ""자, 이거 안 지워지는 잉크야. 우리 오늘 같이 놀았다"" 반응한다."
+card_visitor_friend_1_week_007,card_type_visitor,친구1 7주차,"친구1에서 네모가 ""(웃으며) 당연하지! 백작님이 쌓아 올린 이 견고한 세"" 반응한다."
+card_visitor_friend_1_week_008,card_type_visitor,친구1 8주차,"친구1에서 네모가 ""그래. 이제 더 이상 삼촌의 독설에 휘둘리지 않아. 나"" 반응한다."
+card_visitor_friend_1_week_009,card_type_visitor,친구1 9주차,"친구1에서 네모가 ""(친구 1의 손을 꽉 잡으며) 아니, 우리는 최고의 동"" 반응한다."
+card_visitor_friend_2_week_001,card_type_visitor,친구2 1주차,"친구2에서 네모가 ""안녕."" 반응한다."
+card_visitor_friend_2_week_002,card_type_visitor,친구2 2주차,"친구2에서 네모가 ""오늘도 옷 더러워지는 거 싫어?"" 반응한다."
+card_visitor_friend_2_week_003,card_type_visitor,친구2 3주차,"친구2에서 네모가 ""그게 왜 재밌어?"" 반응한다."
+card_visitor_friend_2_week_004,card_type_visitor,친구2 4주차,"친구2에서 네모가 ""이거 다 떨어질 때까지만 쉬자. 이건 백작님이 나한테 "" 반응한다."
+card_visitor_friend_2_week_005,card_type_visitor,친구2 5주차,"친구2에서 네모가 ""봐봐, 여기야. 백작님이 예전에 말씀해주셨는데, 여기가"" 반응한다."
+card_visitor_friend_2_week_006,card_type_visitor,친구2 6주차,"친구2에서 네모가 ""와, 진짜 잘 쓴다! 백작님 글씨처럼 멋져."" 반응한다."
+card_visitor_friend_2_week_007,card_type_visitor,친구2 7주차,친구2 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_visitor_friend_2_week_008,card_type_visitor,친구2 8주차,친구2 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_visitor_friend_2_week_009,card_type_visitor,친구2 9주차,친구2 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_visitor_friend_3_week_001,card_type_visitor,친구3 1주차,"친구3에서 네모가 ""안 닮았어."" 반응한다."
+card_visitor_friend_3_week_002,card_type_visitor,친구3 2주차,"친구3에서 네모가 ""또 먹는 거야?"" 반응한다."
+card_visitor_friend_3_week_003,card_type_visitor,친구3 3주차,"친구3에서 네모가 ""우와. 진짜 개구리 같아."" 반응한다."
+card_visitor_friend_3_week_004,card_type_visitor,친구3 4주차,"친구3에서 네모가 ""대신 이거 봐봐. 이건 백작님이 나 공부할 때 보라고 "" 반응한다."
+card_visitor_friend_3_week_005,card_type_visitor,친구3 5주차,"친구3에서 네모가 ""여기다 그려봐. 네가 생각하는 괴물. 나중에 내가 백작"" 반응한다."
+card_visitor_friend_3_week_007,card_type_visitor,친구3 7주차,친구3 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_visitor_friend_3_week_008,card_type_visitor,친구3 8주차,친구3 관련 이벤트. 네모가 어떻게 행동할지 선택한다.
+card_visitor_friend_3_week_009,card_type_visitor,친구3 9주차,친구3 관련 이벤트. 네모가 어떻게 행동할지 선택한다.

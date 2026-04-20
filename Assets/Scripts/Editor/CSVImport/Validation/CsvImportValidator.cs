@@ -72,6 +72,7 @@ public static class CsvImportValidator
         {
             ValidateReferences(row.OnCompletedInteractionIds.Select(id => (id, $"events.csv -> on_completed_interaction_ids ({row.Id})")), interactionIds, errors);
             ValidateReferences(row.RelatedInformationTypeIds.Select(id => (id, $"events.csv -> related_information_type_ids ({row.Id})")), cardTypeIds, errors);
+            ValidateOptionalReference(row.LinkedCardId, cardIds, $"events.csv -> linked_card_id ({row.Id})", errors);
             foreach (string semantic in row.PreferredSemantics)
             {
                 ValidateEnum<ECardOptionSemantic>(semantic, $"events.csv -> preferred_semantics ({row.Id})", errors);
@@ -79,6 +80,12 @@ public static class CsvImportValidator
 
             ValidateEnum<EventKind>(row.EventKind, $"events.csv -> event_kind ({row.Id})", errors);
             ValidateOptionalReference(CsvImportContext.BuildStepKey(row.Id, row.FirstStepId), stepKeys, $"events.csv -> first_step_id ({row.Id})", errors);
+
+            if (string.Equals(row.EventKind, nameof(EventKind.routine), StringComparison.OrdinalIgnoreCase) &&
+                string.IsNullOrWhiteSpace(row.LinkedCardId))
+            {
+                errors.Add($"Missing linked card: events.csv -> linked_card_id ({row.Id})");
+            }
         }
 
         foreach (EventFlagConditionRow row in dataset.EventFlagConditions)

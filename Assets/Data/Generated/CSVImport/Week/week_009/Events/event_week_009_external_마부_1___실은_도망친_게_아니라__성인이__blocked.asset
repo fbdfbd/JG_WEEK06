@@ -1,0 +1,35 @@
+﻿%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6b5be06421b454a82b7e83feaf94ed, type: 3}
+  m_Name: "event_week_009_external_\uB9C8\uBD80_1___\uC2E4\uC740_\uB3C4\uB9DD\uCE5C_\uAC8C_\uC544\uB2C8\uB77C__\uC131\uC778\uC774__blocked"
+  m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
+  _id: "event_week_009_external_\uB9C8\uBD80_1___\uC2E4\uC740_\uB3C4\uB9DD\uCE5C_\uAC8C_\uC544\uB2C8\uB77C__\uC131\uC778\uC774__blocked"
+  _title: "\uB9C8\uBD80_1___\uC2E4\uC740_\uB3C4\uB9DD\uCE5C_\uAC8C_\uC544\uB2C8\uB77C__\uC131\uC778\uC774_
+    Blocked"
+  _priority: 10
+  _conditions:
+    _requiredFlags: []
+    _blockedFlags: []
+    _statRequirements: []
+    _informationRequirements:
+    - _informationType: {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
+      _useSemanticFilter: 1
+      _semantic: 2
+      _minimumCount: 1
+  _firstStep: {fileID: 11400000, guid: 1c04748c67ecf1f4aa31895fbcb868c1, type: 2}
+  _onCompletedInteractions:
+  - {fileID: 11400000, guid: d0489c957cea47a4f9f63fe618bf1165, type: 2}
+  _cinematicProfile: {fileID: 0}
+  _relatedInformationTypes:
+  - {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
+  _preferredSemantics: 02000000
+  _linkedCard: {fileID: 11400000, guid: 936821c6552f67446a07f68fd301f39f, type: 2}

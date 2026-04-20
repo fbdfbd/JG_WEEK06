@@ -717,6 +717,7 @@ public sealed class WeekFlowPlaytesterController : MonoBehaviour
             "편지를 막아둔 여파",
             20,
             letterRoutineStep,
+            letterCard,
             new[] { letterType },
             new[] { ECardOptionSemantic.Blocked });
 
@@ -725,6 +726,7 @@ public sealed class WeekFlowPlaytesterController : MonoBehaviour
             "바깥 정보를 곱씹는 아이",
             15,
             outsideRoutineStep,
+            outsideCard,
             new[] { externalType },
             new[] { ECardOptionSemantic.Direct });
 
@@ -795,6 +797,7 @@ public sealed class WeekFlowPlaytesterController : MonoBehaviour
             "교재를 더 깊게 파고드는 아이",
             20,
             textbookRoutineStep,
+            textbookCard,
             new[] { textbookType },
             new[] { ECardOptionSemantic.Direct });
 
@@ -1004,12 +1007,14 @@ public sealed class WeekFlowPlaytesterController : MonoBehaviour
         string title,
         int priority,
         SO_InteractiveEventStepDefinition firstStep,
+        SO_CardInfoDefinition linkedCard,
         SO_CardInfoTypeDefinition[] relatedTypes,
         ECardOptionSemantic[] preferredSemantics)
     {
         SO_DayRoutineEventDefinition routineEvent = ScriptableObject.CreateInstance<SO_DayRoutineEventDefinition>();
         PrepareRuntimeAsset(routineEvent, title);
         SetEventFields(routineEvent, id, title, priority, firstStep);
+        SetSerializedField(routineEvent, "_linkedCard", linkedCard);
         SetSerializedField(routineEvent, "_relatedInformationTypes", relatedTypes ?? Array.Empty<SO_CardInfoTypeDefinition>());
         SetSerializedField(routineEvent, "_preferredSemantics", preferredSemantics ?? Array.Empty<ECardOptionSemantic>());
         return routineEvent;

@@ -15,4 +15,4 @@ MonoBehaviour:
   _conditionStat: 2
   _minValue: 3
   _targetStat: 0
-  _amount: 1
+  _amount: 0

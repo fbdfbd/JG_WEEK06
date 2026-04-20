@@ -11,455 +11,342 @@ card_003_tutorvisit,2,Blocked,꺼내지 않는다,방문 이야기를 오늘은 
 card_004_lineagebook,0,Direct,원문대로 읽는다,기록된 문장을 가능한 그대로 읽어 준다.,curiosity_plus_1
 card_004_lineagebook,1,Modified,맥락을 붙여 설명한다,불편할 수 있는 내용을 우회적으로 설명한다.,trust_plus_1|if_curiosity_3_then_trust_plus_1
 card_004_lineagebook,2,Blocked,해당 장은 넘긴다,오늘은 그 장을 읽지 않고 다른 부분으로 넘어간다.,anxiety_plus_1|hidden_info_detected_flag
-card_textbook_child_꽃과_벌레_관찰,0,Blocked,가볍게 넘긴다,꽃과 벌레 관찰 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_child_꽃과_벌레_관찰,1,Modified,쉽게 풀어준다,꽃과 벌레 관찰 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_child_꽃과_벌레_관찰,2,Direct,차분히 읽힌다,꽃과 벌레 관찰 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_child_동화와_글자,0,Blocked,가볍게 넘긴다,동화와 글자 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_child_동화와_글자,1,Modified,쉽게 풀어준다,동화와 글자 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_child_동화와_글자,2,Direct,차분히 읽힌다,동화와 글자 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_child_몸가짐과_발놀림,0,Blocked,가볍게 넘긴다,몸가짐과 발놀림 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_child_몸가짐과_발놀림,1,Modified,쉽게 풀어준다,몸가짐과 발놀림 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_child_몸가짐과_발놀림,2,Direct,차분히 읽힌다,몸가짐과 발놀림 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_child_인사와_식사_예절,0,Blocked,가볍게 넘긴다,인사와 식사 예절 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_child_인사와_식사_예절,1,Modified,쉽게 풀어준다,인사와 식사 예절 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_child_인사와_식사_예절,2,Direct,차분히 읽힌다,인사와 식사 예절 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_teen_군사_전략과_방어_진형,0,Blocked,가볍게 넘긴다,군사 전략과 방어 진형 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_teen_군사_전략과_방어_진형,1,Modified,쉽게 풀어준다,군사 전략과 방어 진형 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_teen_군사_전략과_방어_진형,2,Direct,차분히 읽힌다,군사 전략과 방어 진형 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_teen_외교술과_수사학,0,Blocked,가볍게 넘긴다,외교술과 수사학 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_teen_외교술과_수사학,1,Modified,쉽게 풀어준다,외교술과 수사학 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_teen_외교술과_수사학,2,Direct,차분히 읽힌다,외교술과 수사학 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_teen_제국법과_영지_행정,0,Blocked,가볍게 넘긴다,제국법과 영지 행정 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_teen_제국법과_영지_행정,1,Modified,쉽게 풀어준다,제국법과 영지 행정 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_teen_제국법과_영지_행정,2,Direct,차분히 읽힌다,제국법과 영지 행정 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_teen_화폐_경제와_회계_기초,0,Blocked,가볍게 넘긴다,화폐 경제와 회계 기초 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_teen_화폐_경제와_회계_기초,1,Modified,쉽게 풀어준다,화폐 경제와 회계 기초 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_teen_화폐_경제와_회계_기초,2,Direct,차분히 읽힌다,화폐 경제와 회계 기초 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_young_별자리와_항해술,0,Blocked,가볍게 넘긴다,별자리와 항해술 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_young_별자리와_항해술,1,Modified,쉽게 풀어준다,별자리와 항해술 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_young_별자리와_항해술,2,Direct,차분히 읽힌다,별자리와 항해술 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_young_요리와_배식의_원리,0,Blocked,가볍게 넘긴다,요리와 배식의 원리 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_young_요리와_배식의_원리,1,Modified,쉽게 풀어준다,요리와 배식의 원리 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_young_요리와_배식의_원리,2,Direct,차분히 읽힌다,요리와 배식의 원리 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_young_장치_설계와_기초_공학,0,Blocked,가볍게 넘긴다,장치 설계와 기초 공학 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_young_장치_설계와_기초_공학,1,Modified,쉽게 풀어준다,장치 설계와 기초 공학 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_young_장치_설계와_기초_공학,2,Direct,차분히 읽힌다,장치 설계와 기초 공학 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_textbook_young_체전과_승마_기초,0,Blocked,가볍게 넘긴다,체전과 승마 기초 교재는 오늘 가볍게만 훑고 넘어간다.,obedience_plus_1
-card_textbook_young_체전과_승마_기초,1,Modified,쉽게 풀어준다,체전과 승마 기초 내용을 이해하기 쉽게 풀어서 전달한다.,trust_plus_1
-card_textbook_young_체전과_승마_기초,2,Direct,차분히 읽힌다,체전과 승마 기초 교재 내용을 차분히 읽고 그대로 익히게 한다.,curiosity_plus_1
-card_w001_excursion_basement,0,Blocked,통제,통제,
-card_w001_excursion_basement,1,Direct,허락,허락,
-card_w001_excursion_garden,0,Blocked,통제,통제,
-card_w001_excursion_garden,1,Direct,허락,허락,
-card_w001_excursion_lake,0,Blocked,통제,통제,
-card_w001_excursion_lake,1,Direct,허락,허락,
-card_w001_excursion_library,0,Blocked,통제,통제,
-card_w001_excursion_library,1,Direct,허락,허락,
-card_w001_excursion_study,0,Blocked,통제,통제,
-card_w001_excursion_study,1,Direct,허락,허락,
-card_w001_external_headline_01,0,Blocked,통제,통제,
-card_w001_external_headline_01,1,Direct,허락,허락,
-card_w001_external_issue_01,0,Blocked,통제,통제,
-card_w001_external_issue_01,1,Direct,허락,허락,
-card_w001_external_news_01,0,Blocked,통제,통제,
-card_w001_external_news_01,1,Direct,허락,허락,
-card_w001_house_backgate_wind,0,Blocked,통제,통제,
-card_w001_house_backgate_wind,1,Direct,허락,허락,
-card_w001_house_cousin_1,0,Blocked,통제,통제,
-card_w001_house_cousin_1,1,Direct,허락,허락,
-card_w001_house_cousin_1,2,Modified,수정,수정,
-card_w001_house_lake_wolf,0,Blocked,통제,통제,
-card_w001_house_lake_wolf,1,Direct,허락,허락,
-card_w001_house_lake_wolf,2,Modified,수정,수정,
-card_w001_house_study,0,Blocked,통제,통제,
-card_w001_house_study,1,Direct,허락,허락,
-card_w001_house_study,2,Modified,수정,수정,
-card_w001_letter_cousin_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w001_letter_cousin_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w001_letter_cousin_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w001_letter_friend_1_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w001_letter_friend_1_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w001_letter_friend_1_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w001_letter_friend_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w001_letter_friend_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w001_letter_friend_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w001_letter_friend_3_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w001_letter_friend_3_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w001_letter_friend_3_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w001_visitor_cousin_1,0,Blocked,통제,통제,
-card_w001_visitor_cousin_1,1,Direct,허락,허락,
-card_w001_visitor_cousin_2,0,Blocked,통제,통제,
-card_w001_visitor_cousin_2,1,Direct,허락,허락,
-card_w001_visitor_friend_1,0,Blocked,통제,통제,
-card_w001_visitor_friend_1,1,Direct,허락,허락,
-card_w001_visitor_friend_2,0,Blocked,통제,통제,
-card_w001_visitor_friend_2,1,Direct,허락,허락,
-card_w001_visitor_friend_3,0,Blocked,통제,통제,
-card_w001_visitor_friend_3,1,Direct,허락,허락,
-card_w002_excursion_basement,0,Blocked,통제,통제,
-card_w002_excursion_basement,1,Direct,허락,허락,
-card_w002_excursion_garden,0,Blocked,통제,통제,
-card_w002_excursion_garden,1,Direct,허락,허락,
-card_w002_excursion_lake,0,Blocked,통제,통제,
-card_w002_excursion_lake,1,Direct,허락,허락,
-card_w002_excursion_library,0,Blocked,통제,통제,
-card_w002_excursion_library,1,Direct,허락,허락,
-card_w002_excursion_study,0,Blocked,통제,통제,
-card_w002_excursion_study,1,Direct,허락,허락,
-card_w002_external_headline_02,0,Blocked,통제,통제,
-card_w002_external_headline_02,1,Direct,허락,허락,
-card_w002_external_news_02,0,Blocked,통제,통제,
-card_w002_external_news_02,1,Direct,허락,허락,
-card_w002_house_clocktower_bell,0,Blocked,통제,통제,
-card_w002_house_clocktower_bell,1,Direct,허락,허락,
-card_w002_house_clocktower_bell,2,Modified,수정,수정,
-card_w002_house_kitchen_sugar,0,Blocked,통제,통제,
-card_w002_house_kitchen_sugar,1,Direct,허락,허락,
-card_w002_house_kitchen_sugar,2,Modified,수정,수정,
-card_w002_house_laundry_ribbon,0,Blocked,통제,통제,
-card_w002_house_laundry_ribbon,1,Direct,허락,허락,
-card_w002_house_laundry_ribbon,2,Modified,수정,수정,
-card_w002_house_teacup,0,Blocked,통제,통제,
-card_w002_house_teacup,1,Direct,허락,허락,
-card_w002_house_teacup,2,Modified,수정,수정,
-card_w002_letter_cousin_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w002_letter_cousin_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w002_letter_cousin_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w002_letter_friend_1,0,Blocked,통제,통제,
-card_w002_letter_friend_1,1,Direct,허락,허락,
-card_w002_letter_friend_1,2,Modified,수정,수정,
-card_w002_letter_friend_2,0,Blocked,통제,통제,
-card_w002_letter_friend_2,1,Direct,허락,허락,
-card_w002_letter_friend_2,2,Modified,수정,수정,
-card_w002_letter_friend_3,0,Blocked,통제,통제,
-card_w002_letter_friend_3,1,Direct,허락,허락,
-card_w002_letter_friend_3,2,Modified,수정,수정,
-card_w002_visitor_cousin_1,0,Blocked,통제,통제,
-card_w002_visitor_cousin_1,1,Direct,허락,허락,
-card_w002_visitor_cousin_2,0,Blocked,통제,통제,
-card_w002_visitor_cousin_2,1,Direct,허락,허락,
-card_w002_visitor_friend_1,0,Blocked,통제,통제,
-card_w002_visitor_friend_1,1,Direct,허락,허락,
-card_w002_visitor_friend_2,0,Blocked,통제,통제,
-card_w002_visitor_friend_2,1,Direct,허락,허락,
-card_w002_visitor_friend_3,0,Blocked,통제,통제,
-card_w002_visitor_friend_3,1,Direct,허락,허락,
-card_w003_excursion_basement,0,Blocked,통제,통제,
-card_w003_excursion_basement,1,Direct,허락,허락,
-card_w003_excursion_garden,0,Blocked,통제,통제,
-card_w003_excursion_garden,1,Direct,허락,허락,
-card_w003_excursion_lake,0,Blocked,통제,통제,
-card_w003_excursion_lake,1,Direct,허락,허락,
-card_w003_excursion_library,0,Blocked,통제,통제,
-card_w003_excursion_library,1,Direct,허락,허락,
-card_w003_excursion_study,0,Blocked,통제,통제,
-card_w003_excursion_study,1,Direct,허락,허락,
-card_w003_external_headline_03,0,Blocked,통제,통제,
-card_w003_external_headline_03,1,Direct,허락,허락,
-card_w003_external_headline_03,2,Modified,수정,수정,
-card_w003_external_news_03a,0,Blocked,통제,통제,
-card_w003_external_news_03a,1,Direct,허락,허락,
-card_w003_external_news_03a,2,Modified,수정,수정,
-card_w003_external_news_03b,0,Blocked,통제,통제,
-card_w003_external_news_03b,1,Direct,허락,허락,
-card_w003_external_news_03b,2,Modified,수정,수정,
-card_w003_house_attic_window,0,Blocked,통제,통제,
-card_w003_house_attic_window,1,Direct,허락,허락,
-card_w003_house_attic_window,2,Modified,수정,수정,
-card_w003_house_candlestick,0,Blocked,통제,통제,
-card_w003_house_candlestick,1,Direct,허락,허락,
-card_w003_house_candlestick,2,Modified,수정,수정,
-card_w003_house_fountain_fish,0,Blocked,통제,통제,
-card_w003_house_fountain_fish,1,Direct,허락,허락,
-card_w003_house_fountain_fish,2,Modified,수정,수정,
-card_w003_house_greenhouse_glass,0,Blocked,통제,통제,
-card_w003_house_greenhouse_glass,1,Direct,허락,허락,
-card_w003_house_greenhouse_glass,2,Modified,수정,수정,
-card_w003_letter_cousin_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w003_letter_cousin_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w003_letter_cousin_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w003_letter_friend_1,0,Blocked,통제,통제,
-card_w003_letter_friend_1,1,Direct,허락,허락,
-card_w003_letter_friend_1,2,Modified,수정,수정,
-card_w003_letter_friend_2,0,Blocked,통제,통제,
-card_w003_letter_friend_2,1,Direct,허락,허락,
-card_w003_letter_friend_2,2,Modified,수정,수정,
-card_w003_letter_friend_3,0,Blocked,통제,통제,
-card_w003_letter_friend_3,1,Direct,허락,허락,
-card_w003_letter_friend_3,2,Modified,수정,수정,
-card_w003_visitor_cousin_1,0,Blocked,통제,통제,
-card_w003_visitor_cousin_1,1,Direct,허락,허락,
-card_w003_visitor_cousin_2,0,Blocked,통제,통제,
-card_w003_visitor_cousin_2,1,Direct,허락,허락,
-card_w003_visitor_friend_1,0,Blocked,통제,통제,
-card_w003_visitor_friend_1,1,Direct,허락,허락,
-card_w003_visitor_friend_2,0,Blocked,통제,통제,
-card_w003_visitor_friend_2,1,Direct,허락,허락,
-card_w003_visitor_friend_3,0,Blocked,통제,통제,
-card_w003_visitor_friend_3,1,Direct,허락,허락,
-card_w004_excursion_basement,0,Blocked,통,통,
-card_w004_excursion_basement,1,Direct,허락,허락,
-card_w004_excursion_garden,0,Blocked,통제,통제,
-card_w004_excursion_garden,1,Direct,허락,허락,
-card_w004_excursion_lake,0,Blocked,통제,통제,
-card_w004_excursion_lake,1,Direct,허락,허락,
-card_w004_excursion_library,0,Blocked,통제,통제,
-card_w004_excursion_library,1,Direct,허락,허락,
-card_w004_excursion_study,0,Blocked,통제,통제,
-card_w004_excursion_study,1,Direct,허락,허락,
-card_w004_external_main,0,Blocked,통제,통제,
-card_w004_external_main,1,Direct,허락,허락,
-card_w004_external_main,2,Modified,수정,수정,
-card_w004_house_main,0,Blocked,통제,통제,
-card_w004_house_main,1,Direct,허락,허락,
-card_w004_house_main,2,Modified,수정,수정,
-card_w004_letter_cousin_2,0,Blocked,통제,통제,
-card_w004_letter_cousin_2,1,Direct,허락,허락,
-card_w004_letter_cousin_2,2,Modified,수정,수정,
-card_w004_letter_cousin_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w004_letter_cousin_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w004_letter_cousin_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w004_letter_friend_1,0,Blocked,통제,통제,
-card_w004_letter_friend_1,1,Direct,허락,허락,
-card_w004_letter_friend_1,2,Modified,수정,수정,
-card_w004_letter_friend_1_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w004_letter_friend_1_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w004_letter_friend_1_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w004_letter_friend_2,0,Blocked,통제,통제,
-card_w004_letter_friend_2,1,Direct,허락,허락,
-card_w004_letter_friend_2,2,Modified,수정,수정,
-card_w004_letter_friend_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w004_letter_friend_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w004_letter_friend_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w004_letter_friend_3,0,Blocked,통제,통제,
-card_w004_letter_friend_3,1,Direct,허락,허락,
-card_w004_letter_friend_3,2,Modified,수정,수정,
-card_w004_letter_friend_3_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w004_letter_friend_3_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w004_letter_friend_3_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w004_visitor_cousin_1,0,Blocked,통제,통제,
-card_w004_visitor_cousin_1,1,Direct,허락,허락,
-card_w004_visitor_cousin_2,0,Blocked,통제,통제,
-card_w004_visitor_cousin_2,1,Direct,허락,허락,
-card_w004_visitor_friend_1,0,Blocked,통제,통제,
-card_w004_visitor_friend_1,1,Direct,허락,허락,
-card_w004_visitor_friend_2,0,Blocked,통제,통제,
-card_w004_visitor_friend_2,1,Direct,허락,허락,
-card_w004_visitor_friend_3,0,Blocked,통제,통제,
-card_w004_visitor_friend_3,1,Direct,허락,허락,
-card_w005_excursion_basement,0,Blocked,통제,통제,
-card_w005_excursion_basement,1,Direct,허락,허락,
-card_w005_excursion_garden,0,Blocked,통제,통제,
-card_w005_excursion_garden,1,Direct,허락,허락,
-card_w005_excursion_lake,0,Blocked,통제,통제,
-card_w005_excursion_lake,1,Direct,허락,허락,
-card_w005_excursion_library,0,Blocked,통제,통제,
-card_w005_excursion_library,1,Direct,허락,허락,
-card_w005_excursion_study,0,Blocked,통제,통제,
-card_w005_excursion_study,1,Direct,허락,허락,
-card_w005_external_main,0,Blocked,통제,통제,
-card_w005_external_main,1,Direct,허락,허락,
-card_w005_external_main,2,Modified,수정,수정,
-card_w005_house_main,0,Blocked,통제,통제,
-card_w005_house_main,1,Direct,허락,허락,
-card_w005_house_main,2,Modified,수정,수정,
-card_w005_letter_cousin_2,0,Blocked,통제,통제,
-card_w005_letter_cousin_2,1,Direct,허락,허락,
-card_w005_letter_cousin_2,2,Modified,수정,수정,
-card_w005_letter_cousin_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w005_letter_cousin_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w005_letter_cousin_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w005_letter_friend_1,0,Blocked,통제,통제,
-card_w005_letter_friend_1,1,Direct,허락,허락,
-card_w005_letter_friend_1,2,Modified,수정,수정,
-card_w005_letter_friend_1_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w005_letter_friend_1_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w005_letter_friend_1_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w005_letter_friend_2,0,Blocked,통제,통제,
-card_w005_letter_friend_2,1,Direct,허락,허락,
-card_w005_letter_friend_2,2,Modified,수정,수정,
-card_w005_letter_friend_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w005_letter_friend_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w005_letter_friend_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w005_letter_friend_3,0,Blocked,통제,통제,
-card_w005_letter_friend_3,1,Direct,허락,허락,
-card_w005_letter_friend_3,2,Modified,수정,수정,
-card_w005_letter_friend_3_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w005_letter_friend_3_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w005_letter_friend_3_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w005_visitor_cousin_1,0,Blocked,통제,통제,
-card_w005_visitor_cousin_1,1,Direct,허락,허락,
-card_w005_visitor_cousin_2,0,Blocked,통제,통제,
-card_w005_visitor_cousin_2,1,Direct,허락,허락,
-card_w005_visitor_friend_1,0,Blocked,통제,통제,
-card_w005_visitor_friend_1,1,Direct,허락,허락,
-card_w005_visitor_friend_2,0,Blocked,통제,통제,
-card_w005_visitor_friend_2,1,Direct,허락,허락,
-card_w005_visitor_friend_3,0,Blocked,통제,통제,
-card_w005_visitor_friend_3,1,Direct,허락,허락,
-card_w006_excursion_basement,0,Blocked,통제,통제,
-card_w006_excursion_basement,1,Direct,허락,허락,
-card_w006_excursion_garden,0,Blocked,통제,통제,
-card_w006_excursion_garden,1,Direct,허락,허락,
-card_w006_excursion_lake,0,Blocked,통제,통제,
-card_w006_excursion_lake,1,Direct,허락,허락,
-card_w006_excursion_library,0,Blocked,통제,통제,
-card_w006_excursion_library,1,Direct,허락,허락,
-card_w006_excursion_study,0,Blocked,통제,통제,
-card_w006_excursion_study,1,Direct,허락,허락,
-card_w006_external_main,0,Blocked,통제,통제,
-card_w006_external_main,1,Direct,허락,허락,
-card_w006_external_main,2,Modified,수정,수정,
-card_w006_house_main,0,Blocked,통제,통제,
-card_w006_house_main,1,Direct,허락,허락,
-card_w006_house_main,2,Modified,수정,수정,
-card_w006_letter_cousin_2,0,Blocked,통제,통제,
-card_w006_letter_cousin_2,1,Direct,허락,허락,
-card_w006_letter_cousin_2,2,Modified,수정,수정,
-card_w006_letter_cousin_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w006_letter_cousin_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w006_letter_cousin_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w006_letter_friend_1,0,Blocked,통제,통제,
-card_w006_letter_friend_1,1,Direct,허락,허락,
-card_w006_letter_friend_1,2,Modified,수정,수정,
-card_w006_letter_friend_1_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w006_letter_friend_1_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w006_letter_friend_1_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w006_letter_friend_2,0,Blocked,통제,통제,
-card_w006_letter_friend_2,1,Direct,허락,허락,
-card_w006_letter_friend_2,2,Modified,수정,수정,
-card_w006_letter_friend_2_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w006_letter_friend_2_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w006_letter_friend_2_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w006_letter_friend_3,0,Blocked,통제,통제,
-card_w006_letter_friend_3,1,Direct,허락,허락,
-card_w006_letter_friend_3,2,Modified,수정,수정,
-card_w006_letter_friend_3_placeholder,0,Blocked,지금은 넘긴다,이번 주 편지 소식은 굳이 꺼내지 않고 지나간다.,obedience_plus_1
-card_w006_letter_friend_3_placeholder,1,Modified,소식만 전한다,편지가 올 수 있다는 정도의 소식만 가볍게 전한다.,curiosity_plus_1
-card_w006_letter_friend_3_placeholder,2,Direct,차분히 기다린다,답장이나 새 소식을 차분히 기다리게 한다.,trust_plus_1
-card_w006_visitor_cousin_1,0,Blocked,통제,통제,
-card_w006_visitor_cousin_1,1,Direct,허락,허락,
-card_w006_visitor_cousin_2,0,Blocked,통제,통제,
-card_w006_visitor_cousin_2,1,Direct,허락,허락,
-card_w006_visitor_friend_1,0,Blocked,통제,통제,
-card_w006_visitor_friend_1,1,Direct,허락,허락,
-card_w006_visitor_friend_2,0,Blocked,통제,통제,
-card_w006_visitor_friend_2,1,Direct,허락,허락,
-card_w006_visitor_friend_3,0,Blocked,통제,통제,obedience_plus_1
-card_w006_visitor_friend_3,1,Modified,조심히 허용,상황을 살피며 조심히 허용한다.,trust_plus_1
-card_w006_visitor_friend_3,2,Direct,허락,허락,curiosity_plus_1
-card_w007_excursion_basement,0,Blocked,통제,통제,
-card_w007_excursion_basement,1,Direct,허락,허락,
-card_w007_excursion_basement,2,Modified,수정,수정,
-card_w007_excursion_garden,0,Blocked,통제,통제,
-card_w007_excursion_garden,1,Direct,허락,허락,
-card_w007_excursion_lake,0,Blocked,통제,통제,
-card_w007_excursion_lake,1,Direct,허락,허락,
-card_w007_excursion_library,0,Blocked,통제,통제,
-card_w007_excursion_library,1,Direct,허락,허락,
-card_w007_excursion_study,0,Blocked,통제,통제,
-card_w007_excursion_study,1,Direct,허락,허락,
-card_w007_external_main,0,Blocked,통제,통제,
-card_w007_external_main,1,Direct,허락,허락,
-card_w007_external_main,2,Modified,수정,수정,
-card_w007_house_main,0,Blocked,통제,통제,
-card_w007_house_main,1,Direct,허락,허락,
-card_w007_house_main,2,Modified,수정,수정,
-card_w007_letter_cousin_2,0,Blocked,통제,통제,
-card_w007_letter_cousin_2,1,Direct,허락,허락,
-card_w007_letter_cousin_2,2,Modified,수정,수정,
-card_w007_letter_friend_1,0,Blocked,통제,통제,
-card_w007_letter_friend_1,1,Direct,허락,허락,
-card_w007_letter_friend_1,2,Modified,수정,수정,
-card_w007_letter_friend_2,0,Blocked,통제,통제,
-card_w007_letter_friend_2,1,Direct,허락,허락,
-card_w007_letter_friend_2,2,Modified,수정,수정,
-card_w007_letter_friend_3,0,Blocked,통제,통제,
-card_w007_letter_friend_3,1,Direct,허락,허락,
-card_w007_letter_friend_3,2,Modified,수정,수정,
-card_w007_visitor_cousin_1,0,Blocked,통제,통제,
-card_w007_visitor_cousin_1,1,Direct,수락 (동의,수락 (동의,
-card_w007_visitor_cousin_2,0,Blocked,통제,통제,
-card_w007_visitor_cousin_2,1,Direct,허락 (네모가 사촌 2의 손을 잡고 서재 구석 소파로 이끈다. 백작님의 책상에서 최대한 멀리 떨어진 곳이야.,허락 (네모가 사촌 2의 손을 잡고 서재 구석 소파로 이끈다. 백작님의 책상에서 최대한 멀리 떨어진 곳이야.,
-card_w007_visitor_friend_1,0,Blocked,통제,통제,
-card_w007_visitor_friend_1,1,Direct,허락,허락,
-card_w007_visitor_friend_2,0,Blocked,통제,통제,
-card_w007_visitor_friend_2,1,Direct,허락,허락,
-card_w007_visitor_friend_3,0,Blocked,통제,통제,
-card_w007_visitor_friend_3,1,Direct,허락,허락,
-card_w008_excursion_basement,0,Blocked,통제,통제,
-card_w008_excursion_basement,1,Direct,허락,허락,
-card_w008_excursion_garden,0,Blocked,통제,통제,
-card_w008_excursion_garden,1,Direct,허락,허락,
-card_w008_excursion_lake,0,Blocked,통제,통제,
-card_w008_excursion_lake,1,Direct,허락,허락,
-card_w008_excursion_library,0,Blocked,통제,통제,
-card_w008_excursion_library,1,Direct,허락,허락,
-card_w008_excursion_study,0,Blocked,통제,통제,
-card_w008_excursion_study,1,Direct,허락,허락,
-card_w008_external_main,0,Blocked,통제,통제,
-card_w008_external_main,1,Direct,허락,허락,
-card_w008_external_main,2,Modified,수정,수정,
-card_w008_house_main,0,Blocked,통제,통제,
-card_w008_house_main,1,Direct,허락,허락,
-card_w008_house_main,2,Modified,수정,수정,
-card_w008_letter_cousin_2,0,Blocked,통제,통제,
-card_w008_letter_cousin_2,1,Direct,허락,허락,
-card_w008_letter_cousin_2,2,Modified,수정,수정,
-card_w008_letter_friend_1,0,Blocked,통제,통제,
-card_w008_letter_friend_1,1,Direct,허락,허락,
-card_w008_letter_friend_1,2,Modified,수정,수정,
-card_w008_letter_friend_2,0,Blocked,통제,통제,
-card_w008_letter_friend_2,1,Direct,허락,허락,
-card_w008_letter_friend_2,2,Modified,수정,수정,
-card_w008_letter_friend_3,0,Blocked,통제,통제,
-card_w008_letter_friend_3,1,Direct,허락,허락,
-card_w008_letter_friend_3,2,Modified,수정,수정,
-card_w008_visitor_cousin_1,0,Blocked,통제,통제,
-card_w008_visitor_cousin_1,1,Direct,허락,허락,
-card_w008_visitor_cousin_2,0,Blocked,통제,통제,
-card_w008_visitor_cousin_2,1,Direct,허락,허락,
-card_w008_visitor_friend_1,0,Blocked,"통제 (전통의 계승)(경비대장이 다가와 창문을 조심스럽게 닫으며, 네모에게 백작님이 보낸 작은 펜던트를 건넨다.)경비대장 : 주인님, 이 펜던트 안에는 돌아가신 두 분의 사진이 들어있습니다. 백작님은 주인님이 충분히 강해질 때까지 슬픔을 뒤로 미뤄두셨을 뿐입니다.","통제 (전통의 계승)(경비대장이 다가와 창문을 조심스럽게 닫으며, 네모에게 백작님이 보낸 작은 펜던트를 건넨다.)경비대장 : 주인님, 이 펜던트 안에는 돌아가신 두 분의 사진이 들어있습니다. 백작님은 주인님이 충분히 강해질 때까지 슬픔을 뒤로 미뤄두셨을 뿐입니다.",
-card_w008_visitor_friend_1,1,Direct,"허락 (우정의 확장)(네모가 친구 1의 손을 잡고 지도 위에 숲을 가리킨다.)네모 : 친구 1, 그럼 성인식이 끝나면 나랑 같이 저 숲에 가보자. 백작님이 나를 위해 지켜낸 그곳이 어떤 곳인지 내 눈으로 직접 확인하고 싶어.","허락 (우정의 확장)(네모가 친구 1의 손을 잡고 지도 위에 숲을 가리킨다.)네모 : 친구 1, 그럼 성인식이 끝나면 나랑 같이 저 숲에 가보자. 백작님이 나를 위해 지켜낸 그곳이 어떤 곳인지 내 눈으로 직접 확인하고 싶어.",
-card_w008_visitor_friend_2,0,Blocked,통제,통제,
-card_w008_visitor_friend_2,1,Direct,허락,허락,
-card_w008_visitor_friend_3,0,Blocked,통제,통제,
-card_w008_visitor_friend_3,1,Direct,허락,허락,
-card_w009_excursion_basement,0,Blocked,통제,통제,
-card_w009_excursion_basement,1,Direct,허락,허락,
-card_w009_excursion_garden,0,Blocked,통제,통제,
-card_w009_excursion_garden,1,Direct,"수락네모 : 우와, 내가 좋아하는 꽃 향기가 여기까지 나! 역시 밖에서 마시는 차가 제일 맛있어.","수락네모 : 우와, 내가 좋아하는 꽃 향기가 여기까지 나! 역시 밖에서 마시는 차가 제일 맛있어.",
-card_w009_excursion_lake,0,Blocked,통제,통제,
-card_w009_excursion_lake,1,Direct,허락,허락,
-card_w009_excursion_library,0,Blocked,통제,통제,
-card_w009_excursion_library,1,Direct,허락,허락,
-card_w009_excursion_study,0,Blocked,통제,통제,
-card_w009_excursion_study,1,Direct,허락,허락,
-card_w009_external_main,0,Blocked,통제,통제,
-card_w009_external_main,1,Direct,허락,허락,
-card_w009_external_main,2,Modified,수정,수정,
-card_w009_house_main,0,Blocked,통제,통제,
-card_w009_house_main,1,Direct,허락,허락,
-card_w009_house_main,2,Modified,수정,수정,
-card_w009_letter_cousin_2,0,Blocked,통제,통제,
-card_w009_letter_cousin_2,1,Direct,허락,허락,
-card_w009_letter_cousin_2,2,Modified,수정,수정,
-card_w009_letter_friend_1,0,Blocked,통제,통제,
-card_w009_letter_friend_1,1,Direct,허락,허락,
-card_w009_letter_friend_1,2,Modified,수정,수정,
-card_w009_letter_friend_2,0,Blocked,통제,통제,
-card_w009_letter_friend_2,1,Direct,허락,허락,
-card_w009_letter_friend_2,2,Modified,수정,수정,
-card_w009_letter_friend_3,0,Blocked,통제,통제,
-card_w009_letter_friend_3,1,Direct,허락,허락,
-card_w009_letter_friend_3,2,Modified,수정,수정,
-card_w009_visitor_cousin_1,0,Blocked,통제,통제,
-card_w009_visitor_cousin_1,1,Direct,허락,허락,
-card_w009_visitor_cousin_2,0,Blocked,통제,통제,
-card_w009_visitor_cousin_2,1,Direct,허락,허락,
-card_w009_visitor_friend_1,0,Blocked,통제,통제,
-card_w009_visitor_friend_1,1,Direct,허락,허락,
-card_w009_visitor_friend_2,0,Blocked,통제,통제,
-card_w009_visitor_friend_2,1,Direct,허락 (네모가 친구 2의 손을 잡고 서재 중앙에서 약속한다.),허락 (네모가 친구 2의 손을 잡고 서재 중앙에서 약속한다.),
-card_w009_visitor_friend_3,0,Blocked,통제,통제,
-card_w009_visitor_friend_3,1,Direct,허락,허락,
+card_textbook_etiquette,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_etiquette,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_etiquette,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_story,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_story,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_story,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_nature,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_nature,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_nature,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_posture,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_posture,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_posture,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_astronomy,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_astronomy,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_astronomy,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_riding,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_riding,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_riding,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_cooking,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_cooking,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_cooking,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_engineering,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_engineering,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_engineering,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_law,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_law,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_law,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_diplomacy,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_diplomacy,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_diplomacy,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_economics,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_economics,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_economics,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_textbook_military,0,Blocked,수업을 미룬다,오늘 교재 수업은 미루고 넘어간다.,obedience_plus_1
+card_textbook_military,1,Direct,정식으로 가르친다,교재 내용을 차근차근 가르친다.,trust_plus_1|curiosity_plus_1
+card_textbook_military,2,Modified,흥미 위주로 가르친다,딱딱한 내용 대신 흥미 위주로 풀어 가르친다.,curiosity_plus_1
+card_excursion_basement_week_001,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,anxiety_plus_1|obedience_plus_1
+card_excursion_basement_week_001,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1|obedience_plus_1
+card_excursion_basement_week_002,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|trust_plus_1
+card_excursion_basement_week_002,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1|obedience_plus_1
+card_excursion_basement_week_003,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|obedience_plus_1
+card_excursion_basement_week_003,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_basement_week_004,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|anxiety_plus_1
+card_excursion_basement_week_004,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|curiosity_plus_1
+card_excursion_basement_week_005,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|anxiety_plus_1
+card_excursion_basement_week_005,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|curiosity_plus_1
+card_excursion_basement_week_006,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|obedience_plus_1
+card_excursion_basement_week_006,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|anxiety_plus_1
+card_excursion_basement_week_007,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1
+card_excursion_basement_week_007,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|anxiety_plus_1
+card_excursion_basement_week_007,2,Modified,대안을 제시한다,직접 가는 대신 비슷한 경험으로 달랜다.,trust_plus_1|curiosity_plus_1
+card_excursion_basement_week_008,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_basement_week_008,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,anxiety_plus_1
+card_excursion_basement_week_009,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1
+card_excursion_basement_week_009,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|obedience_plus_1
+card_excursion_garden_week_001,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1
+card_excursion_garden_week_001,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1
+card_excursion_garden_week_002,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|trust_plus_1
+card_excursion_garden_week_002,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_garden_week_003,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_garden_week_003,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_garden_week_004,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|curiosity_plus_1
+card_excursion_garden_week_004,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_garden_week_005,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|obedience_plus_1
+card_excursion_garden_week_005,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1
+card_excursion_garden_week_006,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|obedience_plus_1
+card_excursion_garden_week_006,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|anxiety_plus_1
+card_excursion_garden_week_007,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_garden_week_007,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|curiosity_plus_1
+card_excursion_garden_week_008,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_garden_week_008,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,anxiety_plus_1|curiosity_plus_1
+card_excursion_garden_week_009,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,trust_plus_1|curiosity_plus_1
+card_excursion_garden_week_009,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,
+card_excursion_lake_week_001,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,
+card_excursion_lake_week_001,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,anxiety_plus_1
+card_excursion_lake_week_002,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|trust_plus_1
+card_excursion_lake_week_002,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_lake_week_003,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_lake_week_003,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_lake_week_004,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|obedience_plus_1
+card_excursion_lake_week_004,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|anxiety_plus_1
+card_excursion_lake_week_005,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|obedience_plus_1
+card_excursion_lake_week_005,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|curiosity_plus_1
+card_excursion_lake_week_006,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|obedience_plus_1
+card_excursion_lake_week_006,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|curiosity_plus_1
+card_excursion_lake_week_007,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_lake_week_007,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|curiosity_plus_1
+card_excursion_lake_week_008,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_lake_week_008,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,anxiety_plus_1
+card_excursion_lake_week_009,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_lake_week_009,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|curiosity_plus_1
+card_excursion_library_week_001,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,anxiety_plus_1|obedience_plus_1|trust_plus_1
+card_excursion_library_week_001,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_library_week_002,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|trust_plus_1
+card_excursion_library_week_002,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_library_week_003,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|obedience_plus_1
+card_excursion_library_week_003,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_library_week_004,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_library_week_004,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_library_week_005,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,curiosity_plus_1|obedience_plus_1
+card_excursion_library_week_005,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_library_week_006,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_library_week_006,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|obedience_plus_1
+card_excursion_library_week_007,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1
+card_excursion_library_week_007,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|obedience_plus_1
+card_excursion_library_week_008,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_library_week_008,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,anxiety_plus_1|curiosity_plus_1
+card_excursion_library_week_009,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1
+card_excursion_library_week_009,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|curiosity_plus_1
+card_excursion_study_week_001,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1
+card_excursion_study_week_001,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1
+card_excursion_study_week_002,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,
+card_excursion_study_week_002,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1
+card_excursion_study_week_003,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|curiosity_plus_1
+card_excursion_study_week_003,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_study_week_004,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_study_week_004,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|obedience_plus_1
+card_excursion_study_week_005,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_study_week_005,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,curiosity_plus_1|trust_plus_1
+card_excursion_study_week_006,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_study_week_006,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|obedience_plus_1
+card_excursion_study_week_007,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1
+card_excursion_study_week_007,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|obedience_plus_1
+card_excursion_study_week_008,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1|anxiety_plus_1
+card_excursion_study_week_008,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,anxiety_plus_1|curiosity_plus_1
+card_excursion_study_week_009,0,Blocked,방문을 막는다,해당 장소 외출을 막고 돌려보낸다.,obedience_plus_1
+card_excursion_study_week_009,1,Direct,외출을 허락한다,해당 장소까지 나가도록 허락한다.,trust_plus_1|anxiety_plus_1
+card_external_week_001,0,Blocked,소식을 차단한다,외부 소식을 네모에게 들려주지 않는다.,
+card_external_week_001,1,Direct,소식을 전달한다,외부 소식을 자세히 들려준다.,
+card_external_week_002,0,Blocked,소식을 차단한다,외부 소식을 네모에게 들려주지 않는다.,
+card_external_week_002,1,Direct,소식을 전달한다,외부 소식을 자세히 들려준다.,
+card_external_week_003,0,Blocked,소식을 차단한다,외부 소식을 네모에게 들려주지 않는다.,obedience_plus_1|curiosity_plus_1
+card_external_week_003,1,Direct,소식을 전달한다,외부 소식을 자세히 들려준다.,curiosity_plus_1|trust_plus_1
+card_external_week_003,2,Modified,소식을 완화해서 전달한다,자극적인 부분을 덜어 소식을 전달한다.,curiosity_plus_1|obedience_plus_1
+card_external_week_004,0,Blocked,소식을 차단한다,외부 소식을 네모에게 들려주지 않는다.,obedience_plus_1|anxiety_plus_1
+card_external_week_004,1,Direct,소식을 전달한다,외부 소식을 자세히 들려준다.,anxiety_plus_1|curiosity_plus_1
+card_external_week_004,2,Modified,소식을 완화해서 전달한다,자극적인 부분을 덜어 소식을 전달한다.,trust_plus_1|obedience_plus_1
+card_external_week_005,0,Blocked,소식을 차단한다,외부 소식을 네모에게 들려주지 않는다.,obedience_plus_1|curiosity_plus_1
+card_external_week_005,1,Direct,소식을 전달한다,외부 소식을 자세히 들려준다.,trust_plus_1|curiosity_plus_1
+card_external_week_005,2,Modified,소식을 완화해서 전달한다,자극적인 부분을 덜어 소식을 전달한다.,trust_plus_1|obedience_plus_1
+card_external_week_006,0,Blocked,소식을 차단한다,외부 소식을 네모에게 들려주지 않는다.,curiosity_plus_1|anxiety_plus_1
+card_external_week_006,1,Direct,소식을 전달한다,외부 소식을 자세히 들려준다.,trust_plus_1|curiosity_plus_1
+card_external_week_006,2,Modified,소식을 완화해서 전달한다,자극적인 부분을 덜어 소식을 전달한다.,trust_plus_1|obedience_plus_1
+card_external_week_007,0,Blocked,소식을 차단한다,외부 소식을 네모에게 들려주지 않는다.,
+card_external_week_007,1,Direct,소식을 전달한다,외부 소식을 자세히 들려준다.,
+card_external_week_007,2,Modified,소식을 완화해서 전달한다,자극적인 부분을 덜어 소식을 전달한다.,
+card_external_week_008,0,Blocked,소식을 차단한다,외부 소식을 네모에게 들려주지 않는다.,
+card_external_week_008,1,Direct,소식을 전달한다,외부 소식을 자세히 들려준다.,
+card_external_week_008,2,Modified,소식을 완화해서 전달한다,자극적인 부분을 덜어 소식을 전달한다.,
+card_external_week_009,0,Blocked,소식을 차단한다,외부 소식을 네모에게 들려주지 않는다.,
+card_external_week_009,1,Direct,소식을 전달한다,외부 소식을 자세히 들려준다.,
+card_external_week_009,2,Modified,소식을 완화해서 전달한다,자극적인 부분을 덜어 소식을 전달한다.,
+card_house_talk_week_001,0,Blocked,소문을 숨긴다,저택 내 소문을 네모에게 들려주지 않는다.,obedience_plus_1
+card_house_talk_week_001,1,Direct,소문을 들려준다,저택 내 소문을 있는 그대로 전해 준다.,anxiety_plus_1|curiosity_plus_1
+card_house_talk_week_001,2,Modified,돌려서 말한다,소문의 날카로운 부분을 덜어내고 부드럽게 전달한다.,anxiety_plus_1|trust_plus_1
+card_house_talk_week_002,0,Blocked,소문을 숨긴다,저택 내 소문을 네모에게 들려주지 않는다.,curiosity_plus_1
+card_house_talk_week_002,1,Direct,소문을 들려준다,저택 내 소문을 있는 그대로 전해 준다.,curiosity_plus_1|trust_plus_1
+card_house_talk_week_002,2,Modified,돌려서 말한다,소문의 날카로운 부분을 덜어내고 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_house_talk_week_003,0,Blocked,소문을 숨긴다,저택 내 소문을 네모에게 들려주지 않는다.,curiosity_plus_1|anxiety_plus_1
+card_house_talk_week_003,1,Direct,소문을 들려준다,저택 내 소문을 있는 그대로 전해 준다.,curiosity_plus_1|trust_plus_1
+card_house_talk_week_003,2,Modified,돌려서 말한다,소문의 날카로운 부분을 덜어내고 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_house_talk_week_004,0,Blocked,소문을 숨긴다,저택 내 소문을 네모에게 들려주지 않는다.,curiosity_plus_1|anxiety_plus_1
+card_house_talk_week_004,1,Direct,소문을 들려준다,저택 내 소문을 있는 그대로 전해 준다.,trust_plus_1|anxiety_plus_1
+card_house_talk_week_004,2,Modified,돌려서 말한다,소문의 날카로운 부분을 덜어내고 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_house_talk_week_005,0,Blocked,소문을 숨긴다,저택 내 소문을 네모에게 들려주지 않는다.,anxiety_plus_1|curiosity_plus_1
+card_house_talk_week_005,1,Direct,소문을 들려준다,저택 내 소문을 있는 그대로 전해 준다.,anxiety_plus_1|curiosity_plus_1
+card_house_talk_week_005,2,Modified,돌려서 말한다,소문의 날카로운 부분을 덜어내고 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_house_talk_week_006,0,Blocked,소문을 숨긴다,저택 내 소문을 네모에게 들려주지 않는다.,curiosity_plus_1|anxiety_plus_1
+card_house_talk_week_006,1,Direct,소문을 들려준다,저택 내 소문을 있는 그대로 전해 준다.,curiosity_plus_1|trust_plus_1
+card_house_talk_week_006,2,Modified,돌려서 말한다,소문의 날카로운 부분을 덜어내고 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_house_talk_week_007,0,Blocked,소문을 숨긴다,저택 내 소문을 네모에게 들려주지 않는다.,
+card_house_talk_week_007,1,Direct,소문을 들려준다,저택 내 소문을 있는 그대로 전해 준다.,
+card_house_talk_week_007,2,Modified,돌려서 말한다,소문의 날카로운 부분을 덜어내고 부드럽게 전달한다.,
+card_house_talk_week_008,0,Blocked,소문을 숨긴다,저택 내 소문을 네모에게 들려주지 않는다.,
+card_house_talk_week_008,1,Direct,소문을 들려준다,저택 내 소문을 있는 그대로 전해 준다.,
+card_house_talk_week_008,2,Modified,돌려서 말한다,소문의 날카로운 부분을 덜어내고 부드럽게 전달한다.,
+card_house_talk_week_009,0,Blocked,소문을 숨긴다,저택 내 소문을 네모에게 들려주지 않는다.,
+card_house_talk_week_009,1,Direct,소문을 들려준다,저택 내 소문을 있는 그대로 전해 준다.,
+card_house_talk_week_009,2,Modified,돌려서 말한다,소문의 날카로운 부분을 덜어내고 부드럽게 전달한다.,
+card_letter_cousin_2_week_002,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_cousin_2_week_002,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_cousin_2_week_002,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_cousin_2_week_003,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_cousin_2_week_003,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_cousin_2_week_003,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_cousin_2_week_005,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_cousin_2_week_005,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_cousin_2_week_005,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_letter_cousin_2_week_006,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_cousin_2_week_006,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|obedience_plus_1
+card_letter_cousin_2_week_006,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_cousin_2_week_008,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_cousin_2_week_008,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_cousin_2_week_008,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_letter_cousin_2_week_009,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_cousin_2_week_009,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|obedience_plus_1
+card_letter_cousin_2_week_009,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_friend_1_week_002,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_1_week_002,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_002,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_003,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_1_week_003,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_003,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_005,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_1_week_005,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_005,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_006,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_1_week_006,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_006,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_008,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_1_week_008,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_008,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_009,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_1_week_009,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_1_week_009,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_2_week_002,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_2_week_002,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_2_week_002,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_friend_2_week_003,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_2_week_003,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_2_week_003,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_friend_2_week_005,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_2_week_005,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|curiosity_plus_1
+card_letter_friend_2_week_005,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_friend_2_week_006,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_2_week_006,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|obedience_plus_1
+card_letter_friend_2_week_006,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_friend_2_week_008,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_2_week_008,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|obedience_plus_1
+card_letter_friend_2_week_008,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_friend_2_week_009,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_2_week_009,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,trust_plus_1|obedience_plus_1
+card_letter_friend_2_week_009,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,trust_plus_1|obedience_plus_1
+card_letter_friend_3_week_002,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_3_week_002,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_002,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_003,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_3_week_003,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_003,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_005,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_3_week_005,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_005,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_006,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_3_week_006,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_006,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_008,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_3_week_008,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_008,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_009,0,Blocked,편지를 전달하지 않는다,받은 편지를 네모에게 전달하지 않는다.,
+card_letter_friend_3_week_009,1,Direct,편지를 그대로 읽어준다,편지 내용을 그대로 네모에게 읽어 준다.,curiosity_plus_1|trust_plus_1
+card_letter_friend_3_week_009,2,Modified,요약해서 전달한다,편지 내용을 정리해서 부드럽게 전달한다.,curiosity_plus_1|trust_plus_1
+card_visitor_cousin_1_week_001,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1
+card_visitor_cousin_1_week_001,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1
+card_visitor_cousin_1_week_002,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1
+card_visitor_cousin_1_week_002,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_cousin_1_week_003,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,curiosity_plus_1|obedience_plus_1
+card_visitor_cousin_1_week_003,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_cousin_1_week_004,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_cousin_1_week_004,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_cousin_1_week_005,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_cousin_1_week_005,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_cousin_1_week_006,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_cousin_1_week_006,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_cousin_1_week_007,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1
+card_visitor_cousin_1_week_007,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|anxiety_plus_1
+card_visitor_cousin_1_week_008,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1
+card_visitor_cousin_1_week_008,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|anxiety_plus_1
+card_visitor_cousin_1_week_009,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1
+card_visitor_cousin_1_week_009,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_cousin_2_week_001,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_cousin_2_week_001,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_cousin_2_week_002,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_cousin_2_week_002,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1
+card_visitor_cousin_2_week_003,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,anxiety_plus_1|curiosity_plus_1
+card_visitor_cousin_2_week_003,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_cousin_2_week_004,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_cousin_2_week_004,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_cousin_2_week_005,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_cousin_2_week_005,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_cousin_2_week_006,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_cousin_2_week_006,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_cousin_2_week_007,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1
+card_visitor_cousin_2_week_007,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_cousin_2_week_008,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1
+card_visitor_cousin_2_week_008,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_cousin_2_week_009,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_cousin_2_week_009,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_friend_1_week_001,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_1_week_001,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_1_week_002,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,trust_plus_1
+card_visitor_friend_1_week_002,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_1_week_003,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_1_week_003,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_1_week_004,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_friend_1_week_004,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_1_week_005,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_friend_1_week_005,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_1_week_006,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_friend_1_week_006,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_friend_1_week_007,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_1_week_007,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_1_week_008,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_1_week_008,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_1_week_009,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_1_week_009,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_2_week_001,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_2_week_001,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_2_week_002,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,
+card_visitor_friend_2_week_002,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1
+card_visitor_friend_2_week_003,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,anxiety_plus_1|curiosity_plus_1
+card_visitor_friend_2_week_003,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_friend_2_week_004,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_friend_2_week_004,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_2_week_005,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_friend_2_week_005,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_2_week_006,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_friend_2_week_006,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1
+card_visitor_friend_2_week_007,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_2_week_007,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_2_week_008,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_2_week_008,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_2_week_009,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,trust_plus_1|obedience_plus_1
+card_visitor_friend_2_week_009,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1
+card_visitor_friend_3_week_001,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_3_week_001,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_3_week_002,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,trust_plus_1
+card_visitor_friend_3_week_002,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1
+card_visitor_friend_3_week_003,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,trust_plus_1
+card_visitor_friend_3_week_003,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_3_week_004,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_friend_3_week_004,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_3_week_005,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|anxiety_plus_1
+card_visitor_friend_3_week_005,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_3_week_007,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_3_week_007,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_3_week_008,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,obedience_plus_1|trust_plus_1
+card_visitor_friend_3_week_008,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,curiosity_plus_1|trust_plus_1
+card_visitor_friend_3_week_009,0,Blocked,만남을 막는다,방문자와의 만남을 제한하고 인사만 하게 한다.,trust_plus_1|obedience_plus_1
+card_visitor_friend_3_week_009,1,Direct,만남을 허락한다,방문자와 직접 만나 자유롭게 대화하게 한다.,trust_plus_1|curiosity_plus_1

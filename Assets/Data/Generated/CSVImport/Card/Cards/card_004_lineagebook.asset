@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_004_lineagebook
   _cardType: {fileID: 11400000, guid: e8644e571406f564b9ea2d52094a16a5, type: 2}
-  _title: "\uAC00\uACC4 \uAE30\uB85D\uC11C"
-  _originalText: "\uC6D0\uBCF8 PM \uAD50\uC7AC \uCE74\uB4DC"
+  _title: "\uAC00\uACC4\uB3C4 \uAD50\uC7AC"
+  _originalText: "\uAC00\uBB38\uC758 \uAE30\uB85D\uC774 \uB2F4\uAE34 \uAD50\uC7AC\uC5D0\uC11C
+    \uBB34\uC5C7\uC744 \uAC15\uC870\uD560\uC9C0 \uACB0\uC815\uD55C\uB2E4."
   _options:
   - _semantic: 0
     _label: "\uC6D0\uBB38\uB300\uB85C \uC77D\uB294\uB2E4"
