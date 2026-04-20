@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: WeekFlowCutsceneCatalogGroup
+  m_Name: WeekFlowCutsceneCatalogGroup_Default
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekFlowCutsceneCatalogGroup
   _defaultCatalog: {fileID: 11400000, guid: 94239b7a4bc00284d86e08c5b91a6e0b, type: 2}
   _weekCatalogs:
@@ -18,8 +18,19 @@ MonoBehaviour:
     _catalog: {fileID: 11400000, guid: 94239b7a4bc00284d86e08c5b91a6e0b, type: 2}
   - _weekId: week_001
     _catalog: {fileID: 11400000, guid: 9495a377da28ab9448281a8902a3bb91, type: 2}
+  - _weekId: week_002
+    _catalog: {fileID: 11400000, guid: 92697eb9a175a214eb0e6df0d07450aa, type: 2}
+  - _weekId: week_003
+    _catalog: {fileID: 11400000, guid: 0d177f2a32706c34586e2a5567436eb5, type: 2}
+  - _weekId: week_004
+    _catalog: {fileID: 11400000, guid: 024f003f8c29bf346b5145986b21d51b, type: 2}
   - _weekId: week_005
     _catalog: {fileID: 11400000, guid: 8b19dd20d388c4e4db750de1dab2c38f, type: 2}
   - _weekId: week_006
     _catalog: {fileID: 11400000, guid: f4ad48468bc5a4f40898084623d2fdba, type: 2}
-
+  - _weekId: week_007
+    _catalog: {fileID: 11400000, guid: 986374343e5fab2469be10b9a1d0d7ba, type: 2}
+  - _weekId: week_008
+    _catalog: {fileID: 11400000, guid: f9b89807daa075c4c880d9ebe9f7e584, type: 2}
+  - _weekId: week_009
+    _catalog: {fileID: 11400000, guid: 931151b7cd2b2e242be93d6624d11f31, type: 2}
