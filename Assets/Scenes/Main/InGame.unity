@@ -1847,7 +1847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a659a7b8c5255146b8195d819838379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_WeekFlowCutsceneBridge
-  _catalogGroup: {fileID: 11400000, guid: 065a0b03807eaae42bc2b7d48e82b92c, type: 2}
+  _catalogGroup: {fileID: 11400000, guid: ed3b2c976315c44449cd9e12ebc62f96, type: 2}
   _catalog: {fileID: 11400000, guid: 9495a377da28ab9448281a8902a3bb91, type: 2}
   _players:
   - {fileID: 237135909528359772}
