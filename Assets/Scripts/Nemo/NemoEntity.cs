@@ -156,9 +156,6 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
         {
             StopCoroutine(_dailyRoutineCoroutine);
         }
-
-        Debug.Log("기본 애니메이션 동작 시작");
-        Debug.Log($"Nemo state is {CurrentState}");
         _dailyRoutineCoroutine = StartCoroutine(_routine.DailyRoutine());
     }
 
