@@ -243,28 +243,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55078647}
   m_CullTransparentMesh: 1
---- !u!114 &71269449 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9060119456060496838, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &78080943 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2566199031391128153, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1001 &78364710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -382,17 +360,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4284ef43231144f9c05ba7917a18a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_ChildStateToastItem
---- !u!114 &89866164 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 628132387541527805, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!4 &119356580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3858231402213102536, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
@@ -466,17 +433,6 @@ MonoBehaviour:
   _nameText: {fileID: 891424190}
   _mainContentText: {fileID: 891424192}
   _charactersPerSecond: 40
---- !u!114 &144235701 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8967579581965287054, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &145433370
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,17 +481,6 @@ Transform:
   - {fileID: 726570548}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &153953500 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5997503929825196511, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1001 &157681810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -922,39 +867,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175933477}
   m_CullTransparentMesh: 1
---- !u!114 &195357549 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2023810688973214271, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &200167799 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 583019268805394161, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &206977485 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7179494057439948642, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &224692510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,44 +1127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UI_WeekFlowCutsceneBridge
   _catalogGroup: {fileID: 11400000, guid: f73adb71acedead438f8657274fe78dd, type: 2}
   _catalog: {fileID: 11400000, guid: 9495a377da28ab9448281a8902a3bb91, type: 2}
-  _players:
-  - {fileID: 982877125}
-  - {fileID: 627057439}
-  - {fileID: 677249654}
-  - {fileID: 1100682012}
-  - {fileID: 1477647375}
-  - {fileID: 654934858}
-  - {fileID: 200167799}
-  - {fileID: 78080943}
-  - {fileID: 89866164}
-  - {fileID: 916911999}
-  - {fileID: 1925971036}
-  - {fileID: 206977485}
-  - {fileID: 633420041}
-  - {fileID: 1006871211}
-  - {fileID: 1005934617}
-  - {fileID: 786518849}
-  - {fileID: 1862598307}
-  - {fileID: 1383465987}
-  - {fileID: 760167684}
-  - {fileID: 1780865423}
-  - {fileID: 600958017}
-  - {fileID: 1319914254}
-  - {fileID: 1207092643}
-  - {fileID: 1308167960}
-  - {fileID: 618035749}
-  - {fileID: 195357549}
-  - {fileID: 1706949014}
-  - {fileID: 153953500}
-  - {fileID: 595393333}
-  - {fileID: 144235701}
-  - {fileID: 1049634426}
-  - {fileID: 1751046127}
-  - {fileID: 1143452842}
-  - {fileID: 471128151}
-  - {fileID: 71269449}
-  - {fileID: 1175791108}
-  - {fileID: 1826471003}
+  _players: []
 --- !u!4 &357928816
 Transform:
   m_ObjectHideFlags: 0
@@ -1587,17 +1462,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400127127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &471128151 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1774786616117104800, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &508623015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,17 +1822,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2690636959913122135, guid: b1570dd86b6ce6a4a8e9f0906526826f, type: 3}
   m_PrefabInstance: {fileID: 575894398}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &595393333 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6201062834384586579, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &595546769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,17 +1997,6 @@ MonoBehaviour:
   hideDuration: 0.15
   showEase: 27
   hideEase: 26
---- !u!114 &600958017 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4612839381200349779, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &607355961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,17 +2179,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6719548284958993298, guid: 93cc6f5d744759a44be17ffed0b6b4e3, type: 3}
   m_PrefabInstance: {fileID: 1928788087}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &618035749 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4620665979777221946, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!224 &624039472 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7019130197052290811, guid: 1da5045ad9463c040b5a51c415de65fa, type: 3}
@@ -2380,28 +2211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e0c1328cc20ee44b19ac93effb56d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_ChoiceView
---- !u!114 &627057439 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2540680197454655150, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &633420041 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2372443553363378818, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &652604001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,28 +2242,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &654934858 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3676916972957302369, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &677249654 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7631847312409965557, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!114 &688803797 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4930344592930268640, guid: 6f4da7b5f8b4057449abc1784d9656f9, type: 3}
@@ -2632,28 +2419,6 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 249798308819942857, guid: 80d320e7c4b2b784cadd4562fd4a790b, type: 3}
   m_PrefabInstance: {fileID: 695381589}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &760167684 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 785775205675895148, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &786518849 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2620723283296772203, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1001 &800841377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2976,17 +2741,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1243324334}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &916911999 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6827106007963039464, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!4 &920490043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3674984401716893820, guid: 8a1c601c948d43e43bb1bf3f3182f7a3, type: 3}
@@ -3213,50 +2967,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976171004}
   m_CullTransparentMesh: 1
---- !u!114 &982877125 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7813760220168219144, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &1005934617 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5720375320118024695, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &1006871211 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8657552146287212000, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &1049634426 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1160384999664640218, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &1057311894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,17 +3177,6 @@ Transform:
   - {fileID: 538385502}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1100682012 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1175790249609066029, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &1114980350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,39 +3252,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114980350}
   m_CullTransparentMesh: 1
---- !u!114 &1143452842 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5065843835762430325, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &1175791108 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4057707914605969026, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &1207092643 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1496288256500164136, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &1243324333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3706,17 +3372,6 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1308167960 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9137495010791106215, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &1313476820
 GameObject:
   m_ObjectHideFlags: 0
@@ -3792,17 +3447,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313476820}
   m_CullTransparentMesh: 1
---- !u!114 &1319914254 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1856536586709775257, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1001 &1323983679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3925,17 +3569,6 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1324786630236587353, guid: b1570dd86b6ce6a4a8e9f0906526826f, type: 3}
   m_PrefabInstance: {fileID: 575894398}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1383465987 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8431849353299102060, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &1397264033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4594,17 +4227,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471669135}
   m_CullTransparentMesh: 1
---- !u!114 &1477647375 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3576946947960362117, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &1499134515
 GameObject:
   m_ObjectHideFlags: 0
@@ -5061,28 +4683,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689385685}
   m_CullTransparentMesh: 1
---- !u!114 &1706949014 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2607200073225553277, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &1751046127 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8895869691232069020, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!224 &1753154583 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3570028099247665818, guid: 823b2233877b34a4daeeefb06f5b3b9a, type: 3}
@@ -5111,28 +4711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
---- !u!114 &1780865423 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3965216972395034217, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
---- !u!114 &1826471003 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7533755473709522663, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1 &1841840513
 GameObject:
   m_ObjectHideFlags: 0
@@ -5323,17 +4901,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1862598307 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6118966456708061240, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!114 &1886090637 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6125289150354528018, guid: d03c405138403934191a8764c4e5b711, type: 3}
@@ -5610,17 +5177,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
---- !u!114 &1925971036 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6917581595675730335, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
-  m_PrefabInstance: {fileID: 4185254670301056930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
 --- !u!1001 &1928788087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6096,6 +5652,7 @@ MonoBehaviour:
   _dialogueLogPanel: {fileID: 1463106723}
   _transitionPlayer: {fileID: 467519527}
   _cutsceneBridge: {fileID: 357928815}
+  _endingFollowUpPanel: {fileID: 0}
   _mainCanvasGroup: {fileID: 1850009227}
   _nemo: {fileID: 612463813}
   _interactionPanel: {fileID: 1857524534}
