@@ -20,6 +20,7 @@ public sealed class WeekFlowRuntimeState
     public bool ShouldShowEndingAfterEvents { get; set; }
     public bool ShouldAdvanceToNextWeekAfterEvents { get; set; }
     public bool HasReachedEnding { get; set; }
+    public bool IsAwaitingEndingFollowUp { get; set; }
     public string StatusMessage { get; private set; }
 
     public void ResetChildState()
@@ -27,6 +28,7 @@ public sealed class WeekFlowRuntimeState
         SetChildState(new RuntimeChildState(), true);
         LastWeekResult = null;
         HasReachedEnding = false;
+        IsAwaitingEndingFollowUp = false;
         ClearPendingEventState();
     }
 
@@ -68,6 +70,7 @@ public sealed class WeekFlowRuntimeState
         CurrentEventSession = null;
         ShouldShowEndingAfterEvents = false;
         ShouldAdvanceToNextWeekAfterEvents = false;
+        IsAwaitingEndingFollowUp = false;
     }
 
     public void SetStatusMessage(string statusMessage)

@@ -19,6 +19,7 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
     [SerializeField] private UI_DialogueLogPanel _dialogueLogPanel;
     [SerializeField] private UI_WeekFlowTransitionPlayer _transitionPlayer;
     [SerializeField] private WeekFlowCutsceneBridgeBase _cutsceneBridge;
+    [SerializeField] private GameObject _endingFollowUpPanel;
     [SerializeField] private CanvasGroup _mainCanvasGroup;
     [SerializeField] private GameObject _nemo;
     [SerializeField] private GameObject _interactionPanel;
@@ -150,16 +151,27 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         _dialogueScreenView.ShowEnding(presentation);
     }
 
-    public override void HideTransientViews()
+    public override void ShowEndingFollowUp()
     {
         _dialogueContinueRoute = EDialogueContinueRoute.None;
 
-        if (_dialogueScreenView == null)
+        if (_dialogueScreenView != null)
         {
-            return;
+            _dialogueScreenView.HideView();
         }
 
-        _dialogueScreenView.HideView();
+        SetEndingFollowUpPanelVisible(true);
+    }
+
+    public override void HideTransientViews()
+    {
+        _dialogueContinueRoute = EDialogueContinueRoute.None;
+        SetEndingFollowUpPanelVisible(false);
+
+        if (_dialogueScreenView != null)
+        {
+            _dialogueScreenView.HideView();
+        }
     }
 
     public override void SetMainCanvasVisible(bool visible)
@@ -327,6 +339,11 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
             return true;
         }
 
+        if (IsEndingFollowUpVisible())
+        {
+            return false;
+        }
+
         if (_dialogueScreenView == null)
         {
             return false;
@@ -431,6 +448,21 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         }
 
         _advanceAction = new InputAction("Advance", InputActionType.Button, "<Keyboard>/space");
+    }
+
+    private void SetEndingFollowUpPanelVisible(bool visible)
+    {
+        if (_endingFollowUpPanel == null)
+        {
+            return;
+        }
+
+        _endingFollowUpPanel.SetActive(visible);
+    }
+
+    private bool IsEndingFollowUpVisible()
+    {
+        return _endingFollowUpPanel != null && _endingFollowUpPanel.activeSelf;
     }
 }
 

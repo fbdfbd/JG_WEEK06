@@ -112,6 +112,11 @@ public sealed class WeekFlowPresenter
         _view?.ShowEnding(presentation);
     }
 
+    public void ShowEndingFollowUp()
+    {
+        _view?.ShowEndingFollowUp();
+    }
+
     public void PresentScreen(WeekFlowScreen screen)
     {
         if (screen == null)
@@ -132,6 +137,9 @@ public sealed class WeekFlowPresenter
                 break;
             case EWeekFlowScreenType.Ending:
                 ShowEnding(screen.Ending);
+                break;
+            case EWeekFlowScreenType.EndingFollowUp:
+                ShowEndingFollowUp();
                 break;
         }
     }

@@ -13,6 +13,56 @@ MonoBehaviour:
   m_Name: event_w002
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekFlowCutsceneCatalog
   _entries:
+  - _displayName: event_week_002_etiquette_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_etiquette_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_etiquette_blocked
+  - _displayName: event_week_002_etiquette_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_etiquette_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_etiquette_direct
+  - _displayName: event_week_002_etiquette_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_etiquette_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_etiquette_modified
+  - _displayName: event_week_002_excursion_basement_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_excursion_basement_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_excursion_basement_blocked
+  - _displayName: event_week_002_excursion_basement_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_excursion_basement_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_excursion_basement_direct
   - _displayName: event_week_002_excursion_garden_blocked
     _moment: 2
     _useScreenType: 0
@@ -23,3 +73,543 @@ MonoBehaviour:
     _dialogueIndex: -1
     _choiceLabel: 
     _cutsceneId: event_week_002_excursion_garden_blocked
+  - _displayName: event_week_002_excursion_garden_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_excursion_garden_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_excursion_garden_direct
+  - _displayName: event_week_002_excursion_lake_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_excursion_lake_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_excursion_lake_blocked
+  - _displayName: event_week_002_excursion_lake_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_excursion_lake_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_excursion_lake_direct
+  - _displayName: event_week_002_excursion_library_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_excursion_library_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_excursion_library_blocked
+  - _displayName: event_week_002_excursion_library_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_excursion_library_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_excursion_library_direct
+  - _displayName: event_week_002_excursion_study_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_excursion_study_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_excursion_study_blocked
+  - _displayName: event_week_002_excursion_study_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_excursion_study_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_excursion_study_direct
+  - _displayName: event_week_002_external_w002_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_external_w002_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_external_w002_blocked
+  - _displayName: event_week_002_external_w002_blocked_2
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_external_w002_blocked_2
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_external_w002_blocked_2
+  - _displayName: event_week_002_external_w002_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_external_w002_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_external_w002_direct
+  - _displayName: event_week_002_external_w002_direct_2
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_external_w002_direct_2
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_external_w002_direct_2
+  - _displayName: event_week_002_house_talk_clock_tower_rumor_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_clock_tower_rumor_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_clock_tower_rumor_blocked
+  - _displayName: event_week_002_house_talk_clock_tower_rumor_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_clock_tower_rumor_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_clock_tower_rumor_direct
+  - _displayName: event_week_002_house_talk_clock_tower_rumor_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_clock_tower_rumor_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_clock_tower_rumor_modified
+  - _displayName: event_week_002_house_talk_kitchen_sugar_rumor_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_kitchen_sugar_rumor_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_kitchen_sugar_rumor_blocked
+  - _displayName: event_week_002_house_talk_kitchen_sugar_rumor_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_kitchen_sugar_rumor_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_kitchen_sugar_rumor_direct
+  - _displayName: event_week_002_house_talk_kitchen_sugar_rumor_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_kitchen_sugar_rumor_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_kitchen_sugar_rumor_modified
+  - _displayName: event_week_002_house_talk_laundry_ribbon_rumor_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_laundry_ribbon_rumor_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_laundry_ribbon_rumor_blocked
+  - _displayName: event_week_002_house_talk_laundry_ribbon_rumor_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_laundry_ribbon_rumor_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_laundry_ribbon_rumor_direct
+  - _displayName: event_week_002_house_talk_laundry_ribbon_rumor_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_laundry_ribbon_rumor_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_laundry_ribbon_rumor_modified
+  - _displayName: event_week_002_house_talk_parlor_teacup_rumor_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_parlor_teacup_rumor_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_parlor_teacup_rumor_blocked
+  - _displayName: event_week_002_house_talk_parlor_teacup_rumor_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_parlor_teacup_rumor_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_parlor_teacup_rumor_direct
+  - _displayName: event_week_002_house_talk_parlor_teacup_rumor_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_house_talk_parlor_teacup_rumor_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_house_talk_parlor_teacup_rumor_modified
+  - _displayName: event_week_002_letter_cousin_2_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_cousin_2_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_cousin_2_blocked
+  - _displayName: event_week_002_letter_cousin_2_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_cousin_2_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_cousin_2_direct
+  - _displayName: event_week_002_letter_cousin_2_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_cousin_2_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_cousin_2_modified
+  - _displayName: event_week_002_letter_friend_1_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_friend_1_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_friend_1_blocked
+  - _displayName: event_week_002_letter_friend_1_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_friend_1_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_friend_1_direct
+  - _displayName: event_week_002_letter_friend_1_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_friend_1_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_friend_1_modified
+  - _displayName: event_week_002_letter_friend_2_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_friend_2_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_friend_2_blocked
+  - _displayName: event_week_002_letter_friend_2_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_friend_2_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_friend_2_direct
+  - _displayName: event_week_002_letter_friend_2_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_friend_2_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_friend_2_modified
+  - _displayName: event_week_002_letter_friend_3_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_friend_3_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_friend_3_blocked
+  - _displayName: event_week_002_letter_friend_3_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_friend_3_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_friend_3_direct
+  - _displayName: event_week_002_letter_friend_3_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_letter_friend_3_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_letter_friend_3_modified
+  - _displayName: event_week_002_nature_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_nature_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_nature_blocked
+  - _displayName: event_week_002_nature_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_nature_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_nature_direct
+  - _displayName: event_week_002_nature_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_nature_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_nature_modified
+  - _displayName: event_week_002_posture_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_posture_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_posture_blocked
+  - _displayName: event_week_002_posture_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_posture_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_posture_direct
+  - _displayName: event_week_002_posture_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_posture_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_posture_modified
+  - _displayName: event_week_002_story_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_story_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_story_blocked
+  - _displayName: event_week_002_story_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_story_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_story_direct
+  - _displayName: event_week_002_story_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_story_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_story_modified
+  - _displayName: event_week_002_visitor_cousin_1_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_cousin_1_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_cousin_1_blocked
+  - _displayName: event_week_002_visitor_cousin_1_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_cousin_1_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_cousin_1_direct
+  - _displayName: event_week_002_visitor_cousin_2_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_cousin_2_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_cousin_2_blocked
+  - _displayName: event_week_002_visitor_cousin_2_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_cousin_2_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_cousin_2_direct
+  - _displayName: event_week_002_visitor_friend_1_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_friend_1_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_friend_1_blocked
+  - _displayName: event_week_002_visitor_friend_1_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_friend_1_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_friend_1_direct
+  - _displayName: event_week_002_visitor_friend_2_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_friend_2_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_friend_2_blocked
+  - _displayName: event_week_002_visitor_friend_2_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_friend_2_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_friend_2_direct
+  - _displayName: event_week_002_visitor_friend_3_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_friend_3_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_friend_3_blocked
+  - _displayName: event_week_002_visitor_friend_3_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_002
+    _eventId: event_week_002_visitor_friend_3_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_002_visitor_friend_3_direct

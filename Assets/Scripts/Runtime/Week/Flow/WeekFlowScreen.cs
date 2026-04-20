@@ -3,7 +3,8 @@ public enum EWeekFlowScreenType
     WeekFeedback,
     EventStep,
     ChoiceResult,
-    Ending
+    Ending,
+    EndingFollowUp
 }
 
 public sealed class WeekFlowScreen
@@ -77,5 +78,12 @@ public sealed class WeekFlowScreen
         NemoFeedbackPresentation nemoFeedback)
     {
         return new WeekFlowScreen(EWeekFlowScreenType.Ending, weekDefinition, null, null, null, default, default, default, presentation, nemoFeedback);
+    }
+
+    public static WeekFlowScreen CreateEndingFollowUp(
+        SO_WeekDefinition weekDefinition,
+        NemoFeedbackPresentation nemoFeedback)
+    {
+        return new WeekFlowScreen(EWeekFlowScreenType.EndingFollowUp, weekDefinition, null, null, null, default, default, default, default, nemoFeedback);
     }
 }

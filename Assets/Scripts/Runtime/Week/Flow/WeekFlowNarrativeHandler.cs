@@ -27,6 +27,11 @@ public sealed class WeekFlowNarrativeHandler
         RuntimeInteractiveEventSession eventSession = _runtimeState.CurrentEventSession;
         if (eventSession == null)
         {
+            if (_runtimeState.IsAwaitingEndingFollowUp)
+            {
+                return BuildEndingFollowUpScreen();
+            }
+
             return ContinuePostWeekFlow();
         }
 
@@ -170,6 +175,7 @@ public sealed class WeekFlowNarrativeHandler
     {
         _runtimeState.ShouldShowEndingAfterEvents = false;
         _runtimeState.HasReachedEnding = true;
+        _runtimeState.IsAwaitingEndingFollowUp = true;
         EndingPresentation ending = EndingResolver.Resolve(_runtimeState.ChildState);
         PublishStatusMessage(_weekUiText.GetEndingReachedMessage());
 
@@ -177,6 +183,14 @@ public sealed class WeekFlowNarrativeHandler
             _weekSequenceState.CurrentWeekDefinition,
             ending,
             new NemoFeedbackPresentation(ending.VisualState, ending.ClosingLine)));
+    }
+
+    private WeekFlowActionResult BuildEndingFollowUpScreen()
+    {
+        _runtimeState.IsAwaitingEndingFollowUp = false;
+        return WeekFlowActionResult.ReplaceScreen(WeekFlowScreen.CreateEndingFollowUp(
+            _weekSequenceState.CurrentWeekDefinition,
+            new NemoFeedbackPresentation(ENemoVisualState.Neutral, string.Empty)));
     }
 
     private void MoveToNextWeek()

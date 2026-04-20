@@ -168,6 +168,7 @@ public sealed class WeekFlowCommandHandler
     {
         _runtimeState.ShouldShowEndingAfterEvents = false;
         _runtimeState.HasReachedEnding = true;
+        _runtimeState.IsAwaitingEndingFollowUp = true;
         EndingPresentation ending = EndingResolver.Resolve(_runtimeState.ChildState);
         PublishStatusMessage(_weekUiText.GetEndingReachedMessage());
 

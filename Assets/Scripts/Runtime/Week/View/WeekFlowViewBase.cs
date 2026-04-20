@@ -82,6 +82,7 @@ public abstract class WeekFlowViewBase : MonoBehaviour
     public virtual void ShowInteractiveEvent(InteractiveEventPresentation presentation) { }
     public virtual void ShowInteractiveEventResult(InteractiveEventChoiceResultPresentation presentation) { }
     public virtual void ShowEnding(EndingPresentation presentation) { }
+    public virtual void ShowEndingFollowUp() { }
     public virtual void HideTransientViews() { }
     public virtual void SetMainCanvasVisible(bool visible) { }
     public virtual WeekFlowCutsceneBridgeBase GetCutsceneBridge() { return null; }
