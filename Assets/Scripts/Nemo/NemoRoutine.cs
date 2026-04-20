@@ -60,6 +60,7 @@ public class NemoRoutine
     {
         while (_canRunRoutine())
         {
+            Debug.Log("걷기 시작");
             _anim.PlayWalk();
 
             float walkTime = Random.Range(2f, 5f);
@@ -69,6 +70,7 @@ public class NemoRoutine
             {
                 if (!_canRunRoutine())
                 {
+                    Debug.Log("걷기 시작하다가 멈춤");
                     yield break;
                 }
 
@@ -133,6 +135,7 @@ public class NemoRoutine
 
     private void Move()
     {
+        Debug.Log("움직이는 중");
         _transform.Translate(_moveDirection * _walkSpeed * Time.deltaTime);
     }
 

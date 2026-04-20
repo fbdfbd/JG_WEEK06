@@ -13,6 +13,8 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
 
     public static NemoEntity Instance { get; private set; }
 
+    [SerializeField] private UI_DialogView _dialogView;
+
     [Header("Animation")]
     [SerializeField] private Animator playerAnimator;
 
@@ -104,10 +106,10 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
             return;
         }
 
-        if (CurrentState == NemoState.Interacting)
-        {
-            ResumeRoutine();
-        }
+        //if (CurrentState == NemoState.Interacting)
+        //{
+        //    ResumeRoutine();
+        //}
     }
 
     public void PauseRoutine()
@@ -119,7 +121,7 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
 
     public void ResumeRoutine()
     {
-        CloseInteractionPanel();
+        // CloseInteractionPanel();
         SetState(NemoState.Routine);
         StartDailyRoutine();
     }
@@ -156,6 +158,7 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
         }
 
         Debug.Log("기본 애니메이션 동작 시작");
+        Debug.Log($"Nemo state is {CurrentState}");
         _dailyRoutineCoroutine = StartCoroutine(_routine.DailyRoutine());
     }
 
