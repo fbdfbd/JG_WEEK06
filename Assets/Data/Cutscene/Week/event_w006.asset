@@ -16,7 +16,7 @@ MonoBehaviour:
   - _displayName: event_week_006_astronomy_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_astronomy_blocked
     _stepName: 
@@ -26,7 +26,7 @@ MonoBehaviour:
   - _displayName: event_week_006_astronomy_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_astronomy_direct
     _stepName: 
@@ -36,7 +36,7 @@ MonoBehaviour:
   - _displayName: event_week_006_astronomy_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_astronomy_modified
     _stepName: 
@@ -46,7 +46,7 @@ MonoBehaviour:
   - _displayName: event_week_006_cooking_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_cooking_blocked
     _stepName: 
@@ -56,7 +56,7 @@ MonoBehaviour:
   - _displayName: event_week_006_cooking_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_cooking_direct
     _stepName: 
@@ -66,7 +66,7 @@ MonoBehaviour:
   - _displayName: event_week_006_cooking_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_cooking_modified
     _stepName: 
@@ -76,7 +76,7 @@ MonoBehaviour:
   - _displayName: event_week_006_engineering_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_engineering_blocked
     _stepName: 
@@ -86,7 +86,7 @@ MonoBehaviour:
   - _displayName: event_week_006_engineering_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_engineering_direct
     _stepName: 
@@ -96,7 +96,7 @@ MonoBehaviour:
   - _displayName: event_week_006_engineering_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_engineering_modified
     _stepName: 
@@ -106,7 +106,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_basement_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_basement_blocked
     _stepName: 
@@ -116,7 +116,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_basement_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_basement_direct
     _stepName: 
@@ -126,7 +126,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_garden_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_garden_blocked
     _stepName: 
@@ -136,7 +136,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_garden_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_garden_direct
     _stepName: 
@@ -146,7 +146,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_lake_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_lake_blocked
     _stepName: 
@@ -156,7 +156,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_lake_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_lake_direct
     _stepName: 
@@ -166,7 +166,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_library_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_library_blocked
     _stepName: 
@@ -176,7 +176,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_library_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_library_direct
     _stepName: 
@@ -186,7 +186,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_study_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_study_blocked
     _stepName: 
@@ -196,7 +196,7 @@ MonoBehaviour:
   - _displayName: event_week_006_excursion_study_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_excursion_study_direct
     _stepName: 
@@ -206,7 +206,7 @@ MonoBehaviour:
   - _displayName: event_week_006_external_w006_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_external_w006_blocked
     _stepName: 
@@ -216,7 +216,7 @@ MonoBehaviour:
   - _displayName: event_week_006_external_w006_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_external_w006_direct
     _stepName: 
@@ -226,7 +226,7 @@ MonoBehaviour:
   - _displayName: event_week_006_external_w006_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_external_w006_modified
     _stepName: 
@@ -236,7 +236,7 @@ MonoBehaviour:
   - _displayName: event_week_006_house_talk_w006_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_house_talk_w006_blocked
     _stepName: 
@@ -246,7 +246,7 @@ MonoBehaviour:
   - _displayName: event_week_006_house_talk_w006_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_house_talk_w006_direct
     _stepName: 
@@ -256,7 +256,7 @@ MonoBehaviour:
   - _displayName: event_week_006_house_talk_w006_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_house_talk_w006_modified
     _stepName: 
@@ -266,7 +266,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_cousin_2_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_cousin_2_blocked
     _stepName: 
@@ -276,7 +276,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_cousin_2_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_cousin_2_direct
     _stepName: 
@@ -286,7 +286,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_cousin_2_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_cousin_2_modified
     _stepName: 
@@ -296,7 +296,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_friend_1_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_friend_1_blocked
     _stepName: 
@@ -306,7 +306,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_friend_1_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_friend_1_direct
     _stepName: 
@@ -316,7 +316,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_friend_1_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_friend_1_modified
     _stepName: 
@@ -326,7 +326,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_friend_2_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_friend_2_blocked
     _stepName: 
@@ -336,7 +336,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_friend_2_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_friend_2_direct
     _stepName: 
@@ -346,7 +346,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_friend_2_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_friend_2_modified
     _stepName: 
@@ -356,7 +356,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_friend_3_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_friend_3_blocked
     _stepName: 
@@ -366,7 +366,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_friend_3_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_friend_3_direct
     _stepName: 
@@ -376,7 +376,7 @@ MonoBehaviour:
   - _displayName: event_week_006_letter_friend_3_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_letter_friend_3_modified
     _stepName: 
@@ -386,7 +386,7 @@ MonoBehaviour:
   - _displayName: event_week_006_riding_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_riding_blocked
     _stepName: 
@@ -396,7 +396,7 @@ MonoBehaviour:
   - _displayName: event_week_006_riding_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_riding_direct
     _stepName: 
@@ -406,7 +406,7 @@ MonoBehaviour:
   - _displayName: event_week_006_riding_modified
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_riding_modified
     _stepName: 
@@ -416,7 +416,7 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_cousin_1_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_cousin_1_blocked
     _stepName: 
@@ -426,7 +426,7 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_cousin_1_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_cousin_1_direct
     _stepName: 
@@ -436,7 +436,7 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_cousin_2_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_cousin_2_blocked
     _stepName: 
@@ -446,7 +446,7 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_cousin_2_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_cousin_2_direct
     _stepName: 
@@ -456,7 +456,7 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_friend_1_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_friend_1_blocked
     _stepName: 
@@ -466,7 +466,7 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_friend_1_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_friend_1_direct
     _stepName: 
@@ -476,7 +476,7 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_friend_2_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_friend_2_blocked
     _stepName: 
@@ -486,7 +486,7 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_friend_2_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_friend_2_direct
     _stepName: 
@@ -496,7 +496,7 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_friend_3_blocked
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_friend_3_blocked
     _stepName: 
@@ -506,10 +506,11 @@ MonoBehaviour:
   - _displayName: event_week_006_visitor_friend_3_direct
     _moment: 2
     _useScreenType: 0
-    _screenType: 0
+    _screenType: 1
     _weekId: week_006
     _eventId: event_week_006_visitor_friend_3_direct
     _stepName: 
     _dialogueIndex: -1
     _choiceLabel: 
     _cutsceneId: event_week_006_visitor_friend_3_direct
+
