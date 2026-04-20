@@ -24,3 +24,5 @@ MonoBehaviour:
     _catalog: {fileID: 11400000, guid: 6c80117e1e76f9c47b609251155e18b6, type: 2}
   - _weekId: week_004
     _catalog: {fileID: 11400000, guid: 36da2eec5b5a2554b879213fee2c67e0, type: 2}
+  - _weekId: week_006
+    _catalog: {fileID: 11400000, guid: 6e0fe15095b04411ab0baf07f5e7792d, type: 2}
