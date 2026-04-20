@@ -6,7 +6,7 @@ using UnityEngine;
 public class RuntimeChildState
 {
     public const int MinStatValue = 0;
-    public const int MaxStatValue = 150;
+    public const int MaxStatValue = 300;
     public const int DefaultStatValue = 2;
     private static readonly EChildStatusType[] CachedStatTypes = Enum.GetValues(typeof(EChildStatusType)).Cast<EChildStatusType>().ToArray();
 
