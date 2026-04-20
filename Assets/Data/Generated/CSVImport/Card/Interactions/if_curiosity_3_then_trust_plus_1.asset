@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a115f7d649ac3564c962739dc984f0fa, type: 3}
   m_Name: if_curiosity_3_then_trust_plus_1
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_ConditionalStatDelta
-  _conditionStat: 1
+  _conditionStat: 2
   _minValue: 3
   _targetStat: 0
   _amount: 0

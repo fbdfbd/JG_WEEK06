@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_week_006_excursion_garden_blocked__step_event_week_006_excursion_garden_blocked
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: garden Blocked
+  _bodyText: "excursion garden Blocked \uB8E8\uD2B8"
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
+    _text: "(\uC815\uC6D0\uC0AC\uAC00 \uB180\uB77C\uC11C \uACE7\uC7A5 \uB2E4\uAC00\uC628\uB2E4.)"
+  - _speaker: {fileID: 11400000, guid: 6df200cf2bc61f541b9a6e6cd6484c7b, type: 2}
+    _text: "\uC8FC\uC778\uB2D8, \uADF8\uAC74 \uC190\uB300\uC2DC\uBA74 \uC548 \uB429\uB2C8\uB2E4~"
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uC65C\uC694?"
+  - _speaker: {fileID: 11400000, guid: 6df200cf2bc61f541b9a6e6cd6484c7b, type: 2}
+    _text: "\uBC8C\uB808 \uB9C9\uB294 \uD5A5\uB8CC\uC785\uB2C8\uB2E4~ \uC190\uC5D0
+      \uC9C4\uD558\uAC8C \uBC30\uC5B4\uC694~"
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uC815\uC6D0\uC5D0 \uC65C \uC774\uB807\uAC8C \uB9CE\uC774 \uC228\uACA8
+      \uB1A8\uC5B4?"
+  - _speaker: {fileID: 11400000, guid: 6df200cf2bc61f541b9a6e6cd6484c7b, type: 2}
+    _text: "\uC5EC\uB984\uC774\uB77C \uC6D0\uB798 \uC880 \uC501\uB2C8\uB2E4~"
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uADFC\uB370 \uB108\uBB34 \uB9CE\uC796\uC544."
+  - _speaker: {fileID: 11400000, guid: 6df200cf2bc61f541b9a6e6cd6484c7b, type: 2}
+    _text: "\uC624\uB298\uC740 \uC720\uB09C\uD788 \uB354 \uB208\uC5D0 \uB744\uC168\uB098
+      \uBD05\uB2C8\uB2E4~"
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uC815\uC6D0\uC774 \uAC11\uC790\uAE30 \uB108\uBB34 \uAE68\uB057\uD55C
+      \uAC83\uB3C4 \uC880 \uC774\uC0C1\uD574."
+  - _speaker: {fileID: 11400000, guid: 6df200cf2bc61f541b9a6e6cd6484c7b, type: 2}
+    _text: "\uAE68\uB057\uD558\uBA74 \uC88B\uC740 \uAC70\uC9C0\uC694~"
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uADF8\uAC74 \uB9DE\uB294\uB370\u2026"
+  _nemoLine: "(\uC815\uC6D0\uC0AC\uAC00 \uB180\uB77C\uC11C \uACE7\uC7A5 \uB2E4\uAC00\uC628\uB2E4.)"
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions: []
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

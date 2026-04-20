@@ -5,10 +5,11 @@ public sealed class WeekFlowRuntimeState
 {
     private readonly List<SO_InteractiveEventDefinition> _pendingEvents = new();
     private int _nextEventIndex;
+    public event Action<RuntimeChildState> ChildStateReplaced;
 
     public WeekFlowRuntimeState()
     {
-        ChildState = new RuntimeChildState();
+        SetChildState(new RuntimeChildState(), false);
         ClearPendingEventState();
         StatusMessage = "Week flow is ready.";
     }
@@ -23,7 +24,7 @@ public sealed class WeekFlowRuntimeState
 
     public void ResetChildState()
     {
-        ChildState = new RuntimeChildState();
+        SetChildState(new RuntimeChildState(), true);
         LastWeekResult = null;
         HasReachedEnding = false;
         ClearPendingEventState();
@@ -73,6 +74,15 @@ public sealed class WeekFlowRuntimeState
     {
         StatusMessage = statusMessage;
     }
+
+    private void SetChildState(RuntimeChildState childState, bool notify)
+    {
+        ChildState = childState;
+        if (notify)
+        {
+            ChildStateReplaced?.Invoke(ChildState);
+        }
+    }
 }
 
 public sealed class RuntimeInteractiveEventSession
@@ -86,12 +96,24 @@ public sealed class RuntimeInteractiveEventSession
     public SO_InteractiveEventDefinition EventDefinition { get; }
     public SO_InteractiveEventStepDefinition CurrentStep { get; private set; }
     public InteractiveEventChoiceData SelectedChoice { get; private set; }
-    public bool HasAppliedCurrentStep { get; private set; }
+    public bool HasAppliedLinkedCardRewards { get; private set; }
+    public bool HasAppliedCurrentStepEffects { get; private set; }
+    public bool HasAppliedCurrentStep => HasAppliedCurrentStepEffects;
     public bool HasPendingChoiceResult => SelectedChoice != null;
+
+    public void MarkLinkedCardRewardsApplied()
+    {
+        HasAppliedLinkedCardRewards = true;
+    }
+
+    public void MarkCurrentStepEffectsApplied()
+    {
+        HasAppliedCurrentStepEffects = true;
+    }
 
     public void MarkCurrentStepApplied()
     {
-        HasAppliedCurrentStep = true;
+        MarkCurrentStepEffectsApplied();
     }
 
     public void SelectChoice(InteractiveEventChoiceData choice)
@@ -114,7 +136,7 @@ public sealed class RuntimeInteractiveEventSession
 
         CurrentStep = nextStep;
         SelectedChoice = null;
-        HasAppliedCurrentStep = false;
+        HasAppliedCurrentStepEffects = false;
         return true;
     }
 

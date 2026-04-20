@@ -8,6 +8,7 @@ public class NemoWeeklyDialogController : MonoBehaviour
 {
     [SerializeField] private SO_WeeklyTalkCatalog _weeklyTalkCatalog;
     [SerializeField] private WeekFlowController _weekFlowController;
+    [SerializeField] private UI_ChildStateToastManager _toastManager;
 
     [SerializeField] private UI_WeeklyDialogPanel _dialogPanel;
     [SerializeField] private GameObject _interactionPanel;
@@ -20,6 +21,7 @@ public class NemoWeeklyDialogController : MonoBehaviour
     private string _previousWeekId = string.Empty;
     private string _weekId = string.Empty;
     private SO_WeeklyTalk _currentTalk;
+    private Tween _typingTween;
 
     private void OnEnable()
     {
@@ -39,7 +41,13 @@ public class NemoWeeklyDialogController : MonoBehaviour
 
     private void Start()
     {
+        ResolveToastManager();
         Refresh();
+    }
+
+    private void OnDestroy()
+    {
+        StopTypingTween();
     }
 
     private void Refresh()
@@ -71,15 +79,32 @@ public class NemoWeeklyDialogController : MonoBehaviour
             return;
         }
 
-        _talkText.DOKill();
-        _talkText.text = string.Empty;
+        StopTypingTween();
 
         if (_currentTalk == null || string.IsNullOrWhiteSpace(_currentTalk.Context))
         {
+            _talkText.text = string.Empty;
             return;
         }
 
-        _talkText.DOText(_currentTalk.Context, textDuration).SetEase(Ease.Linear);
+        _talkText.text = _currentTalk.Context;
+        _talkText.maxVisibleCharacters = 0;
+        _talkText.ForceMeshUpdate();
+
+        int characterCount = _talkText.textInfo.characterCount;
+        if (characterCount <= 0)
+        {
+            _talkText.maxVisibleCharacters = int.MaxValue;
+            return;
+        }
+
+        _typingTween = DOTween.To(
+                GetVisibleCharacterCount,
+                ApplyVisibleCharacterCount,
+                characterCount,
+                textDuration)
+            .SetEase(Ease.Linear)
+            .OnComplete(HandleTypingCompleted);
     }
 
     private void HandleWeekChanged(SO_WeekDefinition _)
@@ -109,6 +134,58 @@ public class NemoWeeklyDialogController : MonoBehaviour
         targetParticle.Play();
     }
 
+    private void ApplyCurrentTalkStat()
+    {
+        if (_currentTalk?.StatDelta == null)
+        {
+            return;
+        }
+
+        RuntimeChildState childState = _weekFlowController != null ? _weekFlowController.CurrentChildState : null;
+        if (childState == null)
+        {
+            return;
+        }
+
+        _currentTalk.StatDelta.Apply(childState);
+    }
+
+    private int GetVisibleCharacterCount()
+    {
+        return _talkText != null ? _talkText.maxVisibleCharacters : 0;
+    }
+
+    private void ApplyVisibleCharacterCount(int visibleCharacterCount)
+    {
+        if (_talkText == null)
+        {
+            return;
+        }
+
+        _talkText.maxVisibleCharacters = visibleCharacterCount;
+    }
+
+    private void HandleTypingCompleted()
+    {
+        ApplyVisibleCharacterCount(int.MaxValue);
+        _typingTween = null;
+    }
+
+    private void StopTypingTween()
+    {
+        if (_typingTween == null)
+        {
+            return;
+        }
+
+        if (_typingTween.IsActive())
+        {
+            _typingTween.Kill();
+        }
+
+        _typingTween = null;
+    }
+
     public void OnClickTalkButton()
     {
         if (_weeklyDialogFinised)
@@ -116,6 +193,8 @@ public class NemoWeeklyDialogController : MonoBehaviour
             _dialogPanel.Show();
             PlayCurrentTalkParticle();
             TextRefresh();
+            ApplyCurrentTalkStat();
+            _toastManager?.ShowQueuedToastsImmediately();
             _weeklyDialogFinised = false;
         }
 
@@ -129,5 +208,15 @@ public class NemoWeeklyDialogController : MonoBehaviour
     public void OnClickFlagButton()
     {
 
+    }
+
+    private void ResolveToastManager()
+    {
+        if (_toastManager != null)
+        {
+            return;
+        }
+
+        _toastManager = FindAnyObjectByType<UI_ChildStateToastManager>();
     }
 }

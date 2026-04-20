@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edff9b7bd1a506a42a33e4d294868a53, type: 3}
-  m_Name: week_003
+  m_Name: WeekDefinition_week_003
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
   _id: week_003
   _weekIndex: 3
@@ -21,5 +21,6 @@ MonoBehaviour:
   _nightFlow: {fileID: 11400000, guid: 9043f74227bd5d545b722837297cd437, type: 2}
   _weekRules: []
   _onWeekStartInteractions: []
-  _onWeekEndInteractions: []
+  _onWeekEndInteractions:
+  - {fileID: 11400000, guid: d84600ef705158641be465cb7175d845, type: 2}
   _cinematicProfile: {fileID: 0}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f323fb213e29498f423733493a509, type: 3}
   m_Name: week_001_wrapup_log
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInteraction_AddReactionLog
-  _reactionText: "\uCCAB \uC8FC\uC758 \uC120\uD0DD\uB4E4\uC774 \uB124\uBAA8\uC758
-    \uB9C8\uC74C\uC5D0 \uCE35\uCE35\uC774 \uC313\uC600\uB2E4."
+  _reactionText: "1\uC8FC\uCC28 \uC120\uD0DD\uB4E4\uC774 \uB124\uBAA8\uC758 \uB9C8\uC74C\uC5D0
+    \uC313\uC600\uB2E4."

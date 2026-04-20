@@ -85,7 +85,8 @@ public sealed class CsvDataset
             record["first_step_id"],
             record.GetMultiValue("on_completed_interaction_ids"),
             record.GetMultiValue("related_information_type_ids"),
-            record.GetMultiValue("preferred_semantics")));
+            record.GetMultiValue("preferred_semantics"),
+            record["linked_card_id"]));
         dataset.EventFlagConditions = LoadTable(csvRootPath, "event_flag_conditions.csv", record => new EventFlagConditionRow(
             record["event_id"],
             record["mode"],
@@ -326,7 +327,8 @@ public sealed class EventRow
         string firstStepId,
         string[] onCompletedInteractionIds,
         string[] relatedInformationTypeIds,
-        string[] preferredSemantics)
+        string[] preferredSemantics,
+        string linkedCardId)
     {
         Id = id;
         WeekId = weekId;
@@ -338,6 +340,7 @@ public sealed class EventRow
         OnCompletedInteractionIds = onCompletedInteractionIds;
         RelatedInformationTypeIds = relatedInformationTypeIds;
         PreferredSemantics = preferredSemantics;
+        LinkedCardId = linkedCardId;
     }
 
     public string Id { get; }
@@ -350,6 +353,7 @@ public sealed class EventRow
     public string[] OnCompletedInteractionIds { get; }
     public string[] RelatedInformationTypeIds { get; }
     public string[] PreferredSemantics { get; }
+    public string LinkedCardId { get; }
 }
 
 public sealed class EventFlagConditionRow

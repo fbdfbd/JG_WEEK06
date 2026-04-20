@@ -35,10 +35,7 @@ public sealed class WeekFlowNarrativeHandler
             return WeekFlowActionResult.None;
         }
 
-        if (eventSession.HasPendingChoiceResult)
-        {
-            eventSession.ClearChoiceResult();
-        }
+        ApplyCurrentStepEffectsIfNeeded(eventSession);
 
         if (eventSession.TryMoveToNextStep())
         {
@@ -81,6 +78,11 @@ public sealed class WeekFlowNarrativeHandler
                 line.Text)));
     }
 
+    private void PublishStatusMessage(string statusMessage)
+    {
+        _runtimeState.SetStatusMessage(statusMessage);
+    }
+
     private WeekFlowActionResult ContinuePostWeekFlow()
     {
         if (_runtimeState.CurrentEventSession != null || _runtimeState.TryStartNextEvent())
@@ -113,11 +115,7 @@ public sealed class WeekFlowNarrativeHandler
             return ContinuePostWeekFlow();
         }
 
-        if (!eventSession.HasAppliedCurrentStep)
-        {
-            GameplayInteractionExecutor.ApplyAll(eventSession.CurrentStep.OnEnterInteractions, _runtimeState.ChildState);
-            eventSession.MarkCurrentStepApplied();
-        }
+        ApplyLinkedCardRewardsIfNeeded(eventSession);
 
         InteractiveEventPresentation presentation = WeekNarrativeResolver.CreatePresentation(eventSession, _runtimeState.ChildState, _weekUiText);
         DialogueLinePresentation line = WeekNarrativeResolver.GetPrimaryDialogueLine(presentation.DialogueLines);
@@ -128,6 +126,36 @@ public sealed class WeekFlowNarrativeHandler
             eventSession.CurrentStep,
             presentation,
             new NemoFeedbackPresentation(line.SpeakerName, presentation.VisualState, line.Text)));
+    }
+
+    private void ApplyLinkedCardRewardsIfNeeded(RuntimeInteractiveEventSession eventSession)
+    {
+        if (eventSession == null || eventSession.HasAppliedLinkedCardRewards)
+        {
+            return;
+        }
+
+        RuntimeResolvedCardRecord[] linkedCards = WeekNarrativeResolver.ResolveLinkedCards(
+            eventSession.EventDefinition,
+            _runtimeState.LastWeekResult);
+
+        foreach (RuntimeResolvedCardRecord linkedCard in linkedCards)
+        {
+            linkedCard.TryApplyPendingEventReward(_runtimeState.ChildState);
+        }
+
+        eventSession.MarkLinkedCardRewardsApplied();
+    }
+
+    private void ApplyCurrentStepEffectsIfNeeded(RuntimeInteractiveEventSession eventSession)
+    {
+        if (eventSession == null || eventSession.HasAppliedCurrentStepEffects)
+        {
+            return;
+        }
+
+        GameplayInteractionExecutor.ApplyAll(eventSession.CurrentStep.OnEnterInteractions, _runtimeState.ChildState);
+        eventSession.MarkCurrentStepEffectsApplied();
     }
 
     private void CompleteCurrentEvent()
@@ -170,10 +198,5 @@ public sealed class WeekFlowNarrativeHandler
         PublishStatusMessage(currentWeek == null
             ? _weekUiText.GetMovedToNextWeekFallbackMessage()
             : _weekUiText.GetReadyForWeekMessage(currentWeek.WeekIndex));
-    }
-
-    private void PublishStatusMessage(string statusMessage)
-    {
-        _runtimeState.SetStatusMessage(statusMessage);
     }
 }

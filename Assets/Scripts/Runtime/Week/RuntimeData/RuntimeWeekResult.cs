@@ -7,18 +7,21 @@ public sealed class RuntimeWeekResult
         SO_WeekDefinition weekDefinition,
         IReadOnlyList<RuntimeResolvedCardRecord> resolvedCards,
         IReadOnlyList<string> weekLogs,
-        RuntimeInformationControlResult informationControlResult)
+        RuntimeInformationControlResult informationControlResult,
+        RuntimeChildState eventResolutionChildState = null)
     {
         WeekDefinition = weekDefinition;
         ResolvedCards = resolvedCards;
         WeekLogs = weekLogs;
         InformationControlResult = informationControlResult;
+        EventResolutionChildState = eventResolutionChildState;
     }
 
     public SO_WeekDefinition WeekDefinition { get; }
     public IReadOnlyList<RuntimeResolvedCardRecord> ResolvedCards { get; }
     public IReadOnlyList<string> WeekLogs { get; }
     public RuntimeInformationControlResult InformationControlResult { get; }
+    public RuntimeChildState EventResolutionChildState { get; }
 }
 
 public sealed class RuntimeInformationControlResult

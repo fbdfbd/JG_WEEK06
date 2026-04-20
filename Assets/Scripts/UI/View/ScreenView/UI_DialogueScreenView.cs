@@ -38,12 +38,14 @@ public class UI_DialogueScreenView : MonoBehaviour
 
     private void Awake()
     {
+        BindDialogPanelEvents();
         BindChoicePanelEvents();
         BindContinueButtonEvent();
     }
 
     private void OnDestroy()
     {
+        UnbindDialogPanelEvents();
         UnbindChoicePanelEvents();
         UnbindContinueButtonEvent();
     }
@@ -124,6 +126,39 @@ public class UI_DialogueScreenView : MonoBehaviour
         yield return PlayCurrentDialogueCutsceneInternal();
     }
 
+    public bool TryAdvance()
+    {
+        if (!isActiveAndEnabled || !gameObject.activeInHierarchy)
+        {
+            return false;
+        }
+
+        if (_dialogPanel != null && _dialogPanel.CompleteTypingImmediately())
+        {
+            RefreshInteractionButtons();
+            return true;
+        }
+
+        if (TrySkipCurrentDialogueCutscene())
+        {
+            RefreshInteractionButtons();
+            return true;
+        }
+
+        if (TryMoveToNextDialogueLine())
+        {
+            return true;
+        }
+
+        if (ShouldShowChoices())
+        {
+            return false;
+        }
+
+        ContinueRequested?.Invoke();
+        return true;
+    }
+
     private void BindChoicePanelEvents()
     {
         if (_choicePanel == null)
@@ -132,6 +167,26 @@ public class UI_DialogueScreenView : MonoBehaviour
         }
 
         _choicePanel.OnChoiceSelected += HandleChoiceSelected;
+    }
+
+    private void BindDialogPanelEvents()
+    {
+        if (_dialogPanel == null)
+        {
+            return;
+        }
+
+        _dialogPanel.TypingCompleted += HandleDialogTypingCompleted;
+    }
+
+    private void UnbindDialogPanelEvents()
+    {
+        if (_dialogPanel == null)
+        {
+            return;
+        }
+
+        _dialogPanel.TypingCompleted -= HandleDialogTypingCompleted;
     }
 
     private void UnbindChoicePanelEvents()
@@ -171,24 +226,12 @@ public class UI_DialogueScreenView : MonoBehaviour
 
     private void HandleContinueButtonClicked()
     {
-        if (_dialogPanel != null && _dialogPanel.CompleteTypingImmediately())
-        {
-            RefreshInteractionButtons();
-            return;
-        }
+        TryAdvance();
+    }
 
-        if (TrySkipCurrentDialogueCutscene())
-        {
-            RefreshInteractionButtons();
-            return;
-        }
-
-        if (TryMoveToNextDialogueLine())
-        {
-            return;
-        }
-
-        ContinueRequested?.Invoke();
+    private void HandleDialogTypingCompleted()
+    {
+        RefreshInteractionButtons();
     }
 
     private bool TryMoveToNextDialogueLine()

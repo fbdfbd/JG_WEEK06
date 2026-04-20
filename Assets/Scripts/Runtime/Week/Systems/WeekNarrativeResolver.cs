@@ -7,13 +7,31 @@ public static class WeekNarrativeResolver
     public static SO_InteractiveEventDefinition[] ResolvePendingEvents(
         SO_WeekDefinition weekDefinition,
         RuntimeChildState childState,
-        RuntimeInformationControlResult informationControlResult)
+        RuntimeWeekResult weekResult)
     {
+        RuntimeInformationControlResult informationControlResult = weekResult?.InformationControlResult;
+        IReadOnlyDictionary<string, RuntimeResolvedCardRecord> resolvedCardLookup = BuildResolvedCardLookup(weekResult?.ResolvedCards);
         List<SO_InteractiveEventDefinition> pendingEvents = new();
-        pendingEvents.AddRange(ResolveRoutineEvents(weekDefinition?.DayFlow, childState, informationControlResult));
+        pendingEvents.AddRange(ResolveRoutineEvents(weekDefinition?.DayFlow, childState, resolvedCardLookup));
         pendingEvents.AddRange(ResolveStoryEvents(weekDefinition?.DayFlow, childState, informationControlResult));
         pendingEvents.AddRange(ResolveNightDialogues(weekDefinition?.NightFlow, childState, informationControlResult));
         return pendingEvents.ToArray();
+    }
+
+    public static RuntimeResolvedCardRecord[] ResolveLinkedCards(
+        SO_InteractiveEventDefinition eventDefinition,
+        RuntimeWeekResult weekResult)
+    {
+        if (eventDefinition == null || weekResult?.ResolvedCards == null)
+        {
+            return Array.Empty<RuntimeResolvedCardRecord>();
+        }
+
+        return weekResult.ResolvedCards
+            .Where(resolvedCard => resolvedCard != null)
+            .Where(resolvedCard => resolvedCard.HasPendingEventReward)
+            .Where(resolvedCard => IsCardLinkedToEvent(eventDefinition, resolvedCard))
+            .ToArray();
     }
 
     public static InteractiveEventPresentation CreatePresentation(
@@ -112,18 +130,17 @@ public static class WeekNarrativeResolver
     private static IEnumerable<SO_InteractiveEventDefinition> ResolveRoutineEvents(
         SO_WeekDayFlowDefinition dayFlow,
         RuntimeChildState childState,
-        RuntimeInformationControlResult informationControlResult)
+        IReadOnlyDictionary<string, RuntimeResolvedCardRecord> resolvedCardLookup)
     {
         return dayFlow?.RoutineEvents?
             .Where(routineEvent => routineEvent != null)
             .Select(routineEvent => new
             {
                 Event = routineEvent,
-                Score = ResolveRoutineMatchScore(routineEvent, informationControlResult),
+                MatchedCard = ResolveMatchedRoutineCard(routineEvent, resolvedCardLookup),
             })
-            .Where(item => item.Score > 0 && IsEventAvailable(item.Event, childState, informationControlResult))
-            .OrderByDescending(item => item.Score)
-            .ThenByDescending(item => item.Event.Priority)
+            .Where(item => IsRoutineEventAvailable(item.Event, item.MatchedCard, childState))
+            .OrderByDescending(item => item.Event.Priority)
             .Select(item => item.Event)
             ?? Enumerable.Empty<SO_InteractiveEventDefinition>();
     }
@@ -172,6 +189,23 @@ public static class WeekNarrativeResolver
                MeetsInformationRequirements(informationControlResult, conditions);
     }
 
+    private static bool IsCardLinkedToEvent(
+        SO_InteractiveEventDefinition eventDefinition,
+        RuntimeResolvedCardRecord resolvedCard)
+    {
+        if (eventDefinition == null || resolvedCard?.CardDefinition?.CardType == null || resolvedCard.SelectedOption == null)
+        {
+            return false;
+        }
+
+        if (eventDefinition is SO_DayRoutineEventDefinition routineEvent)
+        {
+            return MatchesRoutineLinkedCard(routineEvent, resolvedCard);
+        }
+
+        return MatchesInformationRequirements(eventDefinition.Conditions, resolvedCard);
+    }
+
     private static bool HasRequiredFlags(RuntimeChildState childState, WeekEventConditionData conditions)
     {
         return conditions?.RequiredFlags == null || conditions.RequiredFlags.All(childState.HasFlag);
@@ -210,29 +244,131 @@ public static class WeekNarrativeResolver
         return conditions.InformationRequirements.All(requirement =>
         {
             ECardOptionSemantic? semanticFilter = requirement.UseSemanticFilter ? requirement.Semantic : null;
-            int count = informationControlResult.CountSelectionsForType(requirement.InformationType, semanticFilter);
+            int count = informationControlResult?.CountSelectionsForType(requirement.InformationType, semanticFilter) ?? 0;
             return count >= requirement.MinimumCount;
         });
     }
 
-    private static int ResolveRoutineMatchScore(
+    private static bool IsRoutineEventAvailable(
         SO_DayRoutineEventDefinition routineEvent,
-        RuntimeInformationControlResult informationControlResult)
+        RuntimeResolvedCardRecord resolvedCard,
+        RuntimeChildState childState)
+    {
+        if (routineEvent?.FirstStep == null || resolvedCard?.SelectedOption == null)
+        {
+            return false;
+        }
+
+        WeekEventConditionData conditions = routineEvent.Conditions;
+        return HasRequiredFlags(childState, conditions) &&
+               HasNoBlockedFlags(childState, conditions) &&
+               MeetsStatRequirements(childState, conditions) &&
+               MeetsRoutineInformationRequirements(conditions, resolvedCard) &&
+               MatchesRoutineEvent(routineEvent, resolvedCard);
+    }
+
+    private static bool MatchesRoutineEvent(
+        SO_DayRoutineEventDefinition routineEvent,
+        RuntimeResolvedCardRecord resolvedCard)
     {
         if (routineEvent?.RelatedInformationTypes == null || routineEvent.RelatedInformationTypes.Length == 0)
         {
-            return 0;
+            return false;
+        }
+
+        bool matchesCardType = routineEvent.RelatedInformationTypes.Contains(resolvedCard.CardDefinition.CardType);
+        if (!matchesCardType)
+        {
+            return false;
         }
 
         if (routineEvent.PreferredSemantics == null || routineEvent.PreferredSemantics.Length == 0)
         {
-            return informationControlResult.CountSelectionsForAnyType(routineEvent.RelatedInformationTypes);
+            return true;
         }
 
-        return routineEvent.PreferredSemantics.Sum(semantic =>
-            informationControlResult.CountSelectionsForAnyType(routineEvent.RelatedInformationTypes, semantic));
+        return routineEvent.PreferredSemantics.Contains(resolvedCard.SelectedOption.Semantic);
     }
 
+    private static bool MatchesRoutineLinkedCard(
+        SO_DayRoutineEventDefinition routineEvent,
+        RuntimeResolvedCardRecord resolvedCard)
+    {
+        SO_CardInfoDefinition linkedCard = routineEvent?.LinkedCard;
+        return linkedCard != null &&
+               string.Equals(resolvedCard?.CardDefinition?.Id, linkedCard.Id, StringComparison.OrdinalIgnoreCase) &&
+               MeetsRoutineInformationRequirements(routineEvent.Conditions, resolvedCard) &&
+               MatchesRoutineEvent(routineEvent, resolvedCard);
+    }
+
+    private static bool MatchesInformationRequirements(
+        WeekEventConditionData conditions,
+        RuntimeResolvedCardRecord resolvedCard)
+    {
+        if (conditions?.InformationRequirements == null || conditions.InformationRequirements.Length == 0)
+        {
+            return false;
+        }
+
+        return conditions.InformationRequirements.Any(requirement =>
+            requirement.InformationType == resolvedCard.CardDefinition.CardType &&
+            (!requirement.UseSemanticFilter || requirement.Semantic == resolvedCard.SelectedOption.Semantic));
+    }
+
+    private static bool MeetsRoutineInformationRequirements(
+        WeekEventConditionData conditions,
+        RuntimeResolvedCardRecord resolvedCard)
+    {
+        if (conditions?.InformationRequirements == null)
+        {
+            return true;
+        }
+
+        return conditions.InformationRequirements.All(requirement =>
+        {
+            if (requirement.MinimumCount > 1)
+            {
+                return false;
+            }
+
+            return requirement.InformationType == resolvedCard.CardDefinition.CardType &&
+                   (!requirement.UseSemanticFilter || requirement.Semantic == resolvedCard.SelectedOption.Semantic);
+        });
+    }
+
+    private static RuntimeResolvedCardRecord ResolveMatchedRoutineCard(
+        SO_DayRoutineEventDefinition routineEvent,
+        IReadOnlyDictionary<string, RuntimeResolvedCardRecord> resolvedCardLookup)
+    {
+        string linkedCardId = routineEvent?.LinkedCard?.Id;
+        if (string.IsNullOrWhiteSpace(linkedCardId) ||
+            resolvedCardLookup == null ||
+            !resolvedCardLookup.TryGetValue(linkedCardId, out RuntimeResolvedCardRecord resolvedCard))
+        {
+            return null;
+        }
+
+        return resolvedCard;
+    }
+
+    private static IReadOnlyDictionary<string, RuntimeResolvedCardRecord> BuildResolvedCardLookup(
+        IReadOnlyList<RuntimeResolvedCardRecord> resolvedCards)
+    {
+        Dictionary<string, RuntimeResolvedCardRecord> lookup = new(StringComparer.OrdinalIgnoreCase);
+
+        foreach (RuntimeResolvedCardRecord resolvedCard in resolvedCards ?? Array.Empty<RuntimeResolvedCardRecord>())
+        {
+            string cardId = resolvedCard?.CardDefinition?.Id;
+            if (string.IsNullOrWhiteSpace(cardId))
+            {
+                continue;
+            }
+
+            lookup[cardId] = resolvedCard;
+        }
+
+        return lookup;
+    }
     private static ENemoVisualState ResolveVisualState(
         SO_InteractiveEventStepDefinition step,
         RuntimeChildState childState)

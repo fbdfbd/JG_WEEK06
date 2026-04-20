@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: card_house_talk_week_003
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_house_talk_week_003
+  _cardType: {fileID: 11400000, guid: ce3bff0c6c6a2844998d0c18806d6b74, type: 2}
+  _title: "\uB2E4\uB77D_\uCC3D\uBB38_\uC18C\uBB38 3\uC8FC\uCC28"
+  _originalText: "\uB2E4\uB77D_\uCC3D\uBB38_\uC18C\uBB38\uC5D0\uC11C \uB124\uBAA8\uAC00
+    \"\uADF8\uB7FC \uB204\uAC00 \uC5F4\uC5C8\uC5B4?\" \uBC18\uC751\uD55C\uB2E4."
+  _options:
+  - _semantic: 2
+    _label: "\uC18C\uBB38\uC744 \uC228\uAE34\uB2E4"
+    _presentedText: "\uC800\uD0DD \uB0B4 \uC18C\uBB38\uC744 \uB124\uBAA8\uC5D0\uAC8C
+      \uB4E4\uB824\uC8FC\uC9C0 \uC54A\uB294\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: f4ea349d76ad73e488dcc5448ce0e451, type: 2}
+    - {fileID: 11400000, guid: 7e8a58bb3ab8b5440a4be57ce5a52c93, type: 2}
+  - _semantic: 0
+    _label: "\uC18C\uBB38\uC744 \uB4E4\uB824\uC900\uB2E4"
+    _presentedText: "\uC800\uD0DD \uB0B4 \uC18C\uBB38\uC744 \uC788\uB294 \uADF8\uB300\uB85C
+      \uC804\uD574 \uC900\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: f4ea349d76ad73e488dcc5448ce0e451, type: 2}
+    - {fileID: 11400000, guid: 3767dfb8845aead42b17c728fe339544, type: 2}
+  - _semantic: 1
+    _label: "\uB3CC\uB824\uC11C \uB9D0\uD55C\uB2E4"
+    _presentedText: "\uC18C\uBB38\uC758 \uB0A0\uCE74\uB85C\uC6B4 \uBD80\uBD84\uC744
+      \uB35C\uC5B4\uB0B4\uACE0 \uBD80\uB4DC\uB7FD\uAC8C \uC804\uB2EC\uD55C\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: 3767dfb8845aead42b17c728fe339544, type: 2}
+    - {fileID: 11400000, guid: 7e9e7c466b743084c8fdfed064fa2fb3, type: 2}

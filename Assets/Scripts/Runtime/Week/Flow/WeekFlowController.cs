@@ -25,9 +25,13 @@ public class WeekFlowController : MonoBehaviour
     private WeekFlowCutsceneBridgeBase _cutsceneBridge;
     private WeekFlowScreen _currentScreen;
     private bool _isTransitionPlaying;
+    private RuntimeChildState _boundChildState;
 
     public event Action<SO_WeekDefinition> WeekChanged;
+    public event Action<RuntimeChildState> ChildStateSourceChanged;
+    public event Action FlowPresentationCompleted;
     public SO_WeekDefinition CurrentWeekDefinition => _weekSequenceState.CurrentWeekDefinition;
+    public RuntimeChildState CurrentChildState => _runtimeState?.ChildState;
 
 
     protected virtual void Awake()
@@ -39,8 +43,19 @@ public class WeekFlowController : MonoBehaviour
         _presenter.PublishDefaultNemoFeedback();
     }
 
+    protected virtual void Start()
+    {
+        if (!ShouldAutoRunCurrentWeekOnStart())
+        {
+            return;
+        }
+
+        RunFlowAction(_commandHandler.RunCurrentWeek);
+    }
+
     protected virtual void OnDestroy()
     {
+        UnbindRuntimeStateEvents();
         UnbindViewEvents();
     }
 
@@ -63,6 +78,7 @@ public class WeekFlowController : MonoBehaviour
         _narrativeHandler = new WeekFlowNarrativeHandler(_runtimeState, _weekUiText, _weekSelectionState, _weekSequenceState);
         _cinematicDirector = new WeekFlowCinematicDirector(_view, new WeekFlowCinematicResolver());
         _cutsceneBridge = _view != null ? _view.GetCutsceneBridge() : null;
+        BindRuntimeStateEvents();
     }
 
     private void BindViewEvents()
@@ -104,6 +120,79 @@ public class WeekFlowController : MonoBehaviour
     private void HandleInteractiveEventContinueRequested() => RunFlowAction(_narrativeHandler.ContinueInteractiveEvent);
     private void HandleCardOptionSelected(SO_CardInfoDefinition cardDefinition, int optionIndex) => RunFlowAction(() => _commandHandler.SelectCardOption(cardDefinition, optionIndex));
     private void HandleInteractiveEventChoiceSelected(int choiceIndex) => RunFlowAction(() => _narrativeHandler.SelectInteractiveEventChoice(choiceIndex));
+
+    private void BindRuntimeStateEvents()
+    {
+        if (_runtimeState == null)
+        {
+            return;
+        }
+
+        _runtimeState.ChildStateReplaced += HandleChildStateReplaced;
+        BindChildState(_runtimeState.ChildState);
+    }
+
+    private void UnbindRuntimeStateEvents()
+    {
+        if (_runtimeState == null)
+        {
+            return;
+        }
+
+        _runtimeState.ChildStateReplaced -= HandleChildStateReplaced;
+        BindChildState(null);
+    }
+
+    private void BindChildState(RuntimeChildState childState)
+    {
+        if (ReferenceEquals(_boundChildState, childState))
+        {
+            return;
+        }
+
+        if (_boundChildState != null)
+        {
+            _boundChildState.StatChanged -= HandleStatChanged;
+            _boundChildState.FlagChanged -= HandleFlagChanged;
+        }
+
+        _boundChildState = childState;
+
+        if (_boundChildState != null)
+        {
+            _boundChildState.StatChanged += HandleStatChanged;
+            _boundChildState.FlagChanged += HandleFlagChanged;
+        }
+
+        ChildStateSourceChanged?.Invoke(_boundChildState);
+    }
+
+    private void HandleChildStateReplaced(RuntimeChildState childState)
+    {
+        BindChildState(childState);
+        _presenter?.PublishChildState();
+    }
+
+    private void HandleStatChanged(StatChangeInfo _)
+    {
+        _presenter?.PublishChildState();
+    }
+
+    private void HandleFlagChanged(FlagChangeInfo _)
+    {
+        _presenter?.PublishChildState();
+    }
+
+    private bool ShouldAutoRunCurrentWeekOnStart()
+    {
+        SO_WeekDefinition currentWeek = _weekSequenceState.CurrentWeekDefinition;
+        if (currentWeek == null)
+        {
+            return false;
+        }
+
+        return string.Equals(currentWeek.Id, "week_000", StringComparison.OrdinalIgnoreCase);
+    }
 
     private void RunFlowAction(Func<WeekFlowActionResult> action)
     {
@@ -179,6 +268,7 @@ public class WeekFlowController : MonoBehaviour
         }
 
         _isTransitionPlaying = false;
+        FlowPresentationCompleted?.Invoke();
     }
 
     private IEnumerator PlayEventEnterCutscene(WeekFlowScreen screen)

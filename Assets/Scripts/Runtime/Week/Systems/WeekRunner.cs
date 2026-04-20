@@ -48,13 +48,18 @@ public sealed class WeekRunner
             weekRule?.OnWeekEnd(context);
         }
 
+        RuntimeChildState eventResolutionChildState = childState.CreateCopy();
+        ApplyDeferredCardRewards(context.ResolvedCards, eventResolutionChildState);
+
         GameplayInteractionExecutor.ApplyAll(weekDefinition.OnWeekEndInteractions, childState);
+        GameplayInteractionExecutor.ApplyAll(weekDefinition.OnWeekEndInteractions, eventResolutionChildState);
 
         return new RuntimeWeekResult(
             weekDefinition,
             context.ResolvedCards,
             context.WeekLogs,
-            WeekInformationControlResolver.Resolve(context.ResolvedCards));
+            WeekInformationControlResolver.Resolve(context.ResolvedCards),
+            eventResolutionChildState);
     }
 
     private static Dictionary<SO_CardInfoDefinition, RuntimeWeekSelection> BuildSelectionMap(
@@ -103,8 +108,6 @@ public sealed class WeekRunner
             weekRule?.BeforeResolveCard(context, cardEntry.Card, selectedOption);
         }
 
-        GameplayInteractionExecutor.ApplyAll(selectedOption.Interactions, context.ChildState);
-
         foreach (SO_WeekRuleDefinition weekRule in context.WeekDefinition.WeekRules)
         {
             weekRule?.AfterResolveCard(context, cardEntry.Card, selectedOption);
@@ -112,6 +115,21 @@ public sealed class WeekRunner
 
         context.AddResolvedCard(
             new RuntimeResolvedCardRecord(cardEntry.Card, selection.SelectedOptionIndex, selectedOption));
+    }
+
+    private static void ApplyDeferredCardRewards(
+        IReadOnlyList<RuntimeResolvedCardRecord> resolvedCards,
+        RuntimeChildState childState)
+    {
+        if (resolvedCards == null || childState == null)
+        {
+            return;
+        }
+
+        foreach (RuntimeResolvedCardRecord resolvedCard in resolvedCards)
+        {
+            resolvedCard?.ApplyInteractionsTo(childState);
+        }
     }
 }
 

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: cousin_2_acquainted
   m_EditorClassIdentifier: Assembly-CSharp::SO_FlagDefinition
   _id: cousin_2_acquainted
-  _displayName: "\uC0AC\uCD0C2 \uC548\uBA74 \uD144\uC74C"
-  _description: "\uC0AC\uCD0C2\uC640 \uD5C8\uB77D \uB8E8\uD2B8\uB85C \uC548\uBA74\uC744
+  _displayName: "cousin_2 \uC548\uBA74 \uD144\uC74C"
+  _description: "cousin_2\uC640 \uD5C8\uB77D \uB8E8\uD2B8\uB85C \uC548\uBA74\uC744
     \uD144\uB2E4"

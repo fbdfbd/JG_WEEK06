@@ -79,6 +79,12 @@ public static class EventCsvImporter
             {
                 CsvImportAssetUtility.SetField(routineEvent, "_relatedInformationTypes", row.RelatedInformationTypeIds.Select(id => context.CardTypesById[id]).ToArray());
                 CsvImportAssetUtility.SetField(routineEvent, "_preferredSemantics", row.PreferredSemantics.Select(value => Enum.Parse<ECardOptionSemantic>(value, true)).ToArray());
+                CsvImportAssetUtility.SetField(
+                    routineEvent,
+                    "_linkedCard",
+                    string.IsNullOrWhiteSpace(row.LinkedCardId)
+                        ? null
+                        : context.CardsById[row.LinkedCardId]);
             }
 
             CsvImportAssetUtility.MarkDirty(asset);
