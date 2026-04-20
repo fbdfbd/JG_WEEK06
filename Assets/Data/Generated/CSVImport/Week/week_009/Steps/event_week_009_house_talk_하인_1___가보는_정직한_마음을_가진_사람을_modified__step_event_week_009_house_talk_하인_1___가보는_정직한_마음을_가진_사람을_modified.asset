@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "event_week_009_house_talk_\uD558\uC778_1___\uAC00\uBCF4\uB294_\uC815\uC9C1\uD55C_\uB9C8\uC74C\uC744_\uAC00\uC9C4_\uC0AC\uB78C\uC744_modified__step_event_week_009_house_talk_\uD558\uC778_1___\uAC00\uBCF4\uB294_\uC815\uC9C1\uD55C_\uB9C8\uC74C\uC744_\uAC00\uC9C4_\uC0AC\uB78C\uC744_modified"
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uD558\uC778_1___\uAC00\uBCF4\uB294_\uC815\uC9C1\uD55C_\uB9C8\uC74C\uC744_\uAC00\uC9C4_\uC0AC\uB78C\uC744
-    Modified"
+    \uC218\uC815"
   _bodyText: "house_talk \uD558\uC778_1___\uAC00\uBCF4\uB294_\uC815\uC9C1\uD55C_\uB9C8\uC74C\uC744_\uAC00\uC9C4_\uC0AC\uB78C\uC744
     Modified \uB8E8\uD2B8"
   _dialogueLines: []

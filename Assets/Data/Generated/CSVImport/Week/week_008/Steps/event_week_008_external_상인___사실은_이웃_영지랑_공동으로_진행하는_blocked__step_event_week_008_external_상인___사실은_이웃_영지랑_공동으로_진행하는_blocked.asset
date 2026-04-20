@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "event_week_008_external_\uC0C1\uC778___\uC0AC\uC2E4\uC740_\uC774\uC6C3_\uC601\uC9C0\uB791_\uACF5\uB3D9\uC73C\uB85C_\uC9C4\uD589\uD558\uB294_blocked__step_event_week_008_external_\uC0C1\uC778___\uC0AC\uC2E4\uC740_\uC774\uC6C3_\uC601\uC9C0\uB791_\uACF5\uB3D9\uC73C\uB85C_\uC9C4\uD589\uD558\uB294_blocked"
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uC0C1\uC778___\uC0AC\uC2E4\uC740_\uC774\uC6C3_\uC601\uC9C0\uB791_\uACF5\uB3D9\uC73C\uB85C_\uC9C4\uD589\uD558\uB294
-    Blocked"
+    \uD1B5\uC81C"
   _bodyText: "external \uC0C1\uC778___\uC0AC\uC2E4\uC740_\uC774\uC6C3_\uC601\uC9C0\uB791_\uACF5\uB3D9\uC73C\uB85C_\uC9C4\uD589\uD558\uB294
     Blocked \uB8E8\uD2B8"
   _dialogueLines: []

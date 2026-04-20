@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_week_008_letter_friend_1_modified__step_event_week_008_letter_friend_1_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: friend_1 Modified
+  _titleOverride: "\uB9C9\uC2A4\uC758 \uD3B8\uC9C0 \uC218\uC815"
   _bodyText: "letter friend_1 Modified \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 5bb39217ef6e2284f84306acd528c0b3, type: 2}

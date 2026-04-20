@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "event_week_009_external_\uC9D1\uC0AC___\uBC31\uC791\uB2D8\uC774_\uC8FC\uC778\uB2D8\uC744_\uB108\uBB34_\uC0AC\uB791\uD558\uC154\uC11C___modified__step_event_week_009_external_\uC9D1\uC0AC___\uBC31\uC791\uB2D8\uC774_\uC8FC\uC778\uB2D8\uC744_\uB108\uBB34_\uC0AC\uB791\uD558\uC154\uC11C___modified"
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uC9D1\uC0AC___\uBC31\uC791\uB2D8\uC774_\uC8FC\uC778\uB2D8\uC744_\uB108\uBB34_\uC0AC\uB791\uD558\uC154\uC11C__
-    Modified"
+    \uC218\uC815"
   _bodyText: "external \uC9D1\uC0AC___\uBC31\uC791\uB2D8\uC774_\uC8FC\uC778\uB2D8\uC744_\uB108\uBB34_\uC0AC\uB791\uD558\uC154\uC11C__
     Modified \uB8E8\uD2B8"
   _dialogueLines: []

@@ -1,4 +1,4 @@
-﻿event_id,information_type_id,use_semantic_filter,semantic,minimum_count
+event_id,information_type_id,use_semantic_filter,semantic,minimum_count
 event_week_001_excursion_garden_blocked,card_type_excursion,true,Blocked,1
 event_week_001_excursion_garden_direct,card_type_excursion,true,Direct,1
 event_week_002_excursion_garden_blocked,card_type_excursion,true,Blocked,1

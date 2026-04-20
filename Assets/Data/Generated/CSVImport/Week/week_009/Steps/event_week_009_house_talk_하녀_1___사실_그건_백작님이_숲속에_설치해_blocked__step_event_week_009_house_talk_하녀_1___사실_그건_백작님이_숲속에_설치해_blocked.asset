@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "event_week_009_house_talk_\uD558\uB140_1___\uC0AC\uC2E4_\uADF8\uAC74_\uBC31\uC791\uB2D8\uC774_\uC232\uC18D\uC5D0_\uC124\uCE58\uD574_blocked__step_event_week_009_house_talk_\uD558\uB140_1___\uC0AC\uC2E4_\uADF8\uAC74_\uBC31\uC791\uB2D8\uC774_\uC232\uC18D\uC5D0_\uC124\uCE58\uD574_blocked"
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uD558\uB140_1___\uC0AC\uC2E4_\uADF8\uAC74_\uBC31\uC791\uB2D8\uC774_\uC232\uC18D\uC5D0_\uC124\uCE58\uD574
-    Blocked"
+    \uD1B5\uC81C"
   _bodyText: "house_talk \uD558\uB140_1___\uC0AC\uC2E4_\uADF8\uAC74_\uBC31\uC791\uB2D8\uC774_\uC232\uC18D\uC5D0_\uC124\uCE58\uD574
     Blocked \uB8E8\uD2B8"
   _dialogueLines: []

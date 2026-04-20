@@ -1,4 +1,4 @@
-﻿event_id,step_id,line_order,speaker_id,text
+event_id,step_id,line_order,speaker_id,text
 event_week_001_excursion_garden_blocked,step_event_week_001_excursion_garden_blocked,0,speaker_narrator,"(후문으로 가려는 순간, 정리를 하던 정원사가 앞을 막는다.)"
 event_week_001_excursion_garden_blocked,step_event_week_001_excursion_garden_blocked,1,speaker_gardener,주인님~ 그쪽은 안 됩니다~
 event_week_001_excursion_garden_blocked,step_event_week_001_excursion_garden_blocked,2,speaker_nemo,왜요?
@@ -1428,7 +1428,7 @@ event_week_005_excursion_library_blocked,step_event_week_005_excursion_library_b
 event_week_005_excursion_library_blocked,step_event_week_005_excursion_library_blocked,3,speaker_librarian,하지만 주인님의 명령입니다.
 event_week_005_excursion_library_blocked,step_event_week_005_excursion_library_blocked,4,speaker_nemo,내 머릿속까지 자기 생각으로 채우려는 게 누군데 이제 와서... 그냥 둘래요. 이건 내 책이에요.
 event_week_005_excursion_library_direct,step_event_week_005_excursion_library_direct,0,speaker_narrator,(네모가 주석 옆에 자기 생각을 작게 덧붙여 적는다.)
-event_week_005_excursion_library_direct,step_event_week_005_excursion_library_direct,1,speaker_nemo,'저는 이 구절이 오히려 위로가 되는데요?'
+event_week_005_excursion_library_direct,step_event_week_005_excursion_library_direct,1,speaker_nemo,저는 이 구절이 오히려 위로가 되는데요?'
 event_week_005_excursion_library_direct,step_event_week_005_excursion_library_direct,2,speaker_narrator,(옆에서 지켜보던 사서가 조용히 미소 짓는다.)
 event_week_005_excursion_library_direct,step_event_week_005_excursion_library_direct,3,speaker_librarian,주인님께서 나중에 이 책을 다시 펼쳐보시면 무척 놀라시겠군요.
 event_week_005_excursion_library_direct,step_event_week_005_excursion_library_direct,4,speaker_nemo,놀라라고 적는 거예요. 나도 내 생각이 있다는 걸 보여줘야지.

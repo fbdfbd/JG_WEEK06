@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_week_005_house_talk_w005_modified__step_event_week_005_house_talk_w005_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: w005 Modified
+  _titleOverride: "\uC218\uC0C1\uD55C \uD53C\uC544\uB178 \uC18C\uBB38 \uC218\uC815"
   _bodyText: "house_talk w005 Modified \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: ea8bb1cd384c18f4c83d6f267d5433b5, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: "event_week_002_house_talk_\uC2DC\uACC4\uD0D1_\uC885\uC18C\uB9AC_\uC18C\uBB38_blocked__step_event_week_002_house_talk_\uC2DC\uACC4\uD0D1_\uC885\uC18C\uB9AC_\uC18C\uBB38_blocked"
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: "\uC2DC\uACC4\uD0D1_\uC885\uC18C\uB9AC_\uC18C\uBB38 Blocked"
+  _titleOverride: "\uC2DC\uACC4\uD0D1 \uC885\uC18C\uB9AC \uC18C\uBB38 \uD1B5\uC81C"
   _bodyText: "house_talk \uC2DC\uACC4\uD0D1_\uC885\uC18C\uB9AC_\uC18C\uBB38 Blocked
     \uB8E8\uD2B8"
   _dialogueLines:
