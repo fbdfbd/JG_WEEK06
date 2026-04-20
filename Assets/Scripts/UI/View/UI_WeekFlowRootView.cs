@@ -142,6 +142,8 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
 
     public override void ShowEnding(EndingPresentation presentation)
     {
+        CancelAdvanceHold();
+
         if (_dialogueScreenView == null)
         {
             return;
@@ -181,7 +183,7 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
             return;
         }
 
-        if(_nemo == null)
+        if (_nemo == null)
         {
             return;
         }
@@ -212,7 +214,7 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         _dialogueScreenView.SetScreenContext(screen, childState, lastWeekResult);
     }
 
-    public override System.Collections.IEnumerator PlayCurrentDialogueCutscene()
+    public override IEnumerator PlayCurrentDialogueCutscene()
     {
         if (_dialogueScreenView == null)
         {
@@ -222,7 +224,7 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         yield return _dialogueScreenView.PlayCurrentDialogueCutscene();
     }
 
-    public override System.Collections.IEnumerator PlayFlowTransition(WeekFlowTransitionContext context)
+    public override IEnumerator PlayFlowTransition(WeekFlowTransitionContext context)
     {
         if (_transitionPlayer == null)
         {
@@ -451,6 +453,12 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         _advanceAction = new InputAction("Advance", InputActionType.Button, "<Keyboard>/space");
     }
 
+    private void CancelAdvanceHold()
+    {
+        _isAdvanceHeld = false;
+        _nextAdvanceRepeatTime = 0f;
+    }
+
     private void SetEndingFollowUpPanelVisible(bool visible)
     {
         if (_endingFollowUpPanel == null)
@@ -466,4 +474,3 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         return _endingFollowUpPanel != null && _endingFollowUpPanel.activeSelf;
     }
 }
-
