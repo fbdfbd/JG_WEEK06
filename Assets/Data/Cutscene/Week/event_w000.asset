@@ -53,3 +53,13 @@ MonoBehaviour:
     _dialogueIndex: -1
     _choiceLabel: 
     _cutsceneId: event_w000_tutorial_intro__step_w000_tutorial_intro_04_cutscene
+  - _displayName: event_w000_tutorial_intro_choice
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 2
+    _weekId: week_000
+    _eventId: event_w000_tutorial_intro
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_w000_tutorial_intro_choice
