@@ -1,4 +1,4 @@
-%YAML 1.1
+﻿%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
@@ -18,3 +18,9 @@ MonoBehaviour:
     _catalog: {fileID: 11400000, guid: 94239b7a4bc00284d86e08c5b91a6e0b, type: 2}
   - _weekId: week_001
     _catalog: {fileID: 11400000, guid: 9495a377da28ab9448281a8902a3bb91, type: 2}
+  - _weekId: week_002
+    _catalog: {fileID: 11400000, guid: bf74c4e02a684d4496082b6c7ebd94cf, type: 2}
+  - _weekId: week_003
+    _catalog: {fileID: 11400000, guid: 6c80117e1e76f9c47b609251155e18b6, type: 2}
+  - _weekId: week_004
+    _catalog: {fileID: 11400000, guid: 36da2eec5b5a2554b879213fee2c67e0, type: 2}
