@@ -203,6 +203,7 @@ public class NemoWeeklyDialogController : MonoBehaviour
 
     public void OnClickeExitButton()
     {
+        NemoEntity.Instance.ResumeRoutine();
         _dialogPanel.Hide();
     }
     public void OnClickFlagButton()
