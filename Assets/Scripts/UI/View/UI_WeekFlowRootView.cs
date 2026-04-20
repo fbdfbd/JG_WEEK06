@@ -187,6 +187,7 @@ public class UI_WeekFlowRootView : WeekFlowViewBase
         }
 
         _nemo.SetActive(visible);
+        NemoEntity.Instance.ResumeRoutine();
         if (_interactionPanel != null)
         {
             _interactionPanel.SetActive(visible);

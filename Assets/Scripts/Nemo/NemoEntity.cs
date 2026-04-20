@@ -106,10 +106,10 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
             return;
         }
 
-        //if (CurrentState == NemoState.Interacting)
-        //{
-        //    ResumeRoutine();
-        //}
+        if (CurrentState == NemoState.Interacting)
+        {
+            ResumeRoutine();
+        }
     }
 
     public void PauseRoutine()

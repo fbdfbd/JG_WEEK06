@@ -258,8 +258,6 @@ public class BackgroundManager : MonoBehaviour
 
     private IEnumerator HideToDefaultNextFrame()
     {
-        // Let the next screen request its background before falling back to default.
-        yield return null;
         pendingHideRoutine = null;
 
         if (currentBackground == defaultBackground)
