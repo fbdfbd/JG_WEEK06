@@ -84,11 +84,13 @@ public class EventCutsceneDefault : WeekFlowCutscenePlayerBase
             {
                 CutsceneCharacterManager.I.ShowLeft(_leftCharacter);
                 CutsceneCharacterManager.I.ShowRight(_rightCharacter);
+                BackgroundSet(active);
             }
             else
             {
                 CutsceneCharacterManager.I.HideLeft();
                 CutsceneCharacterManager.I.HideRight();
+                BackgroundSet(active);
             }
         }
     }
