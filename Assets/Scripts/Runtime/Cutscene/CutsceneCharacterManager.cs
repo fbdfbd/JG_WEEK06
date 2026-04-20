@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public enum CutsceneCharacterType
@@ -78,9 +79,12 @@ public class CutsceneCharacterManager : MonoBehaviour
     private GameObject _rightCharacterInstance;
     private GameObject _centerCharacterInstance;
     private ParticleSystem _readyParticle;
+    private Coroutine _pendingHideRoutine;
 
     public void ShowLeft(CutsceneCharacterType characterType)
     {
+        CancelPendingHide();
+
         GameObject character = FindPrefab(characterType);
         if (character == null)
         {
@@ -94,6 +98,8 @@ public class CutsceneCharacterManager : MonoBehaviour
 
     public void ShowCenter(CutsceneCharacterType characterType)
     {
+        CancelPendingHide();
+
         GameObject character = FindPrefab(characterType);
         if (character == null)
         {
@@ -107,6 +113,8 @@ public class CutsceneCharacterManager : MonoBehaviour
 
     public void ShowRight(CutsceneCharacterType characterType)
     {
+        CancelPendingHide();
+
         GameObject character = FindPrefab(characterType);
         if (character == null)
         {
@@ -123,6 +131,12 @@ public class CutsceneCharacterManager : MonoBehaviour
         HideLeft();
         HideRight();
         HideCenter();
+    }
+
+    public void HideAllDeferred()
+    {
+        CancelPendingHide();
+        _pendingHideRoutine = StartCoroutine(HideAllNextFrame());
     }
 
     public void HideLeft()
@@ -243,5 +257,23 @@ public class CutsceneCharacterManager : MonoBehaviour
         }
 
         return null;
+    }
+
+    private void CancelPendingHide()
+    {
+        if (_pendingHideRoutine == null)
+        {
+            return;
+        }
+
+        StopCoroutine(_pendingHideRoutine);
+        _pendingHideRoutine = null;
+    }
+
+    private IEnumerator HideAllNextFrame()
+    {
+        yield return null;
+        _pendingHideRoutine = null;
+        HideAll();
     }
 }

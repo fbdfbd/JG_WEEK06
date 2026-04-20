@@ -77,7 +77,7 @@ public class EventCutsceneDefault : WeekFlowCutscenePlayerBase
         _hasStarted = false;
 
         KillFadeTween();
-        HideAllCharacters();
+        HideAllCharacters(false);
         SetBackground(false);
     }
 
@@ -102,7 +102,7 @@ public class EventCutsceneDefault : WeekFlowCutscenePlayerBase
     private void HandleExit()
     {
         KillFadeTween();
-        HideAllCharacters();
+        HideAllCharacters(false);
         SetBackground(false);
         _hasStarted = false;
     }
@@ -112,7 +112,7 @@ public class EventCutsceneDefault : WeekFlowCutscenePlayerBase
         if (CutsceneCharacterManager.I == null)
             return;
 
-        HideAllCharacters();
+        HideAllCharacters(true);
 
         switch (_characterPos)
         {
@@ -130,14 +130,18 @@ public class EventCutsceneDefault : WeekFlowCutscenePlayerBase
         }
     }
 
-    private void HideAllCharacters()
+    private void HideAllCharacters(bool immediate)
     {
         if (CutsceneCharacterManager.I == null)
             return;
 
-        CutsceneCharacterManager.I.HideLeft();
-        CutsceneCharacterManager.I.HideRight();
-        CutsceneCharacterManager.I.HideCenter();
+        if (immediate)
+        {
+            CutsceneCharacterManager.I.HideAll();
+            return;
+        }
+
+        CutsceneCharacterManager.I.HideAllDeferred();
     }
 
     private void SetBackground(bool visible)
