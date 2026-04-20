@@ -1,39 +1,162 @@
 ﻿flag_id,display_name,description
-letter_suspected,편지 의심,전달되지 않은 편지나 숨긴 편지를 네모가 의심하는 상태
-external_interest,바깥 관심,네모가 집 밖의 정보와 세계에 지속적으로 관심을 보이는 상태
-hidden_info_detected,숨은 정보 감지,말해지지 않은 단서가 있다는 감각을 네모가 붙잡은 상태
-visitor_remembered,방문자 기억,중요 방문자에 대한 인상이 오래 남아 있는 상태
-child_house_talk_lake_wolf_heard,늑대 소문 청취,후문 근처 늑대 소문을 들은 상태
-child_house_talk_study_01_done,서재 소문 완료,서재 앞 긴장에 대한 소문을 들은 상태
-child_house_talk_cousin_1_01_done,사촌1 소문 완료,사촌1 방문 소문을 들은 상태
-child_house_talk_backgate_wind_01_done,후문 바람 소문 완료,후문 바람 소문을 들은 상태
-child_excursion_garden_01_done,정원 1차 완료,유년기 정원 1차 방문을 마침
-child_excursion_garden_02_done,정원 2차 완료,유년기 정원 2차 방문을 마침
-child_excursion_garden_rain_01_done,정원 비 오는 날 완료,늑대 소문 이후 비 오는 정원 외출을 마침
-child_excursion_lake_01_done,호수 1차 완료,유년기 호수 1차 방문을 마침
-child_excursion_lake_02_done,호수 2차 완료,유년기 호수 2차 방문을 마침
-child_excursion_basement_01_done,지하실 1차 완료,유년기 지하실 1차 방문을 마침
-child_excursion_basement_02_done,지하실 2차 완료,유년기 지하실 2차 방문을 마침
-child_excursion_library_01_done,도서관 1차 완료,유년기 도서관 1차 방문을 마침
-child_excursion_library_02_done,도서관 2차 완료,유년기 도서관 2차 방문을 마침
-child_excursion_study_01_done,내서재 1차 완료,유년기 내서재 1차 방문을 마침
-child_excursion_study_02_done,내서재 2차 완료,유년기 내서재 2차 방문을 마침
-child_visitor_cousin_1_01_done,사촌1 첫 만남 완료,사촌1과 첫 만남을 마침
-child_visitor_cousin_1_02_done,사촌1 두 번째 만남 완료,사촌1과 두 번째 만남을 마침
-child_visitor_cousin_2_01_done,사촌2 첫 만남 완료,사촌2와 첫 만남을 마침
-child_visitor_cousin_2_02_done,사촌2 두 번째 만남 완료,사촌2와 두 번째 만남을 마침
-child_visitor_friend_1_01_done,친구1 첫 만남 완료,친구1과 첫 만남을 마침
-child_visitor_friend_1_02_done,친구1 두 번째 만남 완료,친구1과 두 번째 만남을 마침
-child_visitor_friend_2_01_done,친구2 첫 만남 완료,친구2와 첫 만남을 마침
-child_visitor_friend_2_02_done,친구2 두 번째 만남 완료,친구2와 두 번째 만남을 마침
-child_visitor_friend_3_01_done,친구3 첫 만남 완료,친구3와 첫 만남을 마침
-child_visitor_friend_3_02_done,친구3 두 번째 만남 완료,친구3와 두 번째 만남을 마침
-friend_1_acquainted,친구1 안면 텄음,친구1과 허락 루트로 안면을 텄다
-friend_2_acquainted,친구2 안면 텄음,친구2과 허락 루트로 안면을 텄다
-friend_3_acquainted,친구3 안면 텄음,친구3과 허락 루트로 안면을 텄다
-cousin_2_acquainted,사촌2 안면 텄음,사촌2와 허락 루트로 안면을 텄다
-child_external_festival_01_done,축제 소식 1차 완료,수도 중앙 축제 소식 1차를 접했다
-child_external_festival_02_done,축제 소식 2차 완료,수도 중앙 축제 소식 2차를 접했다
-child_external_post_delay_01_done,우편 지연 소식 완료,우편 지연 소식을 접했다
-child_external_kingdom_news_01_done,왕국 뉴스 1차 완료,왕국 뉴스 1차를 접했다
-child_external_kingdom_news_02_done,왕국 뉴스 2차 완료,왕국 뉴스 2차를 접했다
+flag_friend_1_acquainted,친구1 안면,친구1 안면
+flag_friend_2_acquainted,친구2 안면,친구2 안면
+flag_friend_3_acquainted,친구3 안면,친구3 안면
+flag_cousin_2_acquainted,사촌2 안면,사촌2 안면
+flag_card_w001_excursion_garden_done,정원 1차 방문 완료,정원 1차 방문 완료
+flag_card_w002_excursion_garden_done,정원 2차 방문 완료,정원 2차 방문 완료
+flag_card_w003_excursion_garden_done,정원 3차 방문 완료,정원 3차 방문 완료
+flag_card_w001_excursion_lake_done,호수 1차 방문 완료,호수 1차 방문 완료
+flag_card_w002_excursion_lake_done,호수 2차 방문 완료,호수 2차 방문 완료
+flag_card_w003_excursion_lake_done,호수 3차 방문 완료,호수 3차 방문 완료
+flag_card_w001_excursion_basement_done,지하실 1차 방문 완료,지하실 1차 방문 완료
+flag_card_w002_excursion_basement_done,지하실 2차 방문 완료,지하실 2차 방문 완료
+flag_card_w003_excursion_basement_done,지하실 3차 방문 완료,지하실 3차 방문 완료
+flag_card_w001_excursion_library_done,도서관 1차 방문 완료,도서관 1차 방문 완료
+flag_card_w002_excursion_library_done,도서관 2차 방문 완료,도서관 2차 방문 완료
+flag_card_w003_excursion_library_done,도서관 3차 방문 완료,도서관 3차 방문 완료
+flag_card_w001_excursion_study_done,내서재 1차 방문 완료,내서재 1차 방문 완료
+flag_card_w002_excursion_study_done,내서재 2차 방문 완료,내서재 2차 방문 완료
+flag_card_w003_excursion_study_done,내서재 3차 방문 완료,내서재 3차 방문 완료
+flag_card_w004_excursion_garden_done,정원 4차 방문 완료,정원 4차 방문 완료
+flag_card_w005_excursion_garden_done,정원 5차 방문 완료,정원 5차 방문 완료
+flag_card_w006_excursion_garden_done,정원 6차 방문 완료,정원 6차 방문 완료
+flag_card_w004_excursion_lake_done,호수 4차 방문 완료,호수 4차 방문 완료
+flag_card_w005_excursion_lake_done,호수 5차 방문 완료,호수 5차 방문 완료
+flag_card_w006_excursion_lake_done,호수 6차 방문 완료,호수 6차 방문 완료
+flag_card_w004_excursion_basement_done,지하실 4차 방문 완료,지하실 4차 방문 완료
+flag_card_w005_excursion_basement_done,지하실 5차 방문 완료,지하실 5차 방문 완료
+flag_card_w006_excursion_basement_done,지하실 6차 방문 완료,지하실 6차 방문 완료
+flag_card_w004_excursion_library_done,도서관 4차 방문 완료,도서관 4차 방문 완료
+flag_card_w005_excursion_library_done,도서관 5차 방문 완료,도서관 5차 방문 완료
+flag_card_w006_excursion_library_done,도서관 6차 방문 완료,도서관 6차 방문 완료
+flag_card_w007_excursion_garden_done,정원 7차 방문 완료,정원 7차 방문 완료
+flag_card_w008_excursion_garden_done,정원 8차 방문 완료,정원 8차 방문 완료
+flag_card_w009_excursion_garden_done,정원 9차 방문 완료,정원 9차 방문 완료
+flag_card_w001_visitor_cousin_1_done,사촌1 1차 만남 완료,사촌1 1차 만남 완료
+flag_card_w002_visitor_cousin_1_done,사촌1 2차 만남 완료,사촌1 2차 만남 완료
+flag_card_w003_visitor_cousin_1_done,사촌1 3차 만남 완료,사촌1 3차 만남 완료
+flag_card_w001_visitor_cousin_2_done,사촌2 1차 만남 완료,사촌2 1차 만남 완료
+flag_card_w002_visitor_cousin_2_done,사촌2 2차 만남 완료,사촌2 2차 만남 완료
+flag_card_w003_visitor_cousin_2_done,사촌2 3차 만남 완료,사촌2 3차 만남 완료
+flag_card_w001_visitor_friend_1_done,친구1 1차 만남 완료,친구1 1차 만남 완료
+flag_card_w002_visitor_friend_1_done,친구1 2차 만남 완료,친구1 2차 만남 완료
+flag_card_w003_visitor_friend_1_done,친구1 3차 만남 완료,친구1 3차 만남 완료
+flag_card_w001_visitor_friend_2_done,친구2 1차 만남 완료,친구2 1차 만남 완료
+flag_card_w002_visitor_friend_2_done,친구2 2차 만남 완료,친구2 2차 만남 완료
+flag_card_w003_visitor_friend_2_done,친구2 3차 만남 완료,친구2 3차 만남 완료
+flag_card_w001_visitor_friend_3_done,친구3 1차 만남 완료,친구3 1차 만남 완료
+flag_card_w002_visitor_friend_3_done,친구3 2차 만남 완료,친구3 2차 만남 완료
+flag_card_w003_visitor_friend_3_done,친구3 3차 만남 완료,친구3 3차 만남 완료
+flag_card_w004_visitor_cousin_1_done,사촌1 4차 만남 완료,사촌1 4차 만남 완료
+flag_card_w005_visitor_cousin_1_done,사촌1 5차 만남 완료,사촌1 5차 만남 완료
+flag_card_w006_visitor_cousin_1_done,사촌1 6차 만남 완료,사촌1 6차 만남 완료
+flag_card_w004_visitor_cousin_2_done,사촌2 4차 만남 완료,사촌2 4차 만남 완료
+flag_card_w005_visitor_cousin_2_done,사촌2 5차 만남 완료,사촌2 5차 만남 완료
+flag_card_w006_visitor_cousin_2_done,사촌2 6차 만남 완료,사촌2 6차 만남 완료
+flag_card_w004_visitor_friend_1_done,친구1 4차 만남 완료,친구1 4차 만남 완료
+flag_card_w005_visitor_friend_1_done,친구1 5차 만남 완료,친구1 5차 만남 완료
+flag_card_w006_visitor_friend_1_done,친구1 6차 만남 완료,친구1 6차 만남 완료
+flag_card_w004_visitor_friend_2_done,친구2 4차 만남 완료,친구2 4차 만남 완료
+flag_card_w005_visitor_friend_2_done,친구2 5차 만남 완료,친구2 5차 만남 완료
+flag_card_w006_visitor_friend_2_done,친구2 6차 만남 완료,친구2 6차 만남 완료
+flag_card_w004_visitor_friend_3_done,친구3 4차 만남 완료,친구3 4차 만남 완료
+flag_card_w005_visitor_friend_3_done,친구3 5차 만남 완료,친구3 5차 만남 완료
+flag_card_w007_visitor_cousin_1_done,사촌1 7차 만남 완료,사촌1 7차 만남 완료
+flag_card_w008_visitor_cousin_1_done,사촌1 8차 만남 완료,사촌1 8차 만남 완료
+flag_card_w009_visitor_cousin_1_done,사촌1 9차 만남 완료,사촌1 9차 만남 완료
+flag_card_w007_visitor_cousin_2_done,사촌2 7차 만남 완료,사촌2 7차 만남 완료
+flag_card_w008_visitor_cousin_2_done,사촌2 8차 만남 완료,사촌2 8차 만남 완료
+flag_card_w009_visitor_cousin_2_done,사촌2 9차 만남 완료,사촌2 9차 만남 완료
+flag_card_w007_visitor_friend_1_done,친구1 7차 만남 완료,친구1 7차 만남 완료
+flag_card_w008_visitor_friend_1_done,친구1 8차 만남 완료,친구1 8차 만남 완료
+flag_card_w009_visitor_friend_1_done,친구1 9차 만남 완료,친구1 9차 만남 완료
+flag_card_w007_visitor_friend_2_done,친구2 7차 만남 완료,친구2 7차 만남 완료
+flag_card_w008_visitor_friend_2_done,친구2 8차 만남 완료,친구2 8차 만남 완료
+flag_card_w009_visitor_friend_2_done,친구2 9차 만남 완료,친구2 9차 만남 완료
+flag_card_w007_visitor_friend_3_done,친구3 7차 만남 완료,친구3 7차 만남 완료
+flag_card_w008_visitor_friend_3_done,친구3 8차 만남 완료,친구3 8차 만남 완료
+flag_card_w009_visitor_friend_3_done,친구3 9차 만남 완료,친구3 9차 만남 완료
+flag_card_w002_letter_friend_1_done,친구1 편지 2주차 완료,친구1 편지 2주차 완료
+flag_card_w003_letter_friend_1_done,친구1 편지 3주차 완료,친구1 편지 3주차 완료
+flag_card_w002_letter_friend_2_done,친구2 편지 2주차 완료,친구2 편지 2주차 완료
+flag_card_w003_letter_friend_2_done,친구2 편지 3주차 완료,친구2 편지 3주차 완료
+flag_card_w002_letter_friend_3_done,친구3 편지 2주차 완료,친구3 편지 2주차 완료
+flag_card_w003_letter_friend_3_done,친구3 편지 3주차 완료,친구3 편지 3주차 완료
+flag_card_w007_letter_friend_1_done,친구1 편지 7주차 완료,친구1 편지 7주차 완료
+flag_card_w008_letter_friend_1_done,친구1 편지 8주차 완료,친구1 편지 8주차 완료
+flag_card_w009_letter_friend_1_done,친구1 편지 9주차 완료,친구1 편지 9주차 완료
+flag_card_w007_letter_friend_2_done,친구2 편지 7주차 완료,친구2 편지 7주차 완료
+flag_card_w008_letter_friend_2_done,친구2 편지 8주차 완료,친구2 편지 8주차 완료
+flag_card_w009_letter_friend_2_done,친구2 편지 9주차 완료,친구2 편지 9주차 완료
+flag_card_w007_letter_friend_3_done,친구3 편지 7주차 완료,친구3 편지 7주차 완료
+flag_card_w008_letter_friend_3_done,친구3 편지 8주차 완료,친구3 편지 8주차 완료
+flag_card_w009_letter_friend_3_done,친구3 편지 9주차 완료,친구3 편지 9주차 완료
+flag_card_w007_letter_cousin_2_done,사촌2 편지 7주차 완료,사촌2 편지 7주차 완료
+flag_card_w008_letter_cousin_2_done,사촌2 편지 8주차 완료,사촌2 편지 8주차 완료
+flag_card_w009_letter_cousin_2_done,사촌2 편지 9주차 완료,사촌2 편지 9주차 완료
+flag_card_w001_house_lake_wolf_done,호수 관련 소문 완료,호수 관련 소문 완료
+flag_card_w001_house_study_done,내서재 관련 소문 완료,내서재 관련 소문 완료
+flag_card_w001_house_cousin_1_done,사촌1 관련 소문 완료,사촌1 관련 소문 완료
+flag_card_w001_house_backgate_wind_done,후문 바람 관련 소문 완료,후문 바람 관련 소문 완료
+flag_card_w002_house_kitchen_sugar_done,주방의 설탕 소문 완료,주방의 설탕 소문 완료
+flag_card_w002_house_laundry_ribbon_done,세탁실 리본 소문 완료,세탁실 리본 소문 완료
+flag_card_w002_house_teacup_done,응접실 찻잔 소문 완료,응접실 찻잔 소문 완료
+flag_card_w002_house_clocktower_bell_done,시계탑 종소리 소문 완료,시계탑 종소리 소문 완료
+flag_card_w003_house_attic_window_done,다락 창문 소문 완료,다락 창문 소문 완료
+flag_card_w003_house_greenhouse_glass_done,온실 유리 소문 완료,온실 유리 소문 완료
+flag_card_w003_house_fountain_fish_done,분수대 물고기 소문 완료,분수대 물고기 소문 완료
+flag_card_w003_house_candlestick_done,촛대 소문 완료,촛대 소문 완료
+flag_card_w004_house_main_done,4주차 완료,4주차 완료
+flag_card_w005_house_main_done,5주차 완료,5주차 완료
+flag_card_w006_house_main_done,6주차 완료,6주차 완료
+flag_card_w007_house_main_done,7주차 소문 완료,7주차 소문 완료
+flag_card_w008_house_main_done,8주차 소문 완료,8주차 소문 완료
+flag_card_w009_house_main_done,9주차 소문 완료,9주차 소문 완료
+flag_card_w001_external_news_01_done,소식 1차 완료,소식 1차 완료
+flag_card_w002_external_news_02_done,소식 2차 완료,소식 2차 완료
+flag_card_w003_external_news_03a_done,소식 3차-1 완료,소식 3차-1 완료
+flag_card_w003_external_news_03b_done,소식 3차-2 완료,소식 3차-2 완료
+flag_card_w001_external_issue_01_done,문제 1차 완료,문제 1차 완료
+flag_card_w001_external_headline_01_done,뉴스 1차 완료,뉴스 1차 완료
+flag_card_w002_external_headline_02_done,뉴스 2차 완료,뉴스 2차 완료
+flag_card_w003_external_headline_03_done,뉴스 3차 완료,뉴스 3차 완료
+flag_card_w004_external_main_done,4차 완료,4차 완료
+flag_card_w005_external_main_done,5차 완료,5차 완료
+flag_card_w006_external_main_done,6차 완료,6차 완료
+flag_card_w007_external_main_done,7차 완료,7차 완료
+flag_card_w008_external_main_done,8차 완료,8차 완료
+flag_card_w009_external_main_done,9차 완료,9차 완료
+flag_card_w006_visitor_friend_3_done,flag_card_w006_visitor_friend_3_done,flag_card_w006_visitor_friend_3_done
+flag_card_w006_letter_cousin_2_done,flag_card_w006_letter_cousin_2_done,flag_card_w006_letter_cousin_2_done
+flag_card_w006_letter_friend_1_done,flag_card_w006_letter_friend_1_done,flag_card_w006_letter_friend_1_done
+flag_card_w006_letter_friend_2_done,flag_card_w006_letter_friend_2_done,flag_card_w006_letter_friend_2_done
+flag_card_w006_letter_friend_3_done,flag_card_w006_letter_friend_3_done,flag_card_w006_letter_friend_3_done
+flag_card_w004_excursion_study_done,내서재 4차 방문 완료,내서재 4차 방문 완료
+flag_card_w005_excursion_study_done,내서재 5차 방문 완료,내서재 5차 방문 완료
+flag_card_w006_excursion_study_done,내서재 6차 방문 완료,내서재 6차 방문 완료
+flag_card_w007_excursion_lake_done,호수 7차 방문 완료,호수 7차 방문 완료
+flag_card_w008_excursion_lake_done,호수 8차 방문 완료,호수 8차 방문 완료
+flag_card_w009_excursion_lake_done,호수 9차 방문 완료,호수 9차 방문 완료
+flag_card_w007_excursion_basement_done,지하실 7차 방문 완료,지하실 7차 방문 완료
+flag_card_w008_excursion_basement_done,지하실 8차 방문 완료,지하실 8차 방문 완료
+flag_card_w009_excursion_basement_done,지하실 9차 방문 완료,지하실 9차 방문 완료
+flag_card_w007_excursion_library_done,도서관 7차 방문 완료,도서관 7차 방문 완료
+flag_card_w008_excursion_library_done,도서관 8차 방문 완료,도서관 8차 방문 완료
+flag_card_w009_excursion_library_done,도서관 9차 방문 완료,도서관 9차 방문 완료
+flag_card_w007_excursion_study_done,내서재 7차 방문 완료,내서재 7차 방문 완료
+flag_card_w008_excursion_study_done,내서재 8차 방문 완료,내서재 8차 방문 완료
+flag_card_w009_excursion_study_done,내서재 9차 방문 완료,내서재 9차 방문 완료
+flag_card_w004_letter_friend_1_done,친구1 편지 4주차 완료,친구1 편지 4주차 완료
+flag_card_w005_letter_friend_1_done,친구1 편지 5주차 완료,친구1 편지 5주차 완료
+flag_card_w004_letter_friend_2_done,친구2 편지 4주차 완료,친구2 편지 4주차 완료
+flag_card_w005_letter_friend_2_done,친구2 편지 5주차 완료,친구2 편지 5주차 완료
+flag_card_w004_letter_friend_3_done,친구3 편지 4주차 완료,친구3 편지 4주차 완료
+flag_card_w005_letter_friend_3_done,친구3 편지 5주차 완료,친구3 편지 5주차 완료
+flag_card_w004_letter_cousin_2_done,사촌2 편지 4주차 완료,사촌2 편지 4주차 완료
+flag_card_w003_letter_cousin_2_done,flag_card_w003_letter_cousin_2_done,flag_card_w003_letter_cousin_2_done
+flag_card_w005_letter_cousin_2_done,사촌2 편지 5주차 완료,사촌2 편지 5주차 완료
+letter_suspected,편지 의심,편지 내용을 수상하게 여김
+external_interest,외부 정보 관심,외부 정보에 관심을 가짐
+visitor_remembered,방문자 기억,방문자를 기억함
+hidden_info_detected,숨은 정보 감지,숨겨진 정보를 감지함

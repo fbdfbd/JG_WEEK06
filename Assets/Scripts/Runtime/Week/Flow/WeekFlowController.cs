@@ -43,6 +43,16 @@ public class WeekFlowController : MonoBehaviour
         _presenter.PublishDefaultNemoFeedback();
     }
 
+    protected virtual void Start()
+    {
+        if (!ShouldAutoRunCurrentWeekOnStart())
+        {
+            return;
+        }
+
+        RunFlowAction(_commandHandler.RunCurrentWeek);
+    }
+
     protected virtual void OnDestroy()
     {
         UnbindRuntimeStateEvents();
@@ -171,6 +181,17 @@ public class WeekFlowController : MonoBehaviour
     private void HandleFlagChanged(FlagChangeInfo _)
     {
         _presenter?.PublishChildState();
+    }
+
+    private bool ShouldAutoRunCurrentWeekOnStart()
+    {
+        SO_WeekDefinition currentWeek = _weekSequenceState.CurrentWeekDefinition;
+        if (currentWeek == null)
+        {
+            return false;
+        }
+
+        return string.Equals(currentWeek.Id, "week_000", StringComparison.OrdinalIgnoreCase);
     }
 
     private void RunFlowAction(Func<WeekFlowActionResult> action)

@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_002_courtyardrumor
   _cardType: {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
-  _title: "\uB730 \uBC16\uC758 \uC18C\uBB38"
-  _originalText: "\uD558\uC778\uB4E4\uC774 \uC804\uD574 \uB4E4\uC740 \uBC14\uAE65
-    \uC18C\uBB38\uC744 \uB124\uBAA8\uC5D0\uAC8C \uC5B4\uB290 \uC815\uB3C4\uAE4C\uC9C0
-    \uC774\uC57C\uAE30\uD560\uC9C0 \uC815\uD55C\uB2E4."
+  _title: "\uBC14\uAE65 \uC18C\uBB38"
+  _originalText: "\uC6D0\uBCF8 PM \uC678\uBD80 \uC18C\uBB38 \uCE74\uB4DC"
   _options:
   - _semantic: 0
     _label: "\uC788\uB294 \uADF8\uB300\uB85C \uB9D0\uD55C\uB2E4"

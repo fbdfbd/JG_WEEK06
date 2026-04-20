@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: "card_textbook_child_\uBAB8\uAC00\uC9D0\uACFC_\uBC1C\uB180\uB9BC"
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: "card_textbook_child_\uBAB8\uAC00\uC9D0\uACFC_\uBC1C\uB180\uB9BC"
+  _cardType: {fileID: 11400000, guid: e8644e571406f564b9ea2d52094a16a5, type: 2}
+  _title: "\uBAB8\uAC00\uC9D0\uACFC \uBC1C\uB180\uB9BC"
+  _originalText: "\uBAB8\uC744 \uBC14\uB974\uAC8C \uC138\uC6B0\uACE0 \uC911\uC2EC\uC744
+    \uC7A1\uB294 \uAE30\uCD08 \uC218\uB828 \uAD50\uC7AC. \uC7A5\uB09C\uCC98\uB7FC
+    \uBCF4\uC774\uC9C0\uB9CC, \uB118\uC5B4\uC9C0\uC9C0 \uC54A\uB294 \uBC95, \uC9E7\uAC8C
+    \uBB3C\uB7EC\uB098\uB294 \uBC95, \uAC00\uBCCD\uAC8C \uBC1C\uC744 \uBED7\uB294
+    \uBC95 \uAC19\uC740 \uAE30\uBCF8 \uC6C0\uC9C1\uC784\uC744 \uC775\uD78C\uB2E4."
+  _options:
+  - _semantic: 2
+    _label: "\uAC00\uBCCD\uAC8C \uB118\uAE34\uB2E4"
+    _presentedText: "\uBAB8\uAC00\uC9D0\uACFC \uBC1C\uB180\uB9BC \uAD50\uC7AC\uB294
+      \uC624\uB298 \uAC00\uBCCD\uAC8C\uB9CC \uD6D1\uACE0 \uB118\uC5B4\uAC04\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: 7e9e7c466b743084c8fdfed064fa2fb3, type: 2}
+  - _semantic: 1
+    _label: "\uC27D\uAC8C \uD480\uC5B4\uC900\uB2E4"
+    _presentedText: "\uBAB8\uAC00\uC9D0\uACFC \uBC1C\uB180\uB9BC \uB0B4\uC6A9\uC744
+      \uC774\uD574\uD558\uAE30 \uC27D\uAC8C \uD480\uC5B4\uC11C \uC804\uB2EC\uD55C\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: 3767dfb8845aead42b17c728fe339544, type: 2}
+  - _semantic: 0
+    _label: "\uCC28\uBD84\uD788 \uC77D\uD78C\uB2E4"
+    _presentedText: "\uBAB8\uAC00\uC9D0\uACFC \uBC1C\uB180\uB9BC \uAD50\uC7AC \uB0B4\uC6A9\uC744
+      \uCC28\uBD84\uD788 \uC77D\uACE0 \uADF8\uB300\uB85C \uC775\uD788\uAC8C \uD55C\uB2E4."
+    _interactions:
+    - {fileID: 11400000, guid: f4ea349d76ad73e488dcc5448ce0e451, type: 2}

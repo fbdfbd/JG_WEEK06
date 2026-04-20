@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w005_external_main_direct__step_w005_external_main_direct_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "5\uCC28 - \uD5C8\uB77D"
+  _bodyText: "(\uC131\uBB38 \uADFC\uCC98, \uBCF4\uBD80\uC0C1\uC774 \uC9D0\uC744 \uD480\uBA70
+    \uD558\uB140\uB4E4\uC5D0\uAC8C \uC2DC\uC7A5 \uD1B5 \uC18C\uC2DD\uC744 \uC804\uD55C\uB2E4.)\r\n   
+    \uBCF4\uBD80\uC0C1 : \uC774\uBC88\uC5D0 \uC774\uC6C3 \uB9C8\uC744 \uC601\uC8FC\uB124
+    \uCC3D\uACE0\uAC00 \uD138\uB838\uB2E4\uC9C0 \uBB50\uC57C? \uADF8\uB7F0\uB370
+    \uC2E0\uAE30\uD558\uAC8C\uB3C4 \uAE08\uD654\uB9CC \uC3D9 \uBE7C\uAC00\uACE0 \uAC00\uB09C\uD55C
+    \uC0AC\uB78C\uB4E4 \uC9D1 \uC55E\uC5D0 \uB480\uB2E4\uB354\uAD70.\r\n    \uD558\uB140
+    : \uC5B4\uBA38, \uADF8\uB7FC \uADF8 \uC18C\uBB38\uC758 '\uADF8\uB9BC\uC790 \uAE30\uC0AC'\uAC00
+    \uC9C4\uC9DC \uC788\uB294 \uAC70\uC57C?\r\n    \uB124\uBAA8 : \uADF8\uB9BC\uC790
+    \uAE30\uC0AC? \uB098\uC05C \uC0AC\uB78C\uC774\uC57C?\r\n    \r\n\r\n\uBCF4\uBD80\uC0C1
+    : \uB098\uC05C \uBD80\uC790\uB4E4 \uAC83\uB9CC \uBE8F\uC5B4\uC11C \uB098\uB220\uC8FC\uB294
+    \uC758\uC801\uC774\uB798\uC694. \uC5BC\uAD74\uC744 \uC544\uBB34\uB3C4 \uBAA8\uB978\uB2E4\uC9C0
+    \uBB61\uB2C8\uAE4C?\r\n    \uB124\uBAA8 : \uC5BC\uAD74\uC774 \uC5C6\uC5B4? \uC9C4\uC9DC
+    \uADF8\uB9BC\uC790\uCC98\uB7FC \uB2E4\uB2C8\uB098 \uBD10!\r\n    \uD558\uB140
+    : \uAC80\uC740 \uC637\uC744 \uC785\uACE0 \uBC24\uD558\uB298\uC744 \uB0A0\uC544\uB2E4\uB2CC\uB300\uC694.
+    \uC8FC\uC778\uB2D8\uCC98\uB7FC \uCC29\uD55C \uC544\uC774\uB294 \uC9C0\uCF1C\uC900\uB2E4\uACE0
+    \uD558\uB354\uB77C\uACE0\uC694.\r\n    \uB124\uBAA8 : \uC6B0\uC640, \uC6B0\uB9AC
+    \uC800\uD0DD\uC5D0\uB3C4 \uC62C\uAE4C? \uB098\uB3C4 \uB9CC\uB098\uC11C \uB0B4
+    \uAC04\uC2DD \uC880 \uB098\uB220\uC8FC\uACE0 \uC2F6\uC5B4."
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: a5a321391a7f0264e83961e8e2440638, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

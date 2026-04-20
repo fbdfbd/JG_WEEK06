@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_003_tutorvisit
   _cardType: {fileID: 11400000, guid: 7e3b393c621280e459460f44ff349d9c, type: 2}
-  _title: "\uAC00\uC815\uAD50\uC0AC\uC758 \uBC29\uBB38"
-  _originalText: "\uBC29\uBB38\uC790\uAC00 \uB0A8\uAE34 \uC778\uC0C1\uACFC \uB9D0\uC744
-    \uB124\uBAA8\uC5D0\uAC8C \uC5B4\uB5BB\uAC8C \uC804\uD560\uC9C0 \uACE0\uB978\uB2E4."
+  _title: "\uBC29\uBB38\uC790 \uBA54\uBAA8"
+  _originalText: "\uC6D0\uBCF8 PM \uBC29\uBB38\uC790 \uCE74\uB4DC"
   _options:
   - _semantic: 0
     _label: "\uC9C1\uC811 \uB4E4\uB824\uC900\uB2E4"

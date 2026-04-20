@@ -10,19 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edff9b7bd1a506a42a33e4d294868a53, type: 3}
-  m_Name: week_001
+  m_Name: WeekDefinition_week_001
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDefinition
   _id: week_001
   _weekIndex: 1
-  _title: "\uCCAB \uC8FC\uC758 \uC815\uB9AC"
-  _summary: "\uCCAB \uC8FC\uC5D0 \uB4E4\uC5B4\uC628 \uC815\uBCF4\uB4E4\uC744 \uB124\uBAA8\uC5D0\uAC8C
-    \uC5B4\uB5A4 \uBC29\uC2DD\uC73C\uB85C \uC804\uB2EC\uD560\uC9C0 \uC815\uB9AC\uD558\uACE0
-    \uADF8 \uACB0\uACFC\uB85C \uC5F4\uB9AC\uB294 \uC774\uBCA4\uD2B8\uB97C \uBCF8\uB2E4."
+  _title: "\uC720\uB144\uAE30 1\uC8FC\uCC28"
+  _summary: "\uC720\uB144\uAE30 1\uC8FC\uCC28 \uC9C4\uD589"
   _preTurn: {fileID: 11400000, guid: c6aebed45546d8248a59d1c8ba1a0d65, type: 2}
   _dayFlow: {fileID: 11400000, guid: 4b5d8f94359f9a040a698c601b7bad7d, type: 2}
   _nightFlow: {fileID: 11400000, guid: b00f44a3e96010740b9f1f377b064c1d, type: 2}
   _weekRules: []
   _onWeekStartInteractions: []
-  _onWeekEndInteractions:
-  - {fileID: 11400000, guid: 1b9bf81dde0b191488d07b0cfc056697, type: 2}
+  _onWeekEndInteractions: []
   _cinematicProfile: {fileID: 0}

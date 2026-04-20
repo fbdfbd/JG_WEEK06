@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6b5be06421b454a82b7e83feaf94ed, type: 3}
+  m_Name: event_w004_visitor_cousin_2_blocked
+  m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
+  _id: event_w004_visitor_cousin_2_blocked
+  _title: "\uC0AC\uCD0C2 4\uCC28 \uB9CC\uB0A8 - \uD1B5\uC81C"
+  _priority: 10
+  _conditions:
+    _requiredFlags:
+    - {fileID: 11400000, guid: d3095cf6e2ba25a4aa024b49bd23b560, type: 2}
+    _blockedFlags: []
+    _statRequirements: []
+    _informationRequirements:
+    - _informationType: {fileID: 11400000, guid: 7e3b393c621280e459460f44ff349d9c, type: 2}
+      _useSemanticFilter: 1
+      _semantic: 2
+      _minimumCount: 1
+  _firstStep: {fileID: 11400000, guid: a1547708be1ee0b479eda9e898f274fc, type: 2}
+  _onCompletedInteractions:
+  - {fileID: 11400000, guid: 63bbce45671c8c94eb06e69ec5caf18c, type: 2}
+  - {fileID: 11400000, guid: 923b33ae6c6c25e46a825b99db31f7f6, type: 2}
+  _cinematicProfile: {fileID: 0}
+  _relatedInformationTypes:
+  - {fileID: 11400000, guid: 7e3b393c621280e459460f44ff349d9c, type: 2}
+  _preferredSemantics: 02000000

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w007_letter_cousin_2_direct__step_w007_letter_cousin_2_direct_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uC0AC\uCD0C2 \uD3B8\uC9C0 7\uC8FC\uCC28 - \uD5C8\uB77D"
+  _bodyText: "(\uD558\uB140\uAC00 \uC791\uC740 \uC190\uC218\uAC74\uC5D0 \uC2F8\uC778
+    \uD3B8\uC9C0\uB97C \uB4E4\uACE0 \uC628\uB2E4. \uC190\uC218\uAC74\uC5D0\uC120
+    \uB2EC\uCF64\uD55C \uD5A5\uAE30\uAC00 \uB09C\uB2E4.)\r\n        \r\n\r\n\uD558\uB140
+    : \uC0AC\uCD0C 2 \uB3C4\uB828\uB2D8\uC774 \uBCF4\uB0B8 \uD3B8\uC9C0\uC785\uB2C8\uB2E4.
+    \uC0AC\uCD0C 1 \uC8FC\uC778\uB2D8 \uBAB0\uB798 \uC4F4 \uAC83 \uAC19\uB124\uC694.\r\n       
+    \uB124\uBAA8 : \uC0BC\uCD0C \uBAB0\uB798? \uBB50\uB77C\uACE0 \uC37C\uB294\uB370?\r\n       
+    (\uD558\uB140\uAC00 \uD3B8\uC9C0\uB97C \uC77D\uC5B4 \uC900\uB2E4.)\r\n       
+    \uB124\uBAA8 \uC548\uB155. \uC6B0\uB9AC \uC544\uBE60\uAC00 \uB108\uD55C\uD14C
+    \uBB34\uC11C\uC6B4 \uC598\uAE30 \uD588\uC9C0? \uBBF8\uC548\uD574... \uC544\uBE60\uB294
+    \uAC00\uB054 \uB108\uBB34 \uBB34\uC11C\uC6CC. \uD558\uC9C0\uB9CC \uBC31\uC791\uB2D8\uC740
+    \uC6B0\uB9AC \uC544\uBE60\uB791 \uB2EC\uB77C. \uB10C \uBC31\uC791\uB2D8\uCC98\uB7FC
+    \uBA4B\uC9C4 \uC0AC\uB78C\uC774 \uB420 \uAC70\uC57C. \uB0B4\uAC00 \uC232\uC5D0\uC11C
+    \uC8FC\uC6B4 \uC608\uC05C \uB3CC, \uB0B4\uC77C \uBAB0\uB798 \uC804\uD574\uC904\uAC8C.\r\n       
+    \uB124\uBAA8 : \uC0AC\uCD0C 2... \uAC54\uB294 \uCC38 \uCC29\uD574. \uB3CC\uBA69\uC774
+    \uC120\uBB3C\uC774\uB77C\uB2C8, \uADC0\uC5FD\uB124.\r\n        \uD558\uB140 :
+    \uC0AC\uCD0C 1\uC758 \uC57C\uC2EC \uC18D\uC5D0\uC11C\uB3C4 \uC8FC\uC778\uB2D8\uC744
+    \uD5A5\uD55C \uC21C\uC218\uD55C \uB9C8\uC74C\uC744 \uC9C0\uD0A4\uACE0 \uC788\uB124\uC694.\r\n       
+    \uB124\uBAA8 : \uC751. \uAC54\uAC00 \uC544\uBE60 \uB54C\uBB38\uC5D0 \uC6B8\uC9C0
+    \uC54A\uAC8C \uB0B4\uAC00 \uC798 \uC9C0\uCF1C\uC918\uC57C\uACA0\uC5B4."
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: ff5f7b941b95fc04ba6f3a7a49b04f4a, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

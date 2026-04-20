@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf75e2887b3af5458d469b5570aa42c, type: 3}
+  m_Name: card_w009_excursion_study
+  m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
+  _id: card_w009_excursion_study
+  _cardType: {fileID: 11400000, guid: dbafb5c030c34524294075dd28cedafe, type: 2}
+  _title: "\uB0B4\uC11C\uC7AC 9\uCC28 \uBC29\uBB38"
+  _originalText: "(\uB2A6\uC740 \uBC24, \uC11C\uC7AC\uC5D0 \uD640\uB85C \uC549\uC544
+    \uCD1B\uBD88\uC744 \uCF20 \uCC44 \uAC00\uBB38\uC758 \uBE44\uBC00 \uC7A5\uBD80\uB97C
+    \uC0B4\uD53C\uB358 \uC8FC\uC778\uB2D8. \uAC11\uC790\uAE30 \uCC3D\uBC16\uC5D0\uC11C
+    \uBD88\uC5B4\uC628 \uBC14\uB78C\uC5D0 \uCD1B\uBD88\uC774 \uC77C\uB801\uC774\uBA70
+    \uBCBD\uC5D0 \uD070 \uADF8\uB9BC\uC790\uAC00 \uC9C4\uB2E4.) \uD558\uB140 : \uC8FC\uC778\uB2D8,
+    \uC544\uC9C1 \uC548 \uC8FC\uBB34\uC168\uC5B4\uC694? \uB108\uBB34 \uBB34\uB9AC\uD558\uC2DC\uBA74
+    \uB0B4\uC77C \uC218\uB828\uC5D0 \uC9C0\uC7A5\uC774 \uC0DD\uAE38 \uD150\uB370..."
+  _options:
+  - _semantic: 2
+    _label: "\uD1B5\uC81C"
+    _presentedText: "\uD1B5\uC81C"
+    _interactions: []
+  - _semantic: 0
+    _label: "\uD5C8\uB77D"
+    _presentedText: "\uD5C8\uB77D"
+    _interactions: []

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w002_external_news_02_blocked__step_w002_external_news_02_blocked_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uC18C\uC2DD 2\uCC28 - \uD1B5\uC81C"
+  _bodyText: "\uD558\uB140\uB294 \uCD95\uC81C \uC804\uB2E8 \uB4A4\uCABD\uC5D0 \uACF5\uC5F0
+    \uC2DC\uAC04\uD45C\uAC00 \uC801\uD78C \uAC78 \uBC1C\uACAC\uD588\uB2E4.)\r\n       
+    \r\n\r\n\uB124\uBAA8 : \uB610 \uADF8 \uCD95\uC81C\uC57C?\r\n            \r\n           
+    \uD558\uB140 : \uB124, \uC8FC\uC778\uB2D8. \uC544\uC9C1\uB3C4 \uC2DC\uB044\uB7FD\uB2E4\uB294
+    \uC774\uC57C\uAE30\uC608\uC694.\r\n            \r\n            \uB124\uBAA8 :
+    \uD750\uC751.\r\n            \r\n            \uD6C4\uC18D \uD6A8\uACFC : \uCD95\uC81C
+    \uC678\uCD9C \uD574\uAE08 \uC548 \uB428"
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions: []
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

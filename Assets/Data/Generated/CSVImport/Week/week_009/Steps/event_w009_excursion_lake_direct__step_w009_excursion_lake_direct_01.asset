@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w009_excursion_lake_direct__step_w009_excursion_lake_direct_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uD638\uC218 9\uCC28 \uBC29\uBB38 - \uD5C8\uB77D"
+  _bodyText: "(\uD638\uC22B\uAC00 \uAC00\uC7A5\uC790\uB9AC\uC5D0 \uC138\uC6CC\uC9C4
+    \uB0A1\uC740 \uBE44\uC11D \uC55E. \uAC00\uBB38\uC758 \uCD08\uB300 \uC548\uC8FC\uC778\uC774
+    \uC138\uC6E0\uB2E4\uB294 \uB9F9\uC138\uC758 \uBB38\uAD6C\uAC00 \uC0C8\uACA8\uC838
+    \uC788\uB2E4.)\r\n        \uD558\uB140 : \uC774\uC81C \uACE7 \uC131\uC778\uC774
+    \uB418\uC2DC\uB124\uC694, \uC8FC\uC778\uB2D8. \uC774 \uD638\uC218 \uC55E\uC5D0\uC11C
+    \uAC00\uBB38\uC758 \uC601\uC560\uB85C\uC11C \uB9F9\uC138\uD588\uB358 \uC120\uB300\uB4E4\uC758
+    \uC774\uC57C\uAE30\uB97C \uAE30\uC5B5\uD558\uC2DC\uB098\uC694?\r\n        \r\n\r\n\uD558\uB140
+    : \uC8FC\uC778\uB2D8\uC740 \uC774\uBBF8 \uADF8\uB7F0 \uD6CC\uB96D\uD55C \uBD84\uC774
+    \uB418\uC5B4\uAC00\uACE0 \uACC4\uC138\uC694. \uD638\uC218\uB3C4 \uC8FC\uC778\uB2D8\uC758
+    \uAD73\uAC74\uD55C \uB9C8\uC74C\uC744 \uC54C\uACE0 \uC788\uC744 \uAC70\uC608\uC694.\r\n       
+    \uB124\uBAA8 : \uC751. \uB098\uC911\uC5D0 \uC5B4\uB5A4 \uD30C\uB3C4\uAC00 \uBC00\uB824\uC640\uB3C4,
+    \uC774 \uD638\uC218\uCC98\uB7FC \uD754\uB4E4\uB9BC \uC5C6\uC774 \uAC00\uBB38\uC744
+    \uC9C0\uD0A4\uB294 \uC548\uC8FC\uC778\uC774 \uB420\uAC8C."
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: a5a321391a7f0264e83961e8e2440638, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

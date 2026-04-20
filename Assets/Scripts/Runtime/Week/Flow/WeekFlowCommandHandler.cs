@@ -50,7 +50,7 @@ public sealed class WeekFlowCommandHandler
             _runtimeState.SetPendingEvents(WeekNarrativeResolver.ResolvePendingEvents(
                 currentWeekDefinition,
                 eventResolutionChildState,
-                _runtimeState.LastWeekResult.InformationControlResult));
+                _runtimeState.LastWeekResult));
             _runtimeState.ShouldShowEndingAfterEvents = _weekSequenceState.IsCurrentWeekFinal;
             _runtimeState.ShouldAdvanceToNextWeekAfterEvents = !_runtimeState.ShouldShowEndingAfterEvents;
 

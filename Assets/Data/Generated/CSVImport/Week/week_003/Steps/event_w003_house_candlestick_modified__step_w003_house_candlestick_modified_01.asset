@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w003_house_candlestick_modified__step_w003_house_candlestick_modified_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: "\uCD1B\uB300 \uC18C\uBB38 - \uC218\uC815"
+  _bodyText: "(\uC800\uB141 \uBB34\uB835 \uBCF5\uB3C4. \uD558\uB140 \uB458\uC774
+    \uCD1B\uB300\uB97C \uC62E\uAE30\uBA70 \uC18D\uC0AD\uC778\uB2E4.)\r\n        \r\n       
+    \uD558\uB1401 : \uC5B4\uC81C \uC5EC\uAE30 \uCD1B\uB18D\uC774 \uB354 \uB9CE\uC558\uB358
+    \uAC83 \uAC19\uC740\uB370.\r\n        \r\n        \uD558\uB1402 : \uB204\uAC00
+    \uBAB0\uB798 \uBD88 \uCF30\uB2E4 \uAED0\uB098?\r\n        \r\n        \uB124\uBAA8
+    : \uB610 \uBB50\uC57C \uBB50\uC57C \uBB50\uC57C?\r\n        \r\n\r\n\uD558\uB1401
+    : \uBCF5\uB3C4 \uCD1B\uB300\uB97C \uC870\uAE08 \uC77C\uCC0D \uCF20 \uC0AC\uB78C\uC774
+    \uC788\uC5C8\uB098 \uBD05\uB2C8\uB2E4, \uC8FC\uC778\uB2D8.\r\n        \r\n       
+    \uB124\uBAA8 : \uC65C?\r\n        \r\n        \uD558\uB1402 : \uB0A0\uC774 \uBE68\uB9AC
+    \uC5B4\uB450\uC6CC\uC838\uC11C \uADF8\uB7AC\uACA0\uC9C0\uC694.\r\n        \r\n       
+    \uB124\uBAA8 : \uC544.\r\n        \r\n        \uD558\uB1401 : \uAF2D \uC774\uC0C1\uD55C
+    \uC77C\uC740 \uC544\uB2C8\uC5D0\uC694. \uADF8\uB0E5 \uC11C\uB458\uB7EC \uC900\uBE44\uD55C
+    \uAC70\uB78D\uB2C8\uB2E4.\r\n        \r\n        \uB124\uBAA8 : \uADF8\uB7FC
+    \uAD1C\uCC2E\uB124.\r\n        \r\n        \uD558\uB1402 : \uB124. \uCD1B\uBD88\uC740
+    \uC6D0\uB798 \uBA3C\uC800 \uCF1C \uB450\uBA74 \uB9C8\uC74C\uC774 \uB193\uC774\uB2C8\uAE4C\uC694."
+  _dialogueLines: []
+  _nemoLine: 
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions:
+  - {fileID: 11400000, guid: ff5f7b941b95fc04ba6f3a7a49b04f4a, type: 2}
+  _choices: []
+  _nextStep: {fileID: 0}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}
