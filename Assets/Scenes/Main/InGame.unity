@@ -1504,9 +1504,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93167563d2f279a46b9bbff067ae7701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeekFlowController
-  _weekDefinition: {fileID: 11400000, guid: f2653ee6ce5a6bb48ae0a8d891fc4411, type: 2}
+  _weekDefinition: {fileID: 11400000, guid: e2ab0a08d2744b92a97f30ae734b1e20, type: 2}
   _weekDefinitions:
-  - {fileID: 11400000, guid: f2653ee6ce5a6bb48ae0a8d891fc4411, type: 2}
+  - {fileID: 11400000, guid: e2ab0a08d2744b92a97f30ae734b1e20, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -2643,6 +2643,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+--- !u!1 &763582909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 763582910}
+  - component: {fileID: 763582911}
+  m_Layer: 0
+  m_Name: event_week_005_excursion_basement_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &763582910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763582909}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1968244351}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &763582911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763582909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_005_astronomy_direct
+  _isBlocking: 1
+  _targetEventId: event_week_005_astronomy_direct
+  _backgroundType: 8
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!114 &786518849 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2620723283296772203, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
@@ -5122,6 +5180,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+--- !u!1 &1786423269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1786423270}
+  - component: {fileID: 1786423271}
+  m_Layer: 0
+  m_Name: event_week_005_astronomy_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1786423270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786423269}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1968244351}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1786423271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786423269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_005_astronomy_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_005_astronomy_blocked
+  _backgroundType: 8
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!114 &1826471003 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7533755473709522663, guid: d1971665c17522a4e949f7268d6d3ab5, type: 3}
@@ -5165,6 +5281,7 @@ Transform:
   - {fileID: 357928816}
   - {fileID: 920490043}
   - {fileID: 119356580}
+  - {fileID: 1968244351}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1850009222
@@ -5823,6 +5940,39 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &1968244350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1968244351}
+  m_Layer: 0
+  m_Name: WEEK005
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1968244351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968244350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 763582910}
+  - {fileID: 1786423270}
+  m_Father: {fileID: 1841840514}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1989719526
 GameObject:
   m_ObjectHideFlags: 0

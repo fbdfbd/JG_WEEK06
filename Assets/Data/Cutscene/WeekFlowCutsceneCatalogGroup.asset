@@ -18,3 +18,8 @@ MonoBehaviour:
     _catalog: {fileID: 11400000, guid: 94239b7a4bc00284d86e08c5b91a6e0b, type: 2}
   - _weekId: week_001
     _catalog: {fileID: 11400000, guid: 9495a377da28ab9448281a8902a3bb91, type: 2}
+  - _weekId: week_005
+    _catalog: {fileID: 11400000, guid: 8b19dd20d388c4e4db750de1dab2c38f, type: 2}
+  - _weekId: week_006
+    _catalog: {fileID: 11400000, guid: f4ad48468bc5a4f40898084623d2fdba, type: 2}
+
