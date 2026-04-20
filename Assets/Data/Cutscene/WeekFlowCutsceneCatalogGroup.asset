@@ -16,3 +16,5 @@ MonoBehaviour:
   _weekCatalogs:
   - _weekId: week_000
     _catalog: {fileID: 11400000, guid: 94239b7a4bc00284d86e08c5b91a6e0b, type: 2}
+  - _weekId: week_001
+    _catalog: {fileID: 11400000, guid: 9495a377da28ab9448281a8902a3bb91, type: 2}

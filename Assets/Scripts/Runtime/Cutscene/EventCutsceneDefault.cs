@@ -1,17 +1,42 @@
 using System.Collections;
 using UnityEngine;
+using DG.Tweening;
+
+public enum CharacterPos
+{
+    Both,
+    Center,
+    None,
+}
 
 public class EventCutsceneDefault : WeekFlowCutscenePlayerBase
 {
+    private enum PanelFadeMode
+    {
+        FadeIn,
+        FadeOut,
+        FadeInOut
+    }
+
+    [Header("기본 설정")]
     [SerializeField] private string _targetEventId = string.Empty;
     [SerializeField] private BackgroundType _backgroundType;
 
-    [Header("커스텀")]
+    [Header("연출 설정")]
     [SerializeField] private bool _playSpecialOnStart = true;
-    [SerializeField] private float _duration;
+    [SerializeField] private float _duration = 1f;
 
+    [Header("캐릭터 배치")]
+    [SerializeField] private CharacterPos _characterPos = CharacterPos.Both;
     [SerializeField] private CutsceneCharacterType _leftCharacter;
     [SerializeField] private CutsceneCharacterType _rightCharacter;
+    [SerializeField] private CutsceneCharacterType _centerCharacter;
+
+    [Header("패널 페이드")]
+    [SerializeField] private bool _usePanelFade = false;
+    [SerializeField] private CanvasGroup _fadePanel;
+    [SerializeField] private PanelFadeMode _panelFadeMode = PanelFadeMode.FadeIn;
+    [SerializeField] private float _panelFadeDuration = 0.3f;
 
     private bool _isPlaying;
     private bool _hasStarted;
@@ -29,26 +54,13 @@ public class EventCutsceneDefault : WeekFlowCutscenePlayerBase
     {
         _isPlaying = true;
 
-        switch (request.Moment)
+        if (request.Moment == EWeekFlowCutsceneMoment.EventExit)
         {
-            case EWeekFlowCutsceneMoment.EventExit:
-                DeactivateRoots();
-                _hasStarted = false;
-                break;
-
-            default:
-                if (!_hasStarted)
-                {
-                    ActivateRoots();
-
-                    if (_playSpecialOnStart)
-                    {
-                        yield return PlaySpecialIfNeeded();
-                    }
-
-                    _hasStarted = true;
-                }
-                break;
+            HandleExit();
+        }
+        else if (!_hasStarted)
+        {
+            yield return PlayStartSequence();
         }
 
         _isPlaying = false;
@@ -63,52 +75,129 @@ public class EventCutsceneDefault : WeekFlowCutscenePlayerBase
     {
         _isPlaying = false;
         _hasStarted = false;
-        DeactivateRoots();
+
+        KillFadeTween();
+        HideAllCharacters();
+        SetBackground(false);
     }
 
-    private void ActivateRoots()
+    private IEnumerator PlayStartSequence()
     {
-        SetCharacter(true);
-    }
+        ShowCharacters();
+        SetBackground(true);
 
-    private void DeactivateRoots()
-    {
-        SetCharacter(false);
-    }
-
-    private void SetCharacter(bool active)
-    {
-        if (CutsceneCharacterManager.I != null)
+        if (_usePanelFade)
         {
-            if(active)
-            {
+            yield return PlayPanelFade();
+        }
+
+        if (_playSpecialOnStart)
+        {
+            yield return PlaySpecial();
+        }
+
+        _hasStarted = true;
+    }
+
+    private void HandleExit()
+    {
+        KillFadeTween();
+        HideAllCharacters();
+        SetBackground(false);
+        _hasStarted = false;
+    }
+
+    private void ShowCharacters()
+    {
+        if (CutsceneCharacterManager.I == null)
+            return;
+
+        HideAllCharacters();
+
+        switch (_characterPos)
+        {
+            case CharacterPos.Both:
                 CutsceneCharacterManager.I.ShowLeft(_leftCharacter);
                 CutsceneCharacterManager.I.ShowRight(_rightCharacter);
-                BackgroundSet(active);
-            }
-            else
-            {
-                CutsceneCharacterManager.I.HideLeft();
-                CutsceneCharacterManager.I.HideRight();
-                BackgroundSet(active);
-            }
+                break;
+
+            case CharacterPos.Center:
+                CutsceneCharacterManager.I.ShowCenter(_centerCharacter);
+                break;
+
+            case CharacterPos.None:
+                break;
         }
     }
 
-    private void BackgroundSet(bool active)
+    private void HideAllCharacters()
     {
-        if (BackgroundManager.I != null)
-        {
-            if (active)
-                BackgroundManager.I.ShowBackground(_backgroundType);
-            else
-                BackgroundManager.I.HideBackground(_backgroundType);
-        }
+        if (CutsceneCharacterManager.I == null)
+            return;
+
+        CutsceneCharacterManager.I.HideLeft();
+        CutsceneCharacterManager.I.HideRight();
+        CutsceneCharacterManager.I.HideCenter();
     }
 
+    private void SetBackground(bool visible)
+    {
+        if (BackgroundManager.I == null)
+            return;
 
-    private IEnumerator PlaySpecialIfNeeded()
+        if (visible)
+            BackgroundManager.I.ShowBackground(_backgroundType);
+        else
+            BackgroundManager.I.HideBackground(_backgroundType);
+    }
+
+    private IEnumerator PlaySpecial()
     {
         yield return new WaitForSeconds(_duration);
+    }
+
+    private IEnumerator PlayPanelFade()
+    {
+        if (_fadePanel == null)
+            yield break;
+
+        KillFadeTween();
+        _fadePanel.gameObject.SetActive(true);
+
+        switch (_panelFadeMode)
+        {
+            case PanelFadeMode.FadeIn:
+                _fadePanel.alpha = 0f;
+                yield return _fadePanel
+                    .DOFade(1f, _panelFadeDuration)
+                    .WaitForCompletion();
+                break;
+
+            case PanelFadeMode.FadeOut:
+                _fadePanel.alpha = 1f;
+                yield return _fadePanel
+                    .DOFade(0f, _panelFadeDuration)
+                    .WaitForCompletion();
+                break;
+
+            case PanelFadeMode.FadeInOut:
+                _fadePanel.alpha = 0f;
+                yield return _fadePanel
+                    .DOFade(1f, _panelFadeDuration)
+                    .WaitForCompletion();
+
+                yield return _fadePanel
+                    .DOFade(0f, _panelFadeDuration)
+                    .WaitForCompletion();
+                break;
+        }
+    }
+
+    private void KillFadeTween()
+    {
+        if (_fadePanel == null)
+            return;
+
+        _fadePanel.DOKill();
     }
 }
