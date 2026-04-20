@@ -1,4 +1,4 @@
-﻿event_id,step_id,choice_id,line_order,speaker_id,text
+event_id,step_id,choice_id,line_order,speaker_id,text
 night_outside_interest,step_night_outside_01,choice_night_open,0,speaker_nemo,다음엔 같이 보자.
 night_outside_interest,step_night_outside_01,choice_night_open,1,speaker_maid,그러면 제가 곁에서 도울게요.
 night_outside_interest,step_night_outside_01,choice_night_delay,0,speaker_maid,오늘은 여기까지만 하시죠.

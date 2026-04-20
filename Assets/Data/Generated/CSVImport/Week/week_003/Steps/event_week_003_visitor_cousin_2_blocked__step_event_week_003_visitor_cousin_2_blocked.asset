@@ -36,7 +36,7 @@ MonoBehaviour:
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
     _text: "\uC54C\uACA0\uC5B4."
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
-    _text: "(\uC0AC\uCD0C2\uB294 \uC811\uD78C \uC885\uC774\uB97C \uB2E4\uC2DC \uC8FC\uBA38\uB2C8\uC5D0
+    _text: "(\uB9AC\uC548\uC740 \uC811\uD78C \uC885\uC774\uB97C \uB2E4\uC2DC \uC8FC\uBA38\uB2C8\uC5D0
       \uB123\uB294\uB2E4.)"
   _nemoLine: "(\uC9D1\uC0AC\uC7A5\uC774 \uB458 \uC0AC\uC774\uB85C \uD55C \uAC78\uC74C
     \uB4E4\uC5B4\uC628\uB2E4.)"

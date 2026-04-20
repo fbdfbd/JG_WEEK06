@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: child_house_talk_cousin_1_01_done
   m_EditorClassIdentifier: Assembly-CSharp::SO_FlagDefinition
   _id: child_house_talk_cousin_1_01_done
-  _displayName: "\uC0AC\uCD0C1 \uC18C\uBB38 \uC644\uB8CC"
-  _description: "\uC0AC\uCD0C1 \uBC29\uBB38 \uC18C\uBB38\uC744 \uB4E4\uC740 \uC0C1\uD0DC"
+  _displayName: "\uCE74\uC774\uC628 \uC18C\uBB38 \uC644\uB8CC"
+  _description: "\uCE74\uC774\uC628 \uBC29\uBB38 \uC18C\uBB38\uC744 \uB4E4\uC740
+    \uC0C1\uD0DC"

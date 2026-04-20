@@ -34,7 +34,7 @@ MonoBehaviour:
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
     _text: "\uC548\uB155."
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
-    _text: "(\uC0AC\uCD0C2\uB294 \uC791\uAC8C \uACE0\uAC1C\uB9CC \uB044\uB355\uC778\uB2E4.)"
+    _text: "(\uB9AC\uC548\uC740 \uC791\uAC8C \uACE0\uAC1C\uB9CC \uB044\uB355\uC778\uB2E4.)"
   - _speaker: {fileID: 11400000, guid: 7ba078414ab25104a821c91cc498d418, type: 2}
     _text: "\u2026\u2026\uC548\uB155."
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}

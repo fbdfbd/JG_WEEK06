@@ -16,7 +16,7 @@ MonoBehaviour:
   _bodyText: "excursion lake Direct \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: fa0a52ca28fa9e14780e4a40b6bca1a5, type: 2}
-    _text: "\uC0AC\uCD0C 1\uB2D8\uC774 \uBC8C\uC368\uBD80\uD130 \uC774 \uD638\uC218\uAD8C\uC744
+    _text: "\uCE74\uC774\uC628\uB2D8\uC774 \uBC8C\uC368\uBD80\uD130 \uC774 \uD638\uC218\uAD8C\uC744
       \uD0D0\uB0B4\uC2DC\uB294 \uBAA8\uC591\uC774\uC5D0\uC694."
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
     _text: "\uC800 \uC0AC\uB78C\uB4E4\uC774 \uB0B4 \uD5C8\uB77D\uB3C4 \uC5C6\uC774
@@ -29,7 +29,7 @@ MonoBehaviour:
     _text: "\uC544\uB2C8, \uC800 \uC0AC\uB78C\uB4E4\uC774 \uC6B0\uB9AC \uD638\uC218\uB97C
       \uB9C8\uC74C\uB300\uB85C \uAC74\uB4DC\uB9AC\uAC8C \uB450\uC9C4 \uC54A\uC744
       \uAC70\uC57C."
-  _nemoLine: "\uC0AC\uCD0C 1\uB2D8\uC774 \uBC8C\uC368\uBD80\uD130 \uC774 \uD638\uC218\uAD8C\uC744
+  _nemoLine: "\uCE74\uC774\uC628\uB2D8\uC774 \uBC8C\uC368\uBD80\uD130 \uC774 \uD638\uC218\uAD8C\uC744
     \uD0D0\uB0B4\uC2DC\uB294 \uBAA8\uC591\uC774\uC5D0\uC694."
   _useCustomVisualState: 0
   _visualState: 0

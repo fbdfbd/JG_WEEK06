@@ -17,7 +17,7 @@ MonoBehaviour:
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
     _text: "(\uB124\uBAA8\uAC00 \uC789\uD06C\uB97C \uD39C\uCD09\uC5D0 \uC0B4\uC9DD
-      \uCC0D\uC5B4 \uCE5C\uAD6C 1\uC758 \uC190\uB4F1\uC5D0 \uC791\uC740 \uD558\uD2B8\uB97C
+      \uCC0D\uC5B4 \uB9C9\uC2A4\uC758 \uC190\uB4F1\uC5D0 \uC791\uC740 \uD558\uD2B8\uB97C
       \uADF8\uB824\uC900\uB2E4.)"
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
     _text: "\uC790, \uC774\uAC70 \uC548 \uC9C0\uC6CC\uC9C0\uB294 \uC789\uD06C\uC57C.
@@ -32,7 +32,7 @@ MonoBehaviour:
       \uD558\uC2DC\uACA0\uC9C0\uB9CC... \uBB50 \uC5B4\uB54C, \uC6B0\uB9AC\uB07C\uB9AC
       \uC7AC\uBC0C\uC73C\uBA74 \uB410\uC9C0!"
   _nemoLine: "(\uB124\uBAA8\uAC00 \uC789\uD06C\uB97C \uD39C\uCD09\uC5D0 \uC0B4\uC9DD
-    \uCC0D\uC5B4 \uCE5C\uAD6C 1\uC758 \uC190\uB4F1\uC5D0 \uC791\uC740 \uD558\uD2B8\uB97C
+    \uCC0D\uC5B4 \uB9C9\uC2A4\uC758 \uC190\uB4F1\uC5D0 \uC791\uC740 \uD558\uD2B8\uB97C
     \uADF8\uB824\uC900\uB2E4.)"
   _useCustomVisualState: 0
   _visualState: 0

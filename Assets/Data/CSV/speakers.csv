@@ -1,18 +1,18 @@
-﻿speaker_id,display_name,default_visual_state
+speaker_id,display_name,default_visual_state
 speaker_nemo,네모,Neutral
-speaker_gardener,정원사,Neutral
-speaker_gardener_1,정원사1,Neutral
-speaker_gardener_2,정원사2,Neutral
+speaker_gardener,에단(정원사),Neutral
+speaker_gardener_1,버질(정원사1),Neutral
+speaker_gardener_2,단테(정원사2),Neutral
 speaker_guard_captain,경비대장,Neutral
 speaker_warehouse_keeper,창고지기,Neutral
 speaker_butler,집사장,Neutral
 speaker_librarian,서고관리인,Neutral
 speaker_secretary,비서,Neutral
-speaker_maid,하녀,Neutral
-speaker_maid_1,하녀1,Neutral
-speaker_maid_2,하녀2,Neutral
-speaker_worker_1,사용인1,Neutral
-speaker_worker_2,사용인2,Neutral
+speaker_maid,마리(하녀),Neutral
+speaker_maid_1,엘린(하녀1),Neutral
+speaker_maid_2,메이(하녀2),Neutral
+speaker_worker_1,토마스(사용인1),Neutral
+speaker_worker_2,휴고(사용인2),Neutral
 speaker_cousin_1,카이안 레온하르트,Neutral
 speaker_cousin_2,리안,Neutral
 speaker_friend_1,막스,Neutral
@@ -20,4 +20,4 @@ speaker_friend_2,밀리아,Neutral
 speaker_friend_3,유피,Neutral
 speaker_count,백작,Neutral
 speaker_narrator,(지문),Neutral
-speaker_npc,NPC,Neutral
+speaker_npc,행인,Neutral

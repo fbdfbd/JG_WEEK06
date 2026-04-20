@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: event_week_001_house_talk_cousin1_rumor_direct__step_event_week_001_house_talk_cousin1_rumor_direct
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uCE74\uC774\uC548 \uAD00\uB828 \uC18C\uBB38 \uD5C8\uAC00"
-  _bodyText: "house_talk \uC0AC\uCD0C1_\uAD00\uB828_\uC18C\uBB38 Direct \uB8E8\uD2B8"
+  _bodyText: "house_talk \uCE74\uC774\uC628_\uAD00\uB828_\uC18C\uBB38 Direct \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: fa0a52ca28fa9e14780e4a40b6bca1a5, type: 2}
     _text: "\uBC31\uC791\uB2D8 \uC0AC\uCD0C\uBD84\uC774 \uC624\uC2E0\uB300\uC694,

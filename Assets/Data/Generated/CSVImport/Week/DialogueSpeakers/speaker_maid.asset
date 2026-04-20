@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: speaker_maid
   m_EditorClassIdentifier: Assembly-CSharp::SO_DialogueSpeakerDefinition
   _id: speaker_maid
-  _displayName: "\uD558\uB140"
+  _displayName: "\uB9C8\uB9AC(\uD558\uB140)"
   _defaultVisualState: 0

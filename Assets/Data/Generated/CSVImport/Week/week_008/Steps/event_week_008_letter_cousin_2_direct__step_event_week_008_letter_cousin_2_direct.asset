@@ -16,7 +16,7 @@ MonoBehaviour:
   _bodyText: "letter cousin_2 Direct \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 5bb39217ef6e2284f84306acd528c0b3, type: 2}
-    _text: "\uC0AC\uCD0C 2 \uB3C4\uB828\uB2D8\uC774 \uC5EC\uD589\uC9C0\uC5D0\uC11C
+    _text: "\uB9AC\uC548 \uB3C4\uB828\uB2D8\uC774 \uC5EC\uD589\uC9C0\uC5D0\uC11C
       \uBCF4\uB0B4\uC2E0 \uC120\uBB3C\uC774 \uB3C4\uCC29\uD588\uC2B5\uB2C8\uB2E4."
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
     _text: "\uC870\uAC1C\uAECD\uB370\uAE30\uB2E4! \uC9C4\uC9DC \uC608\uBED0."
@@ -30,7 +30,7 @@ MonoBehaviour:
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
     _text: "\uC751. \uAC54\uAC00 \uC624\uBA74 \uB098\uB3C4 \uB0B4\uAC00 \uC81C\uC77C
       \uC544\uB07C\uB294 \uB9CC\uB144\uD544 \uC120\uBB3C\uD560\uB798."
-  _nemoLine: "\uC0AC\uCD0C 2 \uB3C4\uB828\uB2D8\uC774 \uC5EC\uD589\uC9C0\uC5D0\uC11C
+  _nemoLine: "\uB9AC\uC548 \uB3C4\uB828\uB2D8\uC774 \uC5EC\uD589\uC9C0\uC5D0\uC11C
     \uBCF4\uB0B4\uC2E0 \uC120\uBB3C\uC774 \uB3C4\uCC29\uD588\uC2B5\uB2C8\uB2E4."
   _useCustomVisualState: 0
   _visualState: 0

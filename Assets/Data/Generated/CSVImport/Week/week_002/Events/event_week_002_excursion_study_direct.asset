@@ -16,8 +16,7 @@ MonoBehaviour:
   _title: study Direct
   _priority: 10
   _conditions:
-    _requiredFlags:
-    - {fileID: 11400000, guid: 8490cdf16f41f67419098022dc85b921, type: 2}
+    _requiredFlags: []
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:
