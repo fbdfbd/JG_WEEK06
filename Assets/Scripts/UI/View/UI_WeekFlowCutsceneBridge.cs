@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UI_WeekFlowCutsceneBridge : WeekFlowCutsceneBridgeBase
 {
+    [SerializeField] private SO_WeekFlowCutsceneCatalogGroup _catalogGroup;
     [SerializeField] private SO_WeekFlowCutsceneCatalog _catalog;
     [SerializeField] private WeekFlowCutscenePlayerBase[] _players;
 
@@ -41,7 +42,7 @@ public class UI_WeekFlowCutsceneBridge : WeekFlowCutsceneBridgeBase
             yield break;
         }
 
-        if (!_resolver.TryResolveCutsceneId(request, _catalog, out string cutsceneId))
+        if (!TryResolveCutsceneId(request, out string cutsceneId))
         {
             yield break;
         }
@@ -100,6 +101,27 @@ public class UI_WeekFlowCutsceneBridge : WeekFlowCutsceneBridgeBase
 
             _playerLookup[player.CutsceneId] = player;
         }
+    }
+
+    private bool TryResolveCutsceneId(WeekFlowCutsceneRequest request, out string cutsceneId)
+    {
+        cutsceneId = string.Empty;
+
+        if (_catalogGroup != null)
+        {
+            SO_WeekFlowCutsceneCatalog weekCatalog = _catalogGroup.GetWeekCatalog(request.WeekId);
+            if (_resolver.TryResolveCutsceneId(request, weekCatalog, out cutsceneId))
+            {
+                return true;
+            }
+
+            if (_resolver.TryResolveCutsceneId(request, _catalogGroup.DefaultCatalog, out cutsceneId))
+            {
+                return true;
+            }
+        }
+
+        return _resolver.TryResolveCutsceneId(request, _catalog, out cutsceneId);
     }
 
     private IEnumerator PlaySessionPlayer(WeekFlowCutscenePlayerBase player, WeekFlowCutsceneRequest request)
