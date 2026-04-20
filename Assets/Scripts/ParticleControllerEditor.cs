@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 // ⚠️ 반드시 Editor 폴더 안에 위치시킬 것
 // Assets/Editor/ParticleControllerEditor.cs
 
@@ -32,3 +33,4 @@ namespace GameParticle.Editor
         }
     }
 }
+#endif
