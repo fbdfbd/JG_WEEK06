@@ -10853,6 +10853,7 @@ MonoBehaviour:
   _toastManager: {fileID: 1499134517}
   _dialogPanel: {fileID: 600263494}
   _interactionPanel: {fileID: 1588875544}
+  _canvasRect: {fileID: 0}
   _talkText: {fileID: 1886090637}
   textDuration: 0.5
   _particle:
@@ -18630,6 +18631,10 @@ PrefabInstance:
       propertyPath: interactPanel
       value: 
       objectReference: {fileID: 1588875544}
+    - target: {fileID: 6629327663855515327, guid: 93cc6f5d744759a44be17ffed0b6b4e3, type: 3}
+      propertyPath: _dialogController
+      value: 
+      objectReference: {fileID: 911415173}
     - target: {fileID: 6719548284958993298, guid: 93cc6f5d744759a44be17ffed0b6b4e3, type: 3}
       propertyPath: m_Name
       value: Nemo
@@ -21576,7 +21581,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   _advanceHoldDelay: 0.35
-  _advanceRepeatInterval: 0.08
+  _advanceRepeatInterval: 0.04
 --- !u!4 &2061557645
 Transform:
   m_ObjectHideFlags: 0
