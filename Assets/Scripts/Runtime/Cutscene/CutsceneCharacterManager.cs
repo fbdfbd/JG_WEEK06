@@ -46,9 +46,11 @@ public class CutsceneCharacterManager : MonoBehaviour
     [Header("Spawn Points")]
     [SerializeField] private Transform _leftSpawnPoint;
     [SerializeField] private Transform _rightSpawnPoint;
+    [SerializeField] private Transform _centerSpawnPoint;
 
     private GameObject _leftCharacterInstance;
     private GameObject _rightCharacterInstance;
+    private GameObject _centerCharacterInstance;
 
     public void ShowLeft(CutsceneCharacterType characterType)
     {
@@ -61,6 +63,19 @@ public class CutsceneCharacterManager : MonoBehaviour
 
         ShowCharacter(character, _leftSpawnPoint, false);
         _leftCharacterInstance = character;
+    }
+
+    public void ShowCenter(CutsceneCharacterType characterType)
+    {
+        GameObject character = FindPrefab(characterType);
+        if (character == null)
+        {
+            _centerCharacterInstance = null;
+            return;
+        }
+
+        ShowCharacter(character, _centerSpawnPoint, false);
+        _centerCharacterInstance = character;
     }
 
     public void ShowRight(CutsceneCharacterType characterType)
@@ -80,6 +95,7 @@ public class CutsceneCharacterManager : MonoBehaviour
     {
         HideLeft();
         HideRight();
+        HideCenter();
     }
 
     public void HideLeft()
@@ -88,6 +104,14 @@ public class CutsceneCharacterManager : MonoBehaviour
 
         _leftCharacterInstance.SetActive(false);
         _leftCharacterInstance = null;
+    }
+
+    public void HideCenter()
+    {
+        if (_centerCharacterInstance == null) return;
+
+        _centerCharacterInstance.SetActive(false);
+        _centerCharacterInstance = null;
     }
 
     public void HideRight()
@@ -102,6 +126,12 @@ public class CutsceneCharacterManager : MonoBehaviour
     {
         return _leftCharacterInstance;
     }
+
+    public GameObject GetCenterInstance()
+    {
+        return _centerCharacterInstance;
+    }
+
     public GameObject GetRightInstance()
     {
         return _rightCharacterInstance;
