@@ -21,6 +21,18 @@ public enum CutsceneCharacterType
 
 public class CutsceneCharacterManager : MonoBehaviour
 {
+    public static CutsceneCharacterManager I { get; private set; }
+
+    private void Awake()
+    {
+        if (I != null && I != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        I = this;
+    }
+
     [Serializable]
     private class CharacterPrefabEntry
     {
