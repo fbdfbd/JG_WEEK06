@@ -15,8 +15,9 @@ MonoBehaviour:
   _id: card_excursion_library_week_003
   _cardType: {fileID: 11400000, guid: dbafb5c030c34524294075dd28cedafe, type: 2}
   _title: "\uB3C4\uC11C\uAD00 3\uC8FC\uCC28"
-  _originalText: "\uB3C4\uC11C\uAD00\uC5D0\uC11C \uB124\uBAA8\uAC00 \"\uC9C4\uC9DC?\"
-    \uBC18\uC751\uD55C\uB2E4."
+  _originalText: "\uBCC4\uBE5B\uC774 \uB5A0\uC624\uB974\uB294 \uCC45\uC744 \uB9C8\uC8FC\uD55C\uB2E4.
+    \uC190\uB300\uC9C0 \uBABB\uD558\uAC8C \uD560\uC9C0 \uBCC4\uC790\uB9AC\uB97C \uB530\uB77C\uAC00
+    \uBCF4\uAC8C \uD560\uC9C0 \uC815\uD55C\uB2E4."
   _options:
   - _semantic: 2
     _label: "\uBC29\uBB38\uC744 \uB9C9\uB294\uB2E4"

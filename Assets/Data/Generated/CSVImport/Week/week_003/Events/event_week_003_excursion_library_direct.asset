@@ -16,7 +16,8 @@ MonoBehaviour:
   _title: library Direct
   _priority: 10
   _conditions:
-    _requiredFlags: []
+    _requiredFlags:
+    - {fileID: 11400000, guid: c46d1188446bd8544a8d35ef9ad90c94, type: 2}
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:

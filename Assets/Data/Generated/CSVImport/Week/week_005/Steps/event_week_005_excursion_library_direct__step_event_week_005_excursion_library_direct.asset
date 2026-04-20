@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_week_005_excursion_library_direct__step_event_week_005_excursion_library_direct
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: library Direct
+  _titleOverride: "\uB3C4\uC11C\uAD00 \uD5C8\uAC00"
   _bodyText: "excursion library Direct \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
     _text: "(\uB124\uBAA8\uAC00 \uC8FC\uC11D \uC606\uC5D0 \uC790\uAE30 \uC0DD\uAC01\uC744
       \uC791\uAC8C \uB367\uBD99\uC5EC \uC801\uB294\uB2E4.)"
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: "'\uC800\uB294 \uC774 \uAD6C\uC808\uC774 \uC624\uD788\uB824 \uC704\uB85C\uAC00
+    _text: "\uC800\uB294 \uC774 \uAD6C\uC808\uC774 \uC624\uD788\uB824 \uC704\uB85C\uAC00
       \uB418\uB294\uB370\uC694?'"
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
     _text: "(\uC606\uC5D0\uC11C \uC9C0\uCF1C\uBCF4\uB358 \uC0AC\uC11C\uAC00 \uC870\uC6A9\uD788

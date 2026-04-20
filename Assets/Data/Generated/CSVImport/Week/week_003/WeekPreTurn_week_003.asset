@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
-  m_Name: WeekPreTurn_week_003
+  m_Name: week_003_PreTurn
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
   _title: 
   _summary: 
@@ -57,21 +57,36 @@ MonoBehaviour:
   - _card: {fileID: 11400000, guid: 93a30023aacf8f34d9bf45a43a1ea200, type: 2}
     _isRequired: 1
     _displayOrder: 13
-  - _card: {fileID: 11400000, guid: 6f746accc8ea192469032218810e0faa, type: 2}
+  - _card: {fileID: 11400000, guid: 504e3ead8548e064b98c1d51bb67887b, type: 2}
     _isRequired: 1
     _displayOrder: 14
-  - _card: {fileID: 11400000, guid: 6cfb370eac9f17d46ad99d4d4c302f1f, type: 2}
+  - _card: {fileID: 11400000, guid: 751ed7ece072182418c479b67b69b89e, type: 2}
     _isRequired: 1
     _displayOrder: 15
+  - _card: {fileID: 11400000, guid: cb4f08dbc2ac3f24cafd60a0dd559902, type: 2}
+    _isRequired: 1
+    _displayOrder: 16
+  - _card: {fileID: 11400000, guid: 9e67bdd61e2de8a4f9cfe4582076651c, type: 2}
+    _isRequired: 1
+    _displayOrder: 17
+  - _card: {fileID: 11400000, guid: 67d29776d1490b045950f7fba98d2622, type: 2}
+    _isRequired: 1
+    _displayOrder: 18
+  - _card: {fileID: 11400000, guid: a017be9d8f0cc2741ac77b88c54b14e0, type: 2}
+    _isRequired: 1
+    _displayOrder: 19
+  - _card: {fileID: 11400000, guid: 994b765e4263c7a4289f16de63444eb3, type: 2}
+    _isRequired: 1
+    _displayOrder: 20
   - _card: {fileID: 11400000, guid: 9d320a3fbef64a94faff764a84d9eaac, type: 2}
     _isRequired: 0
-    _displayOrder: 16
+    _displayOrder: 21
   - _card: {fileID: 11400000, guid: 93d1fbdddbe0774458b5b3e817b7041e, type: 2}
     _isRequired: 0
-    _displayOrder: 17
+    _displayOrder: 22
   - _card: {fileID: 11400000, guid: 9ed3b6d5685c772499ab484c9125c48e, type: 2}
     _isRequired: 0
-    _displayOrder: 18
+    _displayOrder: 23
   - _card: {fileID: 11400000, guid: 08a13e0fa94bcfd42adaedc1e880c836, type: 2}
     _isRequired: 0
-    _displayOrder: 19
+    _displayOrder: 24

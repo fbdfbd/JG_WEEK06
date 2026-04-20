@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82477aacd1d46994fa0595b03679138c, type: 3}
-  m_Name: WeekDayFlow_week_008
+  m_Name: week_008_DayFlow
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekDayFlowDefinition
   _routineEvents:
   - {fileID: 11400000, guid: 6b117244fd6574042a95557715050694, type: 2}
@@ -45,10 +45,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c94ab3ed692dda41957ecf8bef52c77, type: 2}
   - {fileID: 11400000, guid: f943f37a5d9f3c043945358283707e4d, type: 2}
   - {fileID: 11400000, guid: 0cfc0077cf5e3514e915fe512f660647, type: 2}
-  - {fileID: 11400000, guid: 48b5d2d504b2dca4ea8b46124a6ebef1, type: 2}
-  - {fileID: 11400000, guid: 220502124366a9942a10f9bbc62e174a, type: 2}
-  - {fileID: 11400000, guid: 04d9ed91d4ee4b041a712f8d025dab7b, type: 2}
-  - {fileID: 11400000, guid: dcb40e18e25249f48afb139a2a2076c8, type: 2}
-  - {fileID: 11400000, guid: 3b4d8df1901f13340b63a43f68bea80e, type: 2}
-  - {fileID: 11400000, guid: 61a69762a84391c41abaf393fe0e6086, type: 2}
+  - {fileID: 11400000, guid: dc6660728e83491439d7e9720ab75fe4, type: 2}
+  - {fileID: 11400000, guid: 1fbf5380f6e981946af47a980276b40f, type: 2}
+  - {fileID: 11400000, guid: fe94ff9888b6cfc4f82980ba67894a6c, type: 2}
+  - {fileID: 11400000, guid: 5468b0fcf81aaed459ec1c839a3494ef, type: 2}
+  - {fileID: 11400000, guid: 9184a8c9fa63e814095c17cb22c89f9d, type: 2}
+  - {fileID: 11400000, guid: 926fa48ed508a6c408789babcbda18bc, type: 2}
+  - {fileID: 11400000, guid: afcda6f2d40cfed42a85c4897d72970c, type: 2}
+  - {fileID: 11400000, guid: 4e8716c309affb64f88161cb832865da, type: 2}
+  - {fileID: 11400000, guid: b1cda4f30ffab264a89579747bd42039, type: 2}
+  - {fileID: 11400000, guid: 52566f059eb32344b80c2d737fb3601f, type: 2}
+  - {fileID: 11400000, guid: 5960bb6deee45a54ebc2fae09083cc18, type: 2}
+  - {fileID: 11400000, guid: bae2ddfe0452aa44497097083f07a9eb, type: 2}
+  - {fileID: 11400000, guid: 332c8f2a6717a804d87df8325be21ae9, type: 2}
+  - {fileID: 11400000, guid: cc294cf0a63fe6a40bc3fc40dd7529bc, type: 2}
+  - {fileID: 11400000, guid: 8598bd7c178981e418dc5b5b4e1a7e8e, type: 2}
+  - {fileID: 11400000, guid: a5b47414e585650489aab814197d4f8c, type: 2}
+  - {fileID: 11400000, guid: 46c510b781a1f7b4780b681810c66719, type: 2}
+  - {fileID: 11400000, guid: e383b8e2c29eefb448e7dae234e2bde2, type: 2}
   _storyEvents: []

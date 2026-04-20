@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
-  m_Name: WeekPreTurn_week_001
+  m_Name: week_001_PreTurn
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
   _title: 
   _summary: 
@@ -57,21 +57,27 @@ MonoBehaviour:
   - _card: {fileID: 11400000, guid: 93a30023aacf8f34d9bf45a43a1ea200, type: 2}
     _isRequired: 1
     _displayOrder: 13
-  - _card: {fileID: 11400000, guid: 5497435953f16de4c8f0bb27e179ca1f, type: 2}
-    _isRequired: 1
-    _displayOrder: 14
-  - _card: {fileID: 11400000, guid: f79d35ecf52d83742b59e3309fdbe51b, type: 2}
-    _isRequired: 1
-    _displayOrder: 15
-  - _card: {fileID: 11400000, guid: 230258348c0a2ea4599d97d75095b99a, type: 2}
-    _isRequired: 1
-    _displayOrder: 16
-  - _card: {fileID: 11400000, guid: ee1f2a7219784ba42a44630863a18a3b, type: 2}
-    _isRequired: 1
-    _displayOrder: 17
-  - _card: {fileID: 11400000, guid: 1a27c300f4238dc45a026e267227617b, type: 2}
-    _isRequired: 1
-    _displayOrder: 18
   - _card: {fileID: 11400000, guid: d9d2e09cae518774aaf50116e8fc410b, type: 2}
     _isRequired: 0
+    _displayOrder: 14
+  - _card: {fileID: 11400000, guid: 093d0b97724580848b9f635ab5b44f8e, type: 2}
+    _isRequired: 1
+    _displayOrder: 15
+  - _card: {fileID: 11400000, guid: 3d180c3c6c3d813488b6b9865d39c2bf, type: 2}
+    _isRequired: 1
+    _displayOrder: 16
+  - _card: {fileID: 11400000, guid: 46b93eccb31bc0b44bbf0db5c5339330, type: 2}
+    _isRequired: 1
+    _displayOrder: 17
+  - _card: {fileID: 11400000, guid: d97686ea6d6195f47ab50cfc81265a6d, type: 2}
+    _isRequired: 1
+    _displayOrder: 18
+  - _card: {fileID: 11400000, guid: 955eee5fd1d96e54a865d0aaf42c0181, type: 2}
+    _isRequired: 1
     _displayOrder: 19
+  - _card: {fileID: 11400000, guid: 9205a4a788bf6904a82506c9469484dd, type: 2}
+    _isRequired: 1
+    _displayOrder: 20
+  - _card: {fileID: 11400000, guid: fb5fd828595301c489e472c399a95d2e, type: 2}
+    _isRequired: 1
+    _displayOrder: 21

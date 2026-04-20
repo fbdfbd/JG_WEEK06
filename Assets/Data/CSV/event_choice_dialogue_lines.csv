@@ -1,1 +1,8 @@
 ﻿event_id,step_id,choice_id,line_order,speaker_id,text
+story_letter_suspected,step_story_letter_01,choice_story_admit,0,speaker_maid,네... 다 말씀드리진 못했습니다.
+story_letter_suspected,step_story_letter_01,choice_story_admit,1,speaker_nemo,그래도 지금은 들을래.
+story_letter_suspected,step_story_letter_01,choice_story_deny,0,speaker_maid,정말 별일 아니었습니다.
+story_letter_suspected,step_story_letter_01,choice_story_deny,1,speaker_nemo,정말?
+night_outside_interest,step_night_outside_01,choice_night_open,0,speaker_nemo,다음엔 같이 보자.
+night_outside_interest,step_night_outside_01,choice_night_open,1,speaker_maid,그러면 제가 곁에서 도울게요.
+night_outside_interest,step_night_outside_01,choice_night_delay,0,speaker_maid,오늘은 여기까지만 하시죠.

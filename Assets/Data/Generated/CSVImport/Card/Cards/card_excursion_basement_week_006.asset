@@ -15,9 +15,9 @@ MonoBehaviour:
   _id: card_excursion_basement_week_006
   _cardType: {fileID: 11400000, guid: dbafb5c030c34524294075dd28cedafe, type: 2}
   _title: "\uC9C0\uD558\uC2E4 6\uC8FC\uCC28"
-  _originalText: "\uC9C0\uD558\uC2E4\uC5D0\uC11C \uB124\uBAA8\uAC00 \"\uADF8\uB798\uC11C
-    \u2018\uC5BC\uB9C8 \uC548 \uB0A8\uC558\uB2E4\u2019\uACE0 \uC801\uC740 \uAC70\uC57C?\"
-    \uBC18\uC751\uD55C\uB2E4."
+  _originalText: "\uC640\uC778\uBCD1 \uACC1\uC758 \uBA54\uBAA8\uB97C \uBCF4\uACE0
+    \uBCF4\uAD00\uC5D0\uB3C4 \uB54C\uAC00 \uC788\uB2E4\uB294 \uB9D0\uC744 \uB4E3\uAC8C
+    \uB41C\uB2E4. \uC228\uAE38\uC9C0 \uC124\uBA85\uD574\uC904\uC9C0 \uC815\uD55C\uB2E4."
   _options:
   - _semantic: 2
     _label: "\uBC29\uBB38\uC744 \uB9C9\uB294\uB2E4"
