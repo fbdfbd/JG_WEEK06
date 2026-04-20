@@ -1,7 +1,4 @@
-﻿card_id,option_order,semantic,label,presented_text,interaction_ids
-card_001_parentsletter,0,Direct,그대로 전달,편지를 거의 숨김 없이 그대로 읽어 준다.,trust_plus_1|reaction_log_letter_open
-card_001_parentsletter,1,Modified,완곡하게 전달,걱정스러운 문장을 덜어내고 정리해서 전한다.,curiosity_plus_1
-card_001_parentsletter,2,Blocked,보류한다,편지는 잠시 감춰 두고 오늘은 전하지 않는다.,anxiety_plus_1|letter_suspected_flag
+card_id,option_order,semantic,label,presented_text,interaction_ids
 card_002_courtyardrumor,0,Direct,있는 그대로 말한다,바깥에서 들은 말과 분위기를 그대로 옮긴다.,outside_interest_bundle
 card_002_courtyardrumor,1,Modified,조금 누그러뜨린다,자극적인 부분을 덜어내고 핵심만 전한다.,trust_plus_1
 card_002_courtyardrumor,2,Blocked,말하지 않는다,네모를 흔들 수 있는 소문은 입 밖에 내지 않는다.,anxiety_plus_1

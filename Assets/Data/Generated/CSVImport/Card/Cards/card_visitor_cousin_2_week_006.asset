@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_visitor_cousin_2_week_006
   _cardType: {fileID: 11400000, guid: 7e3b393c621280e459460f44ff349d9c, type: 2}
-  _title: "\uC0AC\uCD0C2 6\uC8FC\uCC28"
-  _originalText: "\uC0AC\uCD0C2\uC5D0\uC11C \uB124\uBAA8\uAC00 \"\uBD10, '\uB124\uBAA8\uB791
-    \uC0AC\uCD0C 2'. \uC774\uB807\uAC8C \uC801\uC5B4\uB450\uBA74 \uC6B0\uB9AC \uB098\uC911\uC5D0\"
-    \uBC18\uC751\uD55C\uB2E4."
+  _title: "\uB9AC\uC548 6\uC8FC\uCC28"
+  _originalText: "\uB9AC\uC548\uC774 \uBC31\uC791\uC758 \uAE43\uD39C\uC73C\uB85C
+    \uB458\uB9CC\uC758 \uD754\uC801\uC744 \uB0A8\uAE30\uB824 \uD55C\uB2E4. \uC774
+    \uC6B0\uC815\uC744 \uAE30\uB85D\uC73C\uB85C \uB0A8\uAE38\uC9C0 \uC815\uD55C\uB2E4."
   _options:
   - _semantic: 2
     _label: "\uB9CC\uB0A8\uC744 \uB9C9\uB294\uB2E4"

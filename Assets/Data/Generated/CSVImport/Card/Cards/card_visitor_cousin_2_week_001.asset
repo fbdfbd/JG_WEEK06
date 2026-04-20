@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_visitor_cousin_2_week_001
   _cardType: {fileID: 11400000, guid: 7e3b393c621280e459460f44ff349d9c, type: 2}
-  _title: "\uC0AC\uCD0C2 1\uC8FC\uCC28"
-  _originalText: "\uC0AC\uCD0C2\uC5D0\uC11C \uB124\uBAA8\uAC00 \"\uC548\uB155.\"
-    \uBC18\uC751\uD55C\uB2E4."
+  _title: "\uB9AC\uC548 1\uC8FC\uCC28"
+  _originalText: "\uB0AF\uC744 \uAC00\uB9AC\uB294 \uB9AC\uC548\uACFC \uCC98\uC74C
+    \uC778\uC0AC\uB97C \uB098\uB208\uB2E4. \uC9E7\uAC8C \uC2A4\uCE58\uAC8C \uD560\uC9C0
+    \uB9D0\uC744 \uC11E\uAC8C \uD560\uC9C0 \uACB0\uC815\uD55C\uB2E4."
   _options:
   - _semantic: 2
     _label: "\uB9CC\uB0A8\uC744 \uB9C9\uB294\uB2E4"

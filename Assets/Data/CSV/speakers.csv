@@ -1,4 +1,4 @@
-﻿speaker_id,display_name,default_visual_state
+speaker_id,display_name,default_visual_state
 speaker_nemo,네모,Neutral
 speaker_gardener,정원사,Neutral
 speaker_gardener_1,정원사1,Neutral
@@ -13,11 +13,11 @@ speaker_maid_1,하녀1,Neutral
 speaker_maid_2,하녀2,Neutral
 speaker_worker_1,사용인1,Neutral
 speaker_worker_2,사용인2,Neutral
-speaker_cousin_1,사촌1,Neutral
-speaker_cousin_2,사촌2,Neutral
-speaker_friend_1,친구1,Neutral
-speaker_friend_2,친구2,Neutral
-speaker_friend_3,친구3,Neutral
+speaker_cousin_1,카이안 레온하르트,Neutral
+speaker_cousin_2,리안,Neutral
+speaker_friend_1,막스,Neutral
+speaker_friend_2,밀리아,Neutral
+speaker_friend_3,유피,Neutral
 speaker_count,백작,Neutral
 speaker_narrator,(지문),Neutral
 speaker_npc,NPC,Neutral

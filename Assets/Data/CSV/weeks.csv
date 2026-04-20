@@ -1,4 +1,4 @@
-﻿week_id,week_index,title,summary,preturn_title,preturn_summary,on_week_start_interaction_ids,on_week_end_interaction_ids
+week_id,week_index,title,summary,preturn_title,preturn_summary,on_week_start_interaction_ids,on_week_end_interaction_ids
 week_001,1,유년기 1주차,유년기 첫 번째 주차,,,,week_001_wrapup_log
 week_002,2,유년기 2주차,유년기 두 번째 주차,,,,week_002_wrapup_log
 week_003,3,유년기 3주차,유년기 세 번째 주차,,,,week_003_wrapup_log

@@ -1,4 +1,4 @@
-﻿week_id,display_order,card_id,is_required
+week_id,display_order,card_id,is_required
 week_001,0,card_excursion_garden_week_001,true
 week_001,1,card_excursion_lake_week_001,true
 week_001,2,card_excursion_basement_week_001,true
@@ -15,10 +15,9 @@ week_001,12,card_textbook_nature,true
 week_001,13,card_textbook_posture,true
 week_001,14,card_house_talk_week_001,true
 week_001,15,card_external_week_001,true
-week_001,16,card_001_parentsletter,true
-week_001,17,card_002_courtyardrumor,true
-week_001,18,card_003_tutorvisit,true
-week_001,19,card_004_lineagebook,false
+week_001,16,card_002_courtyardrumor,true
+week_001,17,card_003_tutorvisit,true
+week_001,18,card_004_lineagebook,false
 week_002,0,card_excursion_garden_week_002,true
 week_002,1,card_excursion_lake_week_002,true
 week_002,2,card_excursion_basement_week_002,true
