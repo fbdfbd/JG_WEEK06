@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39c763d9dae71b40b6f78e707e22aa5, type: 3}
+  m_Name: event_w000
+  m_EditorClassIdentifier: Assembly-CSharp::SO_WeekFlowCutsceneCatalog
+  _entries:
+  - _displayName: event_w000_tutorial_intro__step_w000_tutorial_intro_01
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_000
+    _eventId: event_w000_tutorial_intro
+    _stepName: event_w000_tutorial_intro__step_w000_tutorial_intro_01
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_w000_tutorial_intro__step_w000_tutorial_intro_01
+  - _displayName: event_w000_tutorial_intro__step_w000_tutorial_intro_02
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_000
+    _eventId: event_w000_tutorial_intro
+    _stepName: event_w000_tutorial_intro__step_w000_tutorial_intro_02
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_w000_tutorial_intro__step_w000_tutorial_intro_02_cutscene
+  - _displayName: event_w000_tutorial_intro__step_w000_tutorial_intro_03
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_000
+    _eventId: event_w000_tutorial_intro
+    _stepName: event_w000_tutorial_intro__step_w000_tutorial_intro_03
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_w000_tutorial_intro__step_w000_tutorial_intro_03_cutscene
+  - _displayName: event_w000_tutorial_intro__step_w000_tutorial_intro_04
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 1
+    _weekId: week_000
+    _eventId: event_w000_tutorial_intro
+    _stepName: event_w000_tutorial_intro__step_w000_tutorial_intro_04
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_w000_tutorial_intro__step_w000_tutorial_intro_04_cutscene

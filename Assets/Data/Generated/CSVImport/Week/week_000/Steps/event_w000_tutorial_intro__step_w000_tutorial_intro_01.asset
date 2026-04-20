@@ -12,18 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_w000_tutorial_intro__step_w000_tutorial_intro_01
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: ""
-  _bodyText: ""
+  _titleOverride: 
+  _bodyText: 
   _dialogueLines:
-  - _speaker: {fileID: 11400000, guid: 1015af0772cfbee45a960aa56bf8a245, type: 2}
-    _text: "백작님, 안건 보고드립니다."
-  - _speaker: {fileID: 11400000, guid: 1015af0772cfbee45a960aa56bf8a245, type: 2}
-    _text: "근 24시간 내 네모 아가씨께선 별 탈 없이 지내셨습니다. 다만 아침부터 창가에 앉아 계신 걸 보면 기다리시는 눈치입니다."
-  - _speaker: {fileID: 11400000, guid: 1015af0772cfbee45a960aa56bf8a245, type: 2}
-    _text: "그리고 어제 밤 침입자가 아가씨 방쪽 벽을 타다 경비에게 쫓겨 달아났습니다."
-  - _speaker: {fileID: 11400000, guid: 1015af0772cfbee45a960aa56bf8a245, type: 2}
-    _text: "경로로 보아 누군가 고의로 보낸 것으로 추정되는데. 조사 중입니다."
-  _nemoLine: ""
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uBC31\uC791\uB2D8, \uC548\uAC74 \uBCF4\uACE0\uB4DC\uB9BD\uB2C8\uB2E4."
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uADFC 24\uC2DC\uAC04 \uB0B4 \uB124\uBAA8 \uC544\uAC00\uC528\uAED8\uC120
+      \uBCC4 \uD0C8 \uC5C6\uC774 \uC9C0\uB0B4\uC168\uC2B5\uB2C8\uB2E4. \uB2E4\uB9CC
+      \uC544\uCE68\uBD80\uD130 \uCC3D\uAC00\uC5D0 \uC549\uC544 \uACC4\uC2E0 \uAC78
+      \uBCF4\uBA74 \uAE30\uB2E4\uB9AC\uC2DC\uB294 \uB208\uCE58\uC785\uB2C8\uB2E4."
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uADF8\uB9AC\uACE0 \uC5B4\uC81C \uBC24 \uCE68\uC785\uC790\uAC00 \uC544\uAC00\uC528
+      \uBC29\uCABD \uBCBD\uC744 \uD0C0\uB2E4 \uACBD\uBE44\uC5D0\uAC8C \uCAD3\uACA8
+      \uB2EC\uC544\uB0AC\uC2B5\uB2C8\uB2E4."
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uACBD\uB85C\uB85C \uBCF4\uC544 \uB204\uAD70\uAC00 \uACE0\uC758\uB85C
+      \uBCF4\uB0B8 \uAC83\uC73C\uB85C \uCD94\uC815\uB418\uB294\uB370. \uC870\uC0AC
+      \uC911\uC785\uB2C8\uB2E4."
+  _nemoLine: 
   _useCustomVisualState: 0
   _visualState: 0
   _onEnterInteractions: []

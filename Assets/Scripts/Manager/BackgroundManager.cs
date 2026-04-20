@@ -13,6 +13,7 @@ public enum BackgroundType
     Lake,
     Study,
     Hallway,
+    Basement,
 }
 
 public enum BackgroundTransitionMode
