@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_greenhouse_glass_rumor_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_greenhouse_glass_rumor_modified
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_greenhouse_glass_rumor_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_greenhouse_glass_rumor_direct
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_fountain_fish_rumor_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_fountain_fish_rumor_modified
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_attic_window_rumor_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_attic_window_rumor_direct
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -445,15 +445,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_cousin_1_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_cousin_1_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 5
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 5
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_cooking_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_cooking_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -1271,15 +1271,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_cousin_1_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_cousin_1_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 5
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 5
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1329,15 +1329,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_garden_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_garden_direct
   _backgroundType: 4
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 8
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1445,7 +1445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_external_w003_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_external_w003_direct
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -1503,15 +1503,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_friend_2_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_friend_2_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 3
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 3
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1653,15 +1653,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_cousin_2_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_cousin_2_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 6
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 6
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1711,7 +1711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_candle_rumor_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_candle_rumor_blocked
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -1769,15 +1769,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_friend_2_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_friend_2_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 3
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 3
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1827,7 +1827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_external_w003_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_external_w003_modified
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -1966,15 +1966,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_library_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_library_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 12
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2024,7 +2024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_1_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_1_direct
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -2082,7 +2082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_etiquette_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_etiquette_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -2125,78 +2125,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_WeekFlowCutsceneBridge
   _catalogGroup: {fileID: 11400000, guid: f73adb71acedead438f8657274fe78dd, type: 2}
-  _catalog: {fileID: 11400000, guid: 6c80117e1e76f9c47b609251155e18b6, type: 2}
+  _catalog: {fileID: 11400000, guid: 36da2eec5b5a2554b879213fee2c67e0, type: 2}
   _players:
-  - {fileID: 777126245}
-  - {fileID: 1202396248}
-  - {fileID: 507822893}
-  - {fileID: 688457778}
-  - {fileID: 1560258991}
-  - {fileID: 2002511858}
-  - {fileID: 1947310031}
-  - {fileID: 1286719627}
-  - {fileID: 410080806}
-  - {fileID: 297894775}
-  - {fileID: 635033327}
-  - {fileID: 629650413}
-  - {fileID: 50068172}
-  - {fileID: 170968769}
-  - {fileID: 1053726197}
-  - {fileID: 2106996844}
-  - {fileID: 552928991}
-  - {fileID: 1218472805}
-  - {fileID: 392473727}
-  - {fileID: 1489840735}
-  - {fileID: 1860091948}
-  - {fileID: 1845495507}
-  - {fileID: 799418349}
-  - {fileID: 311605757}
-  - {fileID: 2040479250}
-  - {fileID: 2044572710}
-  - {fileID: 1383465987}
-  - {fileID: 962757487}
-  - {fileID: 1430357224}
-  - {fileID: 518044995}
-  - {fileID: 1358413487}
-  - {fileID: 1362745446}
-  - {fileID: 460329544}
-  - {fileID: 1589248654}
-  - {fileID: 1166966434}
-  - {fileID: 1170887538}
-  - {fileID: 529888669}
-  - {fileID: 1971289622}
-  - {fileID: 35897837}
-  - {fileID: 1991510057}
-  - {fileID: 1572882777}
-  - {fileID: 16637622}
-  - {fileID: 7369647}
-  - {fileID: 1981134486}
-  - {fileID: 1008169721}
-  - {fileID: 24436143}
-  - {fileID: 248165076}
-  - {fileID: 936835373}
-  - {fileID: 1922738724}
-  - {fileID: 855184194}
-  - {fileID: 209873889}
-  - {fileID: 275080378}
-  - {fileID: 1911857411}
-  - {fileID: 438814023}
-  - {fileID: 1295448233}
-  - {fileID: 1885059892}
-  - {fileID: 830758229}
-  - {fileID: 1850821731}
-  - {fileID: 323609482}
-  - {fileID: 1106715056}
-  - {fileID: 1219207759}
-  - {fileID: 1246388461}
-  - {fileID: 2125265577}
-  - {fileID: 2006029950}
-  - {fileID: 608476812}
-  - {fileID: 733482131}
-  - {fileID: 617005700}
-  - {fileID: 654339860}
-  - {fileID: 808969488}
-  - {fileID: 1743671975}
+  - {fileID: 2056338117}
+  - {fileID: 408596032}
+  - {fileID: 1345133265}
+  - {fileID: 131462322}
+  - {fileID: 1836992135}
+  - {fileID: 868384168}
+  - {fileID: 2042761696}
+  - {fileID: 1053933462}
+  - {fileID: 1456410099}
+  - {fileID: 1094803819}
+  - {fileID: 1006605679}
+  - {fileID: 413408841}
+  - {fileID: 184323245}
+  - {fileID: 547911370}
+  - {fileID: 801725874}
+  - {fileID: 981797356}
+  - {fileID: 395347648}
+  - {fileID: 374809572}
+  - {fileID: 370583984}
+  - {fileID: 1267404360}
+  - {fileID: 1050862389}
+  - {fileID: 1671442376}
+  - {fileID: 1650633344}
+  - {fileID: 2138456004}
+  - {fileID: 1215996615}
+  - {fileID: 1211771327}
+  - {fileID: 1208273972}
+  - {fileID: 754195942}
+  - {fileID: 1224422376}
+  - {fileID: 1744755015}
+  - {fileID: 1740489543}
+  - {fileID: 234178368}
+  - {fileID: 1496917905}
+  - {fileID: 424329285}
+  - {fileID: 212905068}
+  - {fileID: 259148792}
+  - {fileID: 1326814082}
+  - {fileID: 1339312634}
+  - {fileID: 850170897}
+  - {fileID: 403940524}
+  - {fileID: 904391298}
+  - {fileID: 891521798}
+  - {fileID: 895660194}
+  - {fileID: 1542131537}
+  - {fileID: 916391169}
+  - {fileID: 920527229}
+  - {fileID: 1554407416}
+  - {fileID: 1558685088}
+  - {fileID: 1097757807}
+  - {fileID: 1118776875}
 --- !u!4 &357928816
 Transform:
   m_ObjectHideFlags: 0
@@ -2279,15 +2259,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_study_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_study_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 12
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2337,15 +2317,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_study_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_study_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 12
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2395,15 +2375,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_friend_2_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_friend_2_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 3
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 3
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2563,15 +2543,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_library_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_library_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 12
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2605,9 +2585,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93167563d2f279a46b9bbff067ae7701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeekFlowController
-  _weekDefinition: {fileID: 11400000, guid: ece288bcaf71db44fb7b9baf016379cc, type: 2}
+  _weekDefinition: {fileID: 11400000, guid: f2653ee6ce5a6bb48ae0a8d891fc4411, type: 2}
   _weekDefinitions:
-  - {fileID: 11400000, guid: ece288bcaf71db44fb7b9baf016379cc, type: 2}
+  - {fileID: 11400000, guid: f2653ee6ce5a6bb48ae0a8d891fc4411, type: 2}
   _uiTextCatalog: {fileID: 11400000, guid: 33e689828c88c844691c4e31ef1dcb65, type: 2}
   _view: {fileID: 2061557644}
 --- !u!4 &400127127
@@ -2675,7 +2655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_cousin_2_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_cousin_2_direct
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -2733,7 +2713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_astronomy_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_astronomy_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -2791,15 +2771,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_library_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_library_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 12
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2849,15 +2829,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_garden_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_garden_blocked
   _backgroundType: 4
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 8
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2907,15 +2887,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_friend_1_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_friend_1_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 2
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 2
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2965,7 +2945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_external_w003_direct_2
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_external_w003_direct_2
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -3023,7 +3003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_3_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_3_direct
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -3130,15 +3110,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_garden_blocked_2
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_garden_blocked_2
   _backgroundType: 4
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 8
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -3267,7 +3247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_2_direct_2
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_2_direct_2
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -3325,7 +3305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_cousin_2_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_cousin_2_modified
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -3546,15 +3526,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_lake_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_lake_blocked
   _backgroundType: 5
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 9
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -3604,15 +3584,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_friend_1_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_friend_1_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 2
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 2
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -4096,7 +4076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_posture_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_posture_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -4159,7 +4139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_posture_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_posture_modified
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -4307,15 +4287,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_study_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_study_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 11
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -4365,15 +4345,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_study_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_study_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 11
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -4454,7 +4434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_story_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_story_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -4628,15 +4608,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_garden_direct_2
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_garden_direct_2
   _backgroundType: 4
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 8
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -4858,7 +4838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_posture_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_posture_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -4916,7 +4896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_riding_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_riding_modified
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -4979,15 +4959,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_garden_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_garden_blocked
   _backgroundType: 4
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 8
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -5037,7 +5017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_1_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_1_blocked
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -5212,15 +5192,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_lake_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_lake_direct
   _backgroundType: 5
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 9
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -5270,7 +5250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_story_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_story_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -5328,7 +5308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_external_w003_direct_3
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_external_w003_direct_3
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -5386,7 +5366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_cousin_2_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_cousin_2_blocked
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -5444,7 +5424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_external_w003_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_external_w003_blocked
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -5518,7 +5498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_cooking_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_cooking_modified
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -5709,7 +5689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_friend_1_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_friend_1_blocked
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -5767,7 +5747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_friend_1_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_friend_1_direct
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -5825,7 +5805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_cousin_2_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_cousin_2_modified
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -5939,7 +5919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_friend_2_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_friend_2_blocked
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -6060,7 +6040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_friend_2_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_friend_2_direct
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -6118,7 +6098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_candle_rumor_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_candle_rumor_direct
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -6309,7 +6289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_2_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_2_modified
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -6455,15 +6435,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_library_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_library_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 12
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -6571,15 +6551,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_basement_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_basement_direct
   _backgroundType: 8
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 13
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -6629,7 +6609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_fountain_fish_rumor_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_fountain_fish_rumor_direct
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -6687,7 +6667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_external_w004_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_external_w004_direct
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -6745,15 +6725,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_cousin_2_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_cousin_2_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 6
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 6
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -6803,7 +6783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_engineering_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_engineering_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -7071,15 +7051,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_excursion_basement_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_excursion_basement_blocked
   _backgroundType: 8
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 13
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -7129,7 +7109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_friend_3_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_friend_3_direct
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -7245,7 +7225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_etiquette_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_etiquette_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -7378,7 +7358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_friend_3_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_friend_3_modified
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -7436,7 +7416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_cousin_2_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_cousin_2_blocked
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -7494,7 +7474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_cousin_2_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_cousin_2_direct
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -7552,15 +7532,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_garden_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_garden_direct
   _backgroundType: 4
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 8
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -7610,7 +7590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_riding_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_riding_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -7668,7 +7648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_riding_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_riding_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -7726,7 +7706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_house_talk_w004_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_house_talk_w004_modified
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -7784,15 +7764,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_friend_1_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_friend_1_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 2
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 2
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -7842,7 +7822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_etiquette_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_etiquette_modified
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -7900,15 +7880,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_cousin_1_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_cousin_1_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 5
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 5
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -8078,7 +8058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_nature_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_nature_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -8136,7 +8116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_external_w004_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_external_w004_blocked
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -8194,15 +8174,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_basement_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_basement_direct
   _backgroundType: 8
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 13
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -8252,7 +8232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_external_w003_modified_2
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_external_w003_modified_2
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -8502,15 +8482,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_friend_3_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_friend_3_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 4
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 4
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -8565,15 +8545,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_friend_3_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_friend_3_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 4
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 4
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -8623,7 +8603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_astronomy_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_astronomy_modified
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -8681,7 +8661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_2_modified_2
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_2_modified_2
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -8739,7 +8719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_3_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_3_blocked
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -8797,7 +8777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_2_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_2_direct
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -8992,7 +8972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_2_blocked_2
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_2_blocked_2
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -9337,7 +9317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_engineering_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_engineering_modified
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -9681,15 +9661,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_friend_2_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_friend_2_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 3
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 3
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -9739,15 +9719,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_friend_1_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_friend_1_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 2
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 2
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -9956,7 +9936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_friend_1_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_friend_1_modified
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -10014,7 +9994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_friend_2_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_friend_2_modified
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -10072,7 +10052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_letter_friend_3_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_letter_friend_3_blocked
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -10130,15 +10110,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_lake_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_lake_blocked
   _backgroundType: 5
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 9
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -10188,7 +10168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_greenhouse_glass_rumor_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_greenhouse_glass_rumor_blocked
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -10256,7 +10236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_3_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_3_modified
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -10424,7 +10404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_house_talk_w004_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_house_talk_w004_blocked
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -10482,7 +10462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_external_w004_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_external_w004_modified
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -10615,15 +10595,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_cousin_2_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_cousin_2_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 6
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 6
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -10673,7 +10653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_story_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_story_modified
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -10731,15 +10711,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_visitor_cousin_1_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_visitor_cousin_1_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 5
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 5
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -10817,7 +10797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_cooking_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_cooking_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -10909,15 +10889,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_friend_3_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_friend_3_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 4
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 4
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -11086,7 +11066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_external_w003_modified_3
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_external_w003_modified_3
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -11181,15 +11161,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_friend_3_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_friend_3_blocked
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 4
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 4
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -11239,7 +11219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_external_w003_blocked_3
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_external_w003_blocked_3
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -11536,7 +11516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_external_w003_blocked_2
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_external_w003_blocked_2
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -11594,7 +11574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_candle_rumor_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_candle_rumor_modified
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -11839,15 +11819,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_basement_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_basement_blocked
   _backgroundType: 8
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 13
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -11952,7 +11932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_attic_window_rumor_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_attic_window_rumor_blocked
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -12010,7 +11990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_fountain_fish_rumor_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_fountain_fish_rumor_blocked
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -12307,7 +12287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_house_talk_attic_window_rumor_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_house_talk_attic_window_rumor_modified
   _backgroundType: 7
   _playSpecialOnStart: 1
@@ -12365,15 +12345,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_excursion_lake_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_excursion_lake_direct
   _backgroundType: 5
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 1
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 9
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -12423,7 +12403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_nature_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_nature_modified
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -12481,7 +12461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_1_modified
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_1_modified
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -12539,7 +12519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_engineering_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_engineering_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -12597,7 +12577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_letter_friend_2_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_letter_friend_2_blocked
   _backgroundType: 0
   _playSpecialOnStart: 1
@@ -12655,7 +12635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_astronomy_blocked
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_astronomy_blocked
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -12972,15 +12952,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_visitor_cousin_2_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_visitor_cousin_2_direct
   _backgroundType: 3
   _playSpecialOnStart: 1
   _duration: 1
-  _characterPos: 1
-  _leftCharacter: 0
-  _rightCharacter: 0
-  _centerCharacter: 6
+  _characterPos: 0
+  _leftCharacter: 1
+  _rightCharacter: 6
+  _centerCharacter: 0
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -13030,7 +13010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_003_nature_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_003_nature_direct
   _backgroundType: 6
   _playSpecialOnStart: 1
@@ -13417,7 +13397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
   _cutsceneId: event_week_004_house_talk_w004_direct
-  _isBlocking: 1
+  _isBlocking: 0
   _targetEventId: event_week_004_house_talk_w004_direct
   _backgroundType: 7
   _playSpecialOnStart: 1
