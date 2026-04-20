@@ -42,33 +42,36 @@ MonoBehaviour:
   - _card: {fileID: 11400000, guid: 9386a51fbd1488745b4e9aa66943d074, type: 2}
     _isRequired: 1
     _displayOrder: 8
-  - _card: {fileID: 11400000, guid: 54e1e936b661eb14a96f01a11c361e91, type: 2}
+  - _card: {fileID: 11400000, guid: 60e76efdbf7d80b449607497294c8eee, type: 2}
     _isRequired: 1
     _displayOrder: 9
-  - _card: {fileID: 11400000, guid: 7ad5665b0012f6b4f818b989d31d9a46, type: 2}
+  - _card: {fileID: 11400000, guid: 54e1e936b661eb14a96f01a11c361e91, type: 2}
     _isRequired: 1
     _displayOrder: 10
-  - _card: {fileID: 11400000, guid: 07575aba3b58a5e47bdec8677d22550d, type: 2}
+  - _card: {fileID: 11400000, guid: 7ad5665b0012f6b4f818b989d31d9a46, type: 2}
     _isRequired: 1
     _displayOrder: 11
-  - _card: {fileID: 11400000, guid: 2c4a2bcdb8841964a945ca7a0593ee8b, type: 2}
+  - _card: {fileID: 11400000, guid: 07575aba3b58a5e47bdec8677d22550d, type: 2}
     _isRequired: 1
     _displayOrder: 12
-  - _card: {fileID: 11400000, guid: 9ffdfc869a2de064188c9b9d2c5a6533, type: 2}
+  - _card: {fileID: 11400000, guid: 2c4a2bcdb8841964a945ca7a0593ee8b, type: 2}
     _isRequired: 1
     _displayOrder: 13
-  - _card: {fileID: 11400000, guid: 9cb01e262aebcd84cb3d07b97dbb78dd, type: 2}
+  - _card: {fileID: 11400000, guid: 9ffdfc869a2de064188c9b9d2c5a6533, type: 2}
     _isRequired: 1
     _displayOrder: 14
+  - _card: {fileID: 11400000, guid: 9cb01e262aebcd84cb3d07b97dbb78dd, type: 2}
+    _isRequired: 1
+    _displayOrder: 15
   - _card: {fileID: 11400000, guid: 0f64a2784cb12bf4ca939c30b6a5a898, type: 2}
     _isRequired: 0
-    _displayOrder: 15
+    _displayOrder: 16
   - _card: {fileID: 11400000, guid: 81845c18a8c526f46a90c6336a1f56bd, type: 2}
     _isRequired: 0
-    _displayOrder: 16
+    _displayOrder: 17
   - _card: {fileID: 11400000, guid: e2cc9603fb0b8a94bab20d16c81c2268, type: 2}
     _isRequired: 0
-    _displayOrder: 17
+    _displayOrder: 18
   - _card: {fileID: 11400000, guid: 9d5f1ccb1e50ec545bc997721690a006, type: 2}
     _isRequired: 0
-    _displayOrder: 18
+    _displayOrder: 19

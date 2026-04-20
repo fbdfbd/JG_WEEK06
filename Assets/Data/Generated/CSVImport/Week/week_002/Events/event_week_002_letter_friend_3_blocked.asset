@@ -17,8 +17,8 @@ MonoBehaviour:
   _priority: 10
   _conditions:
     _requiredFlags:
-    - {fileID: 11400000, guid: f147de7a8866a25458cdf527e32fde3b, type: 2}
     - {fileID: 11400000, guid: 8d1619d6971d5124d96e5f537027c3bb, type: 2}
+    - {fileID: 11400000, guid: f147de7a8866a25458cdf527e32fde3b, type: 2}
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:

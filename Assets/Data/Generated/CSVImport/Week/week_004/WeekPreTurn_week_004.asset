@@ -63,3 +63,15 @@ MonoBehaviour:
   - _card: {fileID: 11400000, guid: 980235f3017054d49bb4132f88ad4a96, type: 2}
     _isRequired: 1
     _displayOrder: 15
+  - _card: {fileID: 11400000, guid: e3d916fafef6e9f4b97abdaf13c4f9cf, type: 2}
+    _isRequired: 0
+    _displayOrder: 16
+  - _card: {fileID: 11400000, guid: 54bd872187ab3b04699c617e4fe56c4a, type: 2}
+    _isRequired: 0
+    _displayOrder: 17
+  - _card: {fileID: 11400000, guid: 1d00c102b190085488bd6c34656d1a97, type: 2}
+    _isRequired: 0
+    _displayOrder: 18
+  - _card: {fileID: 11400000, guid: 66631d1ba2c21c94ba3eae958937d77b, type: 2}
+    _isRequired: 0
+    _displayOrder: 19
