@@ -33,6 +33,9 @@ public class BackgroundManager : MonoBehaviour
         public BackgroundType type;
         public Image targetImage;
 
+        [Tooltip("같은 실제 배경이면 같은 키를 넣어주세요. 비워두면 sprite 기준으로 비교합니다.")]
+        public string visualKey;
+
         [NonSerialized] public RectTransform rect;
         [NonSerialized] public Vector2 initialAnchoredPosition;
     }
@@ -51,6 +54,7 @@ public class BackgroundManager : MonoBehaviour
 
     private BackgroundEntry currentEntry;
     private BackgroundType currentBackground;
+    private string currentVisualToken;
     private bool isTransitioning;
 
     private void Awake()
@@ -78,8 +82,18 @@ public class BackgroundManager : MonoBehaviour
         if (!TryGetEntry(type, out BackgroundEntry nextEntry))
             return;
 
+        // 1) 완전히 같은 타입이면 아무 것도 안 함
         if (currentEntry != null && currentEntry.type == type)
             return;
+
+        string nextVisualToken = GetVisualToken(nextEntry);
+
+        // 2) 타입은 달라도 실제 보여지는 배경이 같으면 전환 생략
+        if (currentEntry != null && currentVisualToken == nextVisualToken)
+        {
+            currentBackground = type; // 논리 상태만 갱신
+            return;
+        }
 
         UIBackgroundTransitionBase transition = GetSelectedTransition();
 
@@ -101,6 +115,7 @@ public class BackgroundManager : MonoBehaviour
             {
                 currentEntry = nextEntry;
                 currentBackground = nextEntry.type;
+                currentVisualToken = nextVisualToken;
                 isTransitioning = false;
             });
     }
@@ -124,10 +139,8 @@ public class BackgroundManager : MonoBehaviour
         {
             case BackgroundTransitionMode.None:
                 return noTransition;
-
             case BackgroundTransitionMode.Pop:
                 return popTransition;
-
             case BackgroundTransitionMode.Slide:
             default:
                 return slideTransition;
@@ -200,6 +213,7 @@ public class BackgroundManager : MonoBehaviour
 
         currentEntry = startEntry;
         currentBackground = startType;
+        currentVisualToken = GetVisualToken(startEntry);
         isTransitioning = false;
     }
 
@@ -221,7 +235,23 @@ public class BackgroundManager : MonoBehaviour
 
         currentEntry = nextEntry;
         currentBackground = nextEntry.type;
+        currentVisualToken = GetVisualToken(nextEntry);
         isTransitioning = false;
+    }
+
+    private string GetVisualToken(BackgroundEntry entry)
+    {
+        if (entry == null || entry.targetImage == null)
+            return string.Empty;
+
+        if (!string.IsNullOrWhiteSpace(entry.visualKey))
+            return entry.visualKey;
+
+        Sprite sprite = entry.targetImage.sprite;
+        if (sprite != null)
+            return $"sprite:{sprite.GetInstanceID()}";
+
+        return $"image:{entry.targetImage.GetInstanceID()}";
     }
 
     private bool TryGetEntry(BackgroundType type, out BackgroundEntry entry)
