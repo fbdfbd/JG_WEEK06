@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: event_week_005_astronomy_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_005_astronomy_modified
-  _title: "\uCC9C\uBB38 \uC218\uC5C5\uC744 \uC774\uC57C\uAE30\uCC98\uB7FC \uD47C\uB2E4"
+  _title: "\uCE5C\uAD6C \uAC19\uC740 \uBCC4\uBD80\uD130 \uC775\uD78C\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: event_week_002_story_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_002_story_modified
-  _title: "\uB3D9\uD654\uB97C \uC7AC\uBBF8\uC788\uAC8C \uD480\uC5B4 \uC77D\uD78C\uB2E4"
+  _title: "\uAE00\uC790\uB97C \uB369\uC5B4\uB9AC\uB85C \uC77D\uAC8C \uD55C\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []

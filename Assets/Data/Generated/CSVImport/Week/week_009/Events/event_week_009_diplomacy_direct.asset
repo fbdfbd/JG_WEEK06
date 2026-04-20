@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: event_week_009_diplomacy_direct
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_009_diplomacy_direct
-  _title: "\uC608\uBC95\uACFC \uD611\uC0C1\uC758 \uAE30\uBCF8\uC744 \uAC00\uB974\uCE5C\uB2E4"
+  _title: "\uBD80\uB4DC\uB7FD\uAC8C \uAC70\uC808\uD558\uB294 \uB9D0\uC744 \uC775\uD78C\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: event_week_008_military_direct
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_008_military_direct
-  _title: "\uBCD1\uB825 \uBC30\uCE58\uC640 \uBA85\uB839\uC758 \uAE30\uBCF8\uC744
-    \uAC00\uB974\uCE5C\uB2E4"
+  _title: "\uC9C0\uD615\uC5D0\uC11C \uC124 \uC790\uB9AC\uB97C \uC77D\uB294\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []

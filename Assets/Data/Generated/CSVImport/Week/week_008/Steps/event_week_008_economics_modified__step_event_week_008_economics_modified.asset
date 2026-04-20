@@ -12,25 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_week_008_economics_modified__step_event_week_008_economics_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: "\uD68C\uACC4 \uC218\uC5C5\uC744 \uC0DD\uD65C \uC608\uC2DC\uB85C
-    \uD47C\uB2E4"
-  _bodyText: "\uD68C\uACC4 \uC218\uC5C5\uC744 \uC0DD\uD65C \uC608\uC2DC\uB85C \uD47C\uB2E4
-    \uB8E8\uD2B8"
+  _titleOverride: "\uB3C8\uC758 \uC790\uB8E8\uB97C \uB098\uB204\uB4EF \uBD84\uB958\uD55C\uB2E4"
+  _bodyText: "\uD654\uD3D0 \uACBD\uC81C\uC640 \uD68C\uACC4 \uAE30\uCD08 8\uC8FC\uCC28
+    Modified \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
-    _text: "(\uC800\uD0DD \uC0B4\uB9BC \uC608\uC2DC\uB97C \uB4E4\uC5B4 \uC22B\uC790\uC758
-      \uC758\uBBF8\uB97C \uC27D\uAC8C \uD480\uC5B4 \uC124\uBA85\uD55C\uB2E4.)"
+    _text: "(\uC11C\uC7AC. \uC7A5\uBD80 \uD55C \uAD8C\uACFC \uC8FC\uD654, \uC601\uC218\uC99D
+      \uBB36\uC74C\uC774 \uB193\uC5EC \uC788\uB2E4. \uBE44\uC11C\uB294 \uB3C8\uC758
+      \uC591\uBCF4\uB2E4 \uD750\uB984\uC744 \uBA3C\uC800 \uBCF4\uB77C\uACE0 \uB9D0\uD55C\uB2E4.)"
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uC8FC\uC778\uB2D8, \uC624\uB298\uC740 \uB3C8\uC774 \uB9CE\uACE0 \uC801\uC74C\uC744
+      \uBCF4\uB294 \uB0A0\uC774 \uC544\uB2C8\uB77C, \uC5B4\uB514\uC11C \uB4E4\uC5B4\uC624\uACE0
+      \uC5B4\uB514\uB85C \uB098\uAC00\uB294\uC9C0 \uBCF4\uB294 \uB0A0\uC785\uB2C8\uB2E4."
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: "\uADF8\uB7EC\uB2C8\uAE4C \uC0AC\uACFC \uC5F4 \uAC1C\uAC00 \uC5B4\uB514\uB85C
-      \uAC14\uB294\uC9C0 \uC138\uB294 \uAC70\uB124."
+    _text: "\uC22B\uC790\uBCF4\uB2E4 \uAE38\uC744 \uBCF4\uB77C\uB294 \uAC70\uB124."
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uB124. \uC798 \uC544\uC168\uC2B5\uB2C8\uB2E4."
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
-    _text: "\uC0DD\uD65C \uC18D \uACC4\uC0B0\uC73C\uB85C \uBC14\uAFB8\uC5B4 \uAD50\uC7AC\uC758
-      \uC7A5\uBCBD\uC744 \uB0AE\uCD98\uB2E4."
+    _text: "(\uBE44\uC11C\uAC00 \uC8FC\uD654\uB97C \uC791\uC740 \uC811\uC2DC \uC5EC\uB7EC
+      \uC7A5\uC5D0 \uB098\uB220 \uB2F4\uC544 \uB454\uB2E4.)"
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uCC98\uC74C\uBD80\uD130 \uC7A5\uBD80 \uC804\uCCB4\uB97C \uBCF4\uC9C0
+      \uB9D0\uACE0, \uC790\uB8E8\uB97C \uB098\uB208\uB2E4\uACE0 \uC0DD\uAC01\uD574
+      \uBCF4\uC138\uC694."
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: "\uC774 \uC815\uB3C4\uBA74 \uC800\uB3C4 \uC870\uAE08\uC740 \uB530\uB77C\uAC08
-      \uC218 \uC788\uC5B4."
-  _nemoLine: "(\uC800\uD0DD \uC0B4\uB9BC \uC608\uC2DC\uB97C \uB4E4\uC5B4 \uC22B\uC790\uC758
-    \uC758\uBBF8\uB97C \uC27D\uAC8C \uD480\uC5B4 \uC124\uBA85\uD55C\uB2E4.)"
+    _text: "\uB4E4\uC5B4\uC624\uB294 \uAC70, \uB098\uAC00\uB294 \uAC70, \uB0A8\uB294
+      \uAC70?"
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uB124. \uADF8\uB807\uAC8C \uB098\uB204\uBA74 \uC22B\uC790\uAC00 \uB35C
+      \uD0C1\uD574\uC9D1\uB2C8\uB2E4."
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "\uADF8\uAC74 \uC880 \uBCF4\uAE30 \uC27D\uB2E4."
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uADF8\uB798\uC11C \uBD84\uB958\uAC00 \uBA3C\uC800\uC9C0\uC694."
+  _nemoLine: "(\uC11C\uC7AC. \uC7A5\uBD80 \uD55C \uAD8C\uACFC \uC8FC\uD654, \uC601\uC218\uC99D
+    \uBB36\uC74C\uC774 \uB193\uC5EC \uC788\uB2E4. \uBE44\uC11C\uB294 \uB3C8\uC758
+    \uC591\uBCF4\uB2E4 \uD750\uB984\uC744 \uBA3C\uC800 \uBCF4\uB77C\uACE0 \uB9D0\uD55C\uB2E4.)"
   _useCustomVisualState: 0
   _visualState: 0
   _onEnterInteractions: []

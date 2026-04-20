@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: event_week_009_law_blocked
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_009_law_blocked
-  _title: "\uBC95\uB960 \uC218\uC5C5\uC744 \uBBF8\uB8EC\uB2E4"
+  _title: "\uD310\uB2E8\uC744 \uC9E7\uACE0 \uBD84\uBA85\uD558\uAC8C \uC801\uB294\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []

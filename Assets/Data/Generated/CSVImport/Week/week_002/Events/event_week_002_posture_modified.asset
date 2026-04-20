@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: event_week_002_posture_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_002_posture_modified
-  _title: "\uBAB8\uAC00\uC9D0 \uC218\uC5C5\uC744 \uB180\uC774\uCC98\uB7FC \uD55C\uB2E4"
+  _title: "\uC2DC\uC120\uC73C\uB85C \uBC29\uD5A5\uC744 \uBA3C\uC800 \uC7A1\uAC8C
+    \uD55C\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []

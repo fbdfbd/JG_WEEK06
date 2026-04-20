@@ -12,27 +12,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_week_008_diplomacy_modified__step_event_week_008_diplomacy_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: "\uC678\uAD50 \uC218\uC5C5\uC744 \uB300\uD654 \uC5F0\uC2B5\uCC98\uB7FC
-    \uD47C\uB2E4"
-  _bodyText: "\uC678\uAD50 \uC218\uC5C5\uC744 \uB300\uD654 \uC5F0\uC2B5\uCC98\uB7FC
-    \uD47C\uB2E4 \uB8E8\uD2B8"
+  _titleOverride: "\uB9D0\uC758 \uD750\uB984\uBD80\uD130 \uB4E3\uAC8C \uD55C\uB2E4"
+  _bodyText: "\uC678\uAD50\uC220\uACFC \uC218\uC0AC\uD559 8\uC8FC\uCC28 Modified
+    \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
-    _text: "(\uC0C1\uD669\uADF9\uCC98\uB7FC \uC5ED\uD560\uC744 \uB098\uB220 \uC678\uAD50
-      \uAD50\uC7AC \uB0B4\uC6A9\uC744 \uC790\uC5F0\uC2A4\uB7FD\uAC8C \uC775\uD788\uAC8C
-      \uD55C\uB2E4.)"
+    _text: "(\uC751\uC811\uC2E4. \uBE44\uC11C\uAC00 \uC758\uC790 \uB450 \uAC1C\uB97C
+      \uB9C8\uC8FC \uB193\uACE0, \uC9E7\uC740 \uC9C8\uBB38 \uCE74\uB4DC \uC5EC\uB7EC
+      \uC7A5\uC744 \uC900\uBE44\uD574 \uB454\uB2E4. \uC624\uB298\uC740 \uC608\uC0C1
+      \uC9C8\uBB38\uC5D0 \uBC14\uB85C \uB2F5\uD558\uC9C0 \uC54A\uACE0, \uC0C1\uB300\uC758
+      \uC758\uB3C4\uB97C \uB418\uC9DA\uB294 \uC5F0\uC2B5\uC744 \uD55C\uB2E4.)"
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uC8FC\uC778\uB2D8, \uC624\uB298\uC740 \uB300\uB2F5\uD558\uB294 \uBC95\uBCF4\uB2E4
+      \uB418\uBB3B\uB294 \uBC95\uC744 \uBC30\uC6C1\uB2C8\uB2E4."
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: "\uC81C\uAC00 \uC0AC\uC808\uC774\uBA74 \uBB50\uB77C\uACE0 \uBA3C\uC800
-      \uB9D0\uD574\uC57C \uD574?"
+    _text: "\uB418\uBB3B\uB294 \uAC8C \uB354 \uC5B4\uB824\uC6B4 \uAC70 \uC544\uB0D0?"
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uADF8\uB798\uC11C \uC5F0\uC2B5\uD558\uB294 \uAC81\uB2C8\uB2E4."
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
-    _text: "\uB531\uB531\uD55C \uADDC\uCE59 \uB300\uC2E0 \uB300\uD654 \uD750\uB984\uC744
-      \uBAB8\uC5D0 \uC775\uD788\uAC8C \uD55C\uB2E4."
+    _text: "(\uBE44\uC11C\uAC00 \uD45C\uC815\uC774 \uAC70\uC758 \uC5C6\uB294 \uC778\uD615
+      \uB450 \uAC1C\uB97C \uD14C\uC774\uBE14 \uC704\uC5D0 \uC62C\uB824 \uB454\uB2E4.)"
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uC18D\uB9C8\uC74C\uC744 \uB9DE\uD788\uB824 \uD558\uAE30\uBCF4\uB2E4,
+      \uB9D0\uC774 \uC5B4\uB514\uB85C \uAC00\uACE0 \uC788\uB294\uC9C0 \uB4E3\uB294\uB2E4\uACE0
+      \uC0DD\uAC01\uD574 \uBCF4\uC138\uC694."
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: "\uC774\uAC74 \uB9D0\uC2F8\uC6C0\uC774 \uC544\uB2C8\uB77C \uC904\uB2E4\uB9AC\uAE30
-      \uAC19\uC544."
-  _nemoLine: "(\uC0C1\uD669\uADF9\uCC98\uB7FC \uC5ED\uD560\uC744 \uB098\uB220 \uC678\uAD50
-    \uAD50\uC7AC \uB0B4\uC6A9\uC744 \uC790\uC5F0\uC2A4\uB7FD\uAC8C \uC775\uD788\uAC8C
-    \uD55C\uB2E4.)"
+    _text: "\uC0AC\uB78C \uC5BC\uAD74\uBCF4\uB2E4 \uBB38\uC7A5 \uD750\uB984\uBD80\uD130?"
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uB124. \uADF8\uCABD\uC774 \uB354 \uB35C \uC18D\uC2B5\uB2C8\uB2E4."
+  - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
+    _text: "...\uADF8\uAC74 \uC880 \uC720\uC6A9\uD558\uB124."
+  - _speaker: {fileID: 11400000, guid: 22a4c5e895307e74fae01c9ccdc97b8f, type: 2}
+    _text: "\uADF8\uB798\uC11C \uC678\uAD50\uB294 \uADC0\uBCF4\uB2E4 \uBA3C\uC800
+      \uD754\uB4E4\uB9AC\uC9C0 \uC54A\uB294 \uBC95\uC744 \uBC30\uC6B0\uB294 \uC77C\uC774\uAE30\uB3C4
+      \uD569\uB2C8\uB2E4."
+  _nemoLine: "(\uC751\uC811\uC2E4. \uBE44\uC11C\uAC00 \uC758\uC790 \uB450 \uAC1C\uB97C
+    \uB9C8\uC8FC \uB193\uACE0, \uC9E7\uC740 \uC9C8\uBB38 \uCE74\uB4DC \uC5EC\uB7EC
+    \uC7A5\uC744 \uC900\uBE44\uD574 \uB454\uB2E4. \uC624\uB298\uC740 \uC608\uC0C1
+    \uC9C8\uBB38\uC5D0 \uBC14\uB85C \uB2F5\uD558\uC9C0 \uC54A\uACE0, \uC0C1\uB300\uC758
+    \uC758\uB3C4\uB97C \uB418\uC9DA\uB294 \uC5F0\uC2B5\uC744 \uD55C\uB2E4.)"
   _useCustomVisualState: 0
   _visualState: 0
   _onEnterInteractions: []

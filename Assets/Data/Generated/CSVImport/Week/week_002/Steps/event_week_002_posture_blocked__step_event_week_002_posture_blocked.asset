@@ -12,21 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_week_002_posture_blocked__step_event_week_002_posture_blocked
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: "\uBAB8\uAC00\uC9D0 \uC218\uC5C5\uC744 \uBBF8\uB8EC\uB2E4"
-  _bodyText: "\uBAB8\uAC00\uC9D0\uACFC \uBC1C\uB180\uB9BC \uAD50\uC7AC Blocked \uB8E8\uD2B8"
+  _titleOverride: "\uBC29\uD5A5 \uC804\uD658\uC744 \uC5C4\uACA9\uD788 \uC775\uD78C\uB2E4"
+  _bodyText: "\uBAB8\uAC00\uC9D0\uACFC \uBC1C\uB180\uB9BC 2\uC8FC\uCC28 Blocked \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
-    _text: "(\uC790\uC138 \uAD50\uC7AC\uB97C \uD3BC\uCCE4\uB2E4\uAC00, \uC624\uB298\uC740
-      \uBB34\uB9AC\uC2DC\uD0A4\uC9C0 \uC54A\uACE0 \uC9E7\uAC8C \uC26C\uAC8C \uD55C\uB2E4.)"
+    _text: "(\uBC14\uB2E5\uC758 \uC120\uC744 \uB530\uB77C \uAC77\uB294 \uC5F0\uC2B5.
+      \uC774\uBC88\uC5D4 \uBC29\uD5A5 \uC804\uD658\uAE4C\uC9C0 \uCD94\uAC00\uB41C\uB2E4.)"
+  - _speaker: {fileID: 11400000, guid: 5bb39217ef6e2284f84306acd528c0b3, type: 2}
+    _text: "\uC624\uB298\uC740 \uB3CC\uC544\uC11C\uB294 \uAC83\uAE4C\uC9C0 \uD574
+      \uBCF4\uACA0\uC2B5\uB2C8\uB2E4."
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: "\uC624\uB298\uC740 \uC548 \uC11C\uB3C4 \uB3FC\uC694?"
-  - _speaker: {fileID: 11400000, guid: 847f079bcbea6a646a71c4510ac11245, type: 2}
-    _text: "\uAC00\uBCBC\uC6B4 \uC815\uB9AC\uB9CC \uD558\uACE0 \uBCF8\uACA9\uC801\uC778
-      \uC5F0\uC2B5\uC740 \uB2E4\uC74C\uC73C\uB85C \uBBF8\uB8EC\uB2E4."
+    _text: "\uB354 \uC5B4\uB835\uB124, \uC774\uAC70."
+  - _speaker: {fileID: 11400000, guid: 0c996a4b6053a604a8453b8d2e8e4626, type: 2}
+    _text: "\uD754\uB4E4\uB9AC\uBA74 \uB2E4\uC2DC \uC2DC\uC791\uD569\uB2C8\uB2E4."
   - _speaker: {fileID: 11400000, guid: f0ccb6cf85e90dd45a93470958b81247, type: 2}
-    _text: "\uADF8\uB7FC \uB2E4\uC74C\uC5D4 \uB35C \uD754\uB4E4\uB9B4\uB798."
-  _nemoLine: "(\uC790\uC138 \uAD50\uC7AC\uB97C \uD3BC\uCCE4\uB2E4\uAC00, \uC624\uB298\uC740
-    \uBB34\uB9AC\uC2DC\uD0A4\uC9C0 \uC54A\uACE0 \uC9E7\uAC8C \uC26C\uAC8C \uD55C\uB2E4.)"
+    _text: "\uB610 \uCC98\uC74C\uBD80\uD130\uC57C\u2026"
+  _nemoLine: "(\uBC14\uB2E5\uC758 \uC120\uC744 \uB530\uB77C \uAC77\uB294 \uC5F0\uC2B5.
+    \uC774\uBC88\uC5D4 \uBC29\uD5A5 \uC804\uD658\uAE4C\uC9C0 \uCD94\uAC00\uB41C\uB2E4.)"
   _useCustomVisualState: 0
   _visualState: 0
   _onEnterInteractions: []

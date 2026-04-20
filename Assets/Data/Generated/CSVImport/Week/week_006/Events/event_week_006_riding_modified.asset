@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: event_week_006_riding_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_006_riding_modified
-  _title: "\uAE30\uB9C8 \uC218\uC5C5\uC744 \uC0C1\uC0C1 \uB180\uC774\uCC98\uB7FC
-    \uD47C\uB2E4"
+  _title: "\uB9D0\uC5D0\uAC8C \uBA3C\uC800 \uBC29\uD5A5\uC744 \uC54C\uB824 \uC900\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: event_week_006_cooking_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_006_cooking_modified
-  _title: "\uC694\uB9AC \uC218\uC5C5\uC744 \uB9DB\uC788\uB294 \uC774\uC57C\uAE30\uB85C
-    \uD47C\uB2E4"
+  _title: "\uC790\uB9AC\uB97C \uC815\uB9AC\uD558\uB4EF \uB098\uB204\uAC8C \uD55C\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: event_week_002_etiquette_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_002_etiquette_modified
-  _title: "\uC608\uC808\uC744 \uB180\uC774\uCC98\uB7FC \uAC00\uB974\uCE5C\uB2E4"
+  _title: "\uC794\uC794\uD55C \uC2DD\uC0AC \uAC10\uAC01\uC744 \uC775\uD78C\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []

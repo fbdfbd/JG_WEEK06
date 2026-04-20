@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: event_week_008_economics_modified
   m_EditorClassIdentifier: Assembly-CSharp::SO_DayRoutineEventDefinition
   _id: event_week_008_economics_modified
-  _title: "\uD68C\uACC4 \uC218\uC5C5\uC744 \uC0DD\uD65C \uC608\uC2DC\uB85C \uD47C\uB2E4"
+  _title: "\uB3C8\uC758 \uC790\uB8E8\uB97C \uB098\uB204\uB4EF \uBD84\uB958\uD55C\uB2E4"
   _priority: 10
   _conditions:
     _requiredFlags: []
