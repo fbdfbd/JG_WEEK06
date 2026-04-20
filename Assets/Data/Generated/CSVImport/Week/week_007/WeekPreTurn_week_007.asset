@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
-  m_Name: WeekPreTurn_week_007
+  m_Name: week_007_PreTurn
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
   _title: 
   _summary: 
@@ -63,3 +63,15 @@ MonoBehaviour:
   - _card: {fileID: 11400000, guid: 9b7679a0bf289064ba82466e591590ef, type: 2}
     _isRequired: 1
     _displayOrder: 15
+  - _card: {fileID: 11400000, guid: 23b6fb7456f2ceb488616bb071fb40c8, type: 2}
+    _isRequired: 0
+    _displayOrder: 16
+  - _card: {fileID: 11400000, guid: 85a7698bd56c6df4d9c5dd5339aa608e, type: 2}
+    _isRequired: 0
+    _displayOrder: 17
+  - _card: {fileID: 11400000, guid: 20719eaea8f0d5d4b9757a4627715d4e, type: 2}
+    _isRequired: 0
+    _displayOrder: 18
+  - _card: {fileID: 11400000, guid: 8497b85b71af97545a0eb7143cf18a2e, type: 2}
+    _isRequired: 0
+    _displayOrder: 19

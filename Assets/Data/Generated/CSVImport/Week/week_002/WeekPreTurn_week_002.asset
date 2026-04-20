@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 364badc7478fc7e4b9caddf9804fe261, type: 3}
-  m_Name: WeekPreTurn_week_002
+  m_Name: week_002_PreTurn
   m_EditorClassIdentifier: Assembly-CSharp::SO_WeekPreTurnDefinition
   _title: 
   _summary: 
@@ -57,21 +57,33 @@ MonoBehaviour:
   - _card: {fileID: 11400000, guid: 93a30023aacf8f34d9bf45a43a1ea200, type: 2}
     _isRequired: 1
     _displayOrder: 13
-  - _card: {fileID: 11400000, guid: c635dac399b41634580f81417511373a, type: 2}
+  - _card: {fileID: 11400000, guid: 0620e21e2c15d0c42bdce5d4186f77c8, type: 2}
     _isRequired: 1
     _displayOrder: 14
-  - _card: {fileID: 11400000, guid: 9ed946a2bbee2444fa37b75ba4586f77, type: 2}
+  - _card: {fileID: 11400000, guid: 767aea62824d4b648b1a73bcbf3fcf38, type: 2}
     _isRequired: 1
     _displayOrder: 15
+  - _card: {fileID: 11400000, guid: 481742cb9e7053548a90c39501f4232c, type: 2}
+    _isRequired: 1
+    _displayOrder: 16
+  - _card: {fileID: 11400000, guid: 0f7eea64add41eb4e94a73277b436f48, type: 2}
+    _isRequired: 1
+    _displayOrder: 17
+  - _card: {fileID: 11400000, guid: e00d6c6096ad77a48b26c7534abe57cc, type: 2}
+    _isRequired: 1
+    _displayOrder: 18
+  - _card: {fileID: 11400000, guid: b87e4b75391effb4d8c7cb076340ac77, type: 2}
+    _isRequired: 1
+    _displayOrder: 19
   - _card: {fileID: 11400000, guid: 1e3d8edd45bf5964ea4937a2d3342180, type: 2}
     _isRequired: 0
-    _displayOrder: 16
+    _displayOrder: 20
   - _card: {fileID: 11400000, guid: 6e81a80367af4c643972b6eee19c8177, type: 2}
     _isRequired: 0
-    _displayOrder: 17
+    _displayOrder: 21
   - _card: {fileID: 11400000, guid: 0ec8c0fe19e63844fa769363856313d4, type: 2}
     _isRequired: 0
-    _displayOrder: 18
+    _displayOrder: 22
   - _card: {fileID: 11400000, guid: c545f25d2a9acac4dac1ecf3b4a5ee5c, type: 2}
     _isRequired: 0
-    _displayOrder: 19
+    _displayOrder: 23

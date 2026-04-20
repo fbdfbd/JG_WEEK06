@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
   m_Name: event_week_007_visitor_cousin_2_direct__step_event_week_007_visitor_cousin_2_direct
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
-  _titleOverride: cousin_2 Direct
+  _titleOverride: "\uB9AC\uC548 \uBC29\uBB38 \uD5C8\uAC00"
   _bodyText: "visitor cousin_2 Direct \uB8E8\uD2B8"
   _dialogueLines:
   - _speaker: {fileID: 11400000, guid: 7ba078414ab25104a821c91cc498d418, type: 2}

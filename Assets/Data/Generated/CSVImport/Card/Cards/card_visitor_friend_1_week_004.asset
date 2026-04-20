@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_CardInfoDefinition
   _id: card_visitor_friend_1_week_004
   _cardType: {fileID: 11400000, guid: 7e3b393c621280e459460f44ff349d9c, type: 2}
-  _title: "\uCE5C\uAD6C1 4\uC8FC\uCC28"
-  _originalText: "\uCE5C\uAD6C1\uC5D0\uC11C \uB124\uBAA8\uAC00 \"\uCE7C\uC740 \uC548
-    \uB3FC\uB3C4 \uC774\uAC74 \uBD10\uB3C4 \uB3FC. \uC774\uAC78\uB85C \uBCF4\uBA74
-    \uAE00\uC790\uAC00 \uC774\uB9CC\" \uBC18\uC751\uD55C\uB2E4."
+  _title: "\uB9C9\uC2A4 4\uC8FC\uCC28"
+  _originalText: "\uB9C9\uC2A4\uAC00 \uBC31\uC791\uC758 \uC11C\uC7AC \uBCF4\uBB3C\uC5D0
+    \uB208\uC744 \uBE5B\uB0B8\uB2E4. \uC704\uD5D8\uD55C \uBB3C\uAC74\uC744 \uB9C9\uACE0
+    \uB2E4\uB978 \uC7A5\uB09C\uAC10\uC744 \uBCF4\uC5EC\uC904\uC9C0 \uC815\uD55C\uB2E4."
   _options:
   - _semantic: 2
     _label: "\uB9CC\uB0A8\uC744 \uB9C9\uB294\uB2E4"

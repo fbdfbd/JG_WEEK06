@@ -15,8 +15,9 @@ MonoBehaviour:
   _id: card_excursion_garden_week_009
   _cardType: {fileID: 11400000, guid: dbafb5c030c34524294075dd28cedafe, type: 2}
   _title: "\uC815\uC6D0 9\uC8FC\uCC28"
-  _originalText: "\uC815\uC6D0 \uAD00\uB828 \uC774\uBCA4\uD2B8. \uB124\uBAA8\uAC00
-    \uC5B4\uB5BB\uAC8C \uD589\uB3D9\uD560\uC9C0 \uC120\uD0DD\uD55C\uB2E4."
+  _originalText: "\uC628\uC2E4 \uC606 \uAF43\uBC2D\uC5D0\uC11C \uCC28\uB97C \uB9C8\uC2E4
+    \uC2DC\uAC04\uC774 \uC0DD\uAE34\uB2E4. \uD734\uC2DD\uC744 \uADDC\uC728\uB85C
+    \uB04A\uC744\uC9C0 \uC870\uAE08 \uB354 \uB204\uB9AC\uAC8C \uD560\uC9C0 \uACB0\uC815\uD55C\uB2E4."
   _options:
   - _semantic: 2
     _label: "\uBC29\uBB38\uC744 \uB9C9\uB294\uB2E4"

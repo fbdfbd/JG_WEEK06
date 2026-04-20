@@ -1,1 +1,5 @@
 ﻿event_id,step_id,choice_order,choice_id,label,interaction_ids,next_step_id
+night_outside_interest,step_night_outside_01,0,choice_night_open,다음엔 같이 보자,trust_plus_1|reaction_log_night_promise,step_night_outside_02
+night_outside_interest,step_night_outside_01,1,choice_night_delay,지금은 말하지 말자,anxiety_plus_1,
+story_letter_suspected,step_story_letter_01,0,choice_story_admit,조금은 숨겼다고 인정한다,curiosity_plus_1|hidden_info_detected_flag,step_story_letter_02
+story_letter_suspected,step_story_letter_01,1,choice_story_deny,아무 일 아니라고 넘긴다,anxiety_plus_1,
