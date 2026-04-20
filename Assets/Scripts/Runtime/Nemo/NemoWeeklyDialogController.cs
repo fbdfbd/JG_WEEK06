@@ -12,6 +12,7 @@ public class NemoWeeklyDialogController : MonoBehaviour
 
     [SerializeField] private UI_WeeklyDialogPanel _dialogPanel;
     [SerializeField] private GameObject _interactionPanel;
+    [SerializeField] private RectTransform _canvasRect;
     [SerializeField] private TextMeshProUGUI _talkText; 
     [SerializeField] private float textDuration = 0.5f;
 
@@ -184,6 +185,11 @@ public class NemoWeeklyDialogController : MonoBehaviour
         }
 
         _typingTween = null;
+    }
+
+    public bool IsWeeklyDialogFinished()
+    {
+        return _weeklyDialogFinised;
     }
 
     public void OnClickTalkButton()

@@ -14,6 +14,7 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
     public static NemoEntity Instance { get; private set; }
 
     [SerializeField] private UI_DialogView _dialogView;
+    [SerializeField] private NemoWeeklyDialogController _dialogController;
 
     [Header("Animation")]
     [SerializeField] private Animator playerAnimator;
@@ -100,16 +101,16 @@ public sealed class NemoEntity : MonoBehaviour, IPointerClickHandler
 
         if (CurrentState == NemoState.Event) return;
 
-        if (CurrentState == NemoState.Routine)
+        if (CurrentState == NemoState.Routine && _dialogController.IsWeeklyDialogFinished())
         {
             PauseRoutine();
             return;
         }
 
-        if (CurrentState == NemoState.Interacting)
-        {
-            ResumeRoutine();
-        }
+        //if (CurrentState == NemoState.Interacting)
+        //{
+        //    ResumeRoutine();
+        //}
     }
 
     public void PauseRoutine()
