@@ -138,7 +138,7 @@ public sealed class WeekFlowPlaytesterController : MonoBehaviour
         _pendingEvents.AddRange(WeekNarrativeResolver.ResolvePendingEvents(
             CurrentWeek,
             _childState,
-            _lastWeekResult.InformationControlResult));
+            _lastWeekResult));
         _nextPendingEventIndex = 0;
         _showWeekFeedback = true;
         _phase = PlaytestPhase.WeekFeedback;
