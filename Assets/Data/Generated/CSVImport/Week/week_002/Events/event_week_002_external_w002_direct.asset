@@ -31,4 +31,4 @@ MonoBehaviour:
   _relatedInformationTypes:
   - {fileID: 11400000, guid: b4585dc10a2d73f4aa3f673ab8ae39df, type: 2}
   _preferredSemantics: 00000000
-  _linkedCard: {fileID: 11400000, guid: 9ed946a2bbee2444fa37b75ba4586f77, type: 2}
+  _linkedCard: {fileID: 11400000, guid: 3be6fa8a669a79140998f7c83564cde0, type: 2}

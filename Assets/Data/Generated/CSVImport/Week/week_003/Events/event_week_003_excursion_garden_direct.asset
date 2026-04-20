@@ -16,7 +16,8 @@ MonoBehaviour:
   _title: garden Direct
   _priority: 10
   _conditions:
-    _requiredFlags: []
+    _requiredFlags:
+    - {fileID: 11400000, guid: 49dd68d57787da64b92e143b6b5ad62b, type: 2}
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:

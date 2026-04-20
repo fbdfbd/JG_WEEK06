@@ -16,7 +16,8 @@ MonoBehaviour:
   _title: study Blocked
   _priority: 10
   _conditions:
-    _requiredFlags: []
+    _requiredFlags:
+    - {fileID: 11400000, guid: 7562fc138578df1408b21145a28b46cf, type: 2}
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:

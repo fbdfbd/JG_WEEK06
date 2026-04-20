@@ -16,7 +16,8 @@ MonoBehaviour:
   _title: basement Blocked
   _priority: 10
   _conditions:
-    _requiredFlags: []
+    _requiredFlags:
+    - {fileID: 11400000, guid: 4af76d0c50c9cfb4ab032d8122075d08, type: 2}
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:
