@@ -16,8 +16,7 @@ MonoBehaviour:
   _title: friend_3 Blocked
   _priority: 10
   _conditions:
-    _requiredFlags:
-    - {fileID: 11400000, guid: 11bdd425b83f5ae48b7446e2c0eeaf09, type: 2}
+    _requiredFlags: []
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:

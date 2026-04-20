@@ -593,3 +593,123 @@ MonoBehaviour:
     _dialogueIndex: -1
     _choiceLabel: 
     _cutsceneId: event_week_003_external_w003_modified_3
+  - _displayName: event_week_003_etiquette_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_etiquette_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_etiquette_blocked
+  - _displayName: event_week_003_etiquette_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_etiquette_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_etiquette_direct
+  - _displayName: event_week_003_etiquette_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_etiquette_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_etiquette_modified
+  - _displayName: event_week_003_nature_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_nature_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_nature_blocked
+  - _displayName: event_week_003_nature_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_nature_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_nature_direct
+  - _displayName: event_week_003_nature_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_nature_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_nature_modified
+  - _displayName: event_week_003_posture_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_posture_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_posture_blocked
+  - _displayName: event_week_003_posture_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_posture_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_posture_direct
+  - _displayName: event_week_003_posture_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_posture_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_posture_modified
+  - _displayName: event_week_003_story_blocked
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_story_blocked
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_story_blocked
+  - _displayName: event_week_003_story_direct
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_story_direct
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_story_direct
+  - _displayName: event_week_003_story_modified
+    _moment: 2
+    _useScreenType: 0
+    _screenType: 0
+    _weekId: week_003
+    _eventId: event_week_003_story_modified
+    _stepName: 
+    _dialogueIndex: -1
+    _choiceLabel: 
+    _cutsceneId: event_week_003_story_modified

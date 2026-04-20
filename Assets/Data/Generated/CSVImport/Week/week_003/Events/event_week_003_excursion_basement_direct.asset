@@ -16,8 +16,7 @@ MonoBehaviour:
   _title: basement Direct
   _priority: 10
   _conditions:
-    _requiredFlags:
-    - {fileID: 11400000, guid: 196c788f4a361bf40932b96d24f2575b, type: 2}
+    _requiredFlags: []
     _blockedFlags: []
     _statRequirements: []
     _informationRequirements:

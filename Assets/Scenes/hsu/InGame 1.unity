@@ -807,6 +807,64 @@ Transform:
   - {fileID: 916911998}
   m_Father: {fileID: 1841840514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &131462320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 131462321}
+  - component: {fileID: 131462322}
+  m_Layer: 0
+  m_Name: event_week_004_cooking_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &131462321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131462320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &131462322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131462320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_cooking_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_cooking_blocked
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &138419775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,6 +1284,64 @@ MonoBehaviour:
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
   _panelFadeDuration: 0.3
+--- !u!1 &184323243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184323244}
+  - component: {fileID: 184323245}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_garden_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184323244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184323243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &184323245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184323243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_garden_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_garden_direct
+  _backgroundType: 4
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &200167797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,6 +1458,64 @@ MonoBehaviour:
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
   _panelFadeDuration: 0.3
+--- !u!1 &212905066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212905067}
+  - component: {fileID: 212905068}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_friend_2_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &212905067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212905066}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &212905068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212905066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_friend_2_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_friend_2_blocked
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 3
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &224692510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,6 +1608,64 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+--- !u!1 &234178366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234178367}
+  - component: {fileID: 234178368}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_cousin_2_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &234178367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234178366}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &234178368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234178366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_cousin_2_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_cousin_2_direct
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 6
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &248165074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,6 +1720,64 @@ MonoBehaviour:
   _leftCharacter: 0
   _rightCharacter: 0
   _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &259148790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 259148791}
+  - component: {fileID: 259148792}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_friend_2_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &259148791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259148790}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259148792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259148790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_friend_2_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_friend_2_direct
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 3
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -1550,6 +1840,87 @@ MonoBehaviour:
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
   _panelFadeDuration: 0.3
+--- !u!1 &286496254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286496255}
+  m_Layer: 0
+  m_Name: Week004
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &286496255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286496254}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2056338116}
+  - {fileID: 408596031}
+  - {fileID: 1345133264}
+  - {fileID: 131462321}
+  - {fileID: 1836992134}
+  - {fileID: 868384167}
+  - {fileID: 2042761695}
+  - {fileID: 1053933461}
+  - {fileID: 1456410098}
+  - {fileID: 1094803818}
+  - {fileID: 1006605678}
+  - {fileID: 413408840}
+  - {fileID: 184323244}
+  - {fileID: 547911369}
+  - {fileID: 801725873}
+  - {fileID: 981797355}
+  - {fileID: 395347647}
+  - {fileID: 374809571}
+  - {fileID: 370583983}
+  - {fileID: 1267404359}
+  - {fileID: 1050862388}
+  - {fileID: 1671442375}
+  - {fileID: 1650633343}
+  - {fileID: 2138456003}
+  - {fileID: 1215996614}
+  - {fileID: 1211771326}
+  - {fileID: 1208273971}
+  - {fileID: 754195941}
+  - {fileID: 1224422375}
+  - {fileID: 1744755014}
+  - {fileID: 1740489542}
+  - {fileID: 234178367}
+  - {fileID: 1496917904}
+  - {fileID: 424329284}
+  - {fileID: 212905067}
+  - {fileID: 259148791}
+  - {fileID: 1326814081}
+  - {fileID: 1339312633}
+  - {fileID: 850170896}
+  - {fileID: 403940523}
+  - {fileID: 904391297}
+  - {fileID: 891521797}
+  - {fileID: 895660193}
+  - {fileID: 1542131536}
+  - {fileID: 916391168}
+  - {fileID: 920527228}
+  - {fileID: 1554407415}
+  - {fileID: 1558685087}
+  - {fileID: 1097757806}
+  - {fileID: 1118776874}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &297894773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,6 +2037,64 @@ MonoBehaviour:
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
   _panelFadeDuration: 0.3
+--- !u!1 &323609480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323609481}
+  - component: {fileID: 323609482}
+  m_Layer: 0
+  m_Name: event_week_003_etiquette_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &323609481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323609480}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &323609482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323609480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_etiquette_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_003_etiquette_blocked
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &357928814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,6 +2185,18 @@ MonoBehaviour:
   - {fileID: 1885059892}
   - {fileID: 830758229}
   - {fileID: 1850821731}
+  - {fileID: 323609482}
+  - {fileID: 1106715056}
+  - {fileID: 1219207759}
+  - {fileID: 1246388461}
+  - {fileID: 2125265577}
+  - {fileID: 2006029950}
+  - {fileID: 608476812}
+  - {fileID: 733482131}
+  - {fileID: 617005700}
+  - {fileID: 654339860}
+  - {fileID: 808969488}
+  - {fileID: 1743671975}
 --- !u!4 &357928816
 Transform:
   m_ObjectHideFlags: 0
@@ -1793,6 +2234,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!1 &370583982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370583983}
+  - component: {fileID: 370583984}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_study_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370583983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370583982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370583984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370583982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_study_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_study_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &374809570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 374809571}
+  - component: {fileID: 374809572}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_study_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &374809571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374809570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &374809572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374809570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_study_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_study_blocked
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &392473725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,6 +2509,7 @@ RectTransform:
   - {fileID: 1114980351}
   - {fileID: 1437439416}
   - {fileID: 1689385686}
+  - {fileID: 2097414371}
   - {fileID: 1636241520}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1960,6 +2518,64 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &395347646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 395347647}
+  - component: {fileID: 395347648}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_library_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &395347647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395347646}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395347648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395347646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_library_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_library_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &400127125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2014,6 +2630,122 @@ Transform:
   - {fileID: 719961033}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &403940522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403940523}
+  - component: {fileID: 403940524}
+  m_Layer: 0
+  m_Name: event_week_004_letter_cousin_2_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403940523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403940522}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &403940524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403940522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_cousin_2_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_cousin_2_direct
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &408596030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408596031}
+  - component: {fileID: 408596032}
+  m_Layer: 0
+  m_Name: event_week_004_astronomy_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408596031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408596030}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &408596032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408596030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_astronomy_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_astronomy_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &410080804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,6 +2800,122 @@ MonoBehaviour:
   _leftCharacter: 0
   _rightCharacter: 0
   _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &413408839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 413408840}
+  - component: {fileID: 413408841}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_garden_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413408840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413408839}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &413408841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413408839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_garden_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_garden_blocked
+  _backgroundType: 4
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &424329283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 424329284}
+  - component: {fileID: 424329285}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_friend_1_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &424329284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424329283}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &424329285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424329283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_friend_1_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_friend_1_direct
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 2
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -2639,8 +3487,78 @@ Transform:
   - {fileID: 1885059891}
   - {fileID: 830758228}
   - {fileID: 1850821730}
+  - {fileID: 323609481}
+  - {fileID: 1106715055}
+  - {fileID: 1219207758}
+  - {fileID: 1246388460}
+  - {fileID: 2125265576}
+  - {fileID: 2006029949}
+  - {fileID: 608476811}
+  - {fileID: 733482130}
+  - {fileID: 617005699}
+  - {fileID: 654339859}
+  - {fileID: 808969487}
+  - {fileID: 1743671974}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &547911368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547911369}
+  - component: {fileID: 547911370}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_lake_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &547911369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547911368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547911370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547911368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_lake_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_lake_blocked
+  _backgroundType: 5
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &552928989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,11 +4051,127 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &608476810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 608476811}
+  - component: {fileID: 608476812}
+  m_Layer: 0
+  m_Name: event_week_003_posture_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &608476811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608476810}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &608476812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608476810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_posture_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_003_posture_blocked
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &612463813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6719548284958993298, guid: 93cc6f5d744759a44be17ffed0b6b4e3, type: 3}
   m_PrefabInstance: {fileID: 1928788087}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &617005698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617005699}
+  - component: {fileID: 617005700}
+  m_Layer: 0
+  m_Name: event_week_003_posture_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &617005699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617005698}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &617005700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617005698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_posture_modified
+  _isBlocking: 1
+  _targetEventId: event_week_003_posture_modified
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!224 &624039472 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7019130197052290811, guid: 1da5045ad9463c040b5a51c415de65fa, type: 3}
@@ -3375,6 +4409,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &654339858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 654339859}
+  - component: {fileID: 654339860}
+  m_Layer: 0
+  m_Name: event_week_003_story_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &654339859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654339858}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &654339860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654339858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_story_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_003_story_blocked
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &654934856
 GameObject:
   m_ObjectHideFlags: 0
@@ -3721,6 +4813,122 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8576163340051532456, guid: e74f8a4bbcc355345a637beee3a1ca43, type: 3}
   m_PrefabInstance: {fileID: 1936469774}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &733482129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733482130}
+  - component: {fileID: 733482131}
+  m_Layer: 0
+  m_Name: event_week_003_posture_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733482130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733482129}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &733482131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733482129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_posture_direct
+  _isBlocking: 1
+  _targetEventId: event_week_003_posture_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &754195940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754195941}
+  - component: {fileID: 754195942}
+  m_Layer: 0
+  m_Name: event_week_004_riding_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &754195941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754195940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &754195942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754195940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_riding_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_riding_modified
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!198 &759351121 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 249798308819942857, guid: 80d320e7c4b2b784cadd4562fd4a790b, type: 3}
@@ -3959,6 +5167,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4284ef43231144f9c05ba7917a18a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_ChildStateToastItem
+--- !u!1 &801725872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 801725873}
+  - component: {fileID: 801725874}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_lake_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &801725873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801725872}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &801725874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801725872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_lake_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_lake_direct
+  _backgroundType: 5
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &808969486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 808969487}
+  - component: {fileID: 808969488}
+  m_Layer: 0
+  m_Name: event_week_003_story_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &808969487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808969486}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &808969488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808969486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_story_direct
+  _isBlocking: 1
+  _targetEventId: event_week_003_story_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &830758227
 GameObject:
   m_ObjectHideFlags: 0
@@ -4007,6 +5331,64 @@ MonoBehaviour:
   _isBlocking: 1
   _targetEventId: event_week_003_external_w003_direct_3
   _backgroundType: 7
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &850170895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 850170896}
+  - component: {fileID: 850170897}
+  m_Layer: 0
+  m_Name: event_week_004_letter_cousin_2_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &850170896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850170895}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &850170897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850170895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_cousin_2_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_cousin_2_blocked
+  _backgroundType: 0
   _playSpecialOnStart: 1
   _duration: 1
   _characterPos: 1
@@ -4091,6 +5473,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add01b5ca9bf8ef4ba65663e0f1f2c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_TopView
+--- !u!1 &868384166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868384167}
+  - component: {fileID: 868384168}
+  m_Layer: 0
+  m_Name: event_week_004_cooking_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &868384167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868384166}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &868384168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868384166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_cooking_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_cooking_modified
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1001 &891424188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4224,6 +5664,180 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &891521796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891521797}
+  - component: {fileID: 891521798}
+  m_Layer: 0
+  m_Name: event_week_004_letter_friend_1_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891521797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891521796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &891521798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891521796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_friend_1_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_friend_1_blocked
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &895660192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895660193}
+  - component: {fileID: 895660194}
+  m_Layer: 0
+  m_Name: event_week_004_letter_friend_1_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895660193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895660192}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895660194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895660192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_friend_1_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_friend_1_direct
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &904391296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 904391297}
+  - component: {fileID: 904391298}
+  m_Layer: 0
+  m_Name: event_week_004_letter_cousin_2_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &904391297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904391296}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &904391298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904391296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_cousin_2_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_cousin_2_modified
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &911415172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4280,6 +5894,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1243324334}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &916391167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916391168}
+  - component: {fileID: 916391169}
+  m_Layer: 0
+  m_Name: event_week_004_letter_friend_2_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &916391168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916391167}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &916391169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916391167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_friend_2_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_friend_2_blocked
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &916911997
 GameObject:
   m_ObjectHideFlags: 0
@@ -4343,6 +6015,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3674984401716893820, guid: 8a1c601c948d43e43bb1bf3f3182f7a3, type: 3}
   m_PrefabInstance: {fileID: 237135909528359768}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &920527227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920527228}
+  - component: {fileID: 920527229}
+  m_Layer: 0
+  m_Name: event_week_004_letter_friend_2_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &920527228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920527227}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &920527229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920527227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_friend_2_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_friend_2_direct
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &936835371
 GameObject:
   m_ObjectHideFlags: 0
@@ -4680,6 +6410,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976171004}
   m_CullTransparentMesh: 1
+--- !u!1 &981797354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981797355}
+  - component: {fileID: 981797356}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_library_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &981797355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981797354}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981797356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981797354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_library_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_library_blocked
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &982877123
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,6 +6518,64 @@ MonoBehaviour:
   _backgroundType: 4
   _playSpecialOnStart: 0
   _duration: 0
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1006605677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1006605678}
+  - component: {fileID: 1006605679}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_basement_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1006605678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006605677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1006605679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006605677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_basement_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_basement_direct
+  _backgroundType: 8
+  _playSpecialOnStart: 1
+  _duration: 1
   _characterPos: 1
   _leftCharacter: 0
   _rightCharacter: 0
@@ -4796,6 +6642,64 @@ MonoBehaviour:
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
   _panelFadeDuration: 0.3
+--- !u!1 &1050862387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1050862388}
+  - component: {fileID: 1050862389}
+  m_Layer: 0
+  m_Name: event_week_004_external_w004_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1050862388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050862387}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1050862389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050862387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_external_w004_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_external_w004_direct
+  _backgroundType: 7
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1053726195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4850,6 +6754,64 @@ MonoBehaviour:
   _leftCharacter: 0
   _rightCharacter: 0
   _centerCharacter: 6
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1053933460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053933461}
+  - component: {fileID: 1053933462}
+  m_Layer: 0
+  m_Name: event_week_004_engineering_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1053933461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053933460}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1053933462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053933460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_engineering_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_engineering_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -5064,6 +7026,122 @@ Transform:
   - {fileID: 538385502}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1094803817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1094803818}
+  - component: {fileID: 1094803819}
+  m_Layer: 0
+  m_Name: event_week_004_excursion_basement_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1094803818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094803817}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1094803819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094803817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_excursion_basement_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_excursion_basement_blocked
+  _backgroundType: 8
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1097757805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097757806}
+  - component: {fileID: 1097757807}
+  m_Layer: 0
+  m_Name: event_week_004_letter_friend_3_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1097757806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097757805}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1097757807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097757805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_friend_3_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_friend_3_direct
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1100682010
 GameObject:
   m_ObjectHideFlags: 0
@@ -5114,6 +7192,64 @@ MonoBehaviour:
   _backgroundType: 5
   _playSpecialOnStart: 0
   _duration: 0
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1106715054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106715055}
+  - component: {fileID: 1106715056}
+  m_Layer: 0
+  m_Name: event_week_003_etiquette_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1106715055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106715054}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1106715056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106715054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_etiquette_direct
+  _isBlocking: 1
+  _targetEventId: event_week_003_etiquette_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
   _characterPos: 1
   _leftCharacter: 0
   _rightCharacter: 0
@@ -5197,6 +7333,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114980350}
   m_CullTransparentMesh: 1
+--- !u!1 &1118776873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1118776874}
+  - component: {fileID: 1118776875}
+  m_Layer: 0
+  m_Name: event_week_004_letter_friend_3_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1118776874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118776873}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1118776875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118776873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_friend_3_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_friend_3_modified
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1166966432
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,6 +7565,180 @@ MonoBehaviour:
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
   _panelFadeDuration: 0.3
+--- !u!1 &1208273970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208273971}
+  - component: {fileID: 1208273972}
+  m_Layer: 0
+  m_Name: event_week_004_riding_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208273971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208273970}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1208273972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208273970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_riding_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_riding_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1211771325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1211771326}
+  - component: {fileID: 1211771327}
+  m_Layer: 0
+  m_Name: event_week_004_riding_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1211771326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211771325}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1211771327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211771325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_riding_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_riding_blocked
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1215996613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215996614}
+  - component: {fileID: 1215996615}
+  m_Layer: 0
+  m_Name: event_week_004_house_talk_w004_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1215996614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215996613}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1215996615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215996613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_house_talk_w004_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_house_talk_w004_modified
+  _backgroundType: 7
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1218472803
 GameObject:
   m_ObjectHideFlags: 0
@@ -5425,6 +7793,122 @@ MonoBehaviour:
   _leftCharacter: 0
   _rightCharacter: 0
   _centerCharacter: 2
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1219207757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219207758}
+  - component: {fileID: 1219207759}
+  m_Layer: 0
+  m_Name: event_week_003_etiquette_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1219207758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219207757}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1219207759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219207757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_etiquette_modified
+  _isBlocking: 1
+  _targetEventId: event_week_003_etiquette_modified
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1224422374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224422375}
+  - component: {fileID: 1224422376}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_cousin_1_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1224422375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224422374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1224422376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224422374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_cousin_1_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_cousin_1_blocked
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 5
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -5549,6 +8033,122 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &1246388459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246388460}
+  - component: {fileID: 1246388461}
+  m_Layer: 0
+  m_Name: event_week_003_nature_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1246388460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246388459}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1246388461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246388459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_nature_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_003_nature_blocked
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1267404358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1267404359}
+  - component: {fileID: 1267404360}
+  m_Layer: 0
+  m_Name: event_week_004_external_w004_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1267404359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267404358}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1267404360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267404358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_external_w004_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_external_w004_blocked
+  _backgroundType: 7
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1286719625
 GameObject:
   m_ObjectHideFlags: 0
@@ -5857,11 +8457,185 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4284ef43231144f9c05ba7917a18a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_ChildStateToastItem
+--- !u!1 &1326814080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1326814081}
+  - component: {fileID: 1326814082}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_friend_3_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1326814081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326814080}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1326814082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326814080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_friend_3_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_friend_3_blocked
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 4
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!198 &1331587046 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1324786630236587353, guid: b1570dd86b6ce6a4a8e9f0906526826f, type: 3}
   m_PrefabInstance: {fileID: 575894398}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1339312632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1339312633}
+  - component: {fileID: 1339312634}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_friend_3_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1339312633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339312632}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1339312634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339312632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_friend_3_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_friend_3_direct
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 4
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1345133263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1345133264}
+  - component: {fileID: 1345133265}
+  m_Layer: 0
+  m_Name: event_week_004_astronomy_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1345133264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345133263}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1345133265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345133263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_astronomy_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_astronomy_modified
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1358413485
 GameObject:
   m_ObjectHideFlags: 0
@@ -6445,6 +9219,8 @@ MonoBehaviour:
     targetImage: {fileID: 1437439417}
   - type: 8
     targetImage: {fileID: 1689385687}
+  - type: 7
+    targetImage: {fileID: 2097414372}
   defaultBackground: 0
   transitionMode: 0
   noTransition: {fileID: 1449931393}
@@ -6516,6 +9292,64 @@ MonoBehaviour:
   duration: 0.35
   startScale: 0.88
   ease: 27
+--- !u!1 &1456410097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1456410098}
+  - component: {fileID: 1456410099}
+  m_Layer: 0
+  m_Name: event_week_004_engineering_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1456410098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456410097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1456410099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456410097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_engineering_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_engineering_modified
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1457639858
 GameObject:
   m_ObjectHideFlags: 0
@@ -6860,6 +9694,64 @@ MonoBehaviour:
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
   _panelFadeDuration: 0.3
+--- !u!1 &1496917903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1496917904}
+  - component: {fileID: 1496917905}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_friend_1_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1496917904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496917903}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1496917905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496917903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_friend_1_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_friend_1_blocked
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 2
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1499134515
 GameObject:
   m_ObjectHideFlags: 0
@@ -7019,6 +9911,180 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1542131535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1542131536}
+  - component: {fileID: 1542131537}
+  m_Layer: 0
+  m_Name: event_week_004_letter_friend_1_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1542131536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542131535}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1542131537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542131535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_friend_1_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_friend_1_modified
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1554407414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1554407415}
+  - component: {fileID: 1554407416}
+  m_Layer: 0
+  m_Name: event_week_004_letter_friend_2_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1554407415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554407414}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1554407416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554407414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_friend_2_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_friend_2_modified
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1558685086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1558685087}
+  - component: {fileID: 1558685088}
+  m_Layer: 0
+  m_Name: event_week_004_letter_friend_3_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1558685087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558685086}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1558685088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558685086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_letter_friend_3_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_letter_friend_3_blocked
+  _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1560258989
 GameObject:
   m_ObjectHideFlags: 0
@@ -7313,6 +10379,122 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636241519}
   m_CullTransparentMesh: 1
+--- !u!1 &1650633342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650633343}
+  - component: {fileID: 1650633344}
+  m_Layer: 0
+  m_Name: event_week_004_house_talk_w004_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1650633343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650633342}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1650633344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650633342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_house_talk_w004_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_house_talk_w004_blocked
+  _backgroundType: 7
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1671442374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1671442375}
+  - component: {fileID: 1671442376}
+  m_Layer: 0
+  m_Name: event_week_004_external_w004_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1671442375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671442374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1671442376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671442374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_external_w004_modified
+  _isBlocking: 1
+  _targetEventId: event_week_004_external_w004_modified
+  _backgroundType: 7
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1689385685
 GameObject:
   m_ObjectHideFlags: 0
@@ -7388,6 +10570,180 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689385685}
   m_CullTransparentMesh: 1
+--- !u!1 &1740489541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1740489542}
+  - component: {fileID: 1740489543}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_cousin_2_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1740489542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740489541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740489543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740489541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_cousin_2_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_cousin_2_blocked
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 6
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1743671973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743671974}
+  - component: {fileID: 1743671975}
+  m_Layer: 0
+  m_Name: event_week_003_story_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1743671974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743671973}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743671975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743671973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_story_modified
+  _isBlocking: 1
+  _targetEventId: event_week_003_story_modified
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &1744755013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744755014}
+  - component: {fileID: 1744755015}
+  m_Layer: 0
+  m_Name: event_week_004_visitor_cousin_1_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1744755014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744755013}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1744755015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744755013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_visitor_cousin_1_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_visitor_cousin_1_direct
+  _backgroundType: 3
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 5
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!224 &1753154583 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3570028099247665818, guid: 823b2233877b34a4daeeefb06f5b3b9a, type: 3}
@@ -7416,6 +10772,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!1 &1836992133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1836992134}
+  - component: {fileID: 1836992135}
+  m_Layer: 0
+  m_Name: event_week_004_cooking_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1836992134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836992133}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1836992135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836992133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_cooking_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_cooking_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &1841840513
 GameObject:
   m_ObjectHideFlags: 0
@@ -8964,6 +12378,64 @@ MonoBehaviour:
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
   _panelFadeDuration: 0.3
+--- !u!1 &2006029948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2006029949}
+  - component: {fileID: 2006029950}
+  m_Layer: 0
+  m_Name: event_week_003_nature_modified
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2006029949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006029948}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2006029950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006029948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_nature_modified
+  _isBlocking: 1
+  _targetEventId: event_week_003_nature_modified
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &2040479248
 GameObject:
   m_ObjectHideFlags: 0
@@ -9022,6 +12494,64 @@ MonoBehaviour:
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
   _panelFadeDuration: 0.3
+--- !u!1 &2042761694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2042761695}
+  - component: {fileID: 2042761696}
+  m_Layer: 0
+  m_Name: event_week_004_engineering_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2042761695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042761694}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2042761696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042761694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_engineering_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_engineering_blocked
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1 &2044572708
 GameObject:
   m_ObjectHideFlags: 0
@@ -9070,6 +12600,64 @@ MonoBehaviour:
   _isBlocking: 1
   _targetEventId: event_week_003_letter_friend_2_blocked
   _backgroundType: 0
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &2056338115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2056338116}
+  - component: {fileID: 2056338117}
+  m_Layer: 0
+  m_Name: event_week_004_astronomy_blocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2056338116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056338115}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2056338117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056338115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_astronomy_blocked
+  _isBlocking: 1
+  _targetEventId: event_week_004_astronomy_blocked
+  _backgroundType: 6
   _playSpecialOnStart: 1
   _duration: 1
   _characterPos: 1
@@ -9264,6 +12852,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2097414370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097414371}
+  - component: {fileID: 2097414373}
+  - component: {fileID: 2097414372}
+  m_Layer: 5
+  m_Name: Hallway
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2097414371
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097414370}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90.00041}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 393796963}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2097414372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097414370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 70bb27e3420c7424ba62cf7029b53ebb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2097414373
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097414370}
+  m_CullTransparentMesh: 1
 --- !u!1 &2106996842
 GameObject:
   m_ObjectHideFlags: 0
@@ -9318,6 +12981,64 @@ MonoBehaviour:
   _leftCharacter: 0
   _rightCharacter: 0
   _centerCharacter: 6
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
+--- !u!1 &2125265575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2125265576}
+  - component: {fileID: 2125265577}
+  m_Layer: 0
+  m_Name: event_week_003_nature_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2125265576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125265575}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545558314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2125265577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125265575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_003_nature_direct
+  _isBlocking: 1
+  _targetEventId: event_week_003_nature_direct
+  _backgroundType: 6
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
   _usePanelFade: 0
   _fadePanel: {fileID: 0}
   _panelFadeMode: 0
@@ -9651,6 +13372,64 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_MaxRayIntersections: 0
+--- !u!1 &2138456002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2138456003}
+  - component: {fileID: 2138456004}
+  m_Layer: 0
+  m_Name: event_week_004_house_talk_w004_direct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2138456003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138456002}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286496255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2138456004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138456002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b80e5403dc852a47ab6ea35377c1f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventCutsceneDefault
+  _cutsceneId: event_week_004_house_talk_w004_direct
+  _isBlocking: 1
+  _targetEventId: event_week_004_house_talk_w004_direct
+  _backgroundType: 7
+  _playSpecialOnStart: 1
+  _duration: 1
+  _characterPos: 1
+  _leftCharacter: 0
+  _rightCharacter: 0
+  _centerCharacter: 1
+  _usePanelFade: 0
+  _fadePanel: {fileID: 0}
+  _panelFadeMode: 0
+  _panelFadeDuration: 0.3
 --- !u!1001 &237135909528359768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10974,3 +14753,4 @@ SceneRoots:
   - {fileID: 1243324334}
   - {fileID: 1841840514}
   - {fileID: 545558314}
+  - {fileID: 286496255}
