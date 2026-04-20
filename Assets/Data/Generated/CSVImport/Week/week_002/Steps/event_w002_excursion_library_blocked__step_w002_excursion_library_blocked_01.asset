@@ -15,17 +15,18 @@ MonoBehaviour:
   _titleOverride: "\uB3C4\uC11C\uAD00 2\uCC28 \uBC29\uBB38 - \uD1B5\uC81C"
   _bodyText: "(\uB124\uBAA8\uAC00 \uB3C4\uC11C\uAD00 \uC548\uCABD\uC744 \uB3CC\uC544\uB2E4\uB2C8\uB2E4
     \uBA3C\uC9C0\uAC00 \uB450\uAECD\uAC8C \uC313\uC778 \uC624\uB798\uB41C \uCC45\uC744
-    \uBC1C\uACAC\uD55C\uB2E4.)\n        \n                    \uB124\uBAA8 : \uC5B4?
-    \uC774\uAC83\uB3C4 \uBD10\uB3C4 \uB418\uB098?\n        \n\n(\uB124\uBAA8\uAC00
+    \uBC1C\uACAC\uD55C\uB2E4.)\r\n        \r\n                    \uB124\uBAA8 :
+    \uC5B4? \uC774\uAC83\uB3C4 \uBD10\uB3C4 \uB418\uB098?\r\n        \r\n\r\n(\uB124\uBAA8\uAC00
     \uCC45\uC744 \uC7A1\uAE30 \uC9C1\uC804, \uC11C\uACE0\uAD00\uB9AC\uC778\uC774
-    \uB098\uC640 \uADF8 \uCC45\uC744 \uBD99\uB4E0\uB2E4.)\n        \n                       
+    \uB098\uC640 \uADF8 \uCC45\uC744 \uBD99\uB4E0\uB2E4.)\r\n        \r\n                       
     \uC11C\uACE0\uAD00\uB9AC\uC778 : \uC8FC\uC778\uB2D8, \uC774 \uCC45\uC740 \uC190\uB300\uC154\uC120
-    \uC548\uB429\uB2C8\uB2E4.\n        \n                        \uB124\uBAA8 : \uC65C\uC694?\n       
-    \n                        \uC11C\uACE0\uAD00\uB9AC\uC778 : \uCC45\uC774 \uC624\uB798\uB418\uC5B4
-    \uC790\uCE6B\uD558\uB2E8 \uD6FC\uC190 \uB420 \uC218 \uC788\uAE30 \uB54C\uBB38\uC785\uB2C8\uB2E4.\n       
-    \n                        \uB124\uBAA8 : \uC870\uAE08\uB9CC\uC778\uB370.\n       
-    \n                        \uC11C\uACE0\uAD00\uB9AC\uC778 : \uC548 \uB429\uB2C8\uB2E4.\n       
-    \n                        \uB124\uBAA8 : \uC5D0\uC774\u2026"
+    \uC548\uB429\uB2C8\uB2E4.\r\n        \r\n                        \uB124\uBAA8
+    : \uC65C\uC694?\r\n        \r\n                        \uC11C\uACE0\uAD00\uB9AC\uC778
+    : \uCC45\uC774 \uC624\uB798\uB418\uC5B4 \uC790\uCE6B\uD558\uB2E8 \uD6FC\uC190
+    \uB420 \uC218 \uC788\uAE30 \uB54C\uBB38\uC785\uB2C8\uB2E4.\r\n        \r\n                       
+    \uB124\uBAA8 : \uC870\uAE08\uB9CC\uC778\uB370.\r\n        \r\n                       
+    \uC11C\uACE0\uAD00\uB9AC\uC778 : \uC548 \uB429\uB2C8\uB2E4.\r\n        \r\n                       
+    \uB124\uBAA8 : \uC5D0\uC774\u2026"
   _dialogueLines: []
   _nemoLine: 
   _useCustomVisualState: 0

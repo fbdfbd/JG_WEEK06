@@ -242,7 +242,6 @@ public sealed class WeekFlowPlaytesterController : MonoBehaviour
 
         if (_showChoiceResult && _currentEventSession.HasPendingChoiceResult)
         {
-            _currentEventSession.ClearChoiceResult();
             _showChoiceResult = false;
         }
 

@@ -14,16 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uC138\uD0C1\uC2E4 \uB9AC\uBCF8 \uC18C\uBB38 - \uD1B5\uC81C"
   _bodyText: "(\uC138\uD0C1\uC2E4 \uC55E. \uD558\uB140 \uB458\uC774 \uC0C9 \uB9AC\uBCF8\uC744
-    \uC815\uB9AC\uD558\uBA70 \uD55C\uC228 \uC270\uB2E4.)\n        \n        \uD558\uB1401
-    : \uC774\uC0C1\uD558\uC9C0. \uBD84\uBA85 \uC9DD \uB9DE\uCDB0 \uB480\uB294\uB370.\n       
-    \n        \uD558\uB1402 : \uB610 \uD558\uB098 \uC5C6\uC5B4\uC84C\uC5B4.\n       
-    \n        \uB124\uBAA8 : \uBB50 \uC5C6\uC5B4\uC84C\uC5B4?\n        \n\n\uD558\uB1401
-    : \uC544\uBB34\uAC83\uB3C4 \uC544\uB2D9\uB2C8\uB2E4, \uC8FC\uC778\uB2D8.\n       
-    \n        \uB124\uBAA8 : \uB610 \uC228\uAE30\uC9C0.\n        \n        \uD558\uB1402
-    : \uADF8\uB0E5 \uB9AC\uBCF8 \uC815\uB9AC\uAC00 \uC798 \uC548 \uB41C \uAC70\uC608\uC694.\n       
-    \n        \uB124\uBAA8 : \uB9AC\uBCF8\uB3C4 \uB3C4\uB9DD\uAC00?\n        \n       
-    \uD558\uB1401 : \uAC00\uB054\uC740 \uADF8\uB7F0 \uC148\uC774\uC9C0\uC694.\n       
-    \n        \uB124\uBAA8 : \uC774\uC0C1\uD574."
+    \uC815\uB9AC\uD558\uBA70 \uD55C\uC228 \uC270\uB2E4.)\r\n        \r\n        \uD558\uB1401
+    : \uC774\uC0C1\uD558\uC9C0. \uBD84\uBA85 \uC9DD \uB9DE\uCDB0 \uB480\uB294\uB370.\r\n       
+    \r\n        \uD558\uB1402 : \uB610 \uD558\uB098 \uC5C6\uC5B4\uC84C\uC5B4.\r\n       
+    \r\n        \uB124\uBAA8 : \uBB50 \uC5C6\uC5B4\uC84C\uC5B4?\r\n        \r\n\r\n\uD558\uB1401
+    : \uC544\uBB34\uAC83\uB3C4 \uC544\uB2D9\uB2C8\uB2E4, \uC8FC\uC778\uB2D8.\r\n       
+    \r\n        \uB124\uBAA8 : \uB610 \uC228\uAE30\uC9C0.\r\n        \r\n       
+    \uD558\uB1402 : \uADF8\uB0E5 \uB9AC\uBCF8 \uC815\uB9AC\uAC00 \uC798 \uC548 \uB41C
+    \uAC70\uC608\uC694.\r\n        \r\n        \uB124\uBAA8 : \uB9AC\uBCF8\uB3C4
+    \uB3C4\uB9DD\uAC00?\r\n        \r\n        \uD558\uB1401 : \uAC00\uB054\uC740
+    \uADF8\uB7F0 \uC148\uC774\uC9C0\uC694.\r\n        \r\n        \uB124\uBAA8 :
+    \uC774\uC0C1\uD574."
   _dialogueLines: []
   _nemoLine: 
   _useCustomVisualState: 0

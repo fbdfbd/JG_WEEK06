@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uCE5C\uAD6C3 2\uCC28 \uB9CC\uB0A8 - \uD1B5\uC81C"
   _bodyText: "(\uCE5C\uAD6C3\uC774 \uCC3D\uAC00 \uB300\uC2E0 \uACC4\uB2E8 \uB09C\uAC04\uC5D0
-    \uAE30\uB300 \uC11C \uC788\uB2E4.)\n        \n                    \uCE5C\uAD6C3
-    : \uC624\uB298 \uAD6C\uB984\uC740 \uB9CC\uB450 \uAC19\uC544.\n        \n                   
-    \uB124\uBAA8 : \uC800\uBC88\uC5D4 \uBE75 \uC544\uB2C8\uC5C8\uC5B4?\n        \n                   
-    \uCE5C\uAD6C3 : \uC624\uB298\uC740 \uB9CC\uB450\uC57C.\n        \n\n\uD558\uB140
-    : \uC8FC\uC778\uB2D8, \uC624\uB298\uC740 \uC9E7\uAC8C \uC778\uC0AC\uB9CC \uD558\uC154\uC57C
-    \uD569\uB2C8\uB2E4.\n        \n                        \uB124\uBAA8 : \uC7E4
-    \uB610 \uC774\uC0C1\uD55C \uB9D0 \uD574.\n        \n                        \uCE5C\uAD6C3
-    : \uC9C4\uC9DC \uB9CC\uB450 \uAC19\uC740\uB370.\n        \n                       
-    \uB124\uBAA8 : \uC5D0\uC774.\n        \n                        \uCE5C\uAD6C3
-    : \uB2E4\uC74C\uC5D4 \uB354 \uB9DB\uC788\uB294 \uAC70 \uBCF4\uC5EC \uC904\uAC8C.\n       
-    \n                        \uB124\uBAA8 : \uC751."
+    \uAE30\uB300 \uC11C \uC788\uB2E4.)\r\n        \r\n                    \uCE5C\uAD6C3
+    : \uC624\uB298 \uAD6C\uB984\uC740 \uB9CC\uB450 \uAC19\uC544.\r\n        \r\n                   
+    \uB124\uBAA8 : \uC800\uBC88\uC5D4 \uBE75 \uC544\uB2C8\uC5C8\uC5B4?\r\n       
+    \r\n                    \uCE5C\uAD6C3 : \uC624\uB298\uC740 \uB9CC\uB450\uC57C.\r\n       
+    \r\n\r\n\uD558\uB140 : \uC8FC\uC778\uB2D8, \uC624\uB298\uC740 \uC9E7\uAC8C \uC778\uC0AC\uB9CC
+    \uD558\uC154\uC57C \uD569\uB2C8\uB2E4.\r\n        \r\n                       
+    \uB124\uBAA8 : \uC7E4 \uB610 \uC774\uC0C1\uD55C \uB9D0 \uD574.\r\n        \r\n                       
+    \uCE5C\uAD6C3 : \uC9C4\uC9DC \uB9CC\uB450 \uAC19\uC740\uB370.\r\n        \r\n                       
+    \uB124\uBAA8 : \uC5D0\uC774.\r\n        \r\n                        \uCE5C\uAD6C3
+    : \uB2E4\uC74C\uC5D4 \uB354 \uB9DB\uC788\uB294 \uAC70 \uBCF4\uC5EC \uC904\uAC8C.\r\n       
+    \r\n                        \uB124\uBAA8 : \uC751."
   _dialogueLines: []
   _nemoLine: 
   _useCustomVisualState: 0

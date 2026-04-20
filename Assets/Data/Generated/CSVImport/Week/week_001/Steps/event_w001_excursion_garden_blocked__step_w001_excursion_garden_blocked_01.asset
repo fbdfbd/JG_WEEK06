@@ -14,22 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uC815\uC6D0 1\uCC28 \uBC29\uBB38 - \uD1B5\uC81C"
   _bodyText: "(\uCA0D\uD55C \uC810\uC2EC. \uC815\uC6D0\uC744 \uAC77\uB358 \uB124\uBAA8\uAC00
-    \uB098\uBE44\uB97C \uBC1C\uACAC\uD55C\uB2E4.)\n        \n                   
-    \uB124\uBAA8 : \uC640, \uB098\uBE44\uB2E4.\n        \n                    (\uB098\uBE44\uAC00
-    \uD6C4\uBB38 \uB108\uBA38\uB85C \uB0A0\uC544\uAC04\uB2E4.)\n        \n                   
-    \uB124\uBAA8 : \uC5B4? \uC800\uAE30\uB85C \uAC14\uB124. \uC7A1\uACE0 \uC2F6\uC740\uB370\u2026\n       
-    \n                    (\uB124\uBAA8\uB294 \uD6C4\uBB38 \uB108\uBA38\uAC00 \uC870\uAE08
-    \uAD81\uAE08\uD574\uC9C4\uB2E4.)\n        \n\n(\uD6C4\uBB38\uC73C\uB85C \uAC00\uB824\uB294
-    \uC21C\uAC04, \uC815\uB9AC\uB97C \uD558\uB358 \uC815\uC6D0\uC0AC\uAC00 \uC55E\uC744
-    \uB9C9\uB294\uB2E4.)\n        \n                        \uC815\uC6D0\uC0AC :
-    \uC8FC\uC778\uB2D8~ \uADF8\uCABD\uC740 \uC548 \uB429\uB2C8\uB2E4~\n        \n                       
-    \uB124\uBAA8 : \uC65C\uC694?\n        \n                        \uC815\uC6D0\uC0AC
-    : \uB4A4\uCABD\uC740 \uAE38\uC774 \uBBF8\uB044\uB7FD\uACE0, \uD63C\uC790 \uAC00\uC2DC\uBA74
-    \uC704\uD5D8\uD569\uB2C8\uB2E4~\n        \n                        \uB124\uBAA8
-    : \uC5D0\uC774\u2026 \uC870\uAE08\uB9CC\uC778\uB370.\n        \n                       
-    \uC815\uC6D0\uC0AC : \uB2E4\uC74C\uC5D0 \uC5B4\uB978\uC774 \uAC19\uC774 \uC788\uC744
-    \uB54C \uAC00 \uBCF4\uC2DC\uC9C0\uC694~\n        \n                        \uB124\uBAA8
-    : \u2026\u2026\uC54C\uACA0\uC5B4\uC694."
+    \uB098\uBE44\uB97C \uBC1C\uACAC\uD55C\uB2E4.)\r\n        \r\n                   
+    \uB124\uBAA8 : \uC640, \uB098\uBE44\uB2E4.\r\n        \r\n                   
+    (\uB098\uBE44\uAC00 \uD6C4\uBB38 \uB108\uBA38\uB85C \uB0A0\uC544\uAC04\uB2E4.)\r\n       
+    \r\n                    \uB124\uBAA8 : \uC5B4? \uC800\uAE30\uB85C \uAC14\uB124.
+    \uC7A1\uACE0 \uC2F6\uC740\uB370\u2026\r\n        \r\n                    (\uB124\uBAA8\uB294
+    \uD6C4\uBB38 \uB108\uBA38\uAC00 \uC870\uAE08 \uAD81\uAE08\uD574\uC9C4\uB2E4.)\r\n       
+    \r\n\r\n(\uD6C4\uBB38\uC73C\uB85C \uAC00\uB824\uB294 \uC21C\uAC04, \uC815\uB9AC\uB97C
+    \uD558\uB358 \uC815\uC6D0\uC0AC\uAC00 \uC55E\uC744 \uB9C9\uB294\uB2E4.)\r\n       
+    \r\n                        \uC815\uC6D0\uC0AC : \uC8FC\uC778\uB2D8~ \uADF8\uCABD\uC740
+    \uC548 \uB429\uB2C8\uB2E4~\r\n        \r\n                        \uB124\uBAA8
+    : \uC65C\uC694?\r\n        \r\n                        \uC815\uC6D0\uC0AC : \uB4A4\uCABD\uC740
+    \uAE38\uC774 \uBBF8\uB044\uB7FD\uACE0, \uD63C\uC790 \uAC00\uC2DC\uBA74 \uC704\uD5D8\uD569\uB2C8\uB2E4~\r\n       
+    \r\n                        \uB124\uBAA8 : \uC5D0\uC774\u2026 \uC870\uAE08\uB9CC\uC778\uB370.\r\n       
+    \r\n                        \uC815\uC6D0\uC0AC : \uB2E4\uC74C\uC5D0 \uC5B4\uB978\uC774
+    \uAC19\uC774 \uC788\uC744 \uB54C \uAC00 \uBCF4\uC2DC\uC9C0\uC694~\r\n       
+    \r\n                        \uB124\uBAA8 : \u2026\u2026\uC54C\uACA0\uC5B4\uC694."
   _dialogueLines: []
   _nemoLine: 
   _useCustomVisualState: 0

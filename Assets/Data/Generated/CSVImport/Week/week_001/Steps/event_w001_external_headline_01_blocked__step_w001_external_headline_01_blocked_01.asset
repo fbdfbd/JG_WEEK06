@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uB274\uC2A4 1\uCC28 - \uD1B5\uC81C"
   _bodyText: "\uD558\uB140\uAC00 \uBC14\uAE65 \uC18C\uC2DD\uC774 \uC801\uD78C \uC804\uB2E8\uC744
-    \uB4E4\uACE0 \uC788\uB2E4.)\n        \n                    (\uC804\uB2E8\uC5D0\uB294
+    \uB4E4\uACE0 \uC788\uB2E4.)\r\n        \r\n                    (\uC804\uB2E8\uC5D0\uB294
     \uC655\uAD6D\uC758 \uC720\uBA85\uD55C \uBBF8\uC2A4\uD130 \uC784\uC774 \uBD81\uCABD
     \uB9C8\uC218\uB4E4\uC758 \uC6B0\uB450\uBA38\uB9AC\uB97C \uD574\uCE58\uC6B0\uACE0
-    \uB3CC\uC544\uC654\uB2E4\uB294 \uAE00\uC774 \uC801\uD600 \uC788\uB2E4.)\n       
-    \n\n\uB124\uBAA8 : \uADF8\uAC74 \uBB50\uC57C?\n        \n                       
-    \uD558\uB140 : \uBC14\uAE65 \uC18C\uC2DD\uC774\uC5D0\uC694, \uC8FC\uC778\uB2D8.\n       
-    \n                        \uB124\uBAA8 : \uBB50\uB77C\uACE0 \uC801\uD600 \uC788\uC5B4?\n       
-    \n                        \uD558\uB140 : \uC5B4\uB5A4 \uC0AC\uB78C\uC774 \uBA3C
-    \uB370 \uB2E4\uB140\uC654\uB2E4\uB294 \uC774\uC57C\uAE30\uB78D\uB2C8\uB2E4.\n       
-    \n                        \uB124\uBAA8 : \uD750\uC751.\n        \n                       
+    \uB3CC\uC544\uC654\uB2E4\uB294 \uAE00\uC774 \uC801\uD600 \uC788\uB2E4.)\r\n       
+    \r\n\r\n\uB124\uBAA8 : \uADF8\uAC74 \uBB50\uC57C?\r\n        \r\n                       
+    \uD558\uB140 : \uBC14\uAE65 \uC18C\uC2DD\uC774\uC5D0\uC694, \uC8FC\uC778\uB2D8.\r\n       
+    \r\n                        \uB124\uBAA8 : \uBB50\uB77C\uACE0 \uC801\uD600 \uC788\uC5B4?\r\n       
+    \r\n                        \uD558\uB140 : \uC5B4\uB5A4 \uC0AC\uB78C\uC774 \uBA3C
+    \uB370 \uB2E4\uB140\uC654\uB2E4\uB294 \uC774\uC57C\uAE30\uB78D\uB2C8\uB2E4.\r\n       
+    \r\n                        \uB124\uBAA8 : \uD750\uC751.\r\n        \r\n                       
     \uB124\uBAA8 : \uBCC4\uB85C \uC548 \uC7AC\uBC0C\uB124."
   _dialogueLines: []
   _nemoLine: 

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: event_w002_external_headline_02_blocked__step_w002_external_headline_02_blocked_01
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uB274\uC2A4 2\uCC28 - \uD1B5\uC81C"
-  _bodyText: "(\uD558\uB140\uAC00 \uC0C8 \uC804\uB2E8\uC744 \uBCF4\uACE0 \uC6C3\uB294\uB2E4.)\n       
-    \n\n\uB124\uBAA8 : \uC774\uBC88\uC5D4 \uB610 \uBB50\uC57C?\n        \n                       
-    \uD558\uB140 : \uB610 \uADF8 \uC0AC\uB78C \uC774\uC57C\uAE30\uC608\uC694, \uC8FC\uC778\uB2D8.\n       
-    \n                        \uB124\uBAA8 : \uADF8 \uC774\uC0C1\uD55C \uC0AC\uB78C?\n       
-    \n                        \uD558\uB140 : \uB124. \uADF8\uBD84\uC774\uC694."
+  _bodyText: "(\uD558\uB140\uAC00 \uC0C8 \uC804\uB2E8\uC744 \uBCF4\uACE0 \uC6C3\uB294\uB2E4.)\r\n       
+    \r\n\r\n\uB124\uBAA8 : \uC774\uBC88\uC5D4 \uB610 \uBB50\uC57C?\r\n        \r\n                       
+    \uD558\uB140 : \uB610 \uADF8 \uC0AC\uB78C \uC774\uC57C\uAE30\uC608\uC694, \uC8FC\uC778\uB2D8.\r\n       
+    \r\n                        \uB124\uBAA8 : \uADF8 \uC774\uC0C1\uD55C \uC0AC\uB78C?\r\n       
+    \r\n                        \uD558\uB140 : \uB124. \uADF8\uBD84\uC774\uC694."
   _dialogueLines: []
   _nemoLine: 
   _useCustomVisualState: 0

@@ -15,17 +15,17 @@ MonoBehaviour:
   _titleOverride: "\uCE5C\uAD6C2 2\uCC28 \uB9CC\uB0A8 - \uD5C8\uB77D"
   _bodyText: "(\uCE5C\uAD6C2\uB294 \uC624\uB298\uB3C4 \uB2E8\uC815\uD558\uAC8C \uC11C
     \uC788\uC9C0\uB9CC, \uC9C0\uB09C\uBC88\uBCF4\uB2E4 \uB124\uBAA8\uB97C \uB35C
-    \uACBD\uACC4\uD55C\uB2E4.)\n        \n                    \uB124\uBAA8 : \uC548\uB155.\n       
-    \n                    \uCE5C\uAD6C2 : \uC548\uB155.\n        \n\n\uB124\uBAA8
-    : \uC624\uB298\uB3C4 \uC637 \uB354\uB7EC\uC6CC\uC9C0\uB294 \uAC70 \uC2EB\uC5B4?\n       
-    \n                        \uCE5C\uAD6C2 : \uC751.\n        \n                       
-    \uB124\uBAA8 : \uC54C\uC558\uC5B4.\n        \n                        \uCE5C\uAD6C2
-    : \uB108\uB294 \uACC4\uC18D \uBA3C\uC9C0 \uBB3B\uD788\uACE0 \uB2E4\uB2C8\uC796\uC544.\n       
-    \n                        (\uCE5C\uAD6C2\uAC00 \uC190\uC218\uAC74\uC744 \uB0B4\uBBFC\uB2E4.)\n       
-    \n                        \uCE5C\uAD6C2 : \uC624\uB298\uC740 \uB124\uAC00 \uB2E6\uC544.\n       
-    \n                        \uB124\uBAA8 : \uB0B4\uAC00?\n        \n                       
-    \uCE5C\uAD6C2 : \uC751. \uB9E4\uBC88 \uB0B4\uAC00 \uD574 \uC904 \uC21C \uC5C6\uC9C0.\n       
-    \n                        \uB124\uBAA8 : \u2026\uC54C\uACA0\uC5B4."
+    \uACBD\uACC4\uD55C\uB2E4.)\r\n        \r\n                    \uB124\uBAA8 :
+    \uC548\uB155.\r\n        \r\n                    \uCE5C\uAD6C2 : \uC548\uB155.\r\n       
+    \r\n\r\n\uB124\uBAA8 : \uC624\uB298\uB3C4 \uC637 \uB354\uB7EC\uC6CC\uC9C0\uB294
+    \uAC70 \uC2EB\uC5B4?\r\n        \r\n                        \uCE5C\uAD6C2 : \uC751.\r\n       
+    \r\n                        \uB124\uBAA8 : \uC54C\uC558\uC5B4.\r\n        \r\n                       
+    \uCE5C\uAD6C2 : \uB108\uB294 \uACC4\uC18D \uBA3C\uC9C0 \uBB3B\uD788\uACE0 \uB2E4\uB2C8\uC796\uC544.\r\n       
+    \r\n                        (\uCE5C\uAD6C2\uAC00 \uC190\uC218\uAC74\uC744 \uB0B4\uBBFC\uB2E4.)\r\n       
+    \r\n                        \uCE5C\uAD6C2 : \uC624\uB298\uC740 \uB124\uAC00 \uB2E6\uC544.\r\n       
+    \r\n                        \uB124\uBAA8 : \uB0B4\uAC00?\r\n        \r\n                       
+    \uCE5C\uAD6C2 : \uC751. \uB9E4\uBC88 \uB0B4\uAC00 \uD574 \uC904 \uC21C \uC5C6\uC9C0.\r\n       
+    \r\n                        \uB124\uBAA8 : \u2026\uC54C\uACA0\uC5B4."
   _dialogueLines: []
   _nemoLine: 
   _useCustomVisualState: 0

@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: event_w001_house_cousin_1_blocked__step_w001_house_cousin_1_blocked_01
   m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
   _titleOverride: "\uC0AC\uCD0C1 \uAD00\uB828 \uC18C\uBB38 - \uD1B5\uC81C"
-  _bodyText: "\uD558\uB1401 : \uC624\uB298 \uADF8\uBD84 \uC624\uC2E0\uB2E4\uBA70?\n       
-    \n        \uD558\uB1402 : \uC751. \uAD1C\uD788 \uC2E4\uC218 \uC5C6\uAC8C \uD574\uC57C\uC9C0.\n       
-    \n        \uB124\uBAA8 : \uB204\uAD6C \uC640?\n        \n\n\uD558\uB1401 : \uBCC4\uAC70
-    \uC544\uB2D9\uB2C8\uB2E4, \uC8FC\uC778\uB2D8.\n        \n        \uB124\uBAA8
-    : \uBC29\uAE08 \uB204\uAD6C \uC628\uB2E4\uACE0 \uD588\uC796\uC544.\n        \n       
-    \uD558\uB1402 : \uADF8\uB0E5 \uC190\uB2D8 \uD55C \uBD84 \uC624\uC2E0\uB2E4\uB294
-    \uC598\uAE30\uC608\uC694.\n        \n        \uB124\uBAA8 : \uB204\uAD6C \uC190\uB2D8?\n       
-    \n        \uD558\uB1401 : \uBC31\uC791\uB2D8 \uC190\uB2D8\uC774\uC2ED\uB2C8\uB2E4.\n       
-    \n        \uB124\uBAA8 : \uC5B4\uB5A4 \uC0AC\uB78C\uC778\uB370?\n        \n       
-    \uD558\uB1402 : \uC5B4\uB978\uC774\uC5D0\uC694.\n        \n        \uB124\uBAA8
-    : \uADF8\uAC74 \uC544\uB294\uB370.\n        \n        \uD558\uB1401 : \uC8FC\uC778\uB2D8\uC740
-    \uB098\uC911\uC5D0 \uC544\uC2DC\uAC8C \uB420 \uAC70\uC608\uC694.\n        \n       
-    \uB124\uBAA8 : \uC5D0\uC774. \uB9E8\uB0A0 \uB098\uC911\uC774\uB798."
+  _bodyText: "\uD558\uB1401 : \uC624\uB298 \uADF8\uBD84 \uC624\uC2E0\uB2E4\uBA70?\r\n       
+    \r\n        \uD558\uB1402 : \uC751. \uAD1C\uD788 \uC2E4\uC218 \uC5C6\uAC8C \uD574\uC57C\uC9C0.\r\n       
+    \r\n        \uB124\uBAA8 : \uB204\uAD6C \uC640?\r\n        \r\n\r\n\uD558\uB1401
+    : \uBCC4\uAC70 \uC544\uB2D9\uB2C8\uB2E4, \uC8FC\uC778\uB2D8.\r\n        \r\n       
+    \uB124\uBAA8 : \uBC29\uAE08 \uB204\uAD6C \uC628\uB2E4\uACE0 \uD588\uC796\uC544.\r\n       
+    \r\n        \uD558\uB1402 : \uADF8\uB0E5 \uC190\uB2D8 \uD55C \uBD84 \uC624\uC2E0\uB2E4\uB294
+    \uC598\uAE30\uC608\uC694.\r\n        \r\n        \uB124\uBAA8 : \uB204\uAD6C
+    \uC190\uB2D8?\r\n        \r\n        \uD558\uB1401 : \uBC31\uC791\uB2D8 \uC190\uB2D8\uC774\uC2ED\uB2C8\uB2E4.\r\n       
+    \r\n        \uB124\uBAA8 : \uC5B4\uB5A4 \uC0AC\uB78C\uC778\uB370?\r\n       
+    \r\n        \uD558\uB1402 : \uC5B4\uB978\uC774\uC5D0\uC694.\r\n        \r\n       
+    \uB124\uBAA8 : \uADF8\uAC74 \uC544\uB294\uB370.\r\n        \r\n        \uD558\uB1401
+    : \uC8FC\uC778\uB2D8\uC740 \uB098\uC911\uC5D0 \uC544\uC2DC\uAC8C \uB420 \uAC70\uC608\uC694.\r\n       
+    \r\n        \uB124\uBAA8 : \uC5D0\uC774. \uB9E8\uB0A0 \uB098\uC911\uC774\uB798."
   _dialogueLines: []
   _nemoLine: 
   _useCustomVisualState: 0

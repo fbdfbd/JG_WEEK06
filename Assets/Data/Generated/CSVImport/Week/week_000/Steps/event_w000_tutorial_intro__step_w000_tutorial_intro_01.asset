@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae0b7e66326e1946bca6ce9fa70ec4c, type: 3}
+  m_Name: event_w000_tutorial_intro__step_w000_tutorial_intro_01
+  m_EditorClassIdentifier: Assembly-CSharp::SO_InteractiveEventStepDefinition
+  _titleOverride: ""
+  _bodyText: ""
+  _dialogueLines:
+  - _speaker: {fileID: 11400000, guid: 1015af0772cfbee45a960aa56bf8a245, type: 2}
+    _text: "백작님, 안건 보고드립니다."
+  - _speaker: {fileID: 11400000, guid: 1015af0772cfbee45a960aa56bf8a245, type: 2}
+    _text: "근 24시간 내 네모 아가씨께선 별 탈 없이 지내셨습니다. 다만 아침부터 창가에 앉아 계신 걸 보면 기다리시는 눈치입니다."
+  - _speaker: {fileID: 11400000, guid: 1015af0772cfbee45a960aa56bf8a245, type: 2}
+    _text: "그리고 어제 밤 침입자가 아가씨 방쪽 벽을 타다 경비에게 쫓겨 달아났습니다."
+  - _speaker: {fileID: 11400000, guid: 1015af0772cfbee45a960aa56bf8a245, type: 2}
+    _text: "경로로 보아 누군가 고의로 보낸 것으로 추정되는데. 조사 중입니다."
+  _nemoLine: ""
+  _useCustomVisualState: 0
+  _visualState: 0
+  _onEnterInteractions: []
+  _choices: []
+  _nextStep: {fileID: 11400000, guid: b8e372cf87884d11a296d90984c10bd3, type: 2}
+  _cinematicCues:
+    _enterCue: {fileID: 0}
+    _exitCue: {fileID: 0}

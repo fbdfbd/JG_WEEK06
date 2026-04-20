@@ -12,6 +12,8 @@ public class UI_DialogView : MonoBehaviour
     private Tween _typingTween;
     private string _currentContent = string.Empty;
 
+    public event System.Action TypingCompleted;
+
     public bool IsTyping => _typingTween != null && _typingTween.IsActive() && _typingTween.IsPlaying();
 
     private void OnDestroy()
@@ -72,6 +74,7 @@ public class UI_DialogView : MonoBehaviour
         if (characterCount <= 0)
         {
             _mainContentText.maxVisibleCharacters = int.MaxValue;
+            TypingCompleted?.Invoke();
             return;
         }
 
@@ -110,6 +113,7 @@ public class UI_DialogView : MonoBehaviour
     {
         ApplyVisibleCharacterCount(int.MaxValue);
         _typingTween = null;
+        TypingCompleted?.Invoke();
     }
 
     private void StopTypingTween()

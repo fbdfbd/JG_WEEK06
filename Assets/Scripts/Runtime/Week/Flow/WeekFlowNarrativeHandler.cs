@@ -37,11 +37,6 @@ public sealed class WeekFlowNarrativeHandler
 
         ApplyCurrentStepEffectsIfNeeded(eventSession);
 
-        if (eventSession.HasPendingChoiceResult)
-        {
-            eventSession.ClearChoiceResult();
-        }
-
         if (eventSession.TryMoveToNextStep())
         {
             return BuildEventStepScreen();
