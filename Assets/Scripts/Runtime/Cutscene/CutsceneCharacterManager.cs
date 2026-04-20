@@ -40,12 +40,28 @@ public class CutsceneCharacterManager : MonoBehaviour
 
     public void ShowLeft(CutsceneCharacterType characterType)
     {
-        _leftCharacterInstance = ReplaceCharacter(_leftCharacterInstance, characterType, _leftSpawnPoint);
+        GameObject character = FindPrefab(characterType);
+        if (character == null)
+        {
+            _leftCharacterInstance = null;
+            return;
+        }
+
+        ShowCharacter(character, _leftSpawnPoint, false);
+        _leftCharacterInstance = character;
     }
 
     public void ShowRight(CutsceneCharacterType characterType)
     {
-        _rightCharacterInstance = ReplaceCharacter(_rightCharacterInstance, characterType, _rightSpawnPoint);
+        GameObject character = FindPrefab(characterType);
+        if (character == null)
+        {
+            _rightCharacterInstance = null;
+            return;
+        }
+
+        ShowCharacter(character, _rightSpawnPoint, true);
+        _rightCharacterInstance = character;
     }
 
     public void HideAll()
@@ -58,7 +74,7 @@ public class CutsceneCharacterManager : MonoBehaviour
     {
         if (_leftCharacterInstance == null) return;
 
-        Destroy(_leftCharacterInstance);
+        _leftCharacterInstance.SetActive(false);
         _leftCharacterInstance = null;
     }
 
@@ -66,7 +82,7 @@ public class CutsceneCharacterManager : MonoBehaviour
     {
         if (_rightCharacterInstance == null) return;
 
-        Destroy(_rightCharacterInstance);
+        _rightCharacterInstance.SetActive(false);
         _rightCharacterInstance = null;
     }
 
@@ -79,25 +95,33 @@ public class CutsceneCharacterManager : MonoBehaviour
         return _rightCharacterInstance;
     }
 
-    private GameObject ReplaceCharacter(GameObject currentInstance, CutsceneCharacterType characterType, Transform spawnPoint)
+    private void ShowCharacter(GameObject character, Transform spawnPoint, bool flipX)
     {
-        if (currentInstance != null)
+        if (character == null || spawnPoint == null)
         {
-            Destroy(currentInstance);
-            currentInstance = null;
+            return;
         }
 
-        if (characterType == CutsceneCharacterType.None) return null;
-        if (spawnPoint == null) return null;
+        character.transform.position = spawnPoint.position;
+        character.transform.rotation = spawnPoint.rotation;
 
-        GameObject prefab = FindPrefab(characterType);
-        if (prefab == null) return null;
+        SetFlip(character.transform, flipX);
 
-        return Instantiate(prefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
+        character.SetActive(true);
+    }
+
+    private void SetFlip(Transform target, bool flipX)
+    {
+        Vector3 scale = target.localScale;
+        float absX = Mathf.Abs(scale.x);
+        scale.x = flipX ? -absX : absX;
+        target.localScale = scale;
     }
 
     private GameObject FindPrefab(CutsceneCharacterType characterType)
     {
+        if (characterType == CutsceneCharacterType.None) return null;
+
         for (int i = 0; i < _characterPrefabs.Length; i++)
         {
             CharacterPrefabEntry entry = _characterPrefabs[i];
